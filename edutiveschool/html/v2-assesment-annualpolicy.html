@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+
+        <div class="edv-bcrumb">
+            <div><a>Assessment Settings</a></div>
+            <div><a>Assessment Policy</a></div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div>
+              </div>
+              <div class="edv-actions">
+                <a class="act-qadd sm" mdl-pop="addAssessment"></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+
+              <table class="table tbl-topfxd">
+                <thead>
+                  <tr>
+                    <th><span>Academic Year</span></th>
+                    <th><span>Class Name</span></th>
+                    <th><span>Action</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <a>2022</a>
+                    </td>
+                    <td>
+                        <span>XII</span>
+                    </td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="act-edit"></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <a>2023</a>
+                    </td>
+                    <td>
+                        <span>VIII</span>
+                    </td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="act-edit"></a>
+                      </div>
+                    </td>
+                  </tr>
+               </tbody>
+              </table>
+              
+          </div>
+        </div>
+      <!-- Modal Page -->
+      <div class="mdl-page"  mdl-box="addAssessment">
+        <div class="mdl-pop">
+          <div class="mdl-head">
+            <h6>New Assessment Policy</h6>
+          </div>
+          <div class="mdl-body">
+            
+            <div class="edv-row">
+                <div class="edv-col3">
+                  <div class="f-group f-top">
+                    <div class="f-field">
+                      <label>Class</label>
+                      <div>
+                        <select class="edv-select">
+                          <option value="0" selected>All</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            <div class="nav-wrap">
+              <div class="nav-tab">
+                  <a>
+                    <input value="Term 1 " type="text" class="inputcycle" >
+                    <i edv-title="Edit" class="ico-edit edv-title"></i>
+                    <i edv-title="Copy" class="ico-copy edv-title"></i>
+                    <i edv-title="Delete" class="ico-del edv-title"></i>
+                  </a>
+                  <a class="sel">Annual Promotion Policy 
+                    <i edv-title="Edit" class="ico-edit edv-title"></i>
+                  </a>
+                  <a class="act-qadd sm"></a>
+              </div>
+              <div class="nav-container">
+                <div class="subject-wrap">
+                  <div class="annual-promo-wrap">
+
+                    <div class="annual-promo">
+                      <div class="annual-head">
+                        <div>
+                          <label>Term</label><input value="75" class="edv-input edv-input-btmln" /><span>%</span>
+                        </div>
+                      </div>
+                      <div class="annual-bdy">
+                        <div class="lst">
+                          <div>
+                            <label>Cycle 1</label><input value="20" class="edv-input edv-input-btmln" /><span>%</span>
+                          </div>
+                          <div>
+                            <label>Cycle 2</label><input value="20" class="edv-input edv-input-btmln" /><span>%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="annual-promo">
+                      <div class="annual-head">
+                        <div>
+                          <label>Term</label><input value="75" class="edv-input edv-input-btmln" /><span>%</span>
+                        </div>
+                      </div>
+                      <div class="annual-bdy">
+                        <div class="lst">
+                          <div>
+                            <label>Cycle 1</label><input value="20" class="edv-input edv-input-btmln" /><span>%</span>
+                          </div>
+                          <div>
+                            <label>Cycle 2</label><input value="20" class="edv-input edv-input-btmln" /><span>%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="annual-promo">
+                      <div class="annual-head">
+                        <div>
+                          <label>Term</label><input value="75" class="edv-input edv-input-btmln" /><span>%</span>
+                        </div>
+                      </div>
+                      <div class="annual-bdy">
+                        <div class="lst">
+                          <div>
+                            <label>Cycle 1</label><input value="20" class="edv-input edv-input-btmln" /><span>%</span>
+                          </div>
+                          <div>
+                            <label>Cycle 2</label><input value="20" class="edv-input edv-input-btmln" /><span>%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-foo">           
+            <a class="btn primary">Save</a>
+            <a class="btn line">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

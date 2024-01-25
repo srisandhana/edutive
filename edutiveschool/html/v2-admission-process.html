@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Add Admission Process</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+  
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+   <header id="edvheader"></header>
+   <!-- Left Navigation -->
+   <nav id="edvlnav"></nav>
+ 
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+      <div class="home">
+        <a href="../html/account-dashboard.html">Dashboard</a>
+      </div>
+      <div>
+        <a href="../html/Admission_Process_01.html">Admission Process</a>
+      </div>
+      <div class="more">
+        <span>Add Admission Process</span>
+      </div>
+    </div>
+    <div class="page-card">
+      <!-- Header -->
+      <div class="main-head">
+          <div>
+            <div></div>
+            <div class="edv-actions">
+              <button mdl-pop="addAdmission" class="act-qadd sm"></button>
+              <button class="act-copy">Copy Enquiry Form Link </button>
+            </div>
+          </div>
+      </div>
+
+      <!-- Page Content -->
+      <div class="page-content">
+        <table class="table">
+          <thead>
+            <tr>             
+              <th width="300"><span>Segment</span></th>
+              <th width="250"><span>Class</span></th>
+              <th><span>Stages</span></th>
+              <th width="200"><span>Action(s)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Preparatory</td>
+              <td>Standard V</td>
+              <td><span>Enquiry Form,Diagnostic Assessment,School Tour,Interaction with Admission Counselor,Parent Interaction with Principal,Student Interaction with Segment Head,Purchase and Registration of Application,Submission of All Documents,Scrutiny of documents,Fee Payment,Admission Letter</span></td>
+              <td>
+                <div class="tbl-action">
+                  <a class="act-edit"></a>
+                  <a class="act-del"></a>                 
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+   </div>
+  </div>
+
+
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open" mdl-box="addAdmission">
+   <div class="mdl-pop">
+    <div class="main-head">
+     <div>
+      <h6>Add Admission Process</h6>
+     </div>
+    </div>
+    <div class="mdl-body">
+      <div class="edv-row f-group f-top">
+        <div class="edv-col3">
+          <div class="f-field">
+            <label>Segment</label>
+            <div>
+              <select class="edv-select">
+                <option value="0" selected="">Middle</option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="edv-col3">
+          <div class="f-field">
+            <label>Class</label>
+            <div>
+            <select class="edv-select">
+              <option value="0" selected="">All</option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="edv-addadmn-wrap">
+        <div class="edv-stepslst">
+          <div class="edv-section">
+            <div class="title">Admission Stages</div>
+          </div>
+          <div class="edv-stepcont">
+            
+             
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                    <img src="../images/school.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">School Tour</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                 <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                  <img src="../images/Group 80703.png" class="dropimg-sze">
+                  <label class="drag-fnt">Interaction with Admission Councillor</label>
+                 </span>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                    <img src="../images/clipboard.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">Enquiry Form</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                    <img src="../images/workshop.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">Student interaction with Segment Heads</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                    <img src="../images/exam.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">Entrance Test</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                 <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                  <img src="../images/Group 80702.png" class="dropimg-sze">
+                </span>
+                <label class="drag-fnt">Purchase & Registration of Application</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                    <img src="../images/money.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">Fee Payment</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1" >
+                    <img src="../images/letter.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">Admission Letter</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1">
+                    <img src="../images/file.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">Submission of all documents</label>
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                  
+                  <span draggable="true" ondragstart="drag(event)" id="drag1">
+                    <img src="../images/meeting.png" class="dropimg-sze">
+                  </span>
+                  <label class="drag-fnt">Parent interaction with Principal</label>
+                </div>
+            
+            
+          </div>
+        </div>
+        <div class="edv-steporder">
+         
+             <div>
+
+              <div class="edv-orditem">
+                <span>Step 1</span>
+                <a class="act-close"></a>
+
+                <div ngcontent-egb-c248="" content="true" placeholder="Drag &amp; Drop stage" id="stagesDiv_1">
+                  <div ngcontent-egb-c248="" draggable="true" id="drag_3">
+                    <span ngcontent-egb-c248=""><img ngcontent-egb-c248="" class="dropimg-sze" src="../images/clipboard.png"></span>
+                    <label _ngcontent-egb-c248="" class="drag-fnt">Enquiry Form</label>
+                  </div>
+                </div>
+
+                <!-- <div>
+                  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity">
+                      <span draggable="true" ondragstart="drag(event)" id="drag1">
+                        <img src="../images/school.png" class="dropimg-sze">
+                      </span>
+                      <label class="drag-fnt">Student interaction with Segment Heads</label>
+                  </div>
+                </div> -->
+
+              </div>
+
+              <div class="arrow"> &#x2192;</div>
+             
+              <div class="edv-orditem">
+                <span>Step 2</span>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+
+              <div class="arrow"> &#x2192;</div>
+              <div class="edv-orditem">
+                <span>Step 3</span>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+
+              <div class="arrow"> &#x2192;</div>
+              
+              <div class="edv-orditem">
+               <span >4</span>
+               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+
+              <div class="arrow"> &#x2192;</div>
+            
+              <div class="edv-orditem">
+               <span>5</span>
+               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+
+              <div class="arrow"> &#x2192;</div>
+
+              <div class="edv-orditem">
+               <span>6</span>
+               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+
+              <div class="arrow"> &#x2192;</div>
+              <div class="edv-orditem">
+               <span>7</span>
+               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+
+              <div class="arrow"> &#x2192;</div>
+              <div class="edv-orditem">
+               <span>8</span>
+               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+           
+              <div class="arrow"> &#x2192;</div>
+
+              <div class="edv-orditem">
+               <span>9</span>
+               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+              
+              <div class="arrow"> &#x2192;</div>
+              
+              <div class="edv-orditem">
+               <span>10</span>
+               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" content="true" placeholder="Drag & Drop Entity"></div>
+              </div>
+    
+            </div>
+
+        </div>
+      </div>
+
+    
+    </div>
+    <div class="mdl-foo">
+      <a class="btn primary btn-expand">Save</a>
+      <a class="btn line">Cancel</a>
+    </div>
+   </div>
+  </div>
+  
+ </body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

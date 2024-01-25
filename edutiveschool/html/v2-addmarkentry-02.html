@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+    <title>Edutive : Add Mark Entry</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+            <div>
+              <a>Dashboard</a>
+            </div>
+            <div>
+              <a href="v2-markentry.html">Mark Entry</a>
+            </div>
+            <div class="more">
+              <span>Add Mark Entry</span>
+            </div>
+          </div>
+        <!-- Modal Page -->
+        <div class="mdl-page mdl-open" edv-mdl-box="addmarkentry" id="addmarkentry">
+          <div class="mdl-pop">
+            <div class="mdl-head">
+              <h6>Mark Entry</h6>
+              <div class="mdl-head-act"></div>
+            </div>
+            <div class="mdl-body edv-ly-vscrl">
+              <div class="edv-row">
+                <div class="edv-col12">
+                  <div class="edv-row f-group f-top">
+                    <div class="edv-col3">
+                      <div class="f-field ">
+                        <label>Class</label> 
+                        <div class="edv-input-group ddown">
+                          <div class="edv-cust-select">
+                            <div>
+                              <label>Class</label>
+                              <div><p>VI</p></div>
+                            </div>
+                            <div>
+                              <label>Section</label>
+                              <div><p>Section</p></div>
+                            </div>
+                          </div>
+                          <div class="edv-dropdown xl btm">
+                            <div class="edv-compt-multisel">
+                              <div class="lbl-block class">
+                                  <div class="head">Class</div>
+                                  <label class="edv-checkbox"><input name="class" value="I" type="radio">I</label>
+                                  <label class="edv-checkbox"><input name="class" value="II" type="radio">II</label>
+                                  <label class="edv-checkbox"><input name="class" value="III" type="radio">III</label>
+                                  <label class="edv-checkbox"><input name="class" checked value="VI" type="radio">VI</label>
+                              </div>
+                              <div class="lbl-block language">
+                                <div class="head">Section</div>
+                                <label class="edv-checkbox"><input name="language" checked value="LanguageI" type="radio">Language I</label>
+                                <label class="edv-checkbox"><input name="language" value="LanguageII" type="radio">Language II</label>
+                                <label class="edv-checkbox"><input name="language" value="Maths" type="radio">Maths</label>
+                                <label class="edv-checkbox"><input name="language" value="Science" type="radio">Science</label>
+                                <label class="edv-checkbox"><input name="language" value="History" type="radio">History</label>
+                                <label class="edv-checkbox"><input name="language" value="English" type="radio">English</label>
+                                <label class="edv-checkbox"><input name="language" value="English" type="radio">Computer Science</label>                                          
+                              </div>
+                            </div>
+                          </div>
+                          <span class="input-addon"><i class="ico-dash"></i></span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field ">
+                      <label>Terms/Cycle</label> 
+                      <div class="edv-input-group ddown">
+                        <div class="edv-cust-select">
+                          <div>
+                            <label>Term</label>
+                            <div><p>Term</p></div>
+                          </div>
+                          <div>
+                            <label>Cycle</label>
+                            <div><p>Cycle</p></div>
+                          </div>
+                        </div>
+                        <div class="edv-dropdown xl btm">
+                          <div class="edv-compt-multisel">
+                            <div class="lbl-block class">
+                                <div class="head">Term</div>
+                                <label class="edv-checkbox"><input name="class" value="I" type="radio">Term I</label>
+                            </div>
+                            <div class="lbl-block language">
+                              <div class="head">Cycle</div>
+                              <label class="edv-checkbox"><input name="language" checked value="LanguageI" type="radio">Cycle I</label>                                          
+                            </div>
+                          </div>
+                        </div>
+                        <span class="input-addon"><i class="ico-dash"></i></span>
+                      </div>
+                  </div>
+                </div>
+                    <div class="edv-col3">
+                      <div class="f-group f-top">
+                        <div class="f-field">
+                          <label>Co Scholastic</label>
+                          <div>
+                            <select class="edv-select">
+                              <option value="0" selected="">Select</option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                      <div class="f-group f-top">
+                        <div class="f-field">
+                          <label>Activity Name</label>
+                          <div>
+                            <select class="edv-select">
+                              <option value="0" selected="">Select</option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                      <div class="f-group f-top">
+                        <div class="f-field">
+                          <label>Assessment Type</label>
+                          <div>
+                            <select class="edv-select">
+                              <option value="0" selected="">Summative</option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                      <div class="f-group f-top">
+                        <div class="f-field">
+                          <label>Assessment</label>
+                          <div>
+                            <select class="edv-select">
+                              <option value="0" selected="">Written Assessment</option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-head">
+                <div>
+                  <span class="title">Student List</span>
+                </div>
+                <div class="actions">
+                  <a class="ico-filter" id="mdl-filter"></a>
+                  <div class="tsearch ">
+                    <input class="edv-input" placeholder="search">
+                    <a></a>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-markentry-wrap edv-ly-cntscrl">
+                <div class="edv-marksentry">
+                  <table class="table tbl-topfxd tbl-border col1-sticky col2-sticky">
+                    <thead>
+                      <th>
+                        <span class="tsort">Student Name <span class="asc">
+                            <i class="up"></i>
+                            <i class="dwn"></i>
+                          </span>
+                        </span>
+                      </th>
+                      <th>
+                        <span>Theory</span>
+                      </th>
+                      <th>
+                        <span>Practical</span>
+                      </th>
+                      <th>
+                        <span>Internal</span>
+                      </th>
+                      <th>
+                        <span>Remarks</span>
+                      </th>
+                      <th>
+                        <span>Evidence</span>
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Aswin Kumar</td>
+                        <td>
+                          <input class="edv-input edv-input-btmln">
+                        </td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td><a class="act-edit sm"></a></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-foo">
+              <a class="btn primary">Save</a>
+              <a class="btn line">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filter -->
+    <div class="mdl-contain mdl-right mdl-open mdl-filter">
+      <div class="mdl-pop xs">
+        <div class="mdl-head">
+          <h6>Filter</h6>
+          <a class="mdl-cls"></a>
+          <div class="tsearch mt-20 radius-20">
+            <input class="edv-input">
+            <a></a>
+          </div>
+        </div>
+        <div class="mdl-body">
+          <div class="f-group f-top">
+            <div class="f-field ">
+              <label>Segment</label>
+              <div>
+                <input class="edv-input">
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Class</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Section</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <div class="mdl-foo-action">
+            <a class="btn primary">Submit</a>
+            <a class="btn line">Reset</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

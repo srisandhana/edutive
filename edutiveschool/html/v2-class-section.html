@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Class and Section</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Settings</a>
+           </div>
+           <div class="more">
+            <span>Curriculum</span>
+           </div>
+        </div>
+      </div>
+    </div>
+          
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open" edv-mdl-box="addClasssection" style="display: block;">
+    <div class="mdl-pop">
+      <div class="mdl-head">
+        <h6>Add Class and Section</h6>
+      </div>
+      <div class="mdl-body">
+       <div class="nav-wrap">
+          <div class="nav-line">
+            <a class="sel"      onclick="TestsFunction('Home', this, '#fff')"><span id="defaultOpen">Foundational</span></a>
+            <a class="tablink"  onclick="openPage('News', this, '#fff')"><span>Preparatory</span></a>
+            <a class="tablink"  onclick="openPage('Contact', this, '#fff')"><span>Middle</span></a>
+            <a class="tablink"  onclick="openPage('About', this, '#fff')"><span>Secondary</span></a>
+        </div>
+
+          <div class="nav-container tabcontent" id="Home">
+            
+            <div class="edv-class-boardview">
+
+              <div _ngcontent-ydd-c185="" formarrayname="classes" class="ng-pristine ng-invalid ng-touched"><div _ngcontent-ydd-c185="" class="edv-classhead"><span _ngcontent-ydd-c185="">Class LKG</span></div></div>
+
+              <div _ngcontent-ydd-c185="" formarrayname="classes" class="ng-pristine ng-invalid ng-touched">
+                <div _ngcontent-ydd-c185="" class="edv-classhead">
+                  <span _ngcontent-ydd-c185="">Class UKG</span>
+                </div>
+                <div _ngcontent-ydd-c185="" formarrayname="streams" class="ng-pristine ng-invalid ng-touched">
+                  <div _ngcontent-ydd-c185="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                  </div>
+                 
+                 
+                  <div _ngcontent-ydd-c185="" class="edv-classbdy">
+                    <div _ngcontent-ydd-c185="" class="edv-class-group ng-pristine ng-invalid ng-touched">
+                     
+                     
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <p _ngcontent-ydd-c185="">Section</p>
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-pristine ng-valid ng-touched" readonly="" fdprocessedid="vl9i2h">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="98emfk">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="xca85">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="89twz6">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="" placeholder="New Section" class="edv-input" fdprocessedid="6bwqqr">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                     
+                     
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div _ngcontent-ydd-c185="" formarrayname="classes" class="ng-pristine ng-invalid ng-touched">
+                <div _ngcontent-ydd-c185="" class="edv-classhead">
+                  <span _ngcontent-ydd-c185="">Class I</span>
+                </div>
+                <div _ngcontent-ydd-c185="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-ydd-c185="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                  </div>
+                  
+                  
+                  <div _ngcontent-ydd-c185="" class="edv-classbdy">
+                    <div _ngcontent-ydd-c185="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                      
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <p _ngcontent-ydd-c185="">Section</p>
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="3j1wjo">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                       
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="bx4mt">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                       
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="kyrst4">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                       
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="0oa1vo">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                       
+                      </div>
+                      
+                      
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="" placeholder="New Section" class="edv-input" fdprocessedid="gkxp2">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+
+              <div _ngcontent-ydd-c185="" formarrayname="classes" class="ng-pristine ng-invalid ng-touched">
+                <div _ngcontent-ydd-c185="" class="edv-classhead">
+                  <span _ngcontent-ydd-c185="">Class II</span>
+                </div>
+                <div _ngcontent-ydd-c185="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-ydd-c185="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                  </div>
+                  
+                  
+                  <div _ngcontent-ydd-c185="" class="edv-classbdy">
+                    <div _ngcontent-ydd-c185="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <p _ngcontent-ydd-c185="">Section</p>
+                      </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="i19sw9">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="6n4ko">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="yy3cae">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-edit sm"></a>
+                          <a _ngcontent-ydd-c185="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      
+                      <div _ngcontent-ydd-c185="" class="edv-class-addrow">
+                        <input _ngcontent-ydd-c185="" value="" placeholder="New Section" class="edv-input" fdprocessedid="saquso">
+                        <div _ngcontent-ydd-c185="" class="edv-class-actions">
+                          <a _ngcontent-ydd-c185="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="nav-container tabcontent" id="News">
+            
+            <div class="edv-class-boardview">
+
+              <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class III</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                </div>
+                 
+                 
+                  <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+
+
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="unmgwo">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="5m9kcd">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+  
+  
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="miwxx">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+  
+  
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="i1yvp8">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+  
+  
+                      </div>
+
+
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="ret3p">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+               
+               
+              </div>
+
+              <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-pristine ng-invalid ng-touched">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class IV</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-pristine ng-invalid ng-touched">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                  </div>
+                 
+                 
+                  <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-pristine ng-invalid ng-touched">
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-pristine ng-valid ng-touched" readonly="" fdprocessedid="lwhmc">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="gdeind">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="4p25tk">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="qwxvlo">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-pristine ng-invalid ng-touched">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class V</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                  </div>
+                 
+                  <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="xlov3j">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="gcvys">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="9hhyn">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+             </div>
+          </div>
+
+          <div class="nav-container tabcontent" id="Contact">
+            
+            <div class="edv-class-boardview">
+
+              <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class VI</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                  </div>
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" fdprocessedid="xg8d4" readonly="">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="113mj">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="5uiy6">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="cp5uq">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="mh6a7m">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="gvzj3a">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="vpngj">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="4z1hw">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+               </div>
+
+               <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class VII</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                   </div>
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" fdprocessedid="6gkxns" readonly="">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="o9mmgn">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="pz33bg">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="tqkuo1c">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="yee8zc">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="485xcg">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="krnbmd">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="yl17oj">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+               </div>
+
+               <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class VIII</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                    </div>
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="rdt2f">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="b9nlnc">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="kgyunn">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="io8t9l">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="cxuwwn">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="9ehwqn">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="q3biwh">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+           </div>
+
+          <div class="nav-container tabcontent" id="About">
+            
+            <div class="edv-class-boardview">
+
+              <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class IX</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-valid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                    </div>
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-valid">
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="yq25p">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+               </div>
+
+               <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class X</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                   </div>
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="6xh3">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="456tz">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="inaikf">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="5gyn3a">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="ygwkw9">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="mf5b2d">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="o62w2q">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="qc7ccd">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="mbkcxn">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="n2pa9s">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="e79umq">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="zig71d">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="6kvrff">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+
+               <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class XI</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                    </div>
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-valid">
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="4wet6l">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="drcvhb">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="o8zl8f">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-invalid padding-top">
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-invalid">
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-invalid" readonly="" fdprocessedid="xvev5">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="rbwwk">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+
+               <div _ngcontent-lnx-c162="" formarrayname="classes" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-lnx-c162="" class="edv-classhead">
+                  <span _ngcontent-lnx-c162="">Class XII</span>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-valid">
+                  <div _ngcontent-lnx-c162="" class="padding-bottom text-align-right">
+                    <a _ngcontent-ydd-c185="" class="lnkclr">Add Stream</a>
+                  </div>
+                 <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-valid ">
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="2sfb2o">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                        </div>
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="Section" formcontrolname="sectionName" class="edv-input ng-untouched ng-pristine ng-valid" readonly="" fdprocessedid="j16l7u">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-edit sm"></a>
+                          <a _ngcontent-lnx-c162="" class="act-del sm"></a>
+                        </div>
+                       </div>
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="q7v81">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <div _ngcontent-lnx-c162="" formarrayname="streams" class="ng-untouched ng-pristine ng-valid padding-top">
+                  <div _ngcontent-lnx-c162="" class="edv-classbdy">
+                    <div _ngcontent-lnx-c162="" class="edv-class-group ng-untouched ng-pristine ng-valid">
+                      <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <p _ngcontent-lnx-c162="">Section</p>
+                      </div>
+                     <div _ngcontent-lnx-c162="" class="edv-class-addrow">
+                        <input _ngcontent-lnx-c162="" value="" placeholder="New Section" class="edv-input" fdprocessedid="24fo3q">
+                        <div _ngcontent-lnx-c162="" class="edv-class-actions">
+                          <a _ngcontent-lnx-c162="" class="act-qadd sm"></a>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+               </div>
+
+               
+
+
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+      <div class="mdl-foo"></div>
+    </div>
+  </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+<script>
+  function openPage(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].style.color = "";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    var T = document.getElementById("act-qadd");
+    T.style.display = "none"; // <-- Set it to block
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+<script>
+  function TestsFunction(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontents = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].style.display = "none";
+      tabcontents[i].style.color = "";
+    }
+    tablinks1 = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks1.length; i++) {
+      tablinks1[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    var T = document.getElementById("act-qadd");
+    T.style.display = "block"; // <-- Set it to block
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive: Question Bank</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+
+    <div class="edv-bcrumb">
+        <div class="home"><a>Dashboard</a></div>
+        <div><a>Question Bank</a></div>
+        <div class="more"><span>Add Question Bank</span></div>
+    </div>
+    <div class="page-card">
+      <!-- Header -->
+      <div class="main-head">
+        <div>
+          <div>
+            <div class="title">Add Question Bank</div>
+          </div>
+          <div class="actions">
+            <button class="btn primary" edv-mdl-open="addAssessment" id="addAssessment">Add Assessment Policy</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <table class="table tbl-topfxd">
+          <thead>
+            <tr>
+              <th width="30">
+                <label class="edv-checkbox chkall" id="checkAll1">
+                  <input type="checkbox">
+                </label>
+              </th>
+              <th width="280"><span>Name</span></th>
+              <th width="330"><span>Email ID</span></th>
+              <th width="330"><span class="tsort">Class<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+              <th><span>Section</span></th>
+              <th width="260"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label class="edv-checkbox">
+                    <input id="chck02" type="checkbox">
+                </label>
+              </td>
+              <td>
+                  <a class="alnk">Aswin</a>
+              </td>
+              <td>
+                <span>aswin.c@rjr.ac.in</span>
+              </td>
+              <td>
+                <span>I</span>
+              </td>
+              <td>
+                <span>III</span>
+              </td>
+              <td>
+                <div class="tbl-action">
+                  <a class="act-edit"></a>
+                  <a class="act-del"></a>
+                  <a class="act-more"></a>
+                  <a class="act-denied"></a>
+                </div>
+              </td>
+            </tr>
+           
+          </tbody>
+        </table>
+        
+      </div>
+    </div>
+      
+    <!-- Modal Page -->
+    <div class="mdl-page" edv-mdl-box="addQuestionbank" id="addQuestionbank">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Add Question Bank</h6>
+        </div>
+        <div class="mdl-body">
+          
+
+          <div class="nav-wrap">
+              <!-- Question  -->
+            <div edv-tab="profile">
+              
+                  <div class="edv-row f-group f-top">
+                      <div class="edv-col3">
+                          <div class="f-field ">
+                            <label>Class</label> 
+                            <div class="edv-input-group ddown">
+                              <div class="edv-cust-select">
+                                <div>
+                                  <label>Class</label>
+                                  <div><p>VI</p></div>
+                                </div>
+                                <div>
+                                  <label>Language</label>
+                                  <div><p>Language II Language anguage</p></div>
+                                </div>
+                                <i class="ico-close"></i>
+                              </div>
+                              <div class="edv-dropdown xl btm">
+                                <div class="edv-compt-multisel">
+                                  <div class="lbl-block class">
+                                      <div class="head">Class</div>
+                                      <label class="edv-checkbox"><input name="class" value="I" type="radio">I</label>
+                                      <label class="edv-checkbox"><input name="class" value="II" type="radio">II</label>
+                                      <label class="edv-checkbox"><input name="class" value="III" type="radio">III</label>
+                                      <label class="edv-checkbox"><input name="class" checked value="VI" type="radio">VI</label>
+                                  </div>
+                                  <div class="lbl-block language">
+                                    <div class="head">Language</div>
+                                    <label class="edv-checkbox"><input name="language" checked value="LanguageI" type="radio">Language I</label>
+                                    <label class="edv-checkbox"><input name="language" value="LanguageII" type="radio">Language II</label>
+                                    <label class="edv-checkbox"><input name="language" value="Maths" type="radio">Maths</label>
+                                    <label class="edv-checkbox"><input name="language" value="Science" type="radio">Science</label>
+                                    <label class="edv-checkbox"><input name="language" value="History" type="radio">History</label>
+                                    <label class="edv-checkbox"><input name="language" value="English" type="radio">English</label>
+                                    <label class="edv-checkbox"><input name="language" value="English" type="radio">Computer Science</label>                                          
+                                  </div>
+                                </div>
+                              </div>
+                              <span class="input-addon"><i class="ico-dash"></i></span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Subject</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected>Language II</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Chapter</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected>Chapter 1</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Topic</label>
+                            <div>
+                              <input value="Talkative Barber" class="edv-input">
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="edv-row f-group f-top">
+                    <div class="edv-col3">
+                        <div class="f-field">
+                          <label>Difficulty Level</label>
+                          <div>
+                            <input class="edv-input">
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="edv-col3">
+                        <div class="f-field">
+                          <label>Taxonomy</label>
+                          <div>
+                            <select class="edv-select">
+                              <option value="0" selected>All</option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                        <div class="f-field">
+                          <label>Mark</label>
+                          <div>
+                            <input class="edv-input">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="nav-container">
+            
+              <div class="outln">
+                <div class="edv-qbank-wrap">
+                  <div class="edv-row">
+                      <div class="edv-col10">
+                        <textarea type="text" rows="4" placeholder="Question" class="edv-textarea"></textarea>
+                      </div>
+                      <div class="edv-col2">
+                          <select class="edv-select">
+                            <option value="0">Match the following</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="edv-questype">
+                      <!-- Yes / No -->
+                      <div class="edv-ques-yesno">
+                        <div class="lbl-block">
+                          <label class="edv-radio"><input name="Gender" type="radio" value="Female"><input type="text" value="Yes" class="edv-input"></label>
+                          <label class="edv-radio"><input name="Gender" type="radio" value="male"><input type="text" value="No" class="edv-input"></label>
+                        </div>
+                      </div>
+                      <div class="edv-ques-choice">
+                        <!-- Questions -->
+                        <div>
+                          <div>
+                              <div>Question</div>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                          </div>
+                          <!-- <div>
+                            <a class="btn lnk sm"><i class="ico-add"></i>Add Choice</a>
+                          </div> -->
+                        </div>
+                        <!-- Answer -->
+                        <div>
+                          <div>
+                              <div>Answer</div>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                            <i class="ico-close"></i>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                            <i class="ico-close"></i>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                            <i class="ico-close"></i>
+                          </div>
+                          <div>
+                            <i class="ico-drag"></i>
+                            <div><input type="text" class="edv-input"></div>
+                            <i class="ico-close"></i>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    
+                      <!-- Fill in the blanks -->
+                      <div class="edv-ques-blank">
+                        <div>
+                          <input class="edv-input">and <input class="edv-input"> went shopping for <input class="edv-input">in the city.
+                        </div>
+                      </div>
+                      <br>
+                      <br>
+                      <!-- File Upload -->
+                      <div class="edv-ques-file">
+                        <div>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple hidden id="edv-fileupload">
+                            <label class="btn primary" for="edv-fileupload">Choose File</label>
+                            <span class="btn sm">Diagram.pdf<i class="ico-close"></i></span>
+                            <span class="btn sm">Diagram.pdf<i class="ico-close"></i></span>
+                            <span class="btn sm">Diagram.pdf<i class="ico-close"></i></span>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                  <div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo">           
+          <a class="btn primary">Save</a>
+          <a class="btn line">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Alert -->
+  <div class="edv-alert-outer">
+    
+    <div class="edv-alert-noti warning">
+      <i></i>
+      <a class="edv-alert-cls"></a>
+      <div>
+        <p>Jobs has been completed.</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

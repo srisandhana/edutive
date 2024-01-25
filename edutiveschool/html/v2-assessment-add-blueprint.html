@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive : Assessment Blueprint</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.edv-stepnum > div > div').on('click', function() {
+        $(this).addClass('sel').siblings().removeClass('sel');
+        var target = $(this).attr('edv-nav');
+        $('#' + target).addClass('shw').siblings("div").removeClass('shw');
+      });
+  });
+</script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+        <div class="edv-bcrumb">
+            <div class="home"><a>Dashboard</a></div>
+            <div><a>Assessment</a></div>
+            <div class="more"><span>Add Assessment</span></div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div>
+                <div class="title">Assessment</div>
+              </div>
+              <div class="edv-actions">
+
+                <div class="tsearch">
+                  <a></a>
+                  <input type="text" placeholder="Search" class="edv-input">
+                </div>
+  
+                <div class="ln w10 empty"></div>
+  
+                <a class="act-qadd sm"></a>
+                
+                <div class="ln"></div>
+  
+                <div class="pagination">
+                  <a class="first"></a>
+                  <a class="prev"></a>   
+                  <label> 1 to 20  of 420</label>
+                  <a class="next"></a>
+                  <a class="last"></a>                               
+                </div>
+  
+                <div class="ln"></div>
+  
+                <a class="act-filter" mdl-pop="mdl-filter"></a>
+               
+              
+              </div>
+            </div>
+          </div>
+          
+          <div class="page-content">
+
+            <table class="table tbl-topfxd">
+              <thead>
+                <tr>
+                  <th class="mw-30">
+                    <label class="edv-checkbox chkall" id="checkAll1">
+                      <input type="checkbox">
+                    </label>
+                  </th>
+                  <th class="mw-60"><span>Sl No</span></th>
+                  <th width="300"><span class="tsort"><span>Class</span><span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                  <th width="250"><span>Subject</span></th>
+                  <th width="250"><span>Term & Cycle</span></th>
+                  <th><span>Assessment Name</span></th>
+                  <th width="250"><span>Actions</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                    </label>
+                  </td>
+                  <td>
+                      1
+                  </td>
+                  <td>
+                      <span>I</span>
+                  </td>
+                  <td>
+                      <span>9867866467</span>
+                  </td>
+                  <td>Coordinator</td>
+                  <td>PG</td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-edit" mdl-pop="add-blueprint"></a>
+                      <a class="act-denied"></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="edv-checkbox">
+                        <input id="chck02" type="checkbox">
+                    </label>
+                  </td>
+                  <td>
+                      2
+                  </td>
+                  <td>
+                      <span>II</span>
+                  </td>
+                  <td>
+                      <span>9867866467</span>
+                  </td>
+                  <td>Coordinator</td>
+                  <td>PG</td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-edit" mdl-pop="add-blueprint"></a>
+                      <a class="act-denied"></a>
+                    </div>
+                  </td>
+                </tr>             
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <!-- Modal Page -->
+  <div class="mdl-page" mdl-box="add-blueprint">
+    <div class="mdl-pop">
+      <div class="mdl-head">
+        <h6>Add Assessment Blueprint</h6>
+      </div>
+      <div class="mdl-body">
+        
+        <div class="edv-stepcontain">    
+          <div class="edv-stepnum vpos">
+            <div>
+              <div class="sel" edv-nav="Setup">
+                <span>1</span>
+                <div>Setup</div>
+              </div>
+              <div edv-nav="SectionA">
+                <span>2</span>
+                <div>Section - A</div>
+              </div>
+              <div edv-nav="SectionB">
+                <span>3</span>
+                <div>Section - B</div>
+              </div>
+              <div edv-nav="SectionC">
+                <span>4</span>
+                <div>Section - C</div>
+              </div>
+              <div edv-nav="Summary">
+                <span>5</span>
+                <div>Summary</div>
+              </div>                
+            </div>
+          </div>
+          <div class="edv-stepcontent">
+            <div id="Setup" class="dn shw">
+              <div class="edv-row f-group f-top">
+                <div class="edv-col3">
+                  <label></label>
+                  <div class="mt-28">
+                    <label class="edv-checkbox"><input type="checkbox" checkedmt>Map to Report Card</label>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field matry">
+                    <label>Class/Subject</label> 
+                    <div class="edv-input-group ddown">
+                      <div class="edv-cust-select">
+                        <div>
+                          <label>Class</label>
+                          <div><p>VI</p></div>
+                        </div>
+                        <div>
+                          <label>Subject</label>
+                          <div><p>Computer Science II</p></div>
+                        </div>
+                        <!-- <i class="ico-close"></i> -->
+                      </div>
+                      <div class="edv-dropdown xl btm">
+                        <div class="edv-compt-multisel">
+                          <div class="class">
+                              <div class="head">Class</div>
+                              <div class="edv-compt-bdy lbl-block">
+                                <label class="edv-checkbox"><input name="class" value="I" type="radio">I</label>
+                                <label class="edv-checkbox"><input name="class" value="II" type="radio">II</label>
+                                <label class="edv-checkbox"><input name="class" value="III" type="radio">III</label>
+                                <label class="edv-checkbox"><input name="class" checked value="VI" type="radio">VI</label>
+                              </div>
+                          </div>
+                          <div class="language">
+                            <div class="head">Language</div>
+                            <div class="edv-compt-bdy lbl-block">
+                            <label class="edv-checkbox"><input name="language" checked value="LanguageI" type="radio">Language I</label>
+                            <label class="edv-checkbox"><input name="language" value="LanguageII" type="radio">Language II</label>
+                            <label class="edv-checkbox"><input name="language" value="Maths" type="radio">Maths</label>
+                            <label class="edv-checkbox"><input name="language" value="Science" type="radio">Science</label>
+                            <label class="edv-checkbox"><input name="language" value="History" type="radio">History</label>
+                            <label class="edv-checkbox"><input name="language" value="English" type="radio">English</label>
+                            <label class="edv-checkbox"><input name="language" value="English" type="radio">Computer Science</label> 
+                            </div>                                         
+                          </div>
+                        </div>
+                      </div>
+                      <span class="input-addon"><i class="ico-chklst"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field matry">
+                    <label>Term/Cycel</label> 
+                    <div class="edv-input-group ddown">
+                      <div class="edv-cust-select">
+                        <div>
+                          <label>Term</label>
+                          <div><p>VI</p></div>
+                        </div>
+                        <div>
+                          <label>Cycle</label>
+                          <div><p>Computer Science II</p></div>
+                        </div>
+                        <!-- <i class="ico-close"></i> -->
+                      </div>
+                      <div class="edv-dropdown xl btm">
+                        <div class="edv-compt-multisel">
+                          <div class="class">
+                              <div class="head">Class</div>
+                              <div class="edv-compt-bdy lbl-block">
+                                <label class="edv-checkbox"><input name="class" value="I" type="radio">I</label>
+                                <label class="edv-checkbox"><input name="class" value="II" type="radio">II</label>
+                                <label class="edv-checkbox"><input name="class" value="III" type="radio">III</label>
+                                <label class="edv-checkbox"><input name="class" checked value="VI" type="radio">VI</label>
+                              </div>
+                          </div>
+                          <div class="language">
+                            <div class="head">Language</div>
+                            <div class="edv-compt-bdy lbl-block">
+                            <label class="edv-checkbox"><input name="language" checked value="LanguageI" type="radio">Language I</label>
+                            <label class="edv-checkbox"><input name="language" value="LanguageII" type="radio">Language II</label>
+                            <label class="edv-checkbox"><input name="language" value="Maths" type="radio">Maths</label>
+                            <label class="edv-checkbox"><input name="language" value="Science" type="radio">Science</label>
+                            <label class="edv-checkbox"><input name="language" value="History" type="radio">History</label>
+                            <label class="edv-checkbox"><input name="language" value="English" type="radio">English</label>
+                            <label class="edv-checkbox"><input name="language" value="English" type="radio">Computer Science</label> 
+                            </div>                                         
+                          </div>
+                        </div>
+                      </div>
+                      <span class="input-addon"><i class="ico-chklst"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Assessment Type</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected>Formative</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Assessment</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected>Debate</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Chapter/Topic</label>
+                    <div>
+                      <input class="edv-input">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field matry">
+                    <label>Sections</label>
+                    <div>
+                      <input class="edv-input">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field matry">
+                    <label>Total Mark </label>
+                    <div>
+                      <input class="edv-input" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Editor -->
+              <div class="edv-section">
+                Editor
+              </div>
+              <div class="edv-section">
+                <div class="title">Section</div>
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-borderless">
+                  <thead>
+                    <tr>
+                      <th><span>Section Name</span></th>
+                      <th><span>Number of Questions</span></th>
+                      <th><span>Mark Per Questions</span></th>
+                      <th><span>Min. Questions to Answer</span></th>
+                      <th><span>Total Marks</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>                      
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="4" class="text-right">Sum of Total Marks</td>
+                      <td>
+                        <input class="edv-input matry" disabled>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div id="SectionA" class="dn">
+              <div class="edv-section">
+                <div class="title">Section A</div>
+              </div>
+              <div class="edv-asmtcount">
+                <div>
+                  <span>Number of Questions: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Mark Per Question: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Total Mark: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Remaining Questions: <b>30</b></span>
+                </div>
+              </div>
+              <div class="edv-section">
+                <div class="title">Chapter <a class="act-qadd sm" mdl-pop="AddChapter"></a></div>
+              </div>
+              <div class="edv-chapter-choice">
+                  <label class="edv-radio sel">
+                      <input checked name="Chapter" value="Spatial Understanding" type="radio">
+                      <span>Shapes and Spatial Understanding</span>
+                  </label>
+                  <label class="edv-radio">
+                    <input name="Chapter" value="Solids Around Us" type="radio">
+                    <span>Solids Around Us</span>
+                  </label>
+                  <label class="edv-radio">
+                    <input name="Chapter" value="Solids Around Us" type="radio">
+                    <span>Shapes and Spatial Understanding</span>
+                  </label>
+                  <label class="edv-radio">
+                    <input name="Chapter" value="Solids Around Us" type="radio">
+                    <span>Solids Around Us</span>
+                  </label>
+              </div>
+              <div class="edv-section">
+                <div class="title">Shapes and Spatial Understanding <a class="act-copy edv-title" edv-title="Copied">Copy</a></div>
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-borderless">
+                  <thead>
+                    <tr>
+                      <th><span>Question Type</span></th>
+                      <th><span>Remembering</span></th>
+                      <th><span>Understanding</span></th>
+                      <th><span>Applying</span></th>
+                      <th><span>Analyzing</span></th>
+                      <th><span>Evaluating</span></th>
+                      <th><span>Creating</span></th>
+                      <th width="200"><span>Total</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input class="edv-input" value="Multiple Choice Question" disabled>
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td> 
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <span>10</span>
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="edv-input" value="Fill in the Blanks" disabled>
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td> 
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <span>10</span>
+                      </td>                      
+                    </tr>
+                  </tbody>            
+                </table>
+              </div>
+            </div>
+            <div id="SectionB" class="dn">
+              <div class="edv-section">
+                <div class="title">Section B</div>
+              </div>
+              <div class="edv-asmtcount">
+                <div>
+                  <span>Number of Questions: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Mark Per Question: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Total Mark: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Remaining Questions: <b>30</b></span>
+                </div>
+              </div>
+              <div class="edv-section">
+                <div class="title">Chapter <a class="act-qadd sm" mdl-pop="AddChapter"></a></div>
+              </div>
+              <div class="edv-chapter-choice">
+                  <label class="edv-radio sel">
+                      <input checked name="Chapter" value="Spatial Understanding" type="radio">
+                      <span>Shapes and Spatial Understanding</span>
+                  </label>
+                  <label class="edv-radio">
+                    <input name="Chapter" value="Solids Around Us" type="radio">
+                    <span>Solids Around Us</span>
+                </label>
+              </div>
+              <div class="edv-section">
+                <div class="title">Shapes and Spatial Understanding <a class="act-copy edv-title" edv-title="Copied">Copy</a></div>
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-borderless">
+                  <thead>
+                    <tr>
+                      <th><span>Question Type</span></th>
+                      <th><span>Remembering</span></th>
+                      <th><span>Understanding</span></th>
+                      <th><span>Applying</span></th>
+                      <th><span>Analyzing</span></th>
+                      <th><span>Evaluating</span></th>
+                      <th><span>Creating</span></th>
+                      <th width="200"><span>Total</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input class="edv-input" value="Multiple Choice Question" disabled>
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td> 
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <span>10</span>
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="edv-input" value="Fill in the Blanks" disabled>
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td> 
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <span>10</span>
+                      </td>                      
+                    </tr>
+                  </tbody>            
+                </table>
+              </div>
+            </div>
+            <div id="SectionC" class="dn">
+              <div class="edv-section">
+                <div class="title">Section C</div>
+              </div>
+              <div class="edv-asmtcount">
+                <div>
+                  <span>Number of Questions: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Mark Per Question: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Total Mark: <b>30</b></span>
+                </div>
+                <div>
+                  <span>Remaining Questions: <b>30</b></span>
+                </div>
+              </div>
+              <div class="edv-section">
+                <div class="title">Chapter <a class="act-qadd sm" mdl-pop="AddChapter"></a></div>
+              </div>
+              <div class="edv-chapter-choice">
+                  <label class="edv-radio sel">
+                      <input checked name="Chapter" value="Spatial Understanding" type="radio">
+                      <span>Shapes and Spatial Understanding</span>
+                  </label>
+                  <label class="edv-radio">
+                    <input name="Chapter" value="Solids Around Us" type="radio">
+                    <span>Solids Around Us</span>
+                </label>
+              </div>
+              <div class="edv-section">
+                <div class="title">Shapes and Spatial Understanding <a class="act-copy edv-title" edv-title="Copied">Copy</a></div>                
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-borderless">
+                  <thead>
+                    <tr>
+                      <th><span>Question Type</span></th>
+                      <th><span>Remembering</span></th>
+                      <th><span>Understanding</span></th>
+                      <th><span>Applying</span></th>
+                      <th><span>Analyzing</span></th>
+                      <th><span>Evaluating</span></th>
+                      <th><span>Creating</span></th>
+                      <th width="200"><span>Total</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input class="edv-input" value="Multiple Choice Question" disabled>
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td> 
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <span>10</span>
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="edv-input" value="Fill in the Blanks" disabled>
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td> 
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <input class="edv-input matry">
+                      </td>
+                      <td>
+                        <span>10</span>
+                      </td>                      
+                    </tr>
+                  </tbody>            
+                </table>
+              </div>
+            </div>
+            <div id="Summary" class="dn">
+              <div class="edv-section">
+                <div class="title">Summary</div>               
+              </div>
+              <div class="edv-row f-group f-top f-view">
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Map to report Card</label>
+                    <div>
+                      Yes
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Class</label>
+                    <div>
+                      Class - I
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Subject</label>
+                    <div>
+                      Mathematics
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Term & Cycle</label>
+                    <div>
+                      <span>Cycle Test - 1, Term - 2</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Assessment</label>
+                    <div>
+                      Summative, Written Assessment
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Chapter</label>
+                    <div>
+                      Shapes and Spatial Understanding1, Solids Around Us
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Sections</label>
+                    <div>
+                      10
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Total Mark</label>
+                    <div>
+                      100
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-border">
+                  <thead>
+                    <tr>
+                      <th><span>Section Name</span></th>
+                      <th><span>Number of Questions</span></th>
+                      <th><span>Mark Per Questions</span></th>
+                      <th><span>Min. Questions to Answer</span></th>
+                      <th><span>Total Marks</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Section - A	
+                      </td>
+                      <td>
+                        30
+                      </td>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        30
+                      </td>
+                      <td>
+                        30
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td>
+                        Section - B
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        30
+                      </td>
+                      <td>
+                        30
+                      </td>                      
+                    </tr>
+                  </tbody>                
+                </table>
+              </div>
+              <div class="edv-section">
+                <div class="title">Section A</div>               
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-border">
+                  <thead>
+                    <tr>
+                      <th width="300"><span>Chapter Name</span></th>
+                      <th width="250"><span class="tsort">Question Type</span></th>
+                      <th width="150"><span class="tsort">Remembering</span></th>
+                      <th width="150"><span class="tsort">Understanding</span></th>
+                      <th><span class="tsort">Applying</span></th>
+                      <th><span class="tsort">Analyzing</span></th>
+                      <th><span class="tsort">Evaluating</span></th>
+                      <th><span class="tsort">Creating</span></th>
+                      <th width="150"><span>Total</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbl-group tbl-open">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Shapes and Spatial Understanding1</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Short answers</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="tbl-group">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Solids Around Us</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Solids Around Us</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Solids Around Us</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                
+                </table>
+              </div>
+              <div class="edv-section">
+                <div class="title">Section B</div>               
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-border">
+                  <thead>
+                    <tr>
+                      <th width="300"><span>Chapter Name</span></th>
+                      <th width="250"><span class="tsort">Question Type</span></th>
+                      <th width="150"><span class="tsort">Remembering</span></th>
+                      <th width="150"><span class="tsort">Understanding</span></th>
+                      <th><span class="tsort">Applying</span></th>
+                      <th><span class="tsort">Analyzing</span></th>
+                      <th><span class="tsort">Evaluating</span></th>
+                      <th><span class="tsort">Creating</span></th>
+                      <th width="150"><span>Total</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbl-group tbl-open">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Shapes and Spatial Understanding1</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Short answers</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="tbl-group">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Solids Around Us</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Solids Around Us</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Solids Around Us</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                
+                </table>
+              </div>
+              <div class="edv-section">
+                <div class="title">Section C</div>               
+              </div>
+              <div class="tbl-responsive">
+                <table class="table tbl-border">
+                  <thead>
+                    <tr>
+                      <th width="300"><span>Chapter Name</span></th>
+                      <th width="250"><span class="tsort">Question Type</span></th>
+                      <th width="150"><span class="tsort">Remembering</span></th>
+                      <th width="150"><span class="tsort">Understanding</span></th>
+                      <th><span class="tsort">Applying</span></th>
+                      <th><span class="tsort">Analyzing</span></th>
+                      <th><span class="tsort">Evaluating</span></th>
+                      <th><span class="tsort">Creating</span></th>
+                      <th width="150"><span>Total</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbl-group tbl-open">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Shapes and Spatial Understanding1</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Short answers</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="tbl-group">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Solids Around Us</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Solids Around Us</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td></td>                    
+                      <td>Solids Around Us</td>
+                      <td>10</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="mdl-foo mdl-foo-split">   
+        <div>        
+          <a class="btn">Cancel</a>
+        </div>
+        <div>
+          <a class="btn btn-expand">Back</a>
+          <a class="btn primary btn-expand">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal Page -->
+  <div class="mdl-contain mdl-top" mdl-box="AddChapter">
+    <div class="mdl-pop sm">
+      <div class="mdl-head">
+        <h6>Add Chapter</h6>
+        <a class="mdl-cls"></a>
+      </div>
+      <div class="mdl-body">
+          <div class="f-field">
+            <label></label>
+            <div>
+              
+            </div>
+          </div>
+      </div>
+      <div class="mdl-foo">
+        <a class="btn primary">Save</a>
+        <a class="btn">Cancel</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Filter -->
+    <div class="mdl-contain mdl-right" mdl-box="mdl-filter">
+      <div class="mdl-pop xs">
+        <div class="mdl-head">
+          <h6>Filter</h6>
+          <a class="mdl-cls"></a>
+          <div class="tsearch mt-20 radius-20">
+            <input class="edv-input">
+            <a></a>
+          </div>
+        </div>
+        <div class="mdl-body">
+          <div class="f-group f-top">
+            <div class="f-field ">
+              <label>Segment</label>
+              <div>
+                <input class="edv-input">
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Class</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Section</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>  
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <div class="mdl-foo-action">
+            <a class="btn primary">Submit</a>
+            <a class="btn line">Reset</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

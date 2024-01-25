@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Assessment Dashboard</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+  <!-- Top Nav -->
+  <header id="edvheader"></header>
+  <!-- Left Navigation -->
+  <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div class="home">
+      <a>Dashboard</a>
+     </div>
+     <div>
+      <a>Assessment Dashboard</a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open" edv-mdl-box="addClasssection" id="addClasssection" style="display: block;">
+   <div class="mdl-pop">
+     <div class="mdl-head">
+       <h6>Assessment Dashboard</h6>
+      </div>
+    <div class="mdl-body">
+     <div class="nav-wrap">
+      <div class="edv-row">
+       <div class="edv-col3">
+        <div class="f-group f-top">
+         <div class="f-field">
+          <label>Segment</label>
+          <div>
+           <select class="edv-select">
+            <option value="0" selected="">Middle</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+           </select>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="edv-col3">
+        <div class="f-group f-top">
+         <div class="f-field">
+          <label>Class</label>
+          <div>
+           <select class="edv-select">
+            <option value="0" selected="">VI</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+           </select>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="edv-col3">
+        <div class="f-group f-top">
+         <div class="f-field">
+          <label>Segment</label>
+          <div>
+           <select class="edv-select">
+            <option value="0" selected="">Ganga</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+           </select>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- <div class="main-head"><div><div><div class="title">Add Question Bank</div></div><div class="actions"><button class="btn primary" edv-mdl-open="addAssessment" id="addAssessment">Add Assessment Policy</button></div></div></div>-->
+      <div class="sline">
+       <div class="main-head">
+        <div class="head-sec">
+         <div class="mdl-head">
+          <a class="btn primary">Cycle 1</a>
+          <a>Cycle 1</a>
+          <a>Cycle 1 </a>
+          <a class="act-qadd sm"></a>
+         </div>
+         <div class="edv-actions">
+          <button class="btn primary" edv-mdl-open="addAssessment" id="addAssessment">Select All</button>
+          <button class="btn primary" edv-mdl-open="addAssessment" id="Assessment">Report Generator</button>
+         </div>
+        </div>
+        <div class="nav-line sline">
+         <div>
+          <div>
+           <div class="edv-class-boardview">
+            <div>
+             <div class="edv-classhead">
+              <div class="mdl-head" style="padding: 15px 2px;">
+               <h6>Language I</h6>
+              </div>
+             </div>
+             <div class="edv-classbdy">
+              <div class="edv-class-group">
+               <a>Writing</a>
+               <br>
+               <br>
+               <p>Formative Assessment</p>
+               <div class="Line-1288"></div>
+               <div class="edv-class-addrow">
+                <a>Mark Input</a>
+                <div class="mark-entry">
+                 <span class="entry">10/10</span>
+                </div>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Class Teacher Observation</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on1">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Consolidated Remark</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on2">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Peer Review</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on3">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div>
+             <div class="edv-classhead">
+              <div class="mdl-head" style="padding: 15px 2px;"></div>
+             </div>
+             <div class="edv-classbdy">
+              <div class="edv-class-group">
+               <a>Speaking & Listening</a>
+               <br>
+               <br>
+               <p>Formative Assessment</p>
+               <div class="Line-1288"></div>
+               <div class="edv-class-addrow">
+                <a>Mark Input</a>
+                <div class="mark-entry">
+                 <span class="entry">10/10</span>
+                </div>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Class Teacher Observation</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on1">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Consolidated Remark</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on2">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Peer Review</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on3">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div>
+             <div class="edv-classhead">
+              <div class="mdl-head" style="padding: 15px 2px;"></div>
+             </div>
+             <div class="edv-classbdy">
+              <div class="edv-class-group">
+               <a>Writing</a>
+               <br>
+               <br>
+               <p>Summative Assessment</p>
+               <div class="Line-1288"></div>
+               <div class="edv-class-addrow">
+                <a>Mark Input</a>
+                <div class="mark-entry">
+                 <span class="entry">10/10</span>
+                </div>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Class Teacher Observation</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on1">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Consolidated Remark</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on2">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-class-addrow">
+                <a>Peer Review</a>
+                <div class="toggle">
+                 <div class="Icon-awesome-toggle-on3">
+                  <label class="switch">
+                   <input type="checkbox" checked="">
+                   <span class="slider round"></span>
+                  </label>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div>
+             <div class="edv-classhead">
+              <div class="mdl-head" style="padding: 15px 2px;"></div>
+             </div>
+             <div class="edv-classbdy" style="border:none;"></div>
+            </div>
+           </div>
+           <div>
+            <div class="edv-class-boardview">
+             <div>
+              <div class="edv-classhead">
+               <div class="mdl-head" style="padding: 15px 2px;">
+                <h6>Language II</h6>
+               </div>
+              </div>
+              <div class="edv-classbdy">
+               <div class="edv-class-group">
+                <a>Writing</a>
+                <br>
+                <br>
+                <p>Formative Assessment</p>
+                <div class="Line-1288"></div>
+                <div class="edv-class-addrow">
+                 <a>Mark Input</a>
+                 <div class="mark-entry">
+                  <span class="entry">10/10</span>
+                 </div>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Class Teacher Observation</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on1">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Consolidated Remark</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on2">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Peer Review</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on3">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div>
+              <div class="edv-classhead">
+               <div class="mdl-head" style="padding: 15px 2px;"></div>
+              </div>
+              <div class="edv-classbdy">
+               <div class="edv-class-group">
+                <a>Project</a>
+                <br>
+                <br>
+                <p>Formative Assessment</p>
+                <div class="Line-1288"></div>
+                <div class="edv-class-addrow">
+                 <a>Mark Input</a>
+                 <div class="mark-entry">
+                  <span class="entry">10/10</span>
+                 </div>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Class Teacher Observation</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on1">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Consolidated Remark</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on2">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Peer Review</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on3">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div>
+              <div class="edv-classhead">
+               <div class="mdl-head" style="padding: 15px 2px;"></div>
+              </div>
+              <div class="edv-classbdy">
+               <div class="edv-class-group">
+                <a>Critical Thinking</a>
+                <br>
+                <br>
+                <p>Formative Assessment</p>
+                <div class="Line-1288"></div>
+                <div class="edv-class-addrow">
+                 <a>Mark Input</a>
+                 <div class="mark-entry">
+                  <span class="entry">10/10</span>
+                 </div>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Class Teacher Observation</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on1">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Consolidated Remark</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on2">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Peer Review</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on3">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div>
+              <div class="edv-classhead">
+               <div class="mdl-head" style="padding: 15px 2px;"></div>
+              </div>
+              <div class="edv-classbdy">
+               <div class="edv-class-group">
+                <a>Writing</a>
+                <br>
+                <br>
+                <p>Formative Assessment</p>
+                <div class="Line-1288"></div>
+                <div class="edv-class-addrow">
+                 <a>Mark Input</a>
+                 <div class="mark-entry">
+                  <span class="entry">10/10</span>
+                 </div>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Class Teacher Observation</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on1">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Consolidated Remark</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on2">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="edv-class-addrow">
+                 <a>Peer Review</a>
+                 <div class="toggle">
+                  <div class="Icon-awesome-toggle-on3">
+                   <label class="switch">
+                    <input type="checkbox" checked="">
+                    <span class="slider round"></span>
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Filter -->
+    <div class="mdl-foo">
+     <div class="mdl-foo-action">
+      <a class="btn primary">Save</a>
+      <a class="btn line">Cancel</a>
+     </div>
+    </div>
+   </div>
+  </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

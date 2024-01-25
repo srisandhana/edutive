@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+    <title>Edutive : Event Admin</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Events</a>
+          </div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div>
+                <div class="title"> Events </div>
+              </div>
+              <div class="edv-actions">
+                <div class="tsearch">
+                  <a></a>
+                  <input type="text" placeholder="Search" class="edv-input">
+                </div>
+                <div class="ln w10 empty"></div>
+                <a class="act-qadd sm" mdl-pop="add-event"></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="sub-head">
+              <div>
+                <span class="title">Available Events</span>
+              </div>
+              <div class="actions nav-group pills">
+                <a class="ico-lst sel"></a>
+                <a class="ico-dash "></a>
+              </div>
+            </div>
+            <table class="table tbl-topfxd tbl-stripe">
+              <thead>
+                <tr>
+                  <th>
+                    <span>Event</span>
+                  </th>
+                  <th>
+                    <span>Event Type</span>
+                  </th>
+                  <th>
+                    <span>Event Date</span>
+                  </th>
+                  <th>
+                    <span>Venue</span>
+                  </th>
+                  <th>
+                    <span>Nomination Start Date</span>
+                  </th>
+                  <th>
+                    <span>Nomination Closing Date</span>
+                  </th>
+                  <th>
+                    <span>Status</span>
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span>Quiz</span>
+                  </td>
+                  <td>
+                    <span>Intra School</span>
+                  </td>
+                  <td>
+                    <span>25-03-2023</span>
+                  </td>
+                  <td>
+                    <span>RJR, Coimbatore</span>
+                  </td>
+                  <td>
+                    <span>10-03-2023</span>
+                  </td>
+                  <td>
+                    <span>20-03-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_pending">Completed</span>
+                  </td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-eye"></a>
+                      <a class="act-edit"></a>
+                      <div class="ddown">
+                        <a class="act-more"></a>
+                        <div class="edv-dropdown dd-pr rht btm">
+                          <ul>
+                            <li>
+                              <a>Result Entry</a>
+                            </li>
+                            <li>
+                              <a>Completed</a>
+                            </li>
+                            <li>
+                              <a>Cancelled</a>
+                            </li>
+                            <li>
+                              <a>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Debates</span>
+                  </td>
+                  <td>
+                    <span>Inter School</span>
+                  </td>
+                  <td>
+                    <span>28-04-2023</span>
+                  </td>
+                  <td>
+                    <span>SJS, Tirunelveli</span>
+                  </td>
+                  <td>
+                    <span>12-04-2023</span>
+                  </td>
+                  <td>
+                    <span>22-04-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_reject">Cancelled</span>
+                  </td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-eye"></a>
+                      <a class="act-edit"></a>
+                      <div class="ddown">
+                        <a class="act-more"></a>
+                        <div class="edv-dropdown dd-pr rht btm">
+                          <ul>
+                            <li>
+                              <a>Result Entry</a>
+                            </li>
+                            <li>
+                              <a>Completed</a>
+                            </li>
+                            <li>
+                              <a>Cancelled</a>
+                            </li>
+                            <li>
+                              <a>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Dance</span>
+                  </td>
+                  <td>
+                    <span>Inter School</span>
+                  </td>
+                  <td>
+                    <span>29-04-2023</span>
+                  </td>
+                  <td>
+                    <span>RJR, Coimbatore</span>
+                  </td>
+                  <td>
+                    <span>18-04-2023</span>
+                  </td>
+                  <td>
+                    <span>25-04-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_success">Open</span>
+                  </td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-eye"></a>
+                      <a class="act-edit"></a>
+                      <div class="ddown">
+                        <a class="act-more"></a>
+                        <div class="edv-dropdown dd-pr rht btm">
+                          <ul>
+                            <li>
+                              <a>Result Entry</a>
+                            </li>
+                            <li>
+                              <a>Completed</a>
+                            </li>
+                            <li>
+                              <a>Cancelled</a>
+                            </li>
+                            <li>
+                              <a>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Athletics</span>
+                  </td>
+                  <td>
+                    <span>Intra School</span>
+                  </td>
+                  <td>
+                    <span>30-04-2023</span>
+                  </td>
+                  <td>
+                    <span>RJR, Coimbatore</span>
+                  </td>
+                  <td>
+                    <span>19-04-2023</span>
+                  </td>
+                  <td>
+                    <span>25-04-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_success">Open</span>
+                  </td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-eye"></a>
+                      <a class="act-edit"></a>
+                      <div class="ddown">
+                        <a class="act-more"></a>
+                        <div class="edv-dropdown dd-pr rht btm">
+                          <ul>
+                            <li>
+                              <a>Result Entry</a>
+                            </li>
+                            <li>
+                              <a>Completed</a>
+                            </li>
+                            <li>
+                              <a>Cancelled</a>
+                            </li>
+                            <li>
+                              <a>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-page" mdl-box="add-event">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Add Event</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="nav-wrap">
+            <div class="edv-section">
+              <div class="title">Event Name</div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Event Name </label>
+                  <div>
+                    <input class="edv-input" value="Short Distance Running Event">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Major Event</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected="">Track Events</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Sub Event</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected="">Short Distance</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Distance</label>
+                  <div>
+                  <input class="edv-input" value="100 meter">
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="edv-section">
+              <div class="title">Event Details</div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Event Type</label>
+                  <div>
+                    <label class="edv-radio">
+                      <input name="Event" value="Intra School" type="radio">Intra School </label>
+                    <label class="edv-radio">
+                      <input name="Event" value="Inter School" type="radio">Inter School </label>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Event Date</label>
+                  <div class="edv-input-group">
+                    <input class="edv-input" placeholder="Select Event Date">
+                    <span class="input-addon">
+                      <i class="ico-caln"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Attendance?</label>
+                  <div>
+                    <label class="edv-radio">
+                      <input name="Attendance" value="Yes" type="radio">Yes </label>
+                    <label class="edv-radio">
+                      <input name="Attendance" value="No" type="radio">No </label>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Gender</label>
+                  <div>
+                    <label class="edv-radio">
+                      <input name="Gender" value="Both" type="radio">Both </label>
+                    <label class="edv-radio">
+                      <input name="Gender" value="Boys" type="radio">Boys </label>
+                    <label class="edv-radio">
+                      <input name="Gender" value="Girls" type="radio">Girls </label>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Event Incharge</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected=""></option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Incharge Tenure Date</label>
+                  <div class="edv-input-group">
+                    <input class="edv-input" placeholder="Select From and To Date">
+                    <span class="input-addon">
+                      <i class="ico-caln"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Travel Arrangements?</label>
+                  <div>
+                    <label class="edv-radio">
+                      <input name="Travel Arrangements" value="Yes" type="radio">Yes </label>
+                    <label class="edv-radio">
+                      <input name="Travel Arrangements" value="No" type="radio">No </label>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Venue</label>
+                  <div>
+                    <input class="edv-input" placeholder="Enter the Venue Place">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Nomination Opening</label>
+                  <div class="edv-input-group">
+                    <input class="edv-input" placeholder="Select Opening Date">
+                    <span class="input-addon">
+                      <i class="ico-caln"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Nomination Closing</label>
+                  <div class="edv-input-group">
+                    <input class="edv-input" placeholder="Select Opening Date">
+                    <span class="input-addon">
+                      <i class="ico-caln"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Participants Certificates?</label>
+                  <div>
+                    <label class="edv-radio">
+                      <input name="Participants Certificates" value="Yes" type="radio">Yes </label>
+                    <label class="edv-radio">
+                      <input name="Participants Certificates" value="No" type="radio">No </label>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Certificate Format</label>
+                  <div>
+                    <input class="edv-file" type="file">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col6">
+                <div class="f-field">
+                  <label>Remarks</label>
+                  <div>
+                    <textarea class="edv-textarea" rows="2">Short Distance Running 100m for both Boys and Girls, Student can participate one athlete event at a time</textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Declaration Acceptance?</label>
+                  <div>
+                    <label class="edv-radio">
+                      <input name="Declaration Acceptance" value="Yes" type="radio">Yes </label>
+                    <label class="edv-radio">
+                      <input name="Declaration Acceptance" value="No" type="radio">No </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col6">
+                <div class="f-field">
+                  <label>Declaration Format</label>
+                  <div>
+                    <textarea class="edv-textarea" rows="5">"I hereby declare that I am fully aware of the risks and hazards involved in participating in this Athletic Event and I am voluntarily participating in this event at my own risk. I understand that my participation may expose me to certain risks, including but not limited to, bodily injury, property damage, and other hazards. I hereby assume all risks and responsibilities associated with ...</textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-section">
+              <div class="title">Presentation Type</div>
+            </div>
+            <div class="edv-section">
+              <div class="title">Add Position <a class="act-qadd xs"></a>
+              </div>
+            </div>
+            <div class="nav-container">
+              <div class="edv-row f-group f-top">
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Position Name</label>
+                    <div>
+                      <input class="edv-input" value="1st">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Prize Type</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected="">Trophies</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Art Work</label>
+                    <div>
+                      <input class="edv-file" type="file">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Image</label>
+                    <div>
+                      <input class="edv-file" type="file">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Caption</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Caption">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Specification</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Specification">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-container mt-20">
+              <div class="edv-row f-group f-top">
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Position Name</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Position Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Prize Type</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected="">Select Prize Type</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Art Work</label>
+                    <div>
+                      <input class="edv-file" type="file">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Image</label>
+                    <div>
+                      <input class="edv-file" type="file">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Caption</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Caption">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Specification</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Specification">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <a class="btn primary">Save</a>
+          <a class="btn line">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

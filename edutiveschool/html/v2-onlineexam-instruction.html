@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : Online Exam Instruction</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+   <header id="edvheader"></header>
+   <!-- Left Navigation -->
+   <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div class="home">
+      <a>Assessments</a>
+     </div>
+     <div>
+      <a>Written Test</a>
+     </div>
+    </div>
+    <div class="page-card">
+      <div class="main-head text-center online-instr-mdlhead" >
+        <h6>
+         <b>General Instructions</b>
+        </h6>
+       </div>
+     <div class="page-content">
+       <div class="nav-line sline">
+        <ol type="i" class="online-GI">
+         <li>i.  The examination shall consist of 100 (For Full Marks 80) Multiple Choice (MCQ), carrying 01 mark each. </li>
+         <li>ii. Each MCQ will have 4 choices and a student shall mark his/her choice for MCQs on the system itself.</li>
+         <li>iii. Each student can attempt 80 (For 80 Marks) number of questions randomly selected from the question bank out of 100.</li>
+         <li>iv. A Total Test Duration is 120 Minutes.</li>
+         <li>v. There will be no Negative Marking for any wrong answer or non-attempt, and answers will be auto calculated.</li>
+         <li> vi. You can submit your test whenever you have completed the test. However, if the test time elapses, the system will automatically Submit .</li>
+         <li>vii. Do not close any window directly when you are taking the test.</li>
+         <li> viii. Select the appropriate answer for each question. Then click "Next" button to move to the Next Question & "Back" for previous question.</li>
+         <li>ix. You can Bookmark any number of Questions by clicking on "Review" icon; you can remove the Bookmark by clicking on it again.</li>
+         <li>x. You can change your response (Answer) for any question before submitting the test by marking the new response(Answer) (Radio Button). You can clear your response(Answer) <br><br> for any question by using the "Clear" button to mark the Question unanswered.</li>
+         <li>xi. Every time you select an option or a particular question, following changes can be seen on Question Panel.</li>
+         <div class="xam-details">
+          <ul class="xam-descr">
+           <li>
+            <span class="currently-complete"></span>
+            <span>Current</span>
+           </li>
+           <li>
+            <span class="currently-answered"></span>
+            <span>Answered</span>
+           </li>
+            <li>
+            <span class="unanswered"></span>
+            <span>Unanswered</span>
+           </li>
+            <li>
+            <span class="not-viewed"></span>
+            <span>Not Viewed</span>
+           </li>
+           <li>
+            <span class="ico-flag ico-flag-fill review-flag"></span>
+            <span>Review</span>
+           </li>
+          </ul>
+         </div>
+        </ol>
+       </div>
+     </div>
+     <div class="mdl-foo">
+      <a class="btn primary">Start</a>
+      <a class="btn line">Cancel</a>
+     </div>
+     </div>
+     </div>
+     </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

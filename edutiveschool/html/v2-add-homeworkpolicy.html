@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Add Homework Policy</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+        <div class="home">
+         <a href="../html/account-dashboard.html">Dashboard</a>
+        </div>
+        <div>
+          <a href="#">Settings</a>
+         </div>
+        <div class="more">
+         <span>Add Homework Policy</span>
+        </div>
+       </div>
+   </div>
+  </div>
+  <!-- Modal Page -->
+  <div class="mdl-page">
+   <div class="mdl-pop">
+    <div class="mdl-head">
+     <h6>Add Homework Policy</h6>
+    </div>
+    <div class="mdl-body">
+     <div class="nav-wrap">
+      <div edv-tab="profile">
+        <div class="edv-row">
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field ">
+                  <label>Segment</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected>Select segment</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Reviewer</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected></option>
+                      <option value="1">Select All</option>
+                      <option value="2">LKG</option>
+                      <option value="3">UKG</option>
+                      <option value="4">I</option>
+                      <option value="5">II</option>
+                      <option value="5">III</option>
+                      <option value="5">IV</option>
+                      <option value="5">V</option>
+                      <option value="5">VI</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Daily duration ( In hours )</label>
+                   <div>
+                    <input  type="number" class="edv-input" placeholder="120">
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Weekly duration ( In hours )</label>
+                  <div>
+                    <input  type="number" class="edv-input" placeholder="300">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Monthly duration ( In hours )</label>
+                  <div>
+                    <input  type="number" class="edv-input" placeholder="1200">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    <div class="mdl-foo">
+     <a class="btn primary">Save</a>
+     <a class="btn line">Cancel</a>
+    </div>
+
+  </div>
+  </div>
+ </body>
+ <script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

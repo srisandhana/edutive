@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Staff Attendance</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Staff Attendance</a>
+          </div>
+        </div>
+      <!-- modal page -->
+      <div class="mdl-page mdl-open">
+        <div class="mdl-pop">
+          <div class="mdl-head">
+            <h6>Staff Attendance</h6>
+            <div class="mdl-head-act"></div>
+          </div>
+          <div class="mdl-body edv-ly-vscrl">
+            <div class="edv-row">
+                <div class="edv-col10">
+                  <div class="edv-row">
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <div>
+                               <input _ngcontent-mwr-c208="" id="my-file-selector" type="file" name="uploadExcel" class="edv-file">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="edv-markentry-wrap edv-ly-cntscrl">
+              <div class="edv-marksentry">
+                  <table class="table tbl-topfxd col1-sticky col2-sticky">
+                    <thead>
+                      <th><span class="tsort">Employee Code<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span class="tsort">Employee Name<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span class="tsort">Date<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span class="tsort">In Time<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span class="tsort">Out Time<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span>Status</span></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>234567</td>
+                        <td><span>Aswin</span></td>
+                        <td>20/07/2023</td>
+                        <td>10.00 AM</td>
+                        <td>04.00 PM</td>
+                        <td><span class="sts_success">Completed</span></td>
+                      </tr>
+                      <tr>
+                        <td>234567</td>
+                        <td><span>Dharani</span></td>
+                        <td>15/07/2023</td>
+                        <td>10.00 AM</td>
+                        <td>04.00 PM</td>
+                        <td><span class="sts_pending">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td>234567</td>
+                        <td><span>Lakshmi</span></td>
+                        <td>22/08/2023</td>
+                        <td>10.00 AM</td>
+                        <td>04.00 PM</td>
+                        <td><span class="sts_reject">Rejected</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            
+            </div>           
+          </div>
+          <div class="mdl-foo">           
+            <a class="btn primary">Upload</a>
+            <a class="btn line">Cancel</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

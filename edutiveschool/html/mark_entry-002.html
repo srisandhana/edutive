@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive : Mark Entry</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <header>
+      <div id="min-lnav" class="act-menu" edv-title="Menu"></div>
+      <figure class="logo">
+        <img src="../images/edv-logo.svg" />
+      </figure>
+      <div class="ln"></div>
+      <div class="edv-multiorg ddown">
+        <div>
+          <span>
+          <img src="../images/01.png" alt="" />
+          </span>
+          <div>
+            <div class="title">RJR Higher Secondary School</div>
+            <div class="loc">Peelamedu, Coimbatore</div>
+          </div>
+          <div class="edv-dropdown lg btm">
+            <div class="dd-search"><input placeholder="Search Institution.." class="edv-input"></div>
+            <ul>
+              <li>
+                <a>
+                    <img src="../images/01.png">
+                    <span>
+                      <span>Higher Secondary School RJR Higher Secondary School</span>
+                      <b>Pleeamedu, Coimbatore</b>
+                    </span>
+                  </a>
+              </li>
+              <li>
+                <a>
+                  <img src="../images/01.png">
+                  <span>
+                    <span>Higher Secondary School RJR Higher Secondary School</span>
+                    <b>Pleeamedu, Coimbatore</b>
+                  </span>
+                </a>
+              </li>
+            </ul>
+        </div>
+        </div>
+        
+      </div>
+      <div class="profile">
+        <a class="act-noti alert" edv-title="Notification"><span>20</span></a>
+        <a class="act-msg alert" edv-title="Mail"><span>20</span></a>
+        <span class="ln empty w10"></span>
+        <div class="edv-myacc ddown">
+          <a class="act-user">
+            <img src="../images/01.png" />
+          </a>
+          <span>Kathir</span>
+          <!-- Myaccount -->
+          <div class="edv-dropdown btm rht">
+            <div class="accdetail">
+
+              <div class="profile">
+                <div class="photo">
+                  <div>
+                    <img src="../images/01.png" />
+                  </div>
+                  <a class="act-edit edv-title" edv-title="Edit Profile"></a>
+                </div>
+                <div class="name">Kathir</div>
+                <div class="mail">kathir@gmail.om</div>
+              </div>
+          
+              <p class="ln-h"></p>
+
+              <div class="chgpwd">
+                <a class="lnk">Change password</a>
+                <a class="logout">Logout</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Left Navigation -->
+    <nav>
+      <div>
+        <div>
+          <a edv-title="Dashboard" href="../html/account-dashboard.html"><i class="ico-dash"></i><span>Dashboard</span></a>
+          <a edv-title="Teachers" href="../html/teachers.html"><i class="ico-user"></i><span>Teachers</span></a>
+          <a edv-title="Students"><i class="ico-stu"></i><span>Students</span></a>
+          <a edv-title="Reports" href=""><i class="ico-report"></i><span>Reports</span></a>
+
+          <a edv-title="Settings" href="../html/settings.html" class="active"><i class="ico-setting"></i><span>Settings</span></a>
+        </div>
+       </div>
+    </nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+
+        <div class="edv-bcrumb">
+            <div class="set"><a>Dashboard</a></div>
+            <div class="more"><span>Mark Entry</span></div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          
+ 
+        </div>
+
+
+      <!-- Modal Page -->
+      <div class="mdl-page mdl-open" edv-mdl-box="addmarkentry" id="addmarkentry">
+        <div class="mdl-pop">
+          <div class="mdl-head">
+            <h6>Mark Entry</h6>
+            <div class="mdl-head-act">
+             
+            </div>
+          </div>
+          <div class="mdl-body edv-ly-vscrl">
+            <div class="edv-row">
+                <div class="edv-col10">
+                  <div class="edv-row">
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Class</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">VI</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Subject</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">Language I</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Term</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">Term I</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Cycle</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">Cycle I</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                     <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Assessment Type</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">Formative</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Assessment</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">Debate</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      
+                  </div>
+                  
+                </div>
+              
+              </div>
+
+            <div class="sub-head">
+                <div>
+                  <span class="title">Student List</span>
+
+                </div>
+                
+                <div class="actions">
+                  <!-- <a class="act-filter" id="ck-tblfilter"></a> -->
+                  <a class="act-filter" id="mdl-filter"><b>1</b></a>
+                  <div class="tsearch radius-20 mw-160">
+                    <input class="edv-input">
+                    <a></a>
+                  </div>
+                </div>
+              
+            </div>
+
+            <div class="edv-markentry-wrap edv-ly-cntscrl">
+              <div class="edv-marksentry">
+                  <table class="table tbl-topfxd col1-sticky col2-sticky">
+                    <thead>
+                      <th><span class="tsort">Student Name<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span>Presentation</span></th>
+                      <th><span>Comprehension</span></th>
+                      <th><span>Presuasiveness</span></th>
+                      <th><span>Delivery</span></th>
+                      <th><span>Rebuttal</span></th>
+                      <th><span>Remarks</span></th>
+                      <th><span>Evidence</span></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td>
+                          <div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div>
+                        </td>
+                          
+                       
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                       
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                      
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Aswin</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                      
+                      </tr>
+                      <tr>
+                        <td>Aswin Kumar</td>
+                        <td><input class="edv-input edv-input-btmln"></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td><div class="edv-filewrap">
+                            <input type="file" multiple="" hidden="" id="edv-fileupload">
+                            <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                          </div></td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+             
+            </div>           
+          </div>
+          <div class="mdl-foo">           
+            <a class="btn primary">Save</a>
+            <a class="btn line">Cancel</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<!-- Filter -->
+      <!-- Modal Page -->
+      <div class="mdl-contain mdl-open mdl-top">
+        <div class="mdl-pop sm">
+          <div class="mdl-head">
+            <h6>Remarks</h6>
+            <a class="mdl-cls"></a>
+          </div>
+          <div class="mdl-body">
+            <div class="f-group f-top">
+              <div class="f-field ">
+                <!-- <label>Remarks</label> -->
+                <div>
+                  <textarea class="edv-textarea" rows="6">My knowledge and skills in all/ most subjects do not meet the required standards. My performance in the tests and examinatins reflect my competence.</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-foo">
+              <a class="btn primary">Submit</a>
+              <a class="btn line">Cancel</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Filter -->
+      <!-- Modal Page -->
+      <div class="mdl-contain mdl-right mdl-open mdl-filter">
+        <div class="mdl-pop xs">
+          <div class="mdl-head">
+            <h6>Filter</h6>
+            <a class="mdl-cls"></a>
+            <div class="tsearch mt-20 radius-20">
+              <input class="edv-input">
+              <a></a>
+            </div>
+          </div>
+          <div class="mdl-body">
+            <div class="f-group f-top">
+              <div class="f-field ">
+                <label>Segment</label>
+                <div>
+                  <input class="edv-input">
+                </div>
+              </div>
+              <div class="f-field">
+                <label>Class</label>
+                <div>
+                  <select class="edv-select">
+                    <option value="0" selected>All</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+              </div>
+              <div class="f-field">
+                <label>Section</label>
+                <div>
+                  <select class="edv-select">
+                    <option value="0" selected>All</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <div class="mdl-foo">
+            <div class="mdl-foo-action">
+              <a class="btn primary">Submit</a>
+              <a class="btn line">Reset</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<style>
+
+  .edv-section
+  {
+    padding-left: 25px;
+  }
+.demo
+ {
+
+    
+    border-radius: 3px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 8%);
+    background-color: #fff;
+    padding: 5px;
+
+ }
+ .f-group .f-top .f-field > div
+ {
+  width: 600px;
+ }
+  .nav-line > a
+  {
+    padding: 14px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #Assessment
+  {
+    opacity: 0.5;
+  }
+  .Line-1288 {
+      width: 322px;
+    height: 2px;
+    margin: 2% -17px 15px -27px;
+    background-color: #eaecef;
+}
+.mark-entry {
+       margin: 0px 0px 0px 1rem;
+    width: 39px;
+    height: 37px;
+    border-radius: 51%;
+    background: #00F900;
+    padding: 5px;
+}
+.Icon-awesome-toggle-on {
+       width: 21.4px;
+    height: 14.3px;
+    margin: 0px 26px 6.9px 5rem;
+}
+.Icon-awesome-toggle-on1 {
+       width: 21.4px;
+    height: 14.3px;
+    margin: 0px 26px 6.9px 2rem;
+}
+.Icon-awesome-toggle-on2 {
+       width: 21.4px;
+    height: 14.3px;
+    margin: 0px 26px 6.9px 4.3rem;
+}
+.Icon-awesome-toggle-on3 {
+       width: 21.4px;
+    height: 14.3px;
+    margin: 0px 26px 6.9px 8.5rem;
+}
+.switch {
+   position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    cursor: pointer;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.entry {
+    width: 32px;
+    height: 21px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333946;
+    margin: 0% 2.5%;
+}
+input:checked + .slider {
+    background-color: #0d4a69;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+  transform: translateX(17px);
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    /* left: 23.5px; */
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    /* margin: -2% 0% 0% -62.7%; */
+}
+.edv-class-boardview
+{
+  width: 100%;
+}
+.edv-class-boardview > div .edv-classbdy, .edv-class-boardview > div , .edv-class-boardview
+{
+  overflow-y: unset;
+  overflow-x: unset;
+}
+
+  @media only screen and (min-width:1000px) and (max-width: 1500px) {
+    .table.tbl-topfxd > thead > tr > th
+    {
+      min-width: 100%;
+    }
+    
+  }
+@media only screen and (max-width: 640px) {
+body
+{
+      font-size: 5px;
+}
+header{
+      height: 44px;
+      padding: 0 8px;
+}
+.f-group .f-top .f-field > label
+ {
+      font-size: 8px;
+}
+.edv-class-boardview > div .edv-classbdy, .edv-class-boardview > div , .edv-class-boardview
+{
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.edv-row
+{
+  font-size: 10px;
+}
+.main-head
+{
+  padding: 0px 5px;
+}
+.nav-container
+{
+  padding: 0px;s
+}
+.Icon-awesome-toggle-on1
+{
+  margin: 0px 26px 6.9px 5rem;
+}
+.Icon-awesome-toggle-on2
+{
+ margin: 0px 26px 6.9px 6.3rem;
+}
+.Icon-awesome-toggle-on3 {
+  
+    margin: 0px 26px 6.9px 8.7rem;
+}
+.entry
+{
+     margin: 0% -23.5%;
+}
+.head-sec
+{
+  overflow-x: auto;
+}
+.mark-entry {
+    margin: 0px 0px 0px 1rem;
+    width: 41px;
+    height: 41px;
+    border-radius: 51%;
+    background: #00F900;
+    padding: 8px;
+}
+ .table.col1-sticky > thead > tr > th:first-child , .table.col1-sticky > tbody > tr > td:first-child, .table.col1-sticky > tfoot > tr > th:first-child
+{
+	min-width: 55px !important;
+}
+.tsort > span.asc
+{
+	display: none;
+}
+.table.col2-sticky > thead > tr > th:nth-child(2), .table.col2-sticky > tbody > tr > td:nth-child(2), .table.col2-sticky > tfoot > tr > th:nth-child(2)
+{
+	left: 62px;
+	min-width:0px;
+}
+.edv-input-btmln
+{
+	padding: 3px 3px;
+    max-width: 25px;
+}
+.btn.sm {
+    padding: 4px 4px;
+}
+    .act-menu
+    {
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    }
+    .logo img {
+    width: 29px;
+     margin-left: 10px;
+    }
+    .min-lnav nav
+    {
+      padding-left: 0px;
+    }
+    .ln {
+    width: 18px;
+    height: 30px;
+   }
+   .edv-multiorg > div span img {
+    max-width: 25px;
+  }
+  .edv-multiorg > div > div .title , .edv-multiorg > div > div .loc
+  {
+    font-size: 4px;
+  }
+  header .profile
+  {
+    gap: 6px;
+  }
+  .edv-multiorg > div::after
+  {
+    width: 20px;
+    height: 20px;
+  }
+  .act-noti {
+    width: 22px;
+    height: 22px;
+  }
+  .act-noti.alert span {
+    font-size: 7px;
+    top: -9px;
+    right: -7px;
+  }
+  .act-msg {
+    width: 22px;
+    height: 22px;
+  }
+  .act-msg.alert span {
+    font-size: 8px;
+    top: -10px;
+    right: -7px;
+  }
+  header .edv-myacc
+  {
+    gap:4px;
+  }
+  .act-user {
+    width: 35px;
+    height: 35px;
+  }
+  .act-user > img {
+    max-width: 27px;
+    max-height: 28px;
+  }
+  header .edv-myacc > span
+  {
+    font-size: 8px;
+  }
+  :root {
+    --navtop: 32px;
+    --lnav-w: 38px;
+   --lnav-wmin: 39px;
+    --fs-11: 6px;
+     --fs-12: 5px;
+}
+nav > div div > a i
+{
+  font-size: 10px;
+    width: 22px;
+    height: 22px;
+  }
+  .edv-bcrumb > div > a
+  {
+    font-size: 8px;
+  }
+ h6 {
+    font-size: 10px;
+}
+.min-lnav .mdl-page
+{
+  left: calc(var(--lnav-wmin) + 0px);
+}
+.act-qadd.sm:before
+{
+  font-size: 8px;
+}
+.act-qadd.sm {
+    width: 13px;
+    height: 13px;
+}
+.act-chat, .act-more, .act-del, .act-edit, .act-denied, .act-filter, .act-close, .act-download, .act-exp, .act-custom, .act-dcust
+{
+width: 36px;
+    height: 17px;
+}
+.act-chat:before, .act-more:before, .act-del:before, .act-edit:before, .act-denied:before, .act-filter:before, .act-close:before, .act-download:before, .act-exp:before, .act-custom:before, .act-dcust:before
+{
+  font-size: 10px;
+}
+.act-filter b
+{
+  top: -12px;
+  padding: 5px 1px;
+}
+.btn
+{
+  font-size: 10px;
+  padding: 5px 11px;
+}
+.edv-dropdown.sm
+{
+  width: 99px;
+}
+.edv-dropdown
+{
+  font-size: 8px;
+}
+.mw-160 {
+    min-width: 76px;
+    max-width: 127px;
+    height: 22px;
+}
+.tsearch input
+{
+  font-size: 10px;
+}
+.nav-line
+{
+  padding: 0px 0px;
+}
+.table > thead > tr > th:first-child
+{
+  padding-left: 0px;
+}
+.mdl-page .mdl-body
+{
+  padding: 0 10px;
+}
+.table > thead > tr > th, .table > tbody > tr > td, .table > tfoot > tr > td, .table > tfoot > tr > th
+{
+  padding: 6px 1px; 
+}
+.table > thead > tr > th
+{
+  font-size: 4px;
+}
+.edv-ly-vscrl
+{
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+}
+.edv-ly-vscrl .edv-ly-cntscrl
+{
+  overflow-y: unset !important;
+}
+.table
+{
+  width:287px;
+}
+.table.tbl-topfxd > thead > tr > th
+{
+  min-width: 100%;
+}
+.edv-actions
+{
+  gap:10px;
+}
+.tsearch a
+{
+  margin: 0px;
+}
+.mdl-page .mdl-foo, .mdl-page .mdl-head
+{
+  padding: 15px 12px;
+}
+.act-filter:before
+{
+  font-size: 10px;
+}
+.pagination
+{
+  padding: 0px;
+}
+.pagination .edv-input
+{
+  padding: 5px 5px;
+    width: 25px;
+    height: 21px;
+    text-align: center;
+}
+.main-head > div
+{
+     display: block;
+    padding: 10px 0px;
+}
+.pagination .next, .pagination .prev, .pagination .last, .pagination .first
+{
+  height: 10px;
+    width: 10px;
+}
+.tsearch input
+{
+  padding: 6px 5px 6px 4px;
+}
+.table > thead > tr > th:first-child, .table > tbody > tr > td:first-child, .table > tfoot > tr > th:first-child
+{
+  padding-left: 0px;
+}
+.alnk
+{
+  font-size: 5px;
+}
+.edv-col3
+{
+  padding: 10px;
+}
+
+}
+@media only screen and (min-width: 641px) and  (max-width: 930px) {
+  .table.tbl-topfxd > thead > tr > th
+  {
+    min-width: 100%;
+  }
+  .table > thead > tr > th
+  {
+    font-size: 8px;
+  }
+ .table > thead > tr > th, .table > tbody > tr > td, .table > tfoot > tr > td, .table > tfoot > tr > th
+ {
+  padding:8px 7px;
+ }
+ :root {
+    --navtop: 50px;
+    --lnav-w: 80px;
+    --lnav-wmin: 94px;
+
+}
+.min-lnav nav
+{
+  padding-left: 0px;
+}
+nav > div div > a
+{
+  padding: 3px 3px;
+}
+h6 {
+    font-size: 12px;
+   
+}
+.act-qadd.sm {
+    width: 17px;
+    height: 17px;
+}
+.act-qadd.sm:before {
+    font-size: 8px;
+}
+body
+{
+  font-size: 8px;
+}
+.btn
+{
+  font-size: 9px;
+}
+.tsearch input
+{
+  font-size: 12px;
+}
+.mw-160 {
+    min-width: 111px;
+    max-width: 106px;
+}
+.tsearch input
+{
+
+   padding: 5px 5px 6px 10px;
+}
+.alnk
+{
+  font-size: 8px;
+}
+.table > thead > tr > th > span {
+    max-width: 75px;
+   
+}
+.table.col2-sticky > thead > tr > th:nth-child(2) {
+    min-width: 0px;
+    z-index: 2;
+}
+.edv-input-btmln {
+    max-width: 54px;
+    
+}
+.table.col2-sticky > thead > tr > th:nth-child(2), .table.col2-sticky > tbody > tr > td:nth-child(2), .table.col2-sticky > tfoot > tr > th:nth-child(2)
+{
+	min-width: 0px;
+}
+}
+</style>
+
+
+</body>
+
+</html>

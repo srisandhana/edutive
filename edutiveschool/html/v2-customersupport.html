@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Customer Support</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Customer Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Page -->
+    <div class="mdl-page mdl-open">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Customer Support</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="edv-row f-group f-top f-view">
+            <div class="edv-col3">
+              <div class="f-field">
+                <label>Institute Name</label>
+                <div>P S Higher Secondary School</div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-field">
+                <label>User Name</label>
+                <div>P S Higher Secondary School PSHSS</div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-field">
+                <label>Module</label>
+                <div>Create Question</div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-field">
+                <label>Status</label>
+                <div><span class="sts_pending">Pending</span></div>
+              </div>
+            </div>
+            <div class="edv-col6">
+              <div class="f-field">
+                <label>Remarks</label>
+                <div>Unable to create new question for class X, Mathematics. Question Category is general and question type is multiple choice...</div>
+              </div>
+            </div>
+            <div class="edv-col6">
+              <div class="f-field">
+                <label>Attachment</label>
+                <div class="dflex g10 flex-wrap">
+                  <div class="sline p-5">
+                    <a><i class="ico-f-img fs-20"></i></a>
+                  </div>
+                  <div class="sline p-5">
+                    <a><i class="ico-f-img fs-20"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edv-section">
+            <div class="title">Jira Ticket</div>
+          </div>
+          <div class="edv-row f-group f-top">
+            <div class="edv-col3">
+              <div class="f-field">
+                <label>Ticket Name</label>
+                <div>
+                  <input class="edv-input" placeholder="Enter Ticket Name">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edv-row f-group f-top">
+            <div class="edv-col6">
+              <div class="f-field">
+                <label>Description</label>
+                <div>
+                  <textarea class="edv-textarea" rows="5" placeholder="Enter Description"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edv-row f-group f-top">
+            <div class="edv-col6">
+              <a class="btn primary btn-expand">Rise Ticket</a>
+              <a class="btn primary btn-expand">Close Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo mdl-foo-split">
+          <div>
+            <a class="btn primary btn-expand">Save</a>
+            <a class="btn btn-expand">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

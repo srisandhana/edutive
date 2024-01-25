@@ -1,0 +1,161 @@
+
+
+<div id="min-lnav" class="act-menu" edv-title="Menu"></div>
+  <figure class="logo">
+    <img src="../images/edv-logo.svg" />
+  </figure>
+  <div class="ln"></div>
+  <div class="edv-multiorg ddown">
+    <div>
+      <span>
+      <img src="../images/01.png" alt="" />
+      </span>
+      <div>
+        <div class="title">RJR Higher Secondary School</div>
+        <div class="loc">Peelamedu, Coimbatore</div>
+      </div>
+      <div class="edv-dropdown lg btm">
+        <div class="dd-search"><input placeholder="Search Institution.." class="edv-input"></div>
+        <ul>
+          <li>
+            <a>
+                <img src="../images/01.png">
+                <span>
+                  <span>Higher Secondary School RJR Higher Secondary School</span>
+                  <b>Pleeamedu, Coimbatore</b>
+                </span>
+              </a>
+          </li>
+          <li>
+            <a>
+              <img src="../images/01.png">
+              <span>
+                <span>Higher Secondary School RJR Higher Secondary School</span>
+                <b>Pleeamedu, Coimbatore</b>
+              </span>
+            </a>
+          </li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+  <div class="profile">
+    <!-- <a class="act-noti alert" edv-title="Notification"><span>20</span></a> -->
+    <div class="ddown">
+      <a class="act-noti alert" edv-title="Notification"><span>20</span></a>
+      <!-- Myaccount -->
+      <div class="edv-dropdown btm rht">
+        <div class="noti-wrap">
+          <div class="noti-header">
+            <div>
+                <label>Notifications</label>
+            </div>
+            <div>
+                <a>View All</a>  
+            </div>
+          </div>                                                                                                                                                                   
+          <div class="noti-list">
+            <div class="noti-prof">
+              <img src="../images/01.png">
+            </div>
+            <div class="noti-cont">
+              <span class="user">Christina Jenny Edward</span> posted an announcement.
+              <div class="date">21 December 5:52 PM</div>
+            </div>
+          </div>
+          <p class="noti-ln"></p>
+          <div class="noti-list">
+            <div class="noti-prof">
+              <img src="../images/01.png">
+            </div>
+            <div class="noti-cont">
+              <span class="user">Christina Jenny Edward</span> posted an announcement.
+              <div class="date">21 December 5:52 PM</div>
+            </div>
+          </div>
+          <p class="noti-ln"></p>
+          <div class="noti-list">
+            <div class="icon-prof">
+              <i class="ico-auto-tmtbl"></i>
+            </div>
+            <div class="noti-cont">
+               <span class="user">Kumar K (Parent)</span> 
+               <p edv-title="Requesting Meeting Appointment at 10:15 AM" class="edv-title" edv-placement="right">Requesting Meeting Appointment at 10:15 AM.</p>
+               <div class="date">27 june 10:00 AM</div>
+               <div class="pt-15">
+                <a class="btn primary sm">Approve</a>
+                <a class="btn sm">Reschedule</a>
+              </div>
+            </div>
+          </div>
+          <p class="noti-ln"></p>
+          <div class="noti-list">
+            <div class="noti-prof">
+              <img src="../images/01.png">
+            </div>
+            <div class="noti-cont">
+              <span class="user">Christina Jenny Edward</span> posted an announcement.
+              <div class="date">21 December 5:52 PM</div>
+            </div>
+          </div>
+          <p class="noti-ln"></p>                                                                                               
+        </div>                                                                                                                                                                      
+      </div>
+    </div>
+    <!-- <a class="act-msg alert" edv-title="Mail"><span>20</span></a> -->
+    <span class="ln empty w10"></span>
+    <div class="edv-myacc ddown">
+      <a class="act-user">
+        <img src="../images/01.png" />
+      </a>
+      <span>Kathir</span>
+      <!-- Myaccount -->
+      <div class="edv-dropdown btm rht">
+        <div class="accdetail">
+
+          <div class="profile">
+            <div class="photo">
+              <div>
+                <img src="../images/01.png" />
+              </div>
+              <a class="act-edit edv-title" edv-title="Edit Profile"></a>
+            </div>
+            <div class="name">Kathir</div>
+            <div class="mail">kathir@gmail.om</div>
+          </div>
+      
+          <p class="ln-h"></p>
+
+          <div class="chgpwd">
+            <a class="lnk">Change password</a>
+            <a class="logout">Logout</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(function() {
+
+        //Minimize view
+        $('#min-lnav').click(function() {
+          $('body').toggleClass('min-lnav');
+          $(this).toggleClass('sel');
+        });
+
+        $(".ddown").on("click", function(e) {
+          $(".ddown").removeClass("open");
+          $(this).toggleClass("open");
+          e.stopPropagation()
+        });
+        $(document).on("click", function(e) {
+          if ($(e.target).is(".ddown") === false) {
+            $(".ddown").removeClass("open");
+          }
+        });
+
+    });
+</script>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+    <title>Edutive : Event Student</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Events</a>
+          </div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div>
+                <div class="title"> Events </div>
+              </div>
+              <div class="edv-actions">
+                <div class="tsearch">
+                  <a></a>
+                  <input type="text" placeholder="Search" class="edv-input">
+                </div>
+                <div class="ln w10 empty"></div>
+                <a class="act-qadd sm"></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="sub-head">
+              <div>
+                <span class="title">My Events</span>
+              </div>
+              <div class="actions nav-group pills">
+                <a class="ico-lst sel"></a>
+                <a class="ico-dash "></a>
+              </div>
+            </div>
+            <table class="table tbl-topfxd tbl-stripe">
+              <thead>
+                <tr>
+                  <th>
+                    <span>Event</span>
+                  </th>
+                  <th>
+                    <span>Event Type</span>
+                  </th>
+                  <th>
+                    <span>Event Date</span>
+                  </th>
+                  <th>
+                    <span>Venue</span>
+                  </th>
+                  <th>
+                    <span>Nomination Start Date</span>
+                  </th>
+                  <th>
+                    <span>Nomination Closing Date</span>
+                  </th>
+                  <th>
+                    <span>Status</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span>Quiz</span>
+                  </td>
+                  <td>
+                    <span>Intra School</span>
+                  </td>
+                  <td>
+                    <span>25-03-2023</span>
+                  </td>
+                  <td>
+                    <span>RJR, Coimbatore</span>
+                  </td>
+                  <td>
+                    <span>10-03-2023</span>
+                  </td>
+                  <td>
+                    <span>20-03-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_reject">Closed</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Debates</span>
+                  </td>
+                  <td>
+                    <span>Inter School</span>
+                  </td>
+                  <td>
+                    <span>28-04-2023</span>
+                  </td>
+                  <td>
+                    <span>SJS, Tirunelveli</span>
+                  </td>
+                  <td>
+                    <span>12-04-2023</span>
+                  </td>
+                  <td>
+                    <span>22-04-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_reject">Closed</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Dance</span>
+                  </td>
+                  <td>
+                    <span>Inter School</span>
+                  </td>
+                  <td>
+                    <span>29-04-2023</span>
+                  </td>
+                  <td>
+                    <span>RJR, Coimbatore</span>
+                  </td>
+                  <td>
+                    <span>18-04-2023</span>
+                  </td>
+                  <td>
+                    <span>25-04-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_success">Applied</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Music</span>
+                  </td>
+                  <td>
+                    <span>Intra School</span>
+                  </td>
+                  <td>
+                    <span>30-04-2023</span>
+                  </td>
+                  <td>
+                    <span>RJR, Coimbatore</span>
+                  </td>
+                  <td>
+                    <span>19-04-2023</span>
+                  </td>
+                  <td>
+                    <span>25-04-2023</span>
+                  </td>
+                  <td>
+                    <span class="sts_info">New</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

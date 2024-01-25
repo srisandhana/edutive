@@ -1,0 +1,68 @@
+<figure class="logo">
+  <img src="../images/edv-logo.svg" />
+</figure>
+<div class="ln"></div>
+<div class="edv-multiorg ddown">
+  <div>
+    <span>
+    <img src="../images/01.png" alt="" />
+    </span>
+    <div>
+      <div class="title">RJR Higher Secondary School</div>
+      <div class="loc">Peelamedu, Coimbatore</div>
+    </div>
+    <div class="edv-dropdown lg btm">
+      <div class="dd-search"><input placeholder="Search Institution.." class="edv-input"></div>
+      <ul>
+        <li>
+          <a>
+              <img src="../images/01.png">
+              <span>
+                <span>Higher Secondary School RJR Higher Secondary School</span>
+                <b>Pleeamedu, Coimbatore</b>
+              </span>
+            </a>
+        </li>
+        <li>
+          <a>
+            <img src="../images/01.png">
+            <span>
+              <span>Higher Secondary School RJR Higher Secondary School</span>
+              <b>Pleeamedu, Coimbatore</b>
+            </span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  </div>
+  
+</div>
+<div class="profile">
+    <div class="exam-timer">
+     <a class="ico-clock"></a>
+     <span>10:28</span>
+    </div>
+   </div>
+
+<script>
+  $(function() {
+
+      //Minimize view
+      $('#min-lnav').click(function() {
+        $('body').toggleClass('min-lnav');
+        $(this).toggleClass('sel');
+      });
+
+      $(".ddown").on("click", function(e) {
+        $(".ddown").removeClass("open");
+        $(this).toggleClass("open");
+        e.stopPropagation()
+      });
+      $(document).on("click", function(e) {
+        if ($(e.target).is(".ddown") === false) {
+          $(".ddown").removeClass("open");
+        }
+      });
+
+  });
+</script>

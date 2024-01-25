@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Home Work</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+  <!-- Top Nav -->
+  <header id="edvheader"></header>
+  <!-- Left Navigation -->
+  <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div class="home">
+      <a>Dashboard</a>
+     </div>
+     <div>
+      <a>Teacher Homework</a>
+     </div>
+     <div class="more ">
+      <span>Add Homework</span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open">
+   <div class="mdl-pop">
+    <div class="mdl-head">
+     <h6>Add Home Work</h6>
+    </div>
+    <div class="mdl-body">
+     <div class="nav-wrap">
+      <div edv-tab="profile">
+       <div class="edv-row">
+        <div class="edv-col12 ">
+         <div class="edv-row f-group f-top">
+          <div class="edv-col3">
+           <div class="f-group f-top">
+            <div class="f-field">
+             <label>Segment</label>
+             <div>
+              <select class="edv-select ">
+               <option value="0" selected="">Middle</option>
+               <option value="1"></option>
+               <option value="2"></option>
+               <option value="3"></option>
+              </select>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="edv-col3">
+            <div class="f-field ">
+              <label>Class</label> 
+              <div class="edv-input-group ddown">
+                <div class="edv-cust-select">
+                  <div>
+                    <label>Class</label>
+                    <div><p>VI</p></div>
+                  </div>
+                  <div>
+                    <label>Section</label>
+                    <div><p>Section</p></div>
+                  </div>
+                </div>
+                <div class="edv-dropdown xl btm">
+                  <div class="edv-compt-multisel">
+                    <div class="lbl-block class">
+                        <div class="head">Class</div>
+                        <label class="edv-checkbox"><input name="class" value="I" type="radio">I</label>
+                        <label class="edv-checkbox"><input name="class" value="II" type="radio">II</label>
+                        <label class="edv-checkbox"><input name="class" value="III" type="radio">III</label>
+                        <label class="edv-checkbox"><input name="class" checked value="VI" type="radio">VI</label>
+                    </div>
+                    <div class="lbl-block language">
+                      <div class="head">Section</div>
+                      <label class="edv-checkbox"><input name="language" checked value="LanguageI" type="radio">Language I</label>
+                      <label class="edv-checkbox"><input name="language" value="LanguageII" type="radio">Language II</label>
+                      <label class="edv-checkbox"><input name="language" value="Maths" type="radio">Maths</label>
+                      <label class="edv-checkbox"><input name="language" value="Science" type="radio">Science</label>
+                      <label class="edv-checkbox"><input name="language" value="History" type="radio">History</label>
+                      <label class="edv-checkbox"><input name="language" value="English" type="radio">English</label>
+                      <label class="edv-checkbox"><input name="language" value="English" type="radio">Computer Science</label>                                          
+                    </div>
+                  </div>
+                </div>
+                <span class="input-addon"><i class="ico-dash"></i></span>
+              </div>
+          </div>
+        </div>
+          <div class="edv-col6">
+           <div class="f-group f-top">
+            <div class="f-field ">
+             <div class="edv-ats">
+             <label>Student</label>
+             <label class="edv-checkbox edv-actions">
+                <label>All</label>
+                <input id="chck02" type="checkbox">
+            </label>
+            </div>
+             <div>
+              <select class="edv-select">
+               <option value="0" selected="">Aldrin</option>
+               <option value="1">Andrew Franklin</option>
+               <option value="2">Aswin</option>
+              </select>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="edv-col3 ">
+           <div class="f-group f-top">
+            <div class="f-field ">
+             <label>Subject</label>
+             <div>
+              <select class="edv-select ">
+               <option value="0" selected="">Maths</option>
+               <option value="1"></option>
+               <option value="2"></option>
+               <option value="3"></option>
+              </select>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="edv-col3 ">
+            <div class="f-group f-top">
+             <div class="f-field ">
+              <label>Chapter</label>
+              <div>
+               <select class="edv-select ">
+                <option value="0" selected="">2. Whole Numbers</option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+               </select>
+              </div>
+             </div>
+            </div>
+           </div>
+     <div class="edv-col3 ">
+       <div class="f-group f-top">
+        <div class="f-field ">
+         <label>Topic</label>
+         <div>
+          <select class="edv-select ">
+           <option value="0" selected="">2.4. Properties of Number, 2.5. Propert...</option>
+           <option value="1"></option>
+           <option value="2"></option>
+          </select>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="edv-col3 ">
+        <div class="f-group f-top">
+         <div class="f-field ">
+          <label>Duration</label>
+          <div>
+           <input class="edv-input">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="edv-col3 ">
+        <div class="f-group f-top">
+         <div class="f-field ">
+          <label>Home Work Name</label>
+          <div>
+           <input class="edv-input" placeholder="Whole Numbers - Properties">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="edv-col3 ">
+        <div class="f-group f-top">
+         <div class="f-field ">
+          <label>Activity Name</label>
+          <div>
+           <input class="edv-input">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="edv-col3 ">
+        <div class="f-group f-top">
+         <div class="f-field ">
+          <label>Due Date</label>
+          <div>
+           <input class="edv-input" type="date">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+    </div>
+      <div class="edv-col12 ">
+         <div class="edv-row ">
+            <div class="edv-col6">
+                <div class="f-group f-top">
+                 <div class="f-field ">
+                  <label>Remarks</label>
+                  <div>
+                   <input class="edv-textarea" >
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="edv-col6">
+                <div class="f-group f-top">
+                 <div class="f-field ">
+    
+                  <div  class="edv-ats">
+                    <label>Attachments</label>
+                    <div class="edv-filewrap">
+                        <input type="file" multiple="" hidden="" id="edv-fileupload">
+                        <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                      </div>
+                    </div> 
+                    
+                  <div>
+                    <table class="table tbl-topfxd">
+                        <thead>
+                        <tr>
+                          <th>File</th>
+                          <th class="text-right">Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <ng-container formArrayName="attachment" *ngFor="let attachment of homeWorkFormGroup.get('attachment')['controls']; let i=index">
+                            <tr [formGroupName]="i">
+                                <td>
+                                    <a target="_blank" [href]="attachment.get('fileUrl').value" class="file-name">
+                                       
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <a class="act-del sm remove-action" (click)="removeAttachmentFile(i, attachment.get('fileUrl').value)">
+                                    </a>
+                                </td>
+                            </tr>
+                            </ng-container>
+                        </tbody>
+                    </table>
+                  </div>
+                 </div>
+                </div>
+               </div>
+
+               <!-- <div class="edv-col6">
+               <div class="sub-head">
+                <div><span class="title">Student List</span></div>
+                 <div >
+                    <div class="edv-filewrap">
+                        <input type="file" multiple="" hidden="" id="edv-fileupload">
+                        <label class="btn primary sm" for="edv-fileupload">Choose File</label>
+                      </div>
+                </div>
+               </div> 
+            <div class="edv-row">
+                                     
+                <table class="table tbl-topfxd edv-col6">
+                    <thead>
+                    <tr>
+                      <th>File</th>
+                      <th class="text-right">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <ng-container formArrayName="attachment" *ngFor="let attachment of homeWorkFormGroup.get('attachment')['controls']; let i=index">
+                        <tr [formGroupName]="i">
+                            <td>
+                                <a target="_blank" [href]="attachment.get('fileUrl').value" class="file-name">
+                                    {{displayFileName(attachment.get('fileUrl').value)}}
+                                </a>
+                            </td>
+                            <td class="text-right">
+                                <a class="act-del sm remove-action" (click)="removeAttachmentFile(i, attachment.get('fileUrl').value)">
+                                </a>
+                            </td>
+                        </tr>
+                        </ng-container>
+                    </tbody>
+                </table>
+            </div>
+               </div> -->
+           </div>
+          </div>
+       
+    </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mdl-foo ">
+     <a class="btn primary">Save</a>
+     <a class="btn line">Cancel</a>
+    </div>
+   </div>
+  </div>
+ </body>
+ <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Dashboard </title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div class="home">
+            <a>Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Page -->
+    <div class="mdl-page mdl-open">
+      <div class="mdl-pop">
+        <div class="mdl-nohead"></div>
+        <div class="mdl-body">
+          <div class="nav-wrap">
+            <div class="edv-row">
+              <div class="edv-col8">
+                <div class="board-inner">
+                  <div class="card-head">
+                    <div class="card-body">
+                      <div class="edv-row">
+                        <div class="edv-col6 img-col6">
+                          <p class="board-mainhd">Good Morning <span style="font-weight: 600;">Andrew!</span>
+                          </p>
+                          <p class="board-innerhd">10:02 AM Friday, Dec 12</p>
+                          <p class="board-parahd">All students are hereby informed about a change in school timings from 1st October, 2021. The school will now start at 9 am - 3 pm.</p>
+                        </div>
+                        <img class="mblimgresp" src="../images/Welcome Illustration.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col4 count-mblcol4">
+                <div class="edv-row">
+                  <div class="edv-col2 countlist-col">
+                    <div class="edv-settinglist board countlist">
+                      <a class="count-grade">
+                        <img src="../images/Grades.png">
+                      </a>
+                      <div class="edv-lvwrap">
+                        <div class="edv-lvtype countlist-lvtype">
+                          <div class="countfnt">10</div>
+                          <div>Grades</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2 countlist-col">
+                    <div class="edv-settinglist countlist">
+                      <a class="count-student">
+                        <img src="../images/Students.png">
+                      </a>
+                      <div class="edv-lvwrap">
+                        <div class="edv-lvtype countlist-lvtype">
+                          <div class="countfnt">3280</div>
+                          <div>Students</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2 countlist-col">
+                    <div class="edv-settinglist board countlist">
+                      <a class="count-teachers">
+                        <img src="../images/Teachers.png">
+                      </a>
+                      <div class="edv-lvwrap">
+                        <div class="edv-lvtype countlist-lvtype">
+                          <div class="countfnt">84</div>
+                          <div>Teachers</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2 countlist-col">
+                    <div class="edv-settinglist board countlist">
+                      <a class="count-staffs">
+                        <img src="../images/Staffs.png">
+                      </a>
+                      <div class="edv-lvwrap">
+                        <div class="edv-lvtype countlist-lvtype">
+                          <div class="countfnt">38</div>
+                          <div>Staffs</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col12">
+              <div class="edv-row">
+                <div class="edv-col8" id="academic-edvcol8">
+                  <div class="card academic-card">
+                    <div class="main-head maintitle">
+                      <div class="title">Calendar</div>
+                      <div class="mainhead-sec maintitle-sec">
+                        <div class="mdl-head mdlheadingsec">
+                          <a class="btn line sm">Today</a>
+                        </div>
+                        <div class="mdl-head mdlheadsec">
+                          <a class="ico-prev"></a> &nbsp; <a>
+                            <b>September 2021 </b>
+                          </a> &nbsp; <a class="ico-next"></a>
+                        </div>
+                        <div class="edv-actions academic-edvaction">
+                          <div class="act-filter ddown">
+                            <div class="edv-dropdown edv-ddwt btm">
+                              <ul>
+                                <div class="mdl-head filter-cnt">
+                                  <h6>Calenders</h6>
+                                  <a class="act-qadd sm"></a>
+                                </div>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox Orientation-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Orientation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox report-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Teachers Reporting Date </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox exam-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Examinations </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox ptm-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Parent Orientation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox cel-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Celebrations </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox sports-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Inter School Sports </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox elect-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Election </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox regi-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>School Opening </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox schlvac-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>School Vacation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox tit-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Teacher Induction &Training </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox studorien-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Student Orientation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox bc-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Bridge Course </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox club-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Club Activities </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="ico-setting ddown">
+                            <div class="edv-dropdown dd-pr rht btm">
+                              <ul>
+                                <li>
+                                  <a>
+                                    <b>Configurations</b>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a>Define Week Working Days</a>
+                                </li>
+                                <li>
+                                  <a>Define Academic Start Dates</a>
+                                </li>
+                                <li>
+                                  <a>Define Declared Holidays</a>
+                                </li>
+                                <li>
+                                  <a>Settings</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <button class="btn line multi">Month <div class="edv-dropdown sm btm rht"></div>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Mass Update -->
+                    </div>
+                    <div class="card-body">
+                      <div class="edv-noticebrd-wrap">
+                        <div class="tbl-responsive">
+                          <table class="table tbl-border caln-table">
+                            <thead>
+                              <tr>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="caln-td"></td>
+                                <td class="caln-td"></td>
+                                <td class="caln-td"></td>
+                                <td class="caln-td">
+                                  <span class="table-one">1</span>
+                                  <div class="cal-tblouter">
+                                    <div class="cal-tblinner">
+                                      <span class="caln-1">
+                                        <i class="ico-guest-lec"></i>Orientation </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">2</span>
+                                  <div class="cal-tblouter1">
+                                    <div class="cal-tblinner1">
+                                      <span class="caln-1">
+                                        <i class="ico-weeklytest"></i>&nbsp;Internal&nbsp;Test </span>
+                                    </div>
+                                  </div>
+                                  <div class="cal-tblouter">
+                                    <div class="cal-tblinner">
+                                      <span class="caln-1">
+                                        <i class="ico-guest-lec"></i>Guest&nbsp;Lecture </span>
+                                    </div>
+                                  </div>
+                                  <span>2 more</span>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">3</span>
+                                  <div class="cal-tblouter1">
+                                    <div class="cal-tblinner1">
+                                      <span class="caln-1">
+                                        <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                    </div>
+                                  </div>
+                                  <div class="cal-tblouter2">
+                                    <div class="cal-tblinner2">
+                                      <span class="caln-1">
+                                        <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td red-shades-sunday">
+                                  <span class="table-one sunday-caln">4</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="caln-td ">
+                                  <span class="table-one ">5</span>
+                                  <div class="cal-tblouter1">
+                                    <div class="cal-tblinner1">
+                                      <span class="caln-1">
+                                        <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">6</span>
+                                  <div class="cal-tblouter">
+                                    <div class="cal-tblinner">
+                                      <span class="caln-1" id="caln-2">
+                                        <i class="ico-group"></i>Parents&nbsp;Orientation </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">7</span>
+                                  <div class="cal-project">
+                                    <div class="cal-expo">
+                                      <span class="caln-1">
+                                        <i class="ico-celeb"></i>Project&nbsp;Expo </span>
+                                    </div>
+                                  </div>
+                                  <div class="cal-clubactivities" id="mdl-top">
+                                    <div class="cal-club">
+                                      <span class="caln-1">
+                                        <i class="ico-celeb"></i>Club&nbsp;Activities </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">8</span>
+                                  <div class="cal-tblouter2">
+                                    <div class="cal-tblinner2">
+                                      <span class="caln-1">
+                                        <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">9</span>
+                                  <div class="cal-tblouter3">
+                                    <div class="cal-tblinner3">
+                                      <span class="caln-1" style="margin: 0px 2px;">
+                                        <i class="ico-sports"></i>Inter&nbsp;House&nbsp;Sports </span>
+                                    </div>
+                                  </div>
+                                  <div class="cal-project">
+                                    <div class="cal-expo">
+                                      <span class="caln-1" style="margin: 0px 1px;">
+                                        <i class="ico-celeb"></i>Inter&nbsp;House&nbsp;Culturals </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">10</span>
+                                  <div class="cal-Chaturthi">
+                                    <div class="cal-ganesh-chaturthi">
+                                      <span class="caln-1">
+                                        <i class="ico-caln"></i>Ganesh&nbsp;Chaturthi </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td red-shades-sunday">
+                                  <span class="table-one sunday-caln">11 </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="caln-td" style="position: relative;">
+                                  <span class="table-one">12</span>
+                                  <div class="cal-project" id="cal-tblouter1">
+                                    <div class="cal-expo">
+                                      <span class="caln-1">
+                                        <i class="ico-celeb"></i>Culturals </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">13</span>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">14</span>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">15</span>
+                                  <div class="cal-tblouter3">
+                                    <div class="cal-tblinner3">
+                                      <span class="caln-1">
+                                        <i class="ico-sports"></i>Sports&nbsp;Day </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">16</span>
+                                  <div class="cal-tblouter">
+                                    <div class="cal-tblinner">
+                                      <span class="caln-1">
+                                        <i class="ico-guest-lec"></i>Orientation </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">17</span>
+                                  <div class="cal-tblouter2">
+                                    <div class="cal-tblinner2">
+                                      <span class="caln-1">
+                                        <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                    </div>
+                                  </div>
+                                  <div class="cal-tblouter1">
+                                    <div class="cal-tblinner1">
+                                      <span class="caln-1">
+                                        <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                    </div>
+                                  </div>
+                                  <span>2 more</span>
+                                </td>
+                                <td class="caln-td red-shades-sunday">
+                                  <span class="table-one sunday-caln">18</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="caln-td">
+                                  <span class="table-one">19</span>
+                                  <div class="cal-tblouter4">
+                                    <div class="cal-tblinner4">
+                                      <span class="caln-1" style="margin: 0px 30px;">
+                                        <span class="ico ico-Parents-Teachers-Meating">
+                                          <span class="path1"></span>
+                                          <span class="path3"></span>
+                                        </span>Parents&nbsp;Teachers&nbsp;M </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">20</span>
+                                </td>
+                                <td class="caln-td back-shades" style="position: relative;">21 <div class="cal-tblouter1" id="cal-tblouter-1">
+                                    <div class="cal-tblinner1">
+                                      <span class="caln-1">
+                                        <i class="ico-weeklytest"></i>&nbsp;Term&nbsp;I&nbsp;Exam </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td back-shades">
+                                  <span class="table-one">22</span>
+                                </td>
+                                <td class="caln-td back-shades">
+                                  <span class="table-one">23</span>
+                                </td>
+                                <td class="caln-td back-shades">
+                                  <span class="table-one">24</span>
+                                </td>
+                                <td class="caln-td red-shades-sunday">
+                                  <span class="table-one sunday-caln ">25</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="caln-td  back-shades" style="position: relative;">
+                                  <span class="table-one">26</span>
+                                  <div class="cal-tblouter1" id="cal-tblouter-2">
+                                    <div class="cal-tblinner1">
+                                      <span class="caln-1">
+                                        <i class="ico-weeklytest"></i>&nbsp;Term&nbsp;I&nbsp;Exam </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td back-shades">
+                                  <span class="table-one">27</span>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">28</span>
+                                  <div class="cal-tblouter4">
+                                    <div class="cal-tblinner4">
+                                      <span class="caln-1" style="margin: 0px 30px;">
+                                        <span class="ico ico-Parents-Teachers-Meating">
+                                          <span class="path1"></span>
+                                          <span class="path3"></span>
+                                        </span>Parents&nbsp;Teachers&nbsp;M </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">29</span>
+                                </td>
+                                <td class="caln-td">
+                                  <span class="table-one">30</span>
+                                  <div class="cal-project">
+                                    <div class="cal-expo">
+                                      <span class="caln-1">
+                                        <i class="ico-celeb"></i>Science&nbsp;Fest </span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="caln-td"></td>
+                                <td class="caln-td">
+                                  <a class="act-qadd sm plus"></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col4 calendardate">
+                  <div class="edv-row">
+                    <div class="edv-col2 calendardate-col2">
+                      <div class="card academic-card" style="border:solid 1px #e5e5e5;padding: 10px;">
+                        <div class="card-head">
+                          <span class="title title-calnhdr">Notice Board</span>
+                        </div>
+                        <div class="card-body">
+                          <div class="edv-noticebrd-wrap">
+                            <div class="edv-noticebrd">
+                              <div class="caln setcal">
+                                <span class="date">16</span>
+                                <span class="mon">SEP</span>
+                              </div>
+                              <div class="detl">
+                                <div class="head">
+                                  <span class="title setcaln-title">Change in School Timings</span>
+                                  <span class="time setcaln-time">3:00 AM</span>
+                                </div>
+                                <div class="desc setcaln-para">All students are hereby informed about a change in school timings from 1st October, 2021. The school will now start at 9 am - 3 pm. </div>
+                              </div>
+                            </div>
+                            <div class="edv-noticebrd">
+                              <div class="caln setcal">
+                                <span class="date">16</span>
+                                <span class="mon">SEP</span>
+                              </div>
+                              <div class="detl">
+                                <div class="head">
+                                  <span class="title setcaln-title">Visit Historical Sites</span>
+                                  <span class="time setcaln-time">10:42 AM</span>
+                                </div>
+                                <div class="desc setcaln-para">Members of the club are hereby informed of a proposed educational visit in our city which is likely to be scheduled between the 28th and the 30th of Sep.</div>
+                              </div>
+                            </div>
+                            <div class="edv-noticebrd">
+                              <div class="caln setcal">
+                                <span class="date">15</span>
+                                <span class="mon">SEP</span>
+                              </div>
+                              <div class="detl">
+                                <div class="head">
+                                  <span class="title setcaln-title">Sale of Old Spoils Goods</span>
+                                  <span class="time setcaln-time">04:57 PM</span>
+                                </div>
+                                <div class="desc setcaln-para">Our school is organising a sale of its old sports goods like cricket bats, badminton & lawn teams rackets, footballs, cricket & football gear etc.</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col2 calendardate-col2">
+                      <div class="card academic-card" style="border:solid 1px #e5e5e5;padding: 10px;">
+                        <div class="card-head">
+                          <span class="title title-calnhdr">Alerts</span>
+                          <div class="card-actions">
+                            <a class="btn sm">View All</a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="edv-noticebrd-wrap">
+                            <div class="edv-noticebrd" style="position: relative;">
+                              <img class="setimg" src="../images/Profile_2.png">
+                              <div class="status-circle"></div>
+                              <div class="detl">
+                                <div class="head">
+                                  <span class="title setcaln-title">Mehareethaa K V </span>
+                                  <span class="time">02:28 PM</span>
+                                </div>
+                                <div class="desc setcaln-para">Request access to Admin Dashboard privileges.</div>
+                              </div>
+                            </div>
+                            <div class="display-btn">
+                              <a class="btn primary">Approve</a>
+                              <a class="btn line ">Deny</a>
+                            </div>
+                            <div style="border-bottom:1px solid #e5e5e5"></div>
+                            <div class="edv-noticebrd-wrap">
+                              <div class="edv-noticebrd" style="position: relative;">
+                                <img class="setimg" src="../images/Profile_1.png">
+                                <div class="status-redcircle"></div>
+                                <div class="detl">
+                                  <div class="head">
+                                    <span class="title setcaln-title">Avnesh Kumar</span>
+                                    <span class="time">12:43 PM</span>
+                                  </div>
+                                  <div class="desc setcaln-para">Updated Question Banks for Grade V.</div>
+                                </div>
+                              </div>
+                              <div style="border-bottom:1px solid #e5e5e5"></div>
+                              <div class="edv-noticebrd" style="position: relative;margin-bottom: 10px;">
+                                <a class="successimg">
+                                  <img src="../images/Success.png">
+                                </a>
+                                <div class="detl">
+                                  <div class="head">
+                                    <span class="title setcaln-title">Password Reset Successful</span>
+                                    <span class="time">10:06 AM</span>
+                                  </div>
+                                  <div class="desc setcaln-para">Your password has been successfully reset.</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-row chartrow-top" style="padding-top: 20px;">
+              <div class="edv-col4 chart-col4">
+                <div class="card academic-card" style="border:solid 1px #e5e5e5;">
+                  <div class="card-head">
+                    <span class="title title-calnhdr">Chart</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="title">chart</div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col8 chart-col8">
+                <div class="card academic-card" style="border:solid 1px #e5e5e5;">
+                  <div class="card-head">
+                    <span class="title title-calnhdr">Attendance</span>
+                    <div class="card-actions">
+                      <div class="nav-line sm">
+                        <a class="sel">
+                          <span>Teachers</span>
+                        </a>
+                        <a>
+                          <span>Students</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="title">chart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

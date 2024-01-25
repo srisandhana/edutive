@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+    <title>Edutive: Principal Dashboard</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+    
+    <script>
+      window.Promise ||
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+        )
+      window.Promise ||
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+        )
+      window.Promise ||
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+        )
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
+      // Based on https://gist.github.com/blixt/f17b47c62508be59987b
+      var _seed = 42;
+      Math.random = function() {
+        _seed = _seed * 16807 % 2147483647;
+        return (_seed - 1) / 2147483646;
+      };
+    </script>
+
+    <script>
+    function generateData(count, yrange) {
+      var i = 0;
+      var series = [];
+      while (i < count) {
+        var x = (i + 1).toString();
+        var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+    
+        series.push({
+          x: x,
+          y: y
+        });
+        i++;
+      }
+      return series;
+    }
+    </script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div class="home">
+            <a>Dashboard</a>
+          </div>
+        </div>
+        <div class="page-card">
+          <!--Header-->
+          <div class="main-head">
+            <div>
+              <div>
+                <!-- <div class="title">Dashboard</div> -->
+              </div>
+              <div class="actions">
+                <a class="act-dcust iconly" mdl-pop="mdl-widget"></a>
+                <!-- <a class="ico-more iconly" mdl-pop="mdl-widget"></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+
+            <div class="edv-dash-wrap">
+
+            <!-- time table -->
+            <div _ngcontent-xej-c229="" class="edv-row">
+              <div _ngcontent-xej-c229="" class="edv-col10">
+                <div _ngcontent-xej-c229="" class="card">
+                  <div _ngcontent-xej-c229="" class="card-head">
+                    <div _ngcontent-xej-c229="" class="title">Time Table</div>
+                    <div _ngcontent-xej-c229="" class="card-actions">
+                      <a _ngcontent-xej-c229="">
+                        <mat-icon _ngcontent-xej-c229="" role="img" aria-hidden="true" data-mat-icon-type="font" class="mat-icon notranslate material-icons mat-icon-no-color">drag_indicator</mat-icon>
+                      </a>
+                    </div>
+                  </div>
+                  <div _ngcontent-xej-c229="" class="card-body">
+                    <div _ngcontent-xej-c229="" class="edv-row">
+                      <div _ngcontent-xej-c229="" class="edv-col12">
+                        <div _ngcontent-xej-c229="" class="edv-timetbl-wrap">
+                          <div _ngcontent-xej-c229="" class="edv-timetbl-data">
+                            <div _ngcontent-xej-c229="">
+                              <div _ngcontent-xej-c229="" class="edv-data-lst br-absent">
+                                <p _ngcontent-xej-c229="" class="count">1 <sup _ngcontent-xej-c229=""></sup></p>
+                                <div _ngcontent-xej-c229="" class="title">No of Teacher's Absent</div>
+                              </div>
+                              <div _ngcontent-xej-c229="" class="edv-data-lst br-late">
+                                <p _ngcontent-xej-c229="" class="count">2</p>
+                                <div _ngcontent-xej-c229="" class="title">No of Teacher's Late</div>
+                              </div>
+                              <div _ngcontent-xej-c229="" class="edv-data-lst br-sub">
+                                <p _ngcontent-xej-c229="" class="count">3</p>
+                                <div _ngcontent-xej-c229="" class="title">No of Substitute Teacher's</div>
+                              </div>
+                              <div _ngcontent-xej-c229="" class="edv-data-lst br-absent">
+                                <p _ngcontent-xej-c229="" class="count">1 <sup _ngcontent-xej-c229=""></sup></p>
+                                <div _ngcontent-xej-c229="" class="title">No of Teacher's Absent</div>
+                              </div>
+                              <div _ngcontent-xej-c229="" class="edv-data-lst br-absent">
+                                <p _ngcontent-xej-c229="" class="count">1 <sup _ngcontent-xej-c229=""></sup></p>
+                                <div _ngcontent-xej-c229="" class="title">No of Teacher's Absent</div>
+                              </div>
+                              <div _ngcontent-xej-c229="" class="edv-data-lst br-absent">
+                                <p _ngcontent-xej-c229="" class="count">1 <sup _ngcontent-xej-c229=""></sup></p>
+                                <div _ngcontent-xej-c229="" class="title">No of Teacher's Absent</div>
+                              </div>
+                              <div _ngcontent-xej-c229="" class="edv-data-lst br-absent">
+                                <p _ngcontent-xej-c229="" class="count">1 <sup _ngcontent-xej-c229=""></sup></p>
+                                <div _ngcontent-xej-c229="" class="title">No of Teacher's Absent</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div _ngcontent-xej-c229="" class="edv-timetbl">
+                            <div _ngcontent-xej-c229="" class="main-head wthbg pr">
+                              <div _ngcontent-xej-c229="">
+                                <div _ngcontent-xej-c229="">
+                                  <button _ngcontent-xej-c229="" class="btn sm gry multi">Foundational <div _ngcontent-xej-c229="" class="edv-dropdown sm btm lht" style="min-width: 200px!important;">
+                                      <ul _ngcontent-xej-c229="">
+                                        <li _ngcontent-xej-c229="">
+                                          <a _ngcontent-xej-c229="" class="selectedOption">
+                                            <span _ngcontent-xej-c229="">
+                                              <span _ngcontent-xej-c229="">Foundational</span>
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li _ngcontent-xej-c229="">
+                                          <a _ngcontent-xej-c229="">
+                                            <span _ngcontent-xej-c229="">
+                                              <span _ngcontent-xej-c229="">Preparatory</span>
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li _ngcontent-xej-c229="">
+                                          <a _ngcontent-xej-c229="">
+                                            <span _ngcontent-xej-c229="">
+                                              <span _ngcontent-xej-c229="">Middle</span>
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li _ngcontent-xej-c229="">
+                                          <a _ngcontent-xej-c229="">
+                                            <span _ngcontent-xej-c229="">
+                                              <span _ngcontent-xej-c229="">Secondary</span>
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li _ngcontent-xej-c229="">
+                                          <a _ngcontent-xej-c229="">
+                                            <span _ngcontent-xej-c229="">
+                                              <span _ngcontent-xej-c229="">Senior Secondary</span>
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <!---->
+                                      </ul>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div _ngcontent-xej-c229="">
+                                  <a _ngcontent-xej-c229="" class="ico-prev"></a> &nbsp; <a _ngcontent-xej-c229="">
+                                    <b _ngcontent-xej-c229="">Today (Wednesday)</b>
+                                  </a> &nbsp; <a _ngcontent-xej-c229="" class="ico-next"></a>
+                                </div>
+                                <div _ngcontent-xej-c229="" class="edv-actions">
+                                  <div _ngcontent-xej-c229="" class="nav-group pills">
+                                    <a _ngcontent-xej-c229="" class="sel">All</a>
+                                    <a _ngcontent-xej-c229="">I</a>
+                                    <a _ngcontent-xej-c229="">II</a>
+                                    <!---->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div _ngcontent-xej-c229="" class="tbl-responsive">
+                              <table _ngcontent-xej-c229="" class="table tbl-border">
+                                <thead _ngcontent-xej-c229="">
+                                  <tr _ngcontent-xej-c229="">
+                                    <th _ngcontent-xej-c229="" width="100">Class</th>
+                                    <th _ngcontent-xej-c229="" width="100">Section</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 1</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 2</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 3</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 4</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 5</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 6</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 7</th>
+                                    <th _ngcontent-xej-c229="" width="150">Period 8</th>
+                                  </tr>
+                                </thead>
+                                <tbody _ngcontent-xej-c229="">
+                                  <tr _ngcontent-xej-c229="">
+                                    <td _ngcontent-xej-c229="">I</td>
+                                    <td _ngcontent-xej-c229="">A</td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Mathematics</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Hemalatha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">English</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Gowthami</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">French II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">MamathaSri</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">English</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Gowthami</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">French II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">MamathaSri</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Mathematics</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Hemalatha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                  </tr>
+                                  <tr _ngcontent-xej-c229="">
+                                    <td _ngcontent-xej-c229="">I</td>
+                                    <td _ngcontent-xej-c229="">B</td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Mathematics</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Hemalatha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">French II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">MamathaSri</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">English</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Gowthami</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">French II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">MamathaSri</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">English</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Gowthami</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Mathematics</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Hemalatha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                  </tr>
+                                  <tr _ngcontent-xej-c229="">
+                                    <td _ngcontent-xej-c229="">II</td>
+                                    <td _ngcontent-xej-c229="">A</td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Computer</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Sakthivel</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Computer</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Sakthivel</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Computer</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Sakthivel</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">English</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Gowthami</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                  </tr>
+                                  <tr _ngcontent-xej-c229="">
+                                    <td _ngcontent-xej-c229="">II</td>
+                                    <td _ngcontent-xej-c229="">B</td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Computer</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Sakthivel</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Computer</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Sakthivel</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">EVS</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Nagendra</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Computer</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Sakthivel</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">English</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Gowthami</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                    <td _ngcontent-xej-c229="" style="white-space: nowrap;">
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Hindi II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Ashok</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <div _ngcontent-xej-c229="">
+                                        <span _ngcontent-xej-c229="" style="font-family: var(--font-medium);">Kannada II lang</span> / <span _ngcontent-xej-c229="" style="color: #029f9d;">Harshitha</span>
+                                        <br _ngcontent-xej-c229="">
+                                      </div>
+                                      <!---->
+                                    </td>
+                                  </tr>
+                                  <!---->
+                                </tbody>
+                              </table>
+                            </div>
+                            <div _ngcontent-xej-c229="">
+                              <ul _ngcontent-xej-c229="" class="calday-lst">
+                                <li _ngcontent-xej-c229="">
+                                  <span _ngcontent-xej-c229="" class="on-time"></span>
+                                  <span _ngcontent-xej-c229="">On Time</span>
+                                </li>
+                                <li _ngcontent-xej-c229="">
+                                  <span _ngcontent-xej-c229="" class="absent"></span>
+                                  <span _ngcontent-xej-c229="">Absent</span>
+                                </li>
+                                <li _ngcontent-xej-c229="">
+                                  <span _ngcontent-xej-c229="" class="late"></span>
+                                  <span _ngcontent-xej-c229="">Late to Class</span>
+                                </li>
+                                <li _ngcontent-xej-c229="">
+                                  <span _ngcontent-xej-c229="" class="sub"></span>
+                                  <span _ngcontent-xej-c229="">Substitute Class</span>
+                                </li>
+                                <li _ngcontent-xej-c229="">
+                                  <span _ngcontent-xej-c229="" class="mycls"></span>
+                                  <span _ngcontent-xej-c229="">My Class</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div _ngcontent-xej-c229="" class="edv-col2">
+                <div _ngcontent-xej-c229="" class="edv-presence">
+                  <div _ngcontent-xej-c229="" class="edv-att">
+                    <div _ngcontent-xej-c229="">
+                      <i _ngcontent-xej-c229="" class="ico-stud present"></i>
+                    </div>
+                    <div _ngcontent-xej-c229="">
+                      <div _ngcontent-xej-c229="" class="num">768/960</div>
+                      <div _ngcontent-xej-c229="" class="presence">Present</div>
+                    </div>
+                  </div>
+                  <div _ngcontent-xej-c229="" class="edv-att">
+                    <div _ngcontent-xej-c229="">
+                      <i _ngcontent-xej-c229="" class="ico-stud absent"></i>
+                    </div>
+                    <div _ngcontent-xej-c229="">
+                      <div _ngcontent-xej-c229="" class="num">192/960</div>
+                      <div _ngcontent-xej-c229="" class="presence">Absent</div>
+                    </div>
+                  </div>
+                  <div _ngcontent-xej-c229="" class="edv-att">
+                    <div _ngcontent-xej-c229="">
+                      <i _ngcontent-xej-c229="" class="ico-guest-lec present"></i>
+                    </div>
+                    <div _ngcontent-xej-c229="">
+                      <div _ngcontent-xej-c229="" class="num">256/280</div>
+                      <div _ngcontent-xej-c229="" class="presence">Present</div>
+                    </div>
+                  </div>
+                  <div _ngcontent-xej-c229="" class="edv-att">
+                    <div _ngcontent-xej-c229="">
+                      <i _ngcontent-xej-c229="" class="ico-guest-lec absent"></i>
+                    </div>
+                    <div _ngcontent-xej-c229="">
+                      <div _ngcontent-xej-c229="" class="num">24/280</div>
+                      <div _ngcontent-xej-c229="" class="presence">Absent</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- calendar -->
+            <div class="edv-row">
+              <div class="edv-col8">
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title">Calendar</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="main-head wthbg pr">
+                      <div>
+                        <div><a class="btn gry multi sm">Today</a></div>
+                        <div class="mdlheadsec">
+                          <a class="ico-prev"></a> &nbsp; <a>
+                            <b>April 2023</b>
+                          </a> &nbsp; <a class="ico-next"></a>
+                        </div>
+                        <div class="edv-actions">
+                          <div class="act-filter ddown">
+                            <div class="edv-dropdown edv-ddwt btm">
+                              <ul>
+                                <div class="mdl-head filter-cnt">
+                                  <h6>Calenders</h6>
+                                  <a class="act-qadd sm"></a>
+                                </div>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox Orientation-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Orientation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox report-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Teachers Reporting Date </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox exam-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Examinations </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox ptm-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Parent Orientation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox cel-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Celebrations </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox sports-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Inter School Sports </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox elect-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Election </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox regi-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>School Opening </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox schlvac-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>School Vacation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox tit-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Teacher Induction &amp;Training </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox studorien-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Student Orientation </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox bc-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Bridge Course </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <label class="edv-checkbox club-chk">
+                                      <input id="chck02" type="checkbox">
+                                    </label>Club Activities </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="ico-setting ddown">
+                            <div class="edv-dropdown dd-pr rht btm">
+                              <ul>
+                                <li>
+                                  <a>
+                                    <b>Configurations</b>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a>Define Week Working Days</a>
+                                </li>
+                                <li>
+                                  <a>Define Academic Start Dates</a>
+                                </li>
+                                <li>
+                                  <a>Define Declared Holidays</a>
+                                </li>
+                                <li>
+                                  <a>Settings</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <button class="btn gry multi sm" fdprocessedid="konqtd">Month <div class="edv-dropdown sm btm rht"></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-noticebrd-wrap">
+                      <div class="tbl-responsive">
+                        <table class="table tbl-border caln-table">
+                          <thead>
+                            <tr>
+                              <th>Mon</th>
+                              <th>Tue</th>
+                              <th>Wed</th>
+                              <th>Thu</th>
+                              <th>Fri</th>
+                              <th>Sat</th>
+                              <th>Sun</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="caln-td"></td>
+                              <td class="caln-td"></td>
+                              <td class="caln-td"></td>
+                              <td class="caln-td">
+                                <span class="table-one">1</span>
+                                <div class="cal-tblouter">
+                                  <div class="cal-tblinner">
+                                    <span class="caln-1">
+                                      <i class="ico-guest-lec"></i>Orientation </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">2</span>
+                                <div class="cal-tblouter1">
+                                  <div class="cal-tblinner1">
+                                    <span class="caln-1">
+                                      <i class="ico-weeklytest"></i>&nbsp;Internal&nbsp;Test </span>
+                                  </div>
+                                </div>
+                                <div class="cal-tblouter">
+                                  <div class="cal-tblinner">
+                                    <span class="caln-1">
+                                      <i class="ico-guest-lec"></i>Guest&nbsp;Lecture </span>
+                                  </div>
+                                </div>
+                                <span>2 more</span>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">3</span>
+                                <div class="cal-tblouter1">
+                                  <div class="cal-tblinner1">
+                                    <span class="caln-1">
+                                      <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                  </div>
+                                </div>
+                                <div class="cal-tblouter2">
+                                  <div class="cal-tblinner2">
+                                    <span class="caln-1">
+                                      <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td red-shades-sunday">
+                                <span class="table-one sunday-caln">4</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="caln-td ">
+                                <span class="table-one ">5</span>
+                                <div class="cal-tblouter1">
+                                  <div class="cal-tblinner1">
+                                    <span class="caln-1">
+                                      <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">6</span>
+                                <div class="cal-tblouter">
+                                  <div class="cal-tblinner">
+                                    <span class="caln-1" id="caln-2">
+                                      <i class="ico-group"></i>Parents&nbsp;Orientation </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">7</span>
+                                <div class="cal-project">
+                                  <div class="cal-expo">
+                                    <span class="caln-1">
+                                      <i class="ico-celeb"></i>Project&nbsp;Expo </span>
+                                  </div>
+                                </div>
+                                <div class="cal-clubactivities" id="mdl-top">
+                                  <div class="cal-club">
+                                    <span class="caln-1">
+                                      <i class="ico-celeb"></i>Club&nbsp;Activities </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">8</span>
+                                <div class="cal-tblouter2">
+                                  <div class="cal-tblinner2">
+                                    <span class="caln-1">
+                                      <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">9</span>
+                                <div class="cal-tblouter3">
+                                  <div class="cal-tblinner3">
+                                    <span class="caln-1" style="margin: 0px 2px;">
+                                      <i class="ico-sports"></i>Inter&nbsp;House&nbsp;Sports </span>
+                                  </div>
+                                </div>
+                                <div class="cal-project">
+                                  <div class="cal-expo">
+                                    <span class="caln-1" style="margin: 0px 1px;">
+                                      <i class="ico-celeb"></i>Inter&nbsp;House&nbsp;Culturals </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">10</span>
+                                <div class="cal-Chaturthi">
+                                  <div class="cal-ganesh-chaturthi">
+                                    <span class="caln-1">
+                                      <i class="ico-caln"></i>Ganesh&nbsp;Chaturthi </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td red-shades-sunday">
+                                <span class="table-one sunday-caln">11 </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="caln-td" style="position: relative;">
+                                <span class="table-one">12</span>
+                                <div class="cal-project" id="cal-tblouter1">
+                                  <div class="cal-expo">
+                                    <span class="caln-1">
+                                      <i class="ico-celeb"></i>Culturals </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">13</span>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">14</span>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">15</span>
+                                <div class="cal-tblouter3">
+                                  <div class="cal-tblinner3">
+                                    <span class="caln-1">
+                                      <i class="ico-sports"></i>Sports&nbsp;Day </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">16</span>
+                                <div class="cal-tblouter">
+                                  <div class="cal-tblinner">
+                                    <span class="caln-1">
+                                      <i class="ico-guest-lec"></i>Orientation </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">17</span>
+                                <div class="cal-tblouter2">
+                                  <div class="cal-tblinner2">
+                                    <span class="caln-1">
+                                      <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                  </div>
+                                </div>
+                                <div class="cal-tblouter1">
+                                  <div class="cal-tblinner1">
+                                    <span class="caln-1">
+                                      <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                  </div>
+                                </div>
+                                <span>2 more</span>
+                              </td>
+                              <td class="caln-td red-shades-sunday">
+                                <span class="table-one sunday-caln">18</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="caln-td">
+                                <span class="table-one">19</span>
+                                <div class="cal-tblouter4">
+                                  <div class="cal-tblinner4">
+                                    <span class="caln-1" style="margin: 0px 30px;">
+                                      <span class="ico ico-Parents-Teachers-Meating">
+                                        <span class="path1"></span>
+                                        <span class="path3"></span>
+                                      </span>Parents&nbsp;Teachers&nbsp;M </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">20</span>
+                              </td>
+                              <td class="caln-td back-shades" style="position: relative;">21 <div class="cal-tblouter1" id="cal-tblouter-1">
+                                  <div class="cal-tblinner1">
+                                    <span class="caln-1">
+                                      <i class="ico-weeklytest"></i>&nbsp;Term&nbsp;I&nbsp;Exam </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td back-shades">
+                                <span class="table-one">22</span>
+                              </td>
+                              <td class="caln-td back-shades">
+                                <span class="table-one">23</span>
+                              </td>
+                              <td class="caln-td back-shades">
+                                <span class="table-one">24</span>
+                              </td>
+                              <td class="caln-td red-shades-sunday">
+                                <span class="table-one sunday-caln ">25</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="caln-td  back-shades" style="position: relative;">
+                                <span class="table-one">26</span>
+                                <div class="cal-tblouter1" id="cal-tblouter-2">
+                                  <div class="cal-tblinner1">
+                                    <span class="caln-1">
+                                      <i class="ico-weeklytest"></i>&nbsp;Term&nbsp;I&nbsp;Exam </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td back-shades">
+                                <span class="table-one">27</span>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">28</span>
+                                <div class="cal-tblouter4">
+                                  <div class="cal-tblinner4">
+                                    <span class="caln-1" style="margin: 0px 30px;">
+                                      <span class="ico ico-Parents-Teachers-Meating">
+                                        <span class="path1"></span>
+                                        <span class="path3"></span>
+                                      </span>Parents&nbsp;Teachers&nbsp;M </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">29</span>
+                              </td>
+                              <td class="caln-td">
+                                <span class="table-one">30</span>
+                                <div class="cal-project">
+                                  <div class="cal-expo">
+                                    <span class="caln-1">
+                                      <i class="ico-celeb"></i>Science&nbsp;Fest </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="caln-td"></td>
+                              <td class="caln-td">
+                                <a class="act-qadd sm plus"></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col4">
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title dflex align-item-center g5">Meetings<a class="act-qadd xs" mdl-pop="add-appointment"></a></span>
+                    <div class="card-actions">
+                      <div class="ddown">
+                        <a class="btn gry multi sm">
+                          <span>All</span>
+                        </a>
+                        <div class="edv-dropdown btm rht">
+                          <ul>
+                            <li>
+                              <a>
+                                <span>
+                                  <span>Today</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a>
+                                <span>
+                                  <span>Weekly</span>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="edv-meet" mdl-pop="meeting-completed">
+                      <div class="edv-lst">
+                        <div class="date">Today </span>
+                        </div>
+                        <div class="title">Weekly Teachers Meeting</div>
+                        <div class="time">Segment - Middle</div>
+                        <div class="hall">General Hall</div>
+                      </div>
+                      <div class="edv-m-time">
+                        <div class="sts_success">Completed</div>
+                        <div class="ico-participant">
+                          <span>10</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-meet">
+                      <div class="edv-lst">
+                        <div class="date">Today </span>
+                        </div>
+                        <div class="title">Weekly Teachers Meeting</div>
+                        <div class="time">Segment - Middle</div>
+                        <div class="hall">General Hall</div>
+                      </div>
+                      <div class="edv-m-time">
+                        <div  class="sts_pending">Upcoming</div>
+                        <div class="ico-participant">
+                          <span>10</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-meet">
+                      <div class="edv-lst">
+                        <div class="date">Today </span>
+                        </div>
+                        <div class="title">Weekly Teachers Meeting</div>
+                        <div class="time">Segment - Middle</div>
+                        <div class="hall">General Hall</div>
+                      </div>
+                      <div class="edv-m-time">
+                        <div class="mtime">10:00 - 11:00 AM</div>
+                        <div class="ico-participant">
+                          <span>10</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-meet">
+                      <div class="edv-lst">
+                        <div class="title">Parent Meeting</div>
+                        <div class="time">Aswin Kumar, Class VII - A Sec</div>
+                        <div class="hall">Principal Room</div>
+                      </div>
+                      <div class="edv-m-time">
+                        <div class="mtime">02:00 - 02:15 PM</div>
+                        <div class="ico-participant">
+                          <span>2</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-meet">
+                      <div class="edv-lst">
+                        <div class="title">Review Teachers Meeting</div>
+                        <div class="time">Segment - Secondary</div>
+                        <div class="hall">Principal Room</div>
+                      </div>
+                      <div class="edv-m-time">
+                        <div class="mtime">04:00 - 04:30 PM</div>
+                        <div class="ico-participant">
+                          <span>6</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title">Notice Board</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="edv-noticebrd-wrap">
+                      <div class="edv-noticebrd">
+                        <div class="caln">
+                          <span class="date">18</span>
+                          <span class="mon">APR</span>
+                        </div>
+                        <div class="detl">
+                          <div class="head">
+                            <span class="title">Change in School Timings</span>
+                            <span class="time"> 4:00 PM</span>
+                          </div>
+                          <p>To - Students</p>
+                          <div class="desc">All students are hereby informed about a change in school timings from 1st October, 2021. The school will now start at 9 am - 3 pm. </div>
+                        </div>
+                      </div>
+                      <div class="edv-noticebrd">
+                        <div class="caln">
+                          <span class="date">19</span>
+                          <span class="mon">APR</span>
+                        </div>
+                        <div class="detl">
+                          <div class="head">
+                            <span class="title">Teachers Meeting</span>
+                            <span class="time">3:00 AM</span>
+                          </div>
+                          <p>To -Teachers</p>
+                          <div class="desc">All Teachers are hereby informed about a Scheduled Teachers Meeting Tommorow at 4 PM in General Hall.</div>
+                        </div>
+                      </div>
+                      <div class="edv-noticebrd">
+                        <div class="caln">
+                          <span class="date">19</span>
+                          <span class="mon">APR</span>
+                        </div>
+                        <div class="detl">
+                          <div class="head">
+                            <span class="title">Teachers Meeting</span>
+                            <span class="time"> 4:00 PM</span>
+                          </div>
+                          <p>To -Teachers</p>
+                          <div class="desc">All Teachers are hereby informed about a Scheduled Teachers Meeting Tommorow at 4 PM in General Hall.</div>
+                        </div>
+                      </div>
+                      <div class="edv-noticebrd">
+                        <div class="caln">
+                          <span class="date">18</span>
+                          <span class="mon">APR</span>
+                        </div>
+                        <div class="detl">
+                          <div class="head">
+                            <span class="title">Change in School Timings</span>
+                            <span class="time"> 4:00 PM</span>
+                          </div>
+                          <p>To - Students</p>
+                          <div class="desc">All students are hereby informed about a change in school timings from 1st October, 2021. The school will now start at 9 am - 3 pm. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- attendance overview -->
+            <div class="edv-row">
+              <div class="edv-col8">
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title">Attendance</span>
+                    <div class="card-actions">
+                      <div class="nav-line sm">
+                        <a class="sel">
+                          <span>Teachers</span>
+                        </a>
+                        <a>
+                          <span>Students</span>
+                        </a>
+                        <a>
+                          <span>Staff</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body"> Chart </div>
+                </div>
+              </div>
+              <div class="edv-col4">
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title">Today's Attendance</span>
+                  </div>
+                  <div class="card-body">
+                    <div>17-04-2023</div>
+                    <div class="td-attedance">
+                      <figure class="stu-piechart">
+                        <span>80 <b>%</b>
+                        </span>
+                      </figure>
+                      <div class="pie-value">
+                        <div class="num">768/960</div>
+                        <div class="presence">Students</div>
+                      </div>
+                    </div>
+                    <div class="td-attedance">
+                      <figure class="teach-piechart">
+                        <span>90 <b>%</b>
+                        </span>
+                      </figure>
+                      <div class="pie-value">
+                        <div class="num">180/200</div>
+                        <div class="presence">Teachers</div>
+                      </div>
+                    </div>
+                    <div class="td-attedance">
+                      <figure class="staff-piechart">
+                        <span>95 <b>%</b>
+                        </span>
+                      </figure>
+                      <div class="pie-value">
+                        <div class="num">76/80</div>
+                        <div class="presence">Staffs</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--examination-->
+            <div class="edv-row">
+              <div class="edv-col12">
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title">Examination Performance</span>
+                    <div class="card-actions">
+                      <div class="act-filter"></div>
+                      <button class="btn gry multi sm ddown">
+                        <span>Term III</span>
+                        <div class="edv-dropdown sm btm rht">
+                          <ul>
+                            <li>
+                              <a>
+                                <span>
+                                  <span>Term II</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a>
+                                <span>
+                                  <span>Term VI</span>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </button>
+                      <button class="btn gry multi sm ddown">
+                        <span>Class VII - A</span>
+                        <div class="edv-dropdown sm btm rht">
+                          <ul>
+                            <li>
+                              <a>
+                                <span>
+                                  <span>Class VII - B</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a>
+                                <span>
+                                  <span>Class VII - C</span>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="edv-examation">
+                      <div class="edv-graph"> Graph </div>
+                      <div class="edv-tp-students">
+                         <div class="edv-section"><div class="title">Top Performing Students</div></div>
+                        <div class="edv-tp-list">
+                          <div class="title">Aswin Kumar</div>
+                          <p class="count">98.05%</p>
+                        </div>
+                        <div class="edv-tp-list">
+                          <div class="title">Keerthy </div>
+                          <p class="count">97%</p>
+                        </div>
+                        <div class="edv-tp-list">
+                          <div class="title">Chitra </div>
+                          <p class="count">89%</p>
+                        </div>
+                        <div class="edv-tp-list">
+                          <div class="title">Kamal Kumar</div>
+                          <p class="count">85.05%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Activity Dashboard-->
+            <div class="edv-row">
+              <div class="edv-col8">
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title">Activity Dashboard</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="edv-rptdash-cnt">
+                      <div id="chart"></div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col4">
+                <div class="card">
+                  <div class="card-head">
+                    <span class="title">Deadline For Report Submission</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="dl-report">
+                      <div class="box-head">
+                        <div class="dl-ico">
+                          <div>
+                            <i class="ico-f-docu"></i>
+                          </div>
+                          <div>
+                            <div class="title">School Affiliation Form</div>
+                            <div class="date">Management</div>
+                          </div>
+                        </div>
+                        <div class="dl-status">
+                          <b class="sts e-clr1">20-04-2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dl-report">
+                      <div class="box-head">
+                        <div class="dl-ico">
+                          <div>
+                            <i class="ico-f-docu"></i>
+                          </div>
+                          <div>
+                            <div class="title">NDA Form</div>
+                            <div class="date">Management</div>
+                          </div>
+                        </div>
+                        <div class="dl-status">
+                          <b class="sts e-clr1">21-04-2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dl-report">
+                      <div class="box-head">
+                        <div class="dl-ico">
+                          <div>
+                            <i class="ico-f-docu"></i>
+                          </div>
+                          <div>
+                            <div class="title">Lesson Plans</div>
+                            <div class="date">Bala M</div>
+                          </div>
+                        </div>
+                        <div class="dl-status">
+                          <b class="sts e-clr2">25-04-2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dl-report">
+                      <div class="box-head">
+                        <div class="dl-ico">
+                          <div>
+                            <i class="ico-f-docu"></i>
+                          </div>
+                          <div>
+                            <div class="title">Grade Report</div>
+                            <div class="date">KL Srininivas</div>
+                          </div>
+                        </div>
+                        <div class="dl-status">
+                          <b class="sts e-clr3">05-04-2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dl-report">
+                      <div class="box-head">
+                        <div class="dl-ico">
+                          <div>
+                            <i class="ico-f-docu"></i>
+                          </div>
+                          <div>
+                            <div class="title">Student Progress Report</div>
+                            <div class="date">Madhu Bala</div>
+                          </div>
+                        </div>
+                        <div class="dl-status">
+                          <b class="sts e-clr3">08-04-2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dl-report">
+                      <div class="box-head">
+                        <div class="dl-ico">
+                          <div>
+                            <i class="ico-f-docu"></i>
+                          </div>
+                          <div>
+                            <div class="title">NDA Form</div>
+                            <div class="date">Management</div>
+                          </div>
+                        </div>
+                        <div class="dl-status">
+                          <b class="sts e-clr1">21-04-2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dl-report">
+                      <div class="box-head">
+                        <div class="dl-ico">
+                          <div>
+                            <i class="ico-f-docu"></i>
+                          </div>
+                          <div>
+                            <div class="title">Lesson Plans</div>
+                            <div class="date">Bala M</div>
+                          </div>
+                        </div>
+                        <div class="dl-status">
+                          <b class="sts e-clr2">25-04-2023</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+      </div>
+  </body>
+  <!-- Filter -->
+  <div class="mdl-contain mdl-right" mdl-box="mdl-widget">
+    <div class="mdl-pop xs">
+      <div class="mdl-head">
+        <h6>Customize Widget</h6>
+        <a class="mdl-cls"></a>
+        <div class="tsearch mt-20 radius-20">
+          <input class="edv-input">
+          <a></a>
+        </div>
+      </div>
+      <div class="mdl-body">
+        <div class="cust-wgt">
+          <label>Calendar</label>
+          <div>
+            <div class="Icontoggle-on">
+              <label class="switch">
+                <input type="checkbox" checked="">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="cust-wgt">
+          <label>Time Table</label>
+          <div>
+            <div class="Icontoggle-on">
+              <label class="switch">
+                <input type="checkbox" checked="">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="cust-wgt">
+          <label>Meeting</label>
+          <div>
+            <div class="Icontoggle-on">
+              <label class="switch">
+                <input type="checkbox" checked="">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-foo">
+        <div class="mdl-foo-action">
+          <a class="btn primary">Submit</a>
+          <a class="btn line">Reset</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--add appointment Modal Page -->
+  <div class="mdl-page" mdl-box="add-appointment">
+    <div class="mdl-pop">
+      <div class="mdl-head"><h6>Add Appointment</h6></div>
+      <div class="mdl-body">
+        <div class="nav-wrap">
+          <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Visitor Category</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected>Parent</option>
+                        <option value="1">Student</option>
+                        <option value="2"></option>
+                      </select>
+                    </div>
+                  </div>  
+              </div>
+                
+              <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Purpose</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected>Parent - Teacher Meeting</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                      </select>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Visitor Name</label>
+                      <div>
+                        <input class="edv-input" value="Kumar K">
+                      </div>
+                    </div>  
+              </div>
+
+            <div class="edv-col3">
+                  <div class="f-field ">
+                    <label>Visitor Email ID</label>
+                    <div>
+                      <input class="edv-input" value="Kumar7918@gmail.com">
+                    </div>
+                  </div>  
+                </div>
+
+            <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Visitor Mobile No</label>
+                  <div>
+                    <input class="edv-input" value="+91975023659">
+                  </div>
+                </div>  
+              </div>
+
+            <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Appointment With</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected>Parthiban M ( Class Teacher )</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>  
+              </div>
+
+            <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Agenda</label>
+                  <div>
+                    <input class="edv-input" placeholder="Type Agenda Here">
+                  </div>
+                </div>  
+              </div>
+          </div>
+          <!-- calendar -->
+          <div class="edv-row">
+            <div class="edv-col12">
+              <div class="card">
+                <div class="card-head">
+                  <span class="title">Schedule Meeting</span>
+                </div>
+                <div class="card-body">
+                  <div class="edv-appointment">
+                    <div class="edv-schdl-meeting">
+                        <div class="main-head wthbg pr">
+                          <div>
+                            <div><a class="btn gry multi sm">Today</a></div>
+                            <div class="mdlheadsec">
+                              <a class="ico-prev"></a> &nbsp; <a>
+                                <b>April 2023</b>
+                              </a> &nbsp; <a class="ico-next"></a>
+                            </div>
+                            <div class="edv-actions">
+                              <div class="act-filter ddown">
+                                <div class="edv-dropdown edv-ddwt btm">
+                                  <ul>
+                                    <div class="mdl-head filter-cnt">
+                                      <h6>Calenders</h6>
+                                      <a class="act-qadd sm"></a>
+                                    </div>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox Orientation-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Orientation </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox report-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Teachers Reporting Date </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox exam-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Examinations </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox ptm-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Parent Orientation </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox cel-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Celebrations </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox sports-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Inter School Sports </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox elect-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Election </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox regi-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>School Opening </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox schlvac-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>School Vacation </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox tit-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Teacher Induction &amp;Training </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox studorien-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Student Orientation </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox bc-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Bridge Course </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <label class="edv-checkbox club-chk">
+                                          <input id="chck02" type="checkbox">
+                                        </label>Club Activities </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="ico-setting ddown">
+                                <div class="edv-dropdown dd-pr rht btm">
+                                  <ul>
+                                    <li>
+                                      <a>
+                                        <b>Configurations</b>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a>Define Week Working Days</a>
+                                    </li>
+                                    <li>
+                                      <a>Define Academic Start Dates</a>
+                                    </li>
+                                    <li>
+                                      <a>Define Declared Holidays</a>
+                                    </li>
+                                    <li>
+                                      <a>Settings</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <button class="btn gry multi sm" fdprocessedid="konqtd">Month <div class="edv-dropdown sm btm rht"></div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-noticebrd-wrap">
+                          <div class="tbl-responsive">
+                            <table class="table tbl-border caln-table">
+                              <thead>
+                                <tr>
+                                  <th>Mon</th>
+                                  <th>Tue</th>
+                                  <th>Wed</th>
+                                  <th>Thu</th>
+                                  <th>Fri</th>
+                                  <th>Sat</th>
+                                  <th>Sun</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="caln-td"></td>
+                                  <td class="caln-td"></td>
+                                  <td class="caln-td"></td>
+                                  <td class="caln-td">
+                                    <span class="table-one">1</span>
+                                    <div class="cal-tblouter">
+                                      <div class="cal-tblinner">
+                                        <span class="caln-1">
+                                          <i class="ico-guest-lec"></i>Orientation </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">2</span>
+                                    <div class="cal-tblouter1">
+                                      <div class="cal-tblinner1">
+                                        <span class="caln-1">
+                                          <i class="ico-weeklytest"></i>&nbsp;Internal&nbsp;Test </span>
+                                      </div>
+                                    </div>
+                                    <div class="cal-tblouter">
+                                      <div class="cal-tblinner">
+                                        <span class="caln-1">
+                                          <i class="ico-guest-lec"></i>Guest&nbsp;Lecture </span>
+                                      </div>
+                                    </div>
+                                    <span>2 more</span>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">3</span>
+                                    <div class="cal-tblouter1">
+                                      <div class="cal-tblinner1">
+                                        <span class="caln-1">
+                                          <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                      </div>
+                                    </div>
+                                    <div class="cal-tblouter2">
+                                      <div class="cal-tblinner2">
+                                        <span class="caln-1">
+                                          <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td red-shades-sunday">
+                                    <span class="table-one sunday-caln">4</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="caln-td ">
+                                    <span class="table-one ">5</span>
+                                    <div class="cal-tblouter1">
+                                      <div class="cal-tblinner1">
+                                        <span class="caln-1">
+                                          <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">6</span>
+                                    <div class="cal-tblouter">
+                                      <div class="cal-tblinner">
+                                        <span class="caln-1" id="caln-2">
+                                          <i class="ico-group"></i>Parents&nbsp;Orientation </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">7</span>
+                                    <div class="cal-project">
+                                      <div class="cal-expo">
+                                        <span class="caln-1">
+                                          <i class="ico-celeb"></i>Project&nbsp;Expo </span>
+                                      </div>
+                                    </div>
+                                    <div class="cal-clubactivities" id="mdl-top">
+                                      <div class="cal-club">
+                                        <span class="caln-1">
+                                          <i class="ico-celeb"></i>Club&nbsp;Activities </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">8</span>
+                                    <div class="cal-tblouter2">
+                                      <div class="cal-tblinner2">
+                                        <span class="caln-1">
+                                          <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">9</span>
+                                    <div class="cal-tblouter3">
+                                      <div class="cal-tblinner3">
+                                        <span class="caln-1" style="margin: 0px 2px;">
+                                          <i class="ico-sports"></i>Inter&nbsp;House&nbsp;Sports </span>
+                                      </div>
+                                    </div>
+                                    <div class="cal-project">
+                                      <div class="cal-expo">
+                                        <span class="caln-1" style="margin: 0px 1px;">
+                                          <i class="ico-celeb"></i>Inter&nbsp;House&nbsp;Culturals </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">10</span>
+                                    <div class="cal-Chaturthi">
+                                      <div class="cal-ganesh-chaturthi">
+                                        <span class="caln-1">
+                                          <i class="ico-caln"></i>Ganesh&nbsp;Chaturthi </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td red-shades-sunday">
+                                    <span class="table-one sunday-caln">11 </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="caln-td" style="position: relative;">
+                                    <span class="table-one">12</span>
+                                    <div class="cal-project" id="cal-tblouter1">
+                                      <div class="cal-expo">
+                                        <span class="caln-1">
+                                          <i class="ico-celeb"></i>Culturals </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">13</span>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">14</span>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">15</span>
+                                    <div class="cal-tblouter3">
+                                      <div class="cal-tblinner3">
+                                        <span class="caln-1">
+                                          <i class="ico-sports"></i>Sports&nbsp;Day </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">16</span>
+                                    <div class="cal-tblouter">
+                                      <div class="cal-tblinner">
+                                        <span class="caln-1">
+                                          <i class="ico-guest-lec"></i>Orientation </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">17</span>
+                                    <div class="cal-tblouter2">
+                                      <div class="cal-tblinner2">
+                                        <span class="caln-1">
+                                          <i class="ico-guest-lec"></i>Teachers&nbsp;Report </span>
+                                      </div>
+                                    </div>
+                                    <div class="cal-tblouter1">
+                                      <div class="cal-tblinner1">
+                                        <span class="caln-1">
+                                          <i class="ico-weeklytest"></i>&nbsp;Weekly&nbsp;Test </span>
+                                      </div>
+                                    </div>
+                                    <span>2 more</span>
+                                  </td>
+                                  <td class="caln-td red-shades-sunday">
+                                    <span class="table-one sunday-caln">18</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="caln-td">
+                                    <span class="table-one">19</span>
+                                    <div class="cal-tblouter4">
+                                      <div class="cal-tblinner4">
+                                        <span class="caln-1" style="margin: 0px 30px;">
+                                          <span class="ico ico-Parents-Teachers-Meating">
+                                            <span class="path1"></span>
+                                            <span class="path3"></span>
+                                          </span>Parents&nbsp;Teachers&nbsp;M </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">20</span>
+                                  </td>
+                                  <td class="caln-td back-shades" style="position: relative;">21 <div class="cal-tblouter1" id="cal-tblouter-1">
+                                      <div class="cal-tblinner1">
+                                        <span class="caln-1">
+                                          <i class="ico-weeklytest"></i>&nbsp;Term&nbsp;I&nbsp;Exam </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td back-shades">
+                                    <span class="table-one">22</span>
+                                  </td>
+                                  <td class="caln-td back-shades">
+                                    <span class="table-one">23</span>
+                                  </td>
+                                  <td class="caln-td back-shades">
+                                    <span class="table-one">24</span>
+                                  </td>
+                                  <td class="caln-td red-shades-sunday">
+                                    <span class="table-one sunday-caln ">25</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="caln-td  back-shades" style="position: relative;">
+                                    <span class="table-one">26</span>
+                                    <div class="cal-tblouter1" id="cal-tblouter-2">
+                                      <div class="cal-tblinner1">
+                                        <span class="caln-1">
+                                          <i class="ico-weeklytest"></i>&nbsp;Term&nbsp;I&nbsp;Exam </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td back-shades">
+                                    <span class="table-one">27</span>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">28</span>
+                                    <div class="cal-tblouter4">
+                                      <div class="cal-tblinner4">
+                                        <span class="caln-1" style="margin: 0px 30px;">
+                                          <span class="ico ico-Parents-Teachers-Meating">
+                                            <span class="path1"></span>
+                                            <span class="path3"></span>
+                                          </span>Parents&nbsp;Teachers&nbsp;M </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">29</span>
+                                  </td>
+                                  <td class="caln-td">
+                                    <span class="table-one">30</span>
+                                    <div class="cal-project">
+                                      <div class="cal-expo">
+                                        <span class="caln-1">
+                                          <i class="ico-celeb"></i>Science&nbsp;Fest </span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="caln-td"></td>
+                                  <td class="caln-td">
+                                    <a class="act-qadd sm plus"></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="edv-mt-time">
+                      <div class="f-group f-top">
+                          <div class="edv-col12">
+                              <div class="f-field">
+                                <label>Date</label>
+                                  <div class="edv-input-group">
+                                      <input class="edv-input" value="05/05/2023">
+                                      <span class="input-addon">
+                                        <i class="ico-caln"></i>
+                                      </span>
+                                  </div>
+                              </div>  
+                          </div>
+                            
+                          <div class="edv-col12">
+                              <div class="f-field">
+                                <label>Start Time</label>
+                                 <div class="edv-input-group">
+                                    <input class="edv-input" value="1:00 PM">
+                                    <span class="input-addon">
+                                      <i class="ico-clock"></i>
+                                    </span>
+                                 </div>
+                              </div>
+                          </div>
+            
+                          <div class="edv-col12">
+                                <div class="f-field">
+                                  <label>End Time</label>
+                                  <div class="edv-input-group">
+                                    <input class="edv-input" value="2:00 PM">
+                                    <span class="input-addon">
+                                      <i class="ico-clock"></i>
+                                    </span>
+                                 </div>
+                                </div>  
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-foo">
+      <a class="btn primary">Save</a>
+      <a class="btn line">Cancel</a>
+      </div>
+  
+  </div>
+  
+  <!-- meeting completed page screen-->
+  <div class="mdl-page" mdl-box="meeting-completed">
+    <div class="mdl-pop">
+      <div class="mdl-head">
+        <h6>Meeting</h6>
+      </div>
+      <div class="mdl-body">
+        <div class="nav-wrap">
+          <div class="edv-appointment-approve">
+            <span>
+              <img src="../images/01.png">
+            </span>
+            <div>
+              <div class="head"><span class="title">Kumar K</span></div>
+              <div class="desc">Parent</div>
+            </div>
+          </div>
+          <div class="edv-row">
+            <div class="edv-col6">
+              <div class="nav-container a-hgt">
+                <div class="edv-section">
+                  <div class="title">Meeting Details</div>
+                </div>
+                <div class="a-schedule">
+                    <div><i class="ico-caln"></i><span>02/06/2023</span></div>
+                    <div><i class="ico-clock"></i><span>10:15 - 11:00 AM</span></div>
+                </div>
+                <div class="pt-15">
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Created by</label>
+                      <div>Security</div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Pass No</label>
+                      <div>#2235468</div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Purpose</label>
+                      <div>General Discussion with Principal</div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Additional Visitors</label>
+                      <div>2</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col6">
+              <div class="nav-container a-hgt">
+                <div class="edv-section">
+                  <div class="title">Visitor Details</div>
+                </div>
+                <div class="pt-15">
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Visitor Name</label>
+                      <div>Kumar K (Parent)</div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Mobile Number</label>
+                      <div>7904923559</div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Address</label>
+                      <div>3rd Block, Saibaba Colony</div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>City</label>
+                      <div>Coimbatore, 630025</div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field a-field">
+                      <label>Additional Visitors Name</label>
+                      <div>Raja s, Meenakshi M</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-foo">
+        <a class="btn primary">Meeting Completed</a>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+      
+    var options = {
+      series: [{
+        name: 'Jan',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'Feb',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'Mar',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'Apr',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'May',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'Jun',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'Jul',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'Aug',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      },
+      {
+        name: 'Sep',
+        data: generateData(20, {
+          min: -30,
+          max: 55
+        })
+      }
+    ],
+      chart: {
+      height: 350,
+      type: 'heatmap',
+    },
+    plotOptions: {
+      heatmap: {
+        shadeIntensity: 0.5,
+        radius: 0,
+        useFillColorAsStroke: true,
+        colorScale: {
+          ranges: [{
+              from: -30,
+              to: 5,
+              name: 'low',
+              color: '#00A100'
+            },
+            {
+              from: 6,
+              to: 20,
+              name: 'medium',
+              color: '#128FD9'
+            },
+            {
+              from: 21,
+              to: 45,
+              name: 'high',
+              color: '#FFB200'
+            },
+            {
+              from: 46,
+              to: 55,
+              name: 'extreme',
+              color: '#FF0000'
+            }
+          ]
+        }
+      }
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: {
+      width: 1
+    },
+    title: {
+      text: 'HeatMap Chart with Color Range'
+    },
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  
+  
+</script>
+
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

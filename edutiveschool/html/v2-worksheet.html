@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Worksheet</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.edv-stepnum > div > div').on('click', function() {
+        $(this).addClass('sel').siblings().removeClass('sel');
+        var target = $(this).attr('edv-nav');
+        $('#' + target).addClass('shw').siblings("div").removeClass('shw');
+      });
+    });
+  </script>
+</head>
+<body>
+ <div class="container">
+   <!-- Top Nav -->
+   <header id="edvheader"></header>
+   <!-- Left Navigation -->
+   <nav id="edvlnav"></nav>
+   <!-- Page -->
+  <div class="content-wrap">
+
+      <div class="edv-bcrumb">
+        <div><a>Work Sheet</a></div>
+      </div>
+
+    <div class="page-card">
+      <!-- Header -->
+        <div class="main-head">
+          <div>
+            <div>
+              <div class="title"> 
+              </div>
+              </div>
+            <div class="edv-actions">
+
+              <div class="tsearch">
+                <a></a>
+                <input type="text" placeholder="Search" class="edv-input">
+              </div>
+
+              <div class="ln w10 empty"></div>
+              <a class="act-qadd sm" mdl-pop="add-worksheet"></a>
+              <div class="ln"></div>
+
+              <div class="pagination">
+                <a class="first"></a>
+                <a class="prev"></a>   
+                <label> 1 to 20  of 420</label>
+                <a class="next"></a>
+                <a class="last"></a>                               
+              </div>
+
+              <div class="ln"></div>
+
+              <a class="act-filter" mdl-pop="mdl-filter"></a>
+              
+            
+            </div>
+          </div>
+        </div>
+      <!-- Page Content -->
+        <div class="page-content">
+          <table class="table tbl-topfxd tbl-stripe">
+              <thead>
+              <tr>
+                <th class="mw-80">
+                <label class="edv-checkbox chkall" id="checkAll1">
+                  <input type="checkbox">
+                </label>
+                </th>
+                <th class="mw-80">
+                <span>ID</span>
+                </th>
+                <th class="mw-120">
+                <span>Class</span>
+                </th>
+                <th class="mw-160">
+                <span>Subject</span>
+                </th>
+                <th >
+                <span>Name</span>
+                </th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>1</span>
+                </td>
+                <td>
+                <span>VI</span>
+                </td>
+                <td>
+                <span>Science</span>
+                </td>
+                <td>
+                <span>Sci-VI-Pollution-Remedial</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit"></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+            <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>2</span>
+                </td>
+                <td>
+                <span>VI</span>
+                </td>
+                <td>
+                <span>Mathematics</span>
+                </td>
+                <td>
+                <span>Math-VI-Geometry-Challenging</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+
+            <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>3</span>
+                </td>
+                <td>
+                <span>VI</span>
+                </td>
+                <td>
+                <span>English</span>
+                </td>
+                <td>
+                <span>Eng-VI-Verb-Modrate</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+
+          <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>4</span>
+                </td>
+                <td>
+                <span>VI</span>
+                </td>
+                <td>
+                <span>Hindi II lang</span>
+                </td>
+                <td>
+                <span>Hin-VI-Numbers-Easy</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+
+          <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>5</span>
+                </td>
+                <td>
+                <span>V</span>
+                </td>
+                <td>
+                <span>Science</span>
+                </td>
+                <td>
+                <span>Sci-V-Nutrition-Remedial</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+
+        <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>6</span>
+                </td>
+                <td>
+                <span>V</span>
+                </td>
+                <td>
+                <span>English</span>
+                </td>
+                <td>
+                <span>Eng-V-Adjective-Easy</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+
+
+        <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>7</span>
+                </td>
+                <td>
+                <span>VII</span>
+                </td>
+                <td>
+                <span>Mathematics</span>
+                </td>
+                <td>
+                <span>Math-VII-Trigonometry-Challenging</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+
+          <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>8</span>
+                </td>
+                <td>
+                <span>VII</span>
+                </td>
+                <td>
+                <span>Science</span>
+                </td>
+                <td>
+                <span>Sci-VII-Acids-Challenging</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+          <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>9</span>
+                </td>
+                <td>
+                <span>III</span>
+                </td>
+                <td>
+                <span>English</span>
+                </td>
+                <td>
+                <span>Eng-III-Tenses-Modrate</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+          <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>10</span>
+                </td>
+                <td>
+                <span>V</span>
+                </td>
+                <td>
+                <span>Science</span>
+                </td>
+                <td>
+                <span>Sci-V-Fibre-Remedial</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+
+          <tr>
+                <td>
+                <label class="edv-checkbox">
+                  <input id="chck02" type="checkbox">
+                </label>
+                </td>
+                <td>
+                <span>11</span>
+                </td>
+                <td>
+                <span>VI</span>
+                </td>
+                <td>
+                <span>Mathematics</span>
+                </td>
+                <td>
+                <span>Math-VI-Decimals-Modrate</span>
+                </td>
+                <td>
+                <div class="tbl-action">
+                  <a class="act-edit" ></a>
+                <div class="act-more ddown" >
+                  <div class="edv-dropdown btm md">
+                  <ul>
+                    <li>
+                      <a>Generate Worksheet</a>
+                      <a>Delete</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </td>
+          </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Page -->
+    <div class="mdl-page" mdl-box="add-worksheet">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Add Worksheet</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="edv-stepcontain">
+            <div class="edv-stepnum vpos">
+              <div>
+                <div class="sel" edv-nav="Setup">
+                  <span>1</span>
+                  <div>Setup</div>
+                </div>
+                <div edv-nav="Section">
+                  <span>2</span>
+                  <div>Section - A</div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-stepcontent">
+              <div id="Setup" class="dn shw">
+                  <div class="edv-row f-group f-top">
+                    <div class="edv-col3">
+                      <div class="f-field">
+                        <label>Class</label>
+                        <div>
+                        <select class="edv-select">
+                          <option value="0" selected="">Select Class</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                          <option value="3"></option>
+                        </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                      <div class="f-field">
+                        <label>Subject</label>
+                        <div>
+                        <select class="edv-select">
+                          <option value="0" selected="">Select Subject </option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                          <option value="3"></option>
+                        </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                      <div class="f-field">
+                        <label>Chapter / Topic</label>
+                        <div>
+                        <select class="edv-select">
+                          <option value="0" selected="">Select Chapter / Topic</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                          <option value="3"></option>
+                        </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                      <div class="f-field">
+                        <label>Students List</label>
+                        <div>
+                        <select class="edv-select">
+                          <option value="0" selected="">Aldrin</option>
+                          <option value="1">Andrew Franklin</option>
+                          <option value="2">Aswin</option>
+                          <option value="3"></option>
+                        </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edv-col3">
+                      <div class="f-field">
+                        <label>No. of Sections</label>
+                        <div>
+                        <input class="edv-input" placeholder="Enter Sections">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-row f-group f-top">
+                    <div class="edv-col6">
+                      <div class="f-field">
+                        <label>Instructions</label>
+                        <div>
+                          <div class="edv-short-desc longdesc">
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-grey p15">
+                    <div class="edv-section">
+                      <div class="title">Section</div>
+                    </div>
+                    <div class="edv-row f-group f-top">
+                      <div class="edv-col3">
+                        <div class="f-field">
+                          <label>Section Name</label>
+                          <div>
+                            <input class="edv-input">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col3">
+                        <div class="f-field">
+                          <label>Number of questions</label>
+                          <div>
+                            <input class="edv-input">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div id="Section" class="dn">
+                <div class="edv-section">
+                  <div class="title5">Section - A</div>
+                </div>
+                <div class="edv-row f-group f-top">
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Name</label>
+                      <div>
+                        <input class="edv-input" placeholder="Enter Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Difficulty Level</label>
+                      <div>
+                        <select class="edv-select">
+                          <option value="0">Select Difficulty Level</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-grey p15">
+                  <div class="edv-row">
+                    <div class="edv-col3">
+                     <div class="nav-line sline">
+                      <table>
+                       <tbody>
+                        <tr>
+                         <td>
+                          <div>
+                            <div class="edv-section">
+                              <div class="title dflex align-item-center g5">Chapters<a class="act-qadd xs"></a>
+                              </div>
+                            </div>
+                          </div>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td>
+                          <div>
+                           <input type="radio" id="Geometry" name="age" value="Geometry">
+                           <label for="Geometry">Geometry</label>
+                           <br></br>
+                           <input type="radio" id="Algebra" name="age" value="Algebra" checked="">
+                           <label for="Algebra">Algebra</label>
+                           <br></br>
+                           <input type="radio" id="Trigonometry" name="age" value="Trigonometry">
+                           <label for="Trigonometry">Trigonometry</label>
+                           <br>
+                           <br>
+                           <input type="radio" id="Probability" name="age" value="Probability">
+                           <label for="Probability">Probability</label>
+                           <br>
+                           <br>
+                           <input type="radio" id="Statistics" name="age" value="Statistics">
+                           <label for="Statistics">Statistics</label>
+                           <br>
+                           <br>
+                           <input type="radio" id="Mensuration" name="age" value="Mensuration">
+                           <label for="Mensuration">Mensuration</label>
+                           <br>
+                           <br>
+                           <input type="radio" id="Number System" name="age" value="Number System">
+                           <label for="Number System">Number System</label>
+                           <br>
+                           <br>
+                           <input type="radio" id="Triangles" name="age" value="Triangles">
+                           <label for="Triangles">Triangles</label>
+                           <br>
+                           <br>
+                           <input type="radio" id="Real Numbers" name="age" value="Real Numbers">
+                           <label for="Real Numbers">Real Numbers</label>
+                           <br>
+                           <br>
+                           <input type="radio" id="Polynomials" name="age" value="Polynomials">
+                           <label for="Polynomials">Polynomials</label>
+                           <br>
+                           <br>
+                          </div>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </div>
+                    </div>
+                    <div class="edv-col8">
+                      <div class="edv-section">
+                        <div class="title">Algebra</div>
+                      </div>
+                     <div class="nav-line sline p-0">
+                      <table class="table tbl-topfxd">
+                       <thead>
+                        <tr>
+                         <th>
+                          <span>Question Type</span>
+                         </th>
+                         <th>
+                          <span>Remembering</span>
+                         </th>
+                         <th>
+                          <span>Understanding</span>
+                         </th>
+                         <th>
+                          <span>Applying</span>
+                         </th>
+                         <th>
+                          <span>Analyzing</span>
+                         </th>
+                         <th>Evaluating</th>
+                         <th>Creating</th>
+                         <th>Total</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+                        <tr >
+                         <td>
+                          <div class="edv-col3">
+                           <div class="f-group f-top">
+                            <div class="f-field">
+                             <div>
+                              <select class="edv-select" style="width: 215px;">
+                               <option value="0" selected="">Multiple Choice Question</option>
+                               <option value="1"></option>
+                               <option value="2"></option>
+                               <option value="3"></option>
+                              </select>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="1">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="1">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="1">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <span>3</span>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                        </tr>
+                        <tr >
+                         <td>
+                          <div class="edv-col3">
+                           <div class="f-group f-top">
+                            <div class="f-field">
+                             <div>
+                              <select class="edv-select" style="width: 215px;">
+                               <option value="0" selected="">Fill in the blanks</option>
+                               <option value="1"></option>
+                               <option value="2"></option>
+                               <option value="3"></option>
+                              </select>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="1">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="1">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <span>2</span>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                        </tr>
+                        <tr >
+                         <td>
+                          <div class="edv-col3">
+                           <div class="f-group f-top">
+                            <div class="f-field">
+                             <div>
+                              <select class="edv-select" style="width: 215px;">
+                               <option value="0" selected="">True or False</option>
+                               <option value="1"></option>
+                               <option value="2"></option>
+                               <option value="3"></option>
+                              </select>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="1">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <input class="edv-input" placeholder="">
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                         <td>
+                          <div class="edv-col9">
+                           <div class="f-group f-top">
+                            <div class="f-field ">
+                             <div>
+                              <span>1</span>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo mdl-foo-split">
+          <div>
+            <a class="btn">Cancel</a>
+          </div>
+          <div>
+            <a class="btn btn-expand">Back</a>
+            <a class="btn primary btn-expand">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

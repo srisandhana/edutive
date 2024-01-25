@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : Fee Demand</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div>
+         <a href="#">Fee Demand</a>
+        </div>
+       </div>
+
+      <div class="page-card">
+        <!-- Header -->
+        <div class="main-head">
+          <div>
+            <div>
+              <div class="title"> 
+                Fee Demand
+              </div>
+              </div>
+            <div class="edv-actions">
+
+              <div class="ln w10 empty"></div>
+                <a class="act-qadd sm" mdl-pop="add-fee-demand"></a>
+
+                <a class="act-filter" mdl-pop="mdl-filter"></a>
+              <div class="ln"></div>
+
+              <div class="ddown">
+                <a class="btn gry multi">
+                  <span>Sort</span>
+                </a>
+                <!-- <div class="edv-dropdown btm rht">
+                  <ul>
+                    <li>
+                      <a>
+                          <span></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                          <span></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div> -->
+              </div>
+
+              <div class="ddown">
+                <button class="btn primary multi">Export</button>
+                <div class="edv-dropdown btm rht">
+                  <ul>
+                    <li>
+                      <a><i class="ico-f-pdf"></i>PDF</a>
+                    </li>
+                    <li>
+                      <a><i class="ico-f-excel"></i>EXCEL</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <!-- Mass Update -->
+          <div class="edv-massupt">
+              <div>
+                <a class="act-denied"></a>
+                <a class="act-del"></a>
+              </div>
+              <div>
+                <a class="act-close"></a>
+              </div>
+          </div>
+        </div>
+        <!-- Page Content -->
+          <div class="page-content">
+              <div class="sub-head">
+                <div>
+                  <div class="sort-tab">
+                    <a>Segment: Middle<i class="ico-close"></i>
+                    </a>
+                    <a>Class: VII - Yamuna<i class="ico-close"></i>
+                    </a>
+                    </div>
+                </div>
+              </div>
+              <table class="table tbl-topfxd tbl-stripe tbl-border">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Segment</th>
+                    <th rowspan="2">Student Name</th>
+                    <th rowspan="2">Roll No</th>
+                    <th rowspan="2">Class & Sec</th>
+                    <th colspan="2" class="text-align-center">Fee Structure</th>
+                    <th colspan="3" class="text-align-center">Add-ons</th>
+                    <th colspan="2" class="text-align-center">Discount</th>
+                    <th rowspan="2">Demand</th>
+                    <th rowspan="2">Total Collected</th>
+                  </tr>
+                  <tr class="coltbl-sticky">
+                    <th class="mw-200">Fee Structure Name</th>
+                    <th>Tuition Fee</th>
+                    <th>Transport Fee</th>
+                    <th>Hostel Fee</th>
+                    <th>Miscellaneous</th>
+                    <th>Discount Type</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Aadharsh K</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>20,578.00</span></td>
+                    <td><span>15,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Aswhin S</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>35,578.00</span></td>
+                    <td><span>25,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>17,378.00</span></td>
+                    <td><span>7,000.00</span></td>
+                    <td><span>-</span></td>
+                    <td><span>1,200.00</span></td>
+                    <td><span>Army Student</span></td>
+                    <td><span>5,200.00</span></td>
+                    <td><span>25,000.00</span></td>
+                    <td><span>20,000.00</span></td>
+                  </tr>
+                  <tr class="t-r-bk">
+                    <td colspan="10"></td>
+                    <td><span class="fnt-weight-600">Grand Total</span></td>
+                    <td><span class="fnt-weight-600">12,05,000.00</span></td>
+                    <td><span class="fnt-weight-600">11,05,000.000</span></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+      </div>
+      
+  <!-- add fee demand modal page -->
+
+  <div class="mdl-page" mdl-box="add-fee-demand">
+    <div class="mdl-pop">
+      <div class="mdl-head">
+        <h6>Add Fee Demand</h6>
+        <div class="mdl-head-act"></div>
+      </div>
+      <div class="mdl-body edv-ly-vscrl ">
+            <div class="edv-row f-group f-top">
+                <div class="edv-col3">
+                  <div class="f-group f-top">
+                    <div class="f-field">
+                      <label>Segment</label>
+                      <div>
+                        <select class="edv-select">
+                          <option value="0" selected="">Middle</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-group f-top">
+                    <div class="f-field">
+                      <label>Class & Section</label>
+                      <div>
+                        <select class="edv-select">
+                          <option value="0" selected="">VII - Yamuna</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div>
+              <div class="switch-tab">
+                <a class="sel">Existing</a>
+                <a class="">New</a>
+              </div>
+            </div>
+            <div class="dflex align-item-center w-100 p-10">
+              <div class="w-20">
+                <span class="title">VII - Yamuna</span>
+              </div>
+              <div class="w-100">
+                <div class="edv-row">
+                  <div class="edv-col4">
+                        <div>
+                          <select class="edv-select">
+                            <option value="" disabled selected hidden>Add Fee Structure</option>
+                            <option value="0" >One Time Payment</option>
+                            <option value="1">Mid Term Fee 1</option>
+                            <option value="2">Mid Term Fee 2</option>
+                            <option value="2">Mid Term Fee 3</option>
+                          </select>
+                        </div>
+                  </div>
+                  <div class="edv-col4">
+                        <div>
+                          <select class="edv-select">
+                            <option value="" disabled selected hidden>Add Fee Discount</option>
+                            <option value="0" >Army Discount</option>
+                            <option value="1">Alumni Student</option>
+                            <option value="2">Staffs Discount</option>
+                            <option value="2">Financial Aid</option>
+                          </select>
+                        </div>
+                  </div>
+                  <div class="edv-col4">
+                        <div>
+                          <select class="edv-select">
+                            <option value="" disabled selected hidden>Add-ons</option>
+                            <option value="0" >Transport Fee</option>
+                            <option value="1">Hostel Fee</option>
+                            <option value="2">Uniform Fee</option>
+                            <option value="2">Miscellaneous Fee</option>
+                          </select>
+                        </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="edv-markentry-wrap edv-ly-cntscrl">
+              <div class="edv-marksentry">
+                <table class="table tbl-topfxd">
+                  <thead>
+                    <th class="mw-30">
+                      <label class="edv-checkbox">
+                        <input id="edvmchk" type="checkbox">
+                      </label>
+                    </th>
+                    <th>
+                      <span>Student Name</span>
+                    </th>
+                    <th>
+                      <span>Fee Structure</span>
+                    </th>
+                    <th>
+                      <span>Fee Amount</span>
+                    </th>
+                    <th>
+                      <span>Hostel Fee</span>
+                    </th>
+                    <th>
+                      <span>Transport Fee</span>
+                    </th>
+                    <th>
+                      <span>Miscellaneous Fee</span>
+                    </th>
+                    <th>
+                      <span>Discount Type</span>
+                    </th>
+                    <th>
+                      <span>Discount Amount</span>
+                    </th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>Ashwin</span>
+                      </td>
+                      <td>
+                        <span>Mid Term Fee 1</span>
+                      </td>
+                      <td>
+                        <span>17,378.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>12,000.00</span>
+                      </td>
+                      <td>
+                        <span>5,000.00</span>
+                      </td>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>Ashwin</span>
+                      </td>
+                      <td>
+                        <span>Mid Term Fee 1</span>
+                      </td>
+                      <td>
+                        <span>17,378.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>12,000.00</span>
+                      </td>
+                      <td>
+                        <span>5,000.00</span>
+                      </td>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>Ashwin</span>
+                      </td>
+                      <td>
+                        <span>Mid Term Fee 1</span>
+                      </td>
+                      <td>
+                        <span>17,378.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>12,000.00</span>
+                      </td>
+                      <td>
+                        <span>5,000.00</span>
+                      </td>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>Ashwin</span>
+                      </td>
+                      <td>
+                        <span>Mid Term Fee 1</span>
+                      </td>
+                      <td>
+                        <span>17,378.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>12,000.00</span>
+                      </td>
+                      <td>
+                        <span>5,000.00</span>
+                      </td>
+                      <td class="ps">
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>Ashwin</span>
+                      </td>
+                      <td>
+                        <span>Mid Term Fee 1</span>
+                      </td>
+                      <td>
+                        <span>17,378.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>12,000.00</span>
+                      </td>
+                      <td>
+                        <span>5,000.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="edv-checkbox">
+                          <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td>
+                        <span>Ashwin</span>
+                      </td>
+                      <td>
+                        <span>Mid Term Fee 1</span>
+                      </td>
+                      <td>
+                        <span>17,378.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>12,000.00</span>
+                      </td>
+                      <td>
+                        <span>5,000.00</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+      </div>
+      <div class="mdl-foo">
+        <a class="btn primary">Save</a>
+        <a class="btn line">Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive : Reporting</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+   <header id="edvheader"></header>
+   <!-- Left Navigation -->
+   <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div>
+      <a>Reporting</a>
+     </div>
+    </div>
+    <div class="page-card">
+     <!-- Header -->
+     <div class="main-head">
+      <div>
+       <div>
+        <div class="title">Reporting</div>
+       </div>
+       <div class="edv-actions">
+        <div class="tsearch ml-auto mw-160 radius-15">
+         <input placeholder="Search..." class="edv-input">
+         <a></a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Settings -->
+     <div class="page-content">
+      <div class="edv-setwrap">
+        <div class="edv-setland">
+            <div mdl-pop="markentry">
+              <i class="c1 ico-mark"></i>
+              <div>
+                <div class="title">Marks</div>
+                <div class="desc"></div>
+              </div>
+            </div>
+            <div mdl-pop="reports">
+              <i class="c2 ico-report"></i>
+              <div>
+                <div class="title">Reports</div>
+                <div class="desc"></div>
+              </div>
+            </div>
+            <div>
+              <i class="c3 ico-peer-eva"></i>
+              <div>
+                <div class="title">Peer Evaluation</div>
+                <div class="desc"></div>
+              </div>
+            </div>
+            <!---->
+          </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+    <!-- Modal Page -->
+    <div class="mdl-page" mdl-box="markentry">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Mark Entry</h6>
+          <div class="mdl-head-act">
+             <div class="tsearch ml-auto mw-160 radius-15">
+                <input placeholder="Search..." class="edv-input">
+                <a></a>
+             </div>
+          </div>
+        </div>
+        <div class="mdl-body">
+          <div class="edv-setwrap">
+            <div class="edv-setland">
+                <div>
+                  <i class="c5 ico-book"></i>
+                  <div>
+                    <div class="title">Scholastic</div>
+                    <div class="desc"></div>
+                  </div>
+                </div>
+                <div>
+                  <i class="c6 ico-c-scholastic"></i>
+                  <div>
+                    <div class="title">Co-Scholastic</div>
+                    <div class="desc"></div>
+                  </div>
+                </div>
+                <div>
+                  <i class="c8 ico-c-sec"></i>
+                  <div>
+                    <div class="title">Others</div>
+                    <div class="desc"></div>
+                  </div>
+                </div>
+                <!---->
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Page -->
+    <div class="mdl-page" mdl-box="reports">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Reports</h6>
+          <div class="mdl-head-act">
+            <div class="tsearch ml-auto mw-160 radius-15">
+               <input placeholder="Search..." class="edv-input">
+               <a></a>
+            </div>
+         </div>
+        </div>
+        <div class="mdl-body">
+          <div class="edv-setwrap">
+            <div class="edv-setland">
+                <div>
+                  <i class="c1 ico-stu-reportcard"></i>
+                  <div>
+                    <div class="title">Student Report Card</div>
+                    <div class="desc"></div>
+                  </div>
+                </div>
+                <div>
+                  <i class="c2 ico-schl-report"></i>
+                  <div>
+                    <div class="title">School Level Report</div>
+                    <div class="desc"></div>
+                  </div>
+                </div>
+                <div>
+                  <i class="c3 ico-subwise-report"></i>
+                  <div>
+                    <div class="title">Subject-Wise Report</div>
+                    <div class="desc"></div>
+                  </div>
+                </div>
+                <div>
+                  <i class="c3 ico-peer-eva"></i>
+                  <div>
+                    <div class="title">Overall-Subject Report</div>
+                    <div class="desc"></div>
+                  </div>
+                </div>
+                <!---->
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ </body>
+ <script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+ </script>
+</html>

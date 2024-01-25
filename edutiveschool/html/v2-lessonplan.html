@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Lesson Plan</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.edv-stepnum > div > div').on('click', function() {
+          $(this).addClass('sel').siblings().removeClass('sel');
+          var target = $(this).attr('edv-nav');
+          $('#' + target).addClass('shw').siblings("div").removeClass('shw');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Lesson Plan</a>
+          </div>
+          <div class="more">
+            <span>Add Lesson Plan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-contain mdl-top" mdl-box="AddEditor">
+      <div class="mdl-pop sm">
+        <div class="mdl-head">
+          <h6>Concepts & Sub Concepts</h6>
+          <a class="mdl-cls"></a>
+        </div>
+        <div class="mdl-body">
+          <img src="../images/ckeditor-img.png">
+        </div>
+        <div class="mdl-foo">
+          <a class="btn primary">Update</a>
+          <a class="btn">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open">
+    <div class="mdl-pop">
+      <div class="mdl-head">
+        <h6>Add Lesson PLan</h6>
+      </div>
+      <div class="mdl-body">
+        <div class="edv-stepcontain">
+          <div class="edv-stepnum vpos">
+            <div>
+              <div class="sel" edv-nav="Configure">
+                <span>1</span>
+                <div>Configure</div>
+              </div>
+              <div edv-nav="Procedure">
+                <span>2</span>
+                <div>Procedure</div>
+              </div>
+            </div>
+          </div>
+          <div class="edv-stepcontent">
+            <div id="Configure" class="dn shw">
+              <div class="edv-row f-group f-top ">
+                <div class="edv-col3">
+                  <div class="f-field matry">
+                    <label>Class/Subject</label>
+                    <div class="edv-input-group ddown">
+                      <div class="edv-cust-select">
+                        <div>
+                          <label>Class</label>
+                          <div>
+                            <p>VI</p>
+                          </div>
+                        </div>
+                        <div>
+                          <label>Subject</label>
+                          <div>
+                            <p>Computer Science II</p>
+                          </div>
+                        </div>
+                        <i class="ico-close"></i>
+                      </div>
+                      <div class="edv-dropdown xl btm">
+                        <div class="edv-compt-multisel">
+                          <div class="class">
+                            <div class="head">Class</div>
+                            <div class="edv-compt-bdy lbl-block">
+                              <label class="edv-checkbox">
+                                <input name="class" value="I" type="radio">I </label>
+                              <label class="edv-checkbox">
+                                <input name="class" value="II" type="radio">II </label>
+                              <label class="edv-checkbox">
+                                <input name="class" value="III" type="radio">III </label>
+                              <label class="edv-checkbox">
+                                <input name="class" checked="" value="VI" type="radio">VI </label>
+                            </div>
+                          </div>
+                          <div class="language">
+                            <div class="head">Language</div>
+                            <div class="edv-compt-bdy lbl-block">
+                              <label class="edv-checkbox">
+                                <input name="language" checked="" value="LanguageI" type="radio">Language I </label>
+                              <label class="edv-checkbox">
+                                <input name="language" value="LanguageII" type="radio">Language II </label>
+                              <label class="edv-checkbox">
+                                <input name="language" value="Maths" type="radio">Maths </label>
+                              <label class="edv-checkbox">
+                                <input name="language" value="Science" type="radio">Science </label>
+                              <label class="edv-checkbox">
+                                <input name="language" value="History" type="radio">History </label>
+                              <label class="edv-checkbox">
+                                <input name="language" value="English" type="radio">English </label>
+                              <label class="edv-checkbox">
+                                <input name="language" value="English" type="radio">Computer Science </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="input-addon">
+                        <i class="ico-chklst"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Name of the Chapter</label>
+                    <div>
+                      <select class="edv-select"></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>No of Periods Required </label>
+                    <div>
+                      <input class="edv-input">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Start &amp; End Date</label>
+                    <div>
+                      <div class="edv-input-group">
+                        <input class="edv-input">
+                        <span class="input-addon">
+                          <i class="ico-caln"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col6">
+                  <div class="f-field">
+                    <label>Concepts &amp; Sub Concepts</label>
+                    <div>
+                      <div class="edv-short-desc longdesc">
+                        <div> The learner will be able to • Define bodies at rest and in motion. • Differentiate between scalar and vector quantities & explain the difference between distance and displacement, speed and velocity with examples. • Explain the concept of acceleration and critically analyse the different types of motion. • Represent each type of motion graphically • Derive the three equations of motion • Explain uniform circular motion </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col6">
+                  <div class="f-field">
+                    <label>Lesson Objectives/Lesson Outputs</label>
+                    <div>
+                      <div class="edv-short-desc longdesc">
+                        <div> ATTITUDE: 1. Enhance their inquisitiveness to apply their knowledge and skills in their day-to-day life know the reason behind many things happening around them. • Develop the ability to solve problems related to calculation of distance and displacement, speed and: velocity with examples Collaboratively work to represent different types to motion graphically. • Develop the ability to analyse d-t and v-t graphs. Develop the ability to cite examples of bodies having uniform circular motion. </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Procedure" class="dn">
+              <div class="mb-20">
+                <div class="nav-group pills">
+                  <a class="sel">
+                    <b class="dn">Period 1</b>
+                    <input value="Period 1" type="text" class="inputcycle">
+                    <i title="Edit" class="ico-edit"></i>
+                    <i title="Delete" class="ico-del"></i>
+                  </a>
+                  <a>
+                    <b>Period 2</b>
+                    <input type="text" class="inputcycle dn">
+                    <i edv-title="Edit" class="ico-edit edv-title"></i>
+                    <i title="Delete" class="ico-del"></i>
+                  </a>
+                  <a>
+                    <b>Period 3</b>
+                    <input type="text" class="inputcycle dn">
+                    <i edv-title="Edit" class="ico-edit edv-title"></i>
+                    <i title="Delete" class="ico-del"></i>
+                  </a>
+                  <a class="act-qadd sm"></a>
+                </div>
+              </div>
+              <div class="edv-section">
+                <div class="title dflex align-item-center g5">Lesson Step 1 <a class="act-qadd xs"></a>
+                </div>
+              </div>
+              <div class="bg-grey p15">
+                <div class="edv-row f-group f-top">
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Lesson Step</label>
+                      <div>
+                        <select class="edv-select"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Strategy</label>
+                      <div>
+                        <select class="edv-select"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Methodology</label>
+                      <div>
+                        <select class="edv-select"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Resource Used</label>
+                      <div>
+                        <input class="edv-file" type="file">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-section">
+                  <div class="title dflex align-item-center g5">Activity <a class="act-qadd xs"></a>
+                  </div>
+                </div>
+                <div class="edv-row f-group f-top">
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <div>
+                        <input class="edv-input" value="Development Of Concept">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field">
+                      <div>
+                        <div class="edv-short-desc longdesc">
+                          <div> Walk across the room and ask students how they know you are moving. Illustrate another motion, such as raising your hand or jumping up and down. Guide the discussion toward defining the term, reference point. We know that an object is moving when we compare it to an object that appears to stay in place. That object is the reference point. Almost anything near the moving object can be used as a reference point. For example, when you walked across the room, you can use a point on the floor as a reference point. You can also use a clock on the wall. Ask students whether it would have been easier to draw the objects in motion if they could have drawn two pictures. Why or why not? Review the definition of motion: a change in position of an object when compared with a reference point. • Motion and rest • Motion in a straight line, concelit of reference point. • Distance and displacement (units, symbol, device for measurement) • Scalar and vector uantities. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <div>
+                        <div class="dflex align-item-center g5">
+                          <input class="edv-input" value="Synthesis">
+                          <a class="act-del"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field">
+                      <!-- <label>Lesson Objectives/Lesson Outputs</label> -->
+                      <div>
+                        <div class="edv-short-desc longdesc">
+                          <div> • Is distance less than or greater than or equal to displacement. • Which is a vector quantity- distance or displacement? • Name the device used to measure distance. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-section pt-20">
+                <div class="title dflex align-item-center g5">Lesson Step 2 <a class="act-qadd xs"></a>
+                  <a class="act-del"></a>
+                </div>
+              </div>
+              <div class="bg-grey p15">
+                <div class="edv-row f-group f-top">
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Lesson Step</label>
+                      <div>
+                        <select class="edv-select"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Strategy</label>
+                      <div>
+                        <select class="edv-select"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Methodology</label>
+                      <div>
+                        <select class="edv-select"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Resource Used</label>
+                      <div>
+                        <input class="edv-file" type="file">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-section">
+                  <div class="title dflex align-item-center g5">Activity <a class="act-qadd xs"></a>
+                  </div>
+                </div>
+                <div class="edv-row f-group f-top">
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <div>
+                        <input class="edv-input" value="Development Of Concept">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field">
+                      <div>
+                        <div class="edv-short-desc longdesc">
+                          <div> • Uniform motion and graphical representation. • Non uniform motion and graphical representation. • Speed, average speed, units of measurement, device to measure speed. • Velocity, average velocity • Difference between average speed and average velocity. • Numericals based on speed and velocity. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col3">
+                    <div class="f-field">
+                      <div>
+                        <div class="dflex align-item-center g5">
+                          <input class="edv-input" value="Synthesis">
+                          <a class="act-del"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col12">
+                    <div class="f-field">
+                      <!-- <label>Lesson Objectives/Lesson Outputs</label> -->
+                      <div>
+                        <div class="edv-short-desc longdesc">
+                          <div> 1. Velocity and its SI units 2. Comparison of speed and velocity hence to write the differences between them 3. Average velocity and related numerical 4. Acceleration and its SI Units </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-foo mdl-foo-split">
+        <div>
+          <a class="btn">Cancel</a>
+        </div>
+        <div>
+          <a class="btn btn-expand">Back</a>
+          <a class="btn primary btn-expand">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Admission Enquiry List</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script>
+      $(document).ready(function() {
+        $('.edv-stepnav > div > div').on('click', function() {
+          $(this).addClass('sel').siblings().removeClass('sel');
+          var target = $(this).attr('edv-nav');
+          $('#' + target).addClass('shw').siblings("div").removeClass('shw');
+        });
+    });
+
+  </script>
+ </head>
+ <body>
+  <div class="container">
+
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+
+    <!-- Page -->
+    <div class="content-wrap">
+    <div class="edv-bcrumb">
+      <div class="home">
+      <a href="../html/account-dashboard.html">Dashboard</a>
+      </div>
+      <div>
+      <a href="../html/AdmissionEnquiryList.html">Admission Enquiry List</a>
+      </div>
+      <div class="more">
+      <span>Admission Enquiry - Karthick</span>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="mdl-page mdl-open">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Admission Enquiry - Karthick</h6>
+        </div>
+        <div class="mdl-body">
+            <div class="edv-stepcontain">
+              <div class="edv-stepnav">
+                <div>
+                <div class="success" edv-nav="EnquiryForm">
+                    <img src="../images/clipboard.png">
+                    <div>
+                      <span>Enquiry Form</span>                
+                    </div>
+                </div>
+
+                <div class="success" edv-nav="EntranceTest">
+                  <img src="../images/exam.png">
+                  <div>
+                    <span>Entrance Test</span>
+                  </div>
+                </div>
+
+                <div class="success" edv-nav="SchoolTour">
+                  <img src="../images/school.png">
+                  <div>
+                    <span href="../html/AdmissionEnquiry_02.html">School Tour</span>
+                  </div>
+                </div>
+
+                <div class="rejected" edv-nav="AdmissionCouncilor">
+                  <img src="../images/Group 80703.png">
+                  <div>
+                    <span>Interaction with Admission Councilor</span>
+                  </div>
+                </div>
+
+                <div class="sel" edv-nav="RegistrationApp">
+                  <img src="../images/Group 80702.png">
+                  <div>
+                    <span>Purchase & Registration of Application </span>
+                  </div>
+                </div>
+
+                <div edv-nav="SegmentHeads">
+                  <img src="../images/workshop.png">
+                  <div>
+                    <span>Student interaction with Segment Heads</span>
+                  </div>
+                </div>
+
+                <div edv-nav="InteractionPrincipal">
+                  <img src="../images/meeting.png">
+                  <div>
+                    <span>Parent interaction with Principal</span>
+                  </div>
+                </div>
+            
+                <div edv-nav="SubmissionDocuments">
+                  <img src="../images/file.png">
+                  <div>
+                    <span>Submission of all documents</span>
+                  </div>
+                </div>
+
+                <div edv-nav="FeePayment">
+                  <img src="../images/money.png">
+                  <div>
+                    <span>Fee Payment</span>
+                  </div>
+                </div>
+
+                <div edv-nav="AdmissionLetter">
+                  <img src="../images/letter.png">
+                  <div>
+                    <span>Admission Letter</span>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              <div class="edv-stepcontent">
+                
+                <div class="w-100">
+                    <!-- Enquiry Form -->
+                    <div id="EnquiryForm" class="dn shw">
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col6">
+                              <div class="f-field">
+                                <label>Status</label>
+                                <div>
+                                  <label class="edv-radio"><input name="Gender" value="Female" type="radio">Progress</label>
+                                  <label class="edv-radio"><input name="Gender" value="Male" type="radio">Selected</label>
+                                  <label class="edv-radio"><input name="Gender" value="Other" type="radio">Rejected</label>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Date</label>
+                            <div class="edv-input-group">
+                            <input class="edv-input" placeholder="">
+                            <span class="input-addon">
+                              <i class="ico-caln"></i>
+                            </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Venue</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Upload Schedule</label>
+                            <div class="edv-input-group">
+                            <input class="edv-input" placeholder="">
+                            <span class="input-addon">
+                              <i class="ico-attach"></i>
+                            </span>
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- Entrance Test -->
+                    <div id="EntranceTest" class="dn">
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col6">
+                              <div class="f-field">
+                                <label>Status</label>
+                                <div>
+                                  <label class="edv-radio"><input name="Gender" value="Female" type="radio">Progress</label>
+                                  <label class="edv-radio"><input name="Gender" value="Male" type="radio">Selected</label>
+                                  <label class="edv-radio"><input name="Gender" value="Other" type="radio">Rejected</label>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col3">
+                          <div class="f-field">
+                          <label>Date</label>
+                          <div>
+                            <div class="edv-input-group">
+                              <input class="edv-input" placeholder="">
+                              <span class="input-addon">
+                                <i class="ico-caln"></i>
+                              </span>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Venue</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                          </div>
+                        
+                          <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Upload Schedule</label>
+                            <div>
+                              <div class="edv-input-group">
+                                <input class="edv-input" placeholder="">
+                                <span class="input-addon">
+                                  <i class="ico-attach"></i>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          </div>                                             
+                      
+                      </div>
+                      
+                    </div>
+                    <!-- School Tour -->
+                    <div id="SchoolTour" class="dn">
+                      <p>School Tour is planned on 02/05/2023. Please confirm your arrival by clicking the below Confirm button.</p>
+                      <div class="edv-section">
+                        <div class="title">Schedule</div>
+                      </div>
+                      <table class="table tbl-border">
+                        <thead >
+                          <tr><th>Time</th>
+                          <th>Activity</th>                             
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>9:30 AM</td>
+                            <td>Arrive at School</td>                              
+                          </tr>
+                          <tr>
+                            <td>9:45 AM</td>
+                            <td>Info Session</td>
+                          </tr>
+                          <tr>
+                            <td>10:00 AM</td>
+                            <td>Campus Tour</td>
+                          </tr>
+                          <tr>
+                            <td>12:00 PM</td>
+                            <td>Lunch</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Interaction with Admission Councilor -->
+                    <div id="AdmissionCouncilor" class="dn">
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col6">
+                              <div class="f-field">
+                                <label>Status</label>
+                                <div>
+                                  <label class="edv-radio"><input name="Gender" value="Female" type="radio">Progress</label>
+                                  <label class="edv-radio"><input name="Gender" value="Male" type="radio">Selected</label>
+                                  <label class="edv-radio"><input name="Gender" value="Other" type="radio">Rejected</label>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                        <div class="edv-row f-group f-top">
+                          
+                          <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Date</label>
+                            <div>
+                              <div class="edv-input-group">
+                                <input class="edv-input" placeholder="">
+                                <span class="input-addon">
+                                  <i class="ico-caln"></i>
+                                </span>
+                              </div>
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Time</label>
+                              <div>
+                              <select class="edv-select">
+                                <option value="0" selected=""></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                              </select>
+                              </div>
+                            </div>
+                            </div>
+                          
+                            <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Staff</label>
+                              <div>
+                              <select class="edv-select">
+                                <option value="0" selected=""></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                              </select>
+                              </div>
+                            </div>
+                            </div>
+                        
+                            <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Venue</label>
+                              <div>
+                              <select class="edv-select">
+                                <option value="0" selected=""></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                              </select>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                    </div>
+                    <!-- Purchase & Registration of Application -->
+                    <div id="RegistrationApp" class="dn">
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col6">
+                              <div class="f-field">
+                                <label>Status</label>
+                                <div>
+                                  <label class="edv-radio"><input name="Gender" value="Female" type="radio">Progress</label>
+                                  <label class="edv-radio"><input name="Gender" value="Male" type="radio">Selected</label>
+                                  <label class="edv-radio"><input name="Gender" value="Other" type="radio">Rejected</label>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col3">
+                          <div class="f-field">
+                          <label>Payment Link</label>
+                          <div>
+                              <input class="edv-input" placeholder="">
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Upload Application</label>
+                              <div>
+                                <div class="edv-input-group">
+                                  <input class="edv-input" placeholder="">
+                                  <span class="input-addon">
+                                    <i class="ico-caln"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                    </div>
+                    <!-- Student interaction with Segment Heads -->
+                    <div id="SegmentHeads" class="dn">
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col6">
+                              <div class="f-field">
+                                <label>Status</label>
+                                <div>
+                                  <label class="edv-radio"><input name="Gender" value="Female" type="radio">Progress</label>
+                                  <label class="edv-radio"><input name="Gender" value="Male" type="radio">Selected</label>
+                                  <label class="edv-radio"><input name="Gender" value="Other" type="radio">Rejected</label>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="edv-row f-group f-top">
+                          
+                        <div class="edv-col3">
+                          <div class="f-field">
+                          <label>Date</label>
+                          <div>
+                            <div class="edv-input-group">
+                              <input class="edv-input" placeholder="">
+                              <span class="input-addon">
+                                <i class="ico-caln"></i>
+                              </span>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Time</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                          </div>
+                        
+                          <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Staff</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                          </div>
+                      
+                          <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Venue</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+                    
+                      <!-- <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Venue</th>
+                            <th>Staff</th>
+                          </tr> 
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>12/06/2023</td>
+                            <td>10:00 AM</td>
+                            <td>Imperial Hall</td>
+                            <td>Ram Kumar P</td>
+                          </tr>
+                        </tbody>
+                      </table> -->
+                     
+                    </div>
+                    <!-- Parent interaction with Principal -->
+                    <div id="InteractionPrincipal" class="dn">
+
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col6">
+                              <div class="f-field">
+                                <label>Status</label>
+                                <div>
+                                  <label class="edv-radio"><input name="Gender" value="Female" type="radio">Progress</label>
+                                  <label class="edv-radio"><input name="Gender" value="Male" type="radio">Selected</label>
+                                  <label class="edv-radio"><input name="Gender" value="Other" type="radio">Rejected</label>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                          
+                        <div class="edv-col3">
+                          <div class="f-field">
+                          <label>Date</label>
+                          <div>
+                            <div class="edv-input-group">
+                              <input class="edv-input" placeholder="">
+                              <span class="input-addon">
+                                <i class="ico-caln"></i>
+                              </span>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Time</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                          </div>
+                        
+                          <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Staff</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                          </div>
+                          
+                      </div>
+                    
+                    </div>
+                    <!-- Submission of all documents -->
+                    <div id="SubmissionDocuments" class="dn">
+
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col6">
+                              <div class="f-field">
+                                <label>Status</label>
+                                <div>
+                                  <label class="edv-radio"><input name="Gender" value="Female" type="radio">Progress</label>
+                                  <label class="edv-radio"><input name="Gender" value="Male" type="radio">Selected</label>
+                                  <label class="edv-radio"><input name="Gender" value="Other" type="radio">Rejected</label>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Date</label>
+                            <div class="edv-input-group">
+                            <input class="edv-input" placeholder="">
+                            <span class="input-addon">
+                              <i class="ico-caln"></i>
+                            </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Venue</label>
+                            <div>
+                            <select class="edv-select">
+                              <option value="0" selected=""></option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                              <option value="3"></option>
+                            </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col3">
+                          <div class="f-field">
+                            <label>Upload Schedule</label>
+                            <div class="edv-input-group">
+                            <input class="edv-input" placeholder="">
+                            <span class="input-addon">
+                              <i class="ico-attach"></i>
+                            </span>
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Fee Payment -->
+                    <div id="FeePayment" class="dn">
+                      
+                      <div class="edv-row f-group f-top">
+                          
+                        <div class="edv-col6">
+                          <div class="f-field">
+                          <label>Payment Link</label>
+                          <div>
+                              <input class="edv-input" placeholder="">
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <!-- Admission Letter -->
+                    <div id="AdmissionLetter" class="dn">
+                      <div class="edv-row f-group f-top">
+                          
+                        <div class="edv-col6">
+                          <div class="f-field">
+                          <label>Upload Admission Letter</label>
+                          <div class="edv-input-group">
+                            <input class="edv-input" placeholder="">
+                            <span class="input-addon">
+                              <i class="ico-attach"></i>
+                            </span>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div>
+                  <div class="edv-adm-infopanel">
+                    <div class="edv-section">
+                      <div class="title">Enquiry Form Details</div>
+                    </div>
+                    <div>
+                      <label>Current Status:</label>
+                      <div>Enquiry Form</div>
+                    </div>
+                    <div>
+                      <label>Parent Name:</label>
+                      <div>Karthick</div>
+                    </div>
+                    <div>
+                      <label>ID: </label>
+                      <div class="lnclr">karthick024@gmail.com</div>
+                    </div>
+                    <div>
+                      <label>Phone Number:</label>
+                      <div class="lnclr">+91 93475 34346</div>
+                    </div>
+                    <div>
+                      <label>Student Name:</label>
+                      <div class="lnclr">Gowtham</div>
+                    </div>
+                    <div>
+                      <label>Segment & Class:</label>
+                      <div class="lnclr">Middle, Class V</div>
+                    </div>
+                    <div>
+                      <label>Student Date of Birth:</label>
+                      <div class="lnclr">04/08/2012</div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+        </div>
+        <div class="mdl-foo">
+          <button class="btn primary">Confirm</button>
+          <button class="btn line">Request Reschedule</button>
+        </div>
+      </div>
+    </div>
+    
+   </div>
+  </div>
+
+ </body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

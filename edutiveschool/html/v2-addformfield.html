@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Grade Definition</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+  <!-- Top Nav -->
+  <header id="edvheader"></header>
+  <!-- Left Navigation -->
+  <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div class="more">
+      <a>Add Form Field</a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open">
+   <div class="mdl-pop">
+    <div class="mdl-nohead"></div>
+    <div class="mdl-body">
+     <div class="nav-wrap">
+          <div class="edv-row f-group f-top">
+          <div class="edv-col3">
+            <div class="f-field">
+             <label>Form Name</label>
+             <div>
+              <input class="edv-input" placeholder="Institute">
+             </div>
+            </div>
+           </div>
+           <div class="edv-col3">
+            <div class="f-field">
+             <label>Save API</label>
+             <div>
+              <input class="edv-input" placeholder="/api/v1/institute">
+             </div>
+            </div>
+           </div>
+           <div class="edv-col3">
+              <div class="f-field">
+                <label>Image Applicable</label>
+                <div>
+                  <label class="edv-radio"><input name="Image Applicable" value="True" type="radio">True</label>
+                  <label class="edv-radio"><input name="Image Applicable" value="False" type="radio">False</label>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="edv-formfield">
+              <div class="edv-ticketwrap">
+                <div class="edv-ticket-author">
+                    <div class="edv-ticket-head ">
+                      <div class="title">Add section <i class="act-qadd xs"></i></div>
+                    </div>
+                    <div>
+                          <div class="edv-tbk">
+                            <div class="edv-tbk-head sel">
+                              <div class="title">
+                                <i class="ico-ar-up"></i><span>Section 1</span>
+                              </div>
+                              <span><i class="ico-close"></i></span>
+                            </div>
+                            <div class="edv-tbk-bdy">
+                              <ul>
+                                <li class=" dflex align-item-center g5"><span>Fields</span><a class="act-qadd xs"></a></li>
+                                <li class="sel"><a><span>Fields 1</span></a></li>
+                                <li class=""><a><span>Fields 2</span></a></li>
+                                <li class=""><a><span>Fields 3</span></a></li>
+                                <li class=""><a><span>Fields 4</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="edv-tbk">
+                            <div class="edv-tbk-head">
+                              <div class="title">
+                                <i class="ico-ar-dwn"></i><span>Section 2</span>
+                              </div>
+                              <span><i class="ico-close"></i></span>
+                            </div>
+                            <div class="edv-tbk-bdy" style="display: none;">
+                              <ul>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="edv-tbk">
+                            <div class="edv-tbk-head">
+                              <div class="title">
+                                <i class="ico-ar-dwn"></i><span>Section 3</span>
+                              </div>
+                              <span><i class="ico-close"></i></span>
+                            </div>
+                            <div class="edv-tbk-bdy" style="display: none;">
+                              <ul>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="edv-tbk">
+                            <div class="edv-tbk-head">
+                              <div class="title">
+                                <i class="ico-ar-dwn"></i><span>Section 4</span>
+                              </div>
+                              <span><i class="ico-close"></i></span>
+                            </div>
+                            <div class="edv-tbk-bdy" style="display: none;">
+                              <ul>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                                <li class=""><a><span></span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                <div class="edv-ticket-cont">
+                    <div class="edv-ticket-head">
+                        <div class="title"><span>Section 1, Field 1</span></div>
+                    </div>
+                    <div class="edv-section">
+                        <div class="title">Section Details</div>
+                    </div>
+                    <div class="edv-row f-group f-top">
+                    <div class="edv-col3">
+                        <div class="f-field">
+                        <label>Section Name</label>
+                        <div>
+                        <input class="edv-input" placeholder="Institution Details">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="edv-col3">
+                        <div class="f-field">
+                        <label>Section Type</label>
+                        <div>
+                        <input class="edv-select" placeholder="Scalar-fields">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="edv-col3">
+                        <div class="f-field">
+                            <label>Tab Name</label>
+                            <div>
+                            <input class="edv-input" placeholder="Institution">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="edv-section">
+                        <div class="title">Field Details</div>
+                    </div>
+                    <div class="edv-row f-group f-top">
+                        <div class="edv-col3">
+                        <div class="f-field">
+                        <label>Field Id</label>
+                        <div>
+                        <input class="edv-input" placeholder="1">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="edv-col3">
+                        <div class="f-field">
+                        <label>Field Name</label>
+                        <div>
+                        <input class="edv-input" placeholder="logoPath">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="edv-col3">
+                        <div class="f-field">
+                            <label>Field Group</label>
+                            <div>
+                            <input class="edv-input" placeholder="Logo">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                                <label>Display Label</label>
+                                <div>
+                                <input class="edv-input" placeholder="Logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Tool Tip</label>
+                            <div>
+                            <input class="edv-input" placeholder="Institute Logo">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                        <div class="f-field">
+                        <label>Help Text</label>
+                        <div>
+                        <input class="edv-input" placeholder="logoPath">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="edv-col3">
+                        <div class="f-field">
+                            <label>Special Validation Notes</label>
+                            <div>
+                            <input class="edv-input" placeholder="Logo">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                                <label>Is Multi select</label>
+                                <div>
+                                <label class="edv-radio"><input name="Is Multi select" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Multi select" value="False" type="radio">False</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Custom Field</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Custom Field" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Custom Field" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Visible</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Visible" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Visible" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Read Only</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Read Only" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Read Only" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Visible In List</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Visible In List" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Visible In List" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Sortable</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Sortable" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Sortable" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Filterable</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Filterable" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Filterable" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Searchable </label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Searchable " value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Searchable " value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Mandatory</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Mandatory" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Mandatory" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                              <label>Is Editable</label>
+                              <div>
+                                <label class="edv-radio"><input name="Is Editable" value="True" type="radio">True</label>
+                                <label class="edv-radio"><input name="Is Editable" value="False" type="radio">False</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Display Type</label>
+                            <div>
+                            <select class="edv-select">
+                                <option value="0" selected="">Image</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Field Edit Type</label>
+                            <div>
+                            <select class="edv-select">
+                                <option value="0" selected="">Profile Image</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Field Render Type</label>
+                            <div>
+                            <select class="edv-select">
+                                <option value="0" selected="">Image-upload</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Data Type</label>
+                            <div>
+                            <select class="edv-select">
+                                <option value="0" selected="">Profile Image</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Validation Type</label>
+                            <div>
+                            <select class="edv-select">
+                                <option value="0" selected="">Profile Image</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                              </select>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Min Length</label>
+                            <div>
+                            <input class="edv-input" placeholder="0" type="number">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                                <div class="f-field">
+                                <label>Max Length</label>
+                                <div>
+                                <input class="edv-input" placeholder="0" type="number">
+                                </div>
+                                </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Range Start</label>
+                            <div>
+                            <input class="edv-input" placeholder="30720">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Range End</label>
+                            <div>
+                            <input class="edv-input" placeholder="102400">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Dependent Field</label>
+                            <div>
+                            <input class="edv-input" placeholder="102400">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Decimal Place</label>
+                            <div>
+                            <input class="edv-input" placeholder="102400">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Allowed Types</label>
+                            <div>
+                            <select class="edv-select">
+                                <option value="0" selected="">PNG</option>
+                                <option value="1">JPG</option>
+                                <option value="2">JPEG</option>
+                              </select>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Pick List API</label>
+                            <div>
+                            <input class="edv-input" placeholder="">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edv-section">
+                        <div class="title dflex align-item-center g5">Pick List Value<a class="act-qadd xs"></a>
+                        </div>
+                    </div>
+                    <div class="edv-row f-group f-top">
+                        <div class="edv-col3">
+                            <div class="f-field">
+                            <label>Display Value</label>
+                            <div>
+                            <input class="edv-input" placeholder="">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="edv-col3">
+                            <div class="f-field">
+                                <label>Actual Value</label>
+                            <div>
+                                <div class="dflex align-item-center g5">
+                                <input class="edv-input"placeholder="">
+                                <a class="act-del"></a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+              </div>
+          </div>
+     </div>
+    </div>
+    <div class="mdl-foo ">
+     <a class="btn primary">Save</a>
+     <a class="btn line">Cancel</a>
+    </div>
+  </div>
+  </div>
+ </body>
+ <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+</script>
+</html>

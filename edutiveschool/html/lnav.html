@@ -1,0 +1,619 @@
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  </script>
+  
+<div>
+  <div class="nav-bar">
+    <div class="nav-list">
+      
+        <div class="dropdown-btn" >
+          <a edv-title="Academic Administration" class="edv-title active" edv-placement="right">
+            <i class="ico-bill"></i>
+            <span>Academic Administration</span>
+            <i class="ico-ar-dwn angle-lft"></i>
+          </a>
+        </div>
+        <div class="dropdown-container" style="display:none;">
+          <div class="dropdown-btn sec-m-active">
+            <a edv-title="Fee Report" class="edv-title active" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Academic Calendar</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title active" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Calendar Planning</span>
+                </a>
+              </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Fee Report" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Student Portfolio</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Student Portfolio Entry</span>
+                </a>
+              </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Fee Report" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Time Table</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Define Department Meeting</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Teaching Norms</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Manual</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-btn" >
+          <a edv-title="Assessments" class="edv-title " edv-placement="right">
+            <i class="ico-bill"></i>
+            <span>Assessments</span>
+            <i class="ico-ar-dwn angle-lft"></i>
+          </a>
+        </div>
+        <div class="dropdown-container" style="display:none;">
+          <div class="dropdown-btn">
+            <a edv-title="Define & Configure" class="edv-title active" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Define & Configure</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Assessment Policy" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Assessment Policy</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Assessment Policy" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Progress Card</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Assessment Policy" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Rubric</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Assessment Policy" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Peer Evaluation</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Assessment Policy" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Goal Setting</span>
+                </a>
+              </div>
+
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Fee Report" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Question Bank</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Configure Question Bank reviewers</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Create Questions</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Generate Question Paper</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Question Bank - Availability Status</span>
+                </a>
+              </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Fee Report" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Mark Entry & Progress Card</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Scholastic</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Co scholastic</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Others</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Generate Progress Card</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>My 360</span>
+              </a>
+            </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Analytic Reports" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Analytic Reports</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>School Level</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Subject Wise</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Department Wise</span>
+                </a>
+              </div>
+          </div>
+        </div>
+
+        <div class="dropdown-btn" >
+          <a edv-title="School Administration" class="edv-title " edv-placement="right">
+            <i class="ico-bill"></i>
+            <span>School Administration</span>
+            <i class="ico-ar-dwn angle-lft"></i>
+          </a>
+        </div>
+        <div class="dropdown-container" style="display:none;">
+          <div class="dropdown-btn">
+            <a edv-title="Define & Configure" class="edv-title active" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Admission</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Define Admission Process" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Define Admission Process</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Manage Admission" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Manage Admission</span>
+                </a>
+              </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Attendance" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Attendance</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Attendance Policy" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Attendance Policy</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Upload staff Attendance" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Upload staff Attendance</span>
+                </a>
+              </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Fee Report" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Communication</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+            <div class="t-sub-menu">
+              <a edv-title="Send to Parent / Teacher" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Send to Parent / Teacher</span>
+              </a>
+            </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Complaint Redressal" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Complaint Redressal</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Complaint Redressal" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Complaint Redressal</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Fee LedgerAnalytic Reports" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Analytic Reports</span>
+                </a>
+              </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Utilities" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Utilities</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+              <div class="t-sub-menu">
+                <a edv-title="Email" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Email</span>
+                </a>
+              </div>
+              <div class="t-sub-menu">
+                <a edv-title="Accounts" class="edv-title" edv-placement="right" class="dropdown-btn">
+                  <i class="ico-caln"></i>
+                  <span>Accounts</span>
+                </a>
+              </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Events & Clubs" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Events & Clubss</span>
+              <!-- <i class="ico-ar-dwn angle-lft"></i> -->
+            </a>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Define Event Activity" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Define Event Activity</span>
+              <!-- <i class="ico-ar-dwn angle-lft"></i> -->
+            </a>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Define Prizes" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Define Prizes</span>
+              <!-- <i class="ico-ar-dwn angle-lft"></i> -->
+            </a>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Create Events" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Create Events</span>
+              <!-- <i class="ico-ar-dwn angle-lft"></i> -->
+            </a>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Define Prizes" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Fee Management</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+            <div class="t-sub-menu">
+              <a edv-title="Define Fee Types" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Define Fee Types</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Define Fee Structure" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Define Fee Structure</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Fee Reports" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Fee Reports</span>
+              </a>
+            </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Define Prizes" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Feed Back & Survey</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+            <div class="t-sub-menu">
+              <a edv-title="Define Template" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Define Template</span>
+              </a>
+            </div>
+            <div class="t-sub-menu">
+              <a edv-title="Create Feed Back / Survey" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Create Feed Back / Survey</span>
+              </a>
+            </div>
+          </div>
+          <div class="dropdown-btn">
+            <a edv-title="Library Management" class="edv-title" edv-placement="right">
+              <i class="ico-report"></i>
+              <span>Library Management</span>
+              <i class="ico-ar-dwn angle-lft"></i>
+            </a>
+          </div>
+          <div class="dropdown-container" style="display:none">
+            <div class="t-sub-menu">
+              <a edv-title="Library" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Library</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- four sub menus -->
+
+  <!-- <div class="dropdown-btn" >
+    <a edv-title="Assessments" class="edv-title active" edv-placement="right">
+      <i class="ico-stud"></i>
+      <span>Assessments</span>
+      <i class="ico-ar-dwn angle-lft"></i>
+    </a>
+  </div>
+  <div class="dropdown-container" style="display:none">
+      <div class="dropdown-btn">
+        <a edv-title="Define & Configure" class="edv-title" edv-placement="right">
+          <i class="ico-auto-tmtbl"></i>
+          <span>Define & Configure</span>
+          <i class="ico-ar-dwn angle-lft"></i>
+        </a>
+      </div>
+      <div class="dropdown-container" style="display:none;">
+        <div class="dropdown-btn">
+          <a edv-title="Assessment Policy" class="edv-title" edv-placement="right">
+            <i class="ico-report"></i>
+            <span>Assessment Policy</span>
+            <i class="ico-prev angle-lft"></i>
+          </a>
+        </div>
+        <div class="dropdown-container" style="display:none">
+            <div>
+              <a edv-title="Fee Ledger" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-caln"></i>
+                <span>Fee Ledger</span>
+              </a>
+            </div>
+            <div>
+              <a edv-title="Fee Demand" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-assemt"></i>
+                <span>Fee Demand</span>
+              </a>
+            </div>
+            <div>
+              <a edv-title="Fee Legender" class="edv-title" edv-placement="right" class="dropdown-btn">
+                <i class="ico-mark"></i>
+                <span>Fee Legender</span>
+              </a>
+            </div>
+        </div>
+      </div>
+  </div> -->
+   
+   <script>
+      
+  // //////////////////
+  // $(document).ready(function() {
+  //   $(".edv-title").hover(function() {
+  
+  //     //title
+  //     var value = $(this).attr('edv-title');
+  
+  //     //html
+  //     if ($(this).attr('edv-html') === "false") {
+  //       value = value.replace(/</g, "&lt;");
+  //       value = value.replace(/>/g, "&gt;");
+  //     }
+  
+  //     //trigger
+  //     if ($(this).attr('edv-trigger') !== "focus") {
+  
+  //       var elm = '<div class="edv-tooltip bottom" id="tooltiptempid">' + value + '</div>'
+  //         //container 
+  //       var container = $(this).attr('edv-container');
+  //       if (container == undefined || container === "body") {
+  //         $('body').append(elm);
+  //       } else {
+  //         $(this).append(elm);
+  //       }
+  //       $("#tooltiptempid").addClass("DN");
+  
+  //       //placement
+  //       var placement = $(this).attr('edv-placement');
+  //       if (placement !== undefined && placement !== "bottom") {
+  //         $('#tooltiptempid').removeClass('bottom');
+  //         $('#tooltiptempid').addClass(placement);
+  //       }
+  
+  //       //position
+  //       if (container == undefined || container === "body") {
+  //         var p_left, p_top;
+  //         var pos = $(this).offset();
+  //         var popup = $("#tooltiptempid");
+  //         if (placement === "top") {
+  //           p_left = pos.left + ($(this).outerWidth() / 2) - popup.outerWidth() / 2;
+  //           p_top = pos.top - popup.outerHeight();
+  //         } else if (placement === "left") {
+  //           p_left = pos.left - popup.outerWidth();
+  //           p_top = pos.top + ($(this).outerHeight() / 2) - popup.outerHeight() / 2;
+  //         } else if (placement === "right") {
+  //           p_left = pos.left + $(this).outerWidth();
+  //           p_top = pos.top + ($(this).outerHeight() / 2) - popup.outerHeight() / 2;
+  //         } else {
+  //           p_left = pos.left + ($(this).outerWidth() / 2) - popup.outerWidth() / 2;
+  //           p_top = pos.top + $(this).outerHeight();
+  //         }
+  //         $('#tooltiptempid').css({
+  //           left: p_left + 'px', //No I18N
+  //           top: p_top + 'px' //No I18N
+  //         });
+  
+  //       }
+  
+  //       //theme
+  //       if ($(this).attr('edv-theme') === "dark") {
+  //         $('#tooltiptempid').addClass('dark');
+  //       }
+  //       $("#tooltiptempid").removeClass("DN");
+  //     } else {
+  
+  //       var elm = '<div class="edv-tooltip bottom" id="focustempid">' + value + '</div>'
+  //       $(this).focus(function() {
+  //         if ($('#focustempid').length === 0) {
+  //           var container = $(this).attr('edv-container');
+  //           if (container == undefined || container === "body") {
+  //             $('body').append(elm);
+  //           } else {
+  //             $(this).append(elm);
+  //           }
+  //           // $(this).fadeIn('fast').addClass("edv-tooltip_open");
+  //           $("#focustempid").addClass("DN");
+  
+  //           //placement
+  //           var placement = $(this).attr('edv-placement');
+  //           if (placement !== undefined && placement !== "bottom") {
+  //             $('#focustempid').removeClass('bottom');
+  //             $('#focustempid').addClass(placement);
+  //           }
+  
+  //           //position
+  //           if (container == undefined || container === "body") {
+  //             var p_left, p_top;
+  //             var pos = $(this).offset();
+  //             var popup = $("#focustempid");
+  //             if (placement === "top") {
+  //               p_left = pos.left + ($(this).outerWidth() / 2) - popup.outerWidth() / 2;
+  //               p_top = pos.top - popup.outerHeight();
+  //             } else if (placement === "left") {
+  //               p_left = pos.left - popup.outerWidth();
+  //               p_top = pos.top + ($(this).outerHeight() / 2) - popup.outerHeight() / 2;
+  //             } else if (placement === "right") {
+  //               p_left = pos.left + $(this).outerWidth();
+  //               p_top = pos.top + ($(this).outerHeight() / 2) - popup.outerHeight() / 2;
+  //             } else {
+  //               p_left = pos.left + ($(this).outerWidth() / 2) - popup.outerWidth() / 2;
+  //               p_top = pos.top + $(this).outerHeight();
+  //             }
+  //             $('#focustempid').css({
+  //               left: p_left + 'px', //No I18N
+  //               top: p_top + 'px' //No I18N
+  //             });
+  
+  //           }
+  
+  //           //theme
+  //           if ($(this).attr('edv-theme') === "dark") {
+  //             $('#focustempid').addClass('dark');
+  //           }
+  //         }
+  //         $("#focustempid").removeClass("DN");
+  //         $(this).focusout(function() {
+  //           $("#focustempid").remove();
+  //         });
+  //       });
+  //     }
+  //   }, function() {
+  //     $('#tooltiptempid').remove();
+  //   });
+  
+  // });
+
+  //  </script>

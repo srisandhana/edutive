@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Grade Definition</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <a>Grade Definition</a>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div></div>
+              <div class="edv-actions">
+                <div class="tsearch">
+                  <a></a>
+                  <input type="text" placeholder="Search" class="edv-input">
+                </div>
+                <div class="ln w10 empty"></div>
+                <a class="act-qadd sm" mdl-pop="add-gradedefinition"></a>
+                <div class="ln"></div>
+                <div class="pagination">
+                  <a class="first"></a>
+                  <a class="prev"></a>
+                  <label> 1 to 20 of 420</label>
+                  <a class="next"></a>
+                  <a class="last"></a>
+                </div>
+                <div class="ln"></div>
+                <a class="act-filter" mdl-pop="mdl-filter"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Page Content -->
+          <div class="page-content">
+            <table class="table tbl-topfxd">
+              <thead>
+                <tr>
+                  <th class="mw-200">
+                    <span>Mark Range</span>
+                  </th>
+                  <th class="mw-200">
+                    <span>Letter Grade</span>
+                  </th>
+                  <th class="mw-200">
+                    <span>Grade</span>
+                  </th>
+                  <th>
+                    <span>Grade Point</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span>91 - 100</span>
+                  </td>
+                  <td>
+                    <span>S</span>
+                  </td>
+                  <td>
+                    <span>Outstanding</span>
+                  </td>
+                  <td>
+                    <span>10</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>81 - 90</td>
+                  <td>A</td>
+                  <td>Excellent</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>71 - 80 </td>
+                  <td>B</td>
+                  <td>Very Good</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>61 - 70</td>
+                  <td>C</td>
+                  <td>Good </td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>51 - 60</td>
+                  <td>D</td>
+                  <td>Average</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>41 - 50</td>
+                  <td>E</td>
+                  <td>Below Average</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>40</td>
+                  <td>U</td>
+                  <td>Poor</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Page -->
+    <div class="mdl-page" mdl-box="add-gradedefinition">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Add Grade Definition</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="nav-wrap">
+            <div class="edv-row f-group f-top ">
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Board</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected="">Select Board</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Mark Range</label>
+                  <div>
+                    <input class="edv-input" placeholder="Enter Mark Range">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Letter Grade</label>
+                  <div>
+                    <input class="edv-input" placeholder="Enter Letter Grade">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Grade</label>
+                  <div>
+                    <input class="edv-input" placeholder="Enter Grade">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <label>Grade Point</label>
+                  <div>
+                    <div class="dflex align-item-center g5">
+                      <input class="edv-input" placeholder="Enter Grade point">
+                      <a class="act-del"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <div>
+                    <input class="edv-input" placeholder="Enter Mark Range">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <div>
+                    <input class="edv-input" placeholder="Enter Letter Grade">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <div>
+                    <input class="edv-input" placeholder="Enter Grade">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field ">
+                  <div>
+                    <div class="dflex align-item-center g5">
+                      <input class="edv-input" placeholder="Enter Grade point">
+                      <a class="act-qadd xs"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo ">
+          <a class="btn primary">Save</a>
+          <a class="btn line">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

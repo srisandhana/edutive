@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : Fee Due Report</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div>
+         <a href="#">Fee Due Report</a>
+        </div>
+       </div>
+    </div>
+</div>
+<div class="mdl-page mdl-open">
+  <div class="mdl-pop">
+    <div class="mdl-head">
+      <h6>Fee Due Report</h6>
+      <div class="nav-group pills">
+        <a class="ico-table sel"></a>
+        <a class="ico-chart-pie"></a>
+      </div>
+      <div class="mdl-head-act align-item-center">
+        <div class="dflex g20">
+          <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-sort"></i><span>Sort</span><i class="ico-ar-dwn fs-14"></i>
+            <div class="edv-dropdown mw-200 rht btm">
+              <ul>
+                <li>
+                  <a><label class="edv-checkbox">
+                      <input id="chck02" type="checkbox">
+                    </label>Fee Head</a>
+                </li>
+                <li>
+                  <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pb-10 pt-10"><i class="ico-ar-up fs-14"></i><span>Segment</span>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>All</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Foundational</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Middle</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Secondary</a>
+                    </li>
+                  </label>
+                </li>
+                <li>
+                  <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pt-10"><i class="ico-ar-dwn fs-14"></i><span>Class & Section</span>
+                    <!-- <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>All</a>
+                    </li> -->
+                  </label>
+                </li>
+              </ul>
+              <div class="p-lf-20 p-lr-20 pb-10 pt-15"><sapn class="btn primary">Apply</span></div>
+            </div>
+          </div>
+          <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-file-export"></i><span>Export</span><i class="ico-ar-dwn fs-14"></i>
+            <!-- <div class="edv-dropdown mw-200 rht btm">
+              <ul>
+                <li>
+                  <a><i class="ico-f-pdf"></i>PDF</a>
+                </li>
+                <li>
+                  <a><i class="ico-f-excel"></i>EXCEL</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+          <div class="ln"></div>
+          <a class="act-filter" mdl-pop="mdl-filter"></a>
+      </div>
+    </div>
+    <div class="mdl-body edv-ly-vscrl">
+      <div class="sub-head">
+        <div>
+          <div class="sort-tab">
+            <a>Segment: All<i class="ico-close"></i></a>
+            <a>Class: All<i class="ico-close"></i></a>
+            <a>Fee Head<i class="ico-close"></i></a>
+            </div>
+        </div>
+      </div>
+      <div class="edv-markentry-wrap edv-ly-cntscrl">
+        <div class="edv-marksentry">
+            <table class="table tbl-topfxd tbl-stripe tbl-border">
+              <thead>
+                <tr>
+                  <th rowspan="2" class="mw-100 ">Segment</th>
+                  <th rowspan="2" class="mw-200 ">Student Name</th>
+                  <th rowspan="2" class="mw-160 ">Roll No</th>
+                  <th rowspan="2" class="mw-150 ">Class & Sec</th>
+                  <th rowspan="2" class="mw-160 ">Due Date </th>
+                  <th rowspan="2" class="mw-160 ">No of days Delayed</th>
+                  <th style="text-align: center;" colspan="5">Overall Due</th>
+                  <th style="text-align: center;" colspan="3">Fee Head</th>
+                </tr>
+                <tr class="coltbl-sticky">
+                  <th class="title">Total Fee</th>
+                  <th class="title">Fee Paid</th>
+                  <th class="title">Fee Due</th>
+                  <th class="title">Fee Paid %</th>
+                  <th class="title">Fee Due %</th>
+                  <th class="title mw-160">Registration Fee Due</th>
+                  <th class="title">Admission Fee Due</th>
+                  <th class="title">Tuition Fee Due</th>
+                  <!---->
+                </tr>
+      
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>Foundational</span></td>
+                  <td><span>Ravi S</span></td>
+                  <td><span>721154623</span></td>
+                  <td><span>LKG - Ganga</span></td>
+                  <td><span>25-04-2023</span></td>
+                  <td><span>22</span></td>
+                  <td><span>22,000.00</span></td>
+                  <td><span>20,000.00</span></td>
+                  <td><span>2,000.00</span></td>
+                  <td><span>90%</span></td>
+                  <td><span>10%</span></td>
+                  <td><span>0.00</span></td>
+                  <td><span>1,000.00</span></td>
+                  <td><span>1,000.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Middle</span></td>
+                  <td><span>Abinesh L</span></td>
+                  <td><span>721154713</span></td>
+                  <td><span>I - Kaveri</span></td>
+                  <td><span>29-04-2023</span></td>
+                  <td><span>18</span></td>
+                  <td><span>35,000.00</span></td>
+                  <td><span>35,000.00</span></td>
+                  <td><span>0.00</span></td>
+                  <td><span>0</span></td>
+                  <td><span>0</span></td>
+                  <td><span>0.00</span></td>
+                  <td><span>0.00</span></td>
+                  <td><span>0.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Secondary</span></td>
+                  <td><span>Barath kumar S</span></td>
+                  <td><span>721164001</span></td>
+                  <td><span>XI - Yamuna</span></td>
+                  <td><span>01-05-2023</span></td>
+                  <td><span>16</span></td>
+                  <td><span>40,000.00</span></td>
+                  <td><span>15,000.00</span></td>
+                  <td><span>25,000.00</span></td>
+                  <td><span>40%</span></td>
+                  <td><span>60%</span></td>
+                  <td><span>1000.00</span></td>
+                  <td><span>0.00</span></td>
+                  <td><span>20,000.00</span></td>
+                </tr>
+                <tr class="t-r-bk">
+                  <td colspan="7"></td>
+                  <td><span class="fnt-weight-600">Grand Total</span></td>
+                  <td><span class="fnt-weight-600">7,05,000.00</span></td>
+                  <td><span >50%</span></td>
+                  <td><span >50%</span></td>
+                  <td><span class="fnt-weight-600">1000.00</span></td>
+                  <td><span class="fnt-weight-600">8,000.00</span></td>
+                  <td><span class="fnt-weight-600">1,01,000.00</span></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

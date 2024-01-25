@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive : Settings</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+   <header id="edvheader"></header>
+   <!-- Left Navigation -->
+   <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div>
+      <a>Settings</a>
+     </div>
+    </div>
+    <div class="page-card">
+     <!-- Header -->
+     <div class="main-head">
+      <div>
+       <div>
+        <div class="title">Settings</div>
+       </div>
+       <div class="edv-actions">
+        <div class="tsearch ml-auto mw-160 radius-15">
+         <input placeholder="Search..." class="edv-input">
+         <a></a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Settings -->
+     <div class="page-content">
+      <div class="edv-setwrap">
+       <div class="edv-setland">
+        <div>
+         <i class="ico-user c1"></i>
+         <b class="count">34</b>
+         <div>
+          <div class="title">Add User</div>
+         </div>
+        </div>
+        <div onclick="window.open('../html/new-assessment-policy.html','_self');">
+         <i class="ico-assemt c2"></i>
+         <b class="count">75</b>
+         <div>
+          <div class="title">Assessment Policy</div>
+         </div>
+        </div>
+        <div onclick="window.open('../html/question-bank.html','_self');">
+         <i class="ico-rubrics c3"></i>
+         <b class="count">257</b>
+         <div>
+          <div class="title">Question Bank</div>
+         </div>
+        </div>
+        <div>
+         <i class="ico-scholastic c4"></i>
+         <b class="count">97</b>
+         <div>
+          <div class="title">Question Paper</div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+ </script>
+</html>

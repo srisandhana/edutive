@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Withdrawal Form</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div>
+      <a>Withdrawal Form</a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open">
+   <div class="mdl-pop">
+    <div class="mdl-nohead"></div>
+    <div class="mdl-body">
+     <div class="nav-wrap">
+
+
+         <div class="edv-row f-group f-top">
+            <div class="edv-col3">
+              <div class="f-field">
+              <label>Student</label>
+              <select class="edv-select">
+                <option value="0" selected="">Karthick</option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+              </select>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-field">
+              <label>Academic Year</label>
+              <div>
+                <select class="edv-select">
+                <option value="0" selected="">2020 - 2021</option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                </select>
+              </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-field">
+              <label>Reason</label>
+              <div>
+                <select class="edv-select">
+                <option value="0" selected="">Residential Relocate</option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                </select>
+              </div>
+              </div>
+            </div>
+         </div>
+
+          <div class="edv-row f-group f-top">
+          <div class="edv-col3">
+            <div class="f-field ">
+             <label>Enter Custom Reason</label>
+             <div>
+              <textarea class="textara-wdh" rows="4" cols="70"></textarea>
+             </div>
+            </div>
+           </div>
+          </div>
+
+     </div>
+    </div>
+    <div class="mdl-foo">
+     <a class="btn primary">Submit</a>
+     <a class="btn line">Cancel</a>
+    </div>
+   </div>
+  </div>
+ </body>
+ <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

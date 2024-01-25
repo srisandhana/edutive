@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Generate Question Paper</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.edv-quespaper-stepnum > div > div').on('click', function() {
+          $(this).addClass('sel').siblings().removeClass('sel');
+          var target = $(this).attr('edv-nav');
+          $('#' + target).addClass('shw').siblings("div").removeClass('shw');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Generate Question Paper</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open">
+    <div class="mdl-pop">
+      <div class="mdl-head">
+        <h6>Generate Question Paper</h6>
+        <div class="mdl-act">
+          <div class="edv-col3 p-0">
+            <div class="">
+              <label>Student</label>
+              <div class="pt-10">
+                <select class="edv-select"></select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="mdl-body">
+        <div class="edv-stepcontain">
+          <div class="edv-col3 p-0">
+            <div class="">
+              <label>Student</label>
+              <div class="pt-10">
+                <select class="edv-select"></select>
+              </div>
+            </div>
+          </div>
+          <div class="edv-quespaper-stepnum vpos">
+            <div>
+              <div class="sel" edv-nav="Summary">
+                <span>1</span>
+                <div>Summary</div>
+              </div>
+              <div edv-nav="Setion-A">
+                <span>2</span>
+                <div>Section A</div>
+              </div>
+            </div>
+          </div>
+          <div class="edv-ques-stepcontent">
+            <div id="Summary" class="dn shw">
+              <div class="ques-head">
+                <div>
+                  <label>Name: <span></span></label>
+                  <label>Date: <span></span></label>
+                </div>
+                <div class="align-item-center">
+                  <label class="fnt-weight-600">Edu-Tive International School</label>
+                  <label>Term-1 cycle test-1</label>
+                  <label><b>Grade VI-Mathematics</b></label>
+                </div>
+                <div>
+                  <label>Time: <span></span></label>
+                  <label>Max Marks: <span>100</span></label>
+                </div>
+              </div>
+              <div class="ques-container edv-row f-group f-top m-0 p-20">
+                <div class="edv-col3">
+                  <div class="f-field a-field">
+                    <label>No of Questions</label>
+                    <div>
+                      <label class="fnt-weight-600">Section A</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field a-field">
+                    <label>Date</label>
+                    <div>
+                      <label class="fnt-weight-600">21/11/2023</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field a-field">
+                    <label>Total Time</label>
+                    <div>
+                      <label class="fnt-weight-600">30 mins</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field a-field">
+                    <label>Total  Marks</label>
+                    <div>
+                      <label class="fnt-weight-600">100</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Setion-A" class="ques-container dn">
+              <div class="ques-field">
+                <div class="dflex justify-content-between w-100">
+                  <div class="dflex flex-direction-column">
+                    <label class="l-h">1. When 6, 9, 13, 40 are in proportion, write it as</label>
+                    <label class="l-h">1. When 6, 9, 13, 40 are in proportion, write it as</label>
+                    <label class="l-h">1. When 6, 9, 13, 40 are in proportion, write it as</label>
+                  </div>
+                  <div class="sline"></div>
+                </div>
+                <div>
+                  <label class="dflex justify-content-end">Max Marks: <span> 5</span></label>
+                  <div class="edv-row f-group f-top p-10">
+                    <div class="edv-col12">
+                      <div class="f-field">
+                        <label>Answer</label>
+                        <div>
+                          <input class="edv-input" value="5">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ques-field">
+                <div class="dflex justify-content-between w-100">
+                  <label class="l-h">2. If there are 6 boxes of candies, and each box contains 8 candies, how many candies are there in the box 
+                    total?</label>
+                  <div class="sline"></div>
+                </div>
+                <div>
+                  <label class="dflex justify-content-end">Max Marks: <span> 5</span></label>
+                  <div class="edv-row f-group f-top p-10">
+                    <div class="edv-col12">
+                      <div class="f-field">
+                        <label>Answer</label>
+                        <div>
+                          <input class="edv-input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ques-field">
+                <div class="dflex justify-content-between w-100">
+                  <label class="l-h">3. Alexandra owns a flower shop. She starts with 50 roses in her inventory. During the morning, she sells 15 roses to a customer who is decorating for a special event. Feeling generous, Alexandra decides to give away 5 additional roses to a regular customer as a token of appreciation. Later in the day, she receives a new shipment and adds 30 more roses to her inventory. Curious about her current stock, Alexandra decides to count her roses. Considering the roses sold, given away, and the new ones acquired, how many roses does Alexandra have in her flower shop now?</label>
+                  <div class="sline"></div>
+                </div>
+                <div>
+                  <label class="dflex justify-content-end">Max Marks: <span> 5</span></label>
+                  <div class="edv-row f-group f-top p-10">
+                    <div class="edv-col12">
+                      <div class="f-field">
+                        <label>Answer</label>
+                        <div>
+                          <input class="edv-input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-foo mdl-foo-split">
+        <div>
+          <a class="btn primary btn-expand">Save</a>
+          <a class="btn">Cancel</a>
+        </div>
+        <div>
+          <a class="btn btn-expand">Back</a>
+          <a class="btn primary btn-expand">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

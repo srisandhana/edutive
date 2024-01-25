@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Add Subject wise, Topics,  Number of Hours</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Page -->
+    <div class="mdl-page mdl-open">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Add Subject wise, Topics,  Number of Hours</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="nav-wrap">
+            <div class="edv-subject">
+              <div class="edv-section">
+                <div class="title">Subject Details</div>
+              </div>
+              <div class="edv-row f-group f-top">
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Curriculum</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected="">Select Curriculum</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Subject Name</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Subject Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field">
+                    <label>Subject Code</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Subject Code">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field ">
+                    <label>Subject Type</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Subject Type">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field ">
+                    <label>Subject Ref</label>
+                    <div>
+                      <input class="edv-input" placeholder="Enter Subject Ref">
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field ">
+                    <label>Academic Year</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected="">Select Academic Year</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field ">
+                    <label>Tag</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected="">Select Language</option>
+                        <option value="1">Language-III</option>
+                        <option value="2">Language-II</option>
+                        <option value="3">Computer Science</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                  <div class="f-field ">
+                    <label>Applicable Classes</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected="">Select Classes</option>
+                        <option value="1">LKG</option>
+                        <option value="2">UKG</option>
+                        <option value="3">I</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-section">
+                <div class="title">Color Code</div>
+              </div>
+              <div class="edv-row f-group f-top">
+                <div class="edv-col4">
+                  <div class="f-field">
+                    <label>Formative</label>
+                    <div class="edv-colorcode">
+                      <div class="f-rec">
+                        <div class="f-clr formative"></div>
+                      </div>
+                      <div class="edv-input-group">
+                        <span class="input-addon">HEX</span>
+                        <input class="edv-input" placeholder="#E31A1A">
+                      </div>
+                      <div class="edv-input-group">
+                        <span class="input-addon">RGB</span>
+                        <input class="edv-input" placeholder="227, 26, 26">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col4">
+                  <div class="f-field">
+                    <label>Summative</label>
+                    <div class="edv-colorcode">
+                      <div class="f-rec">
+                        <div class="f-clr summative"></div>
+                      </div>
+                      <div class="edv-input-group">
+                        <span class="input-addon">HEX</span>
+                        <input class="edv-input" placeholder="#E88719">
+                      </div>
+                      <div class="edv-input-group">
+                        <span class="input-addon">RGB</span>
+                        <input class="edv-input" placeholder="235, 135, 25">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col4">
+                  <div class="f-field">
+                    <label>Default</label>
+                    <div class="edv-colorcode">
+                      <div class="f-rec">
+                        <div class="f-clr default"></div>
+                      </div>
+                      <div class="edv-input-group">
+                        <span class="input-addon">HEX</span>
+                        <input class="edv-input" placeholder="#FF5F5F">
+                      </div>
+                      <div class="edv-input-group">
+                        <span class="input-addon">RGB</span>
+                        <input class="edv-input" placeholder="255, 95, 95">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="edv-section">
+                <div class="title dflex align-item-center g5">Add Publisher <a class="act-qadd xs"></a>
+                </div>
+              </div>
+              <div class="nav-group pills">
+                <a class="sel">
+                  <div class="title">Publisher 1</div>
+                  <i title="close" class="ico-close"></i>
+                </a>
+                <a>
+                  <div class="title">Publisher 2</div>
+                  <i title="close" class="ico-close"></i>
+                </a>
+                <a>
+                  <div class="title">Publisher 3</div>
+                  <i title="close" class="ico-close"></i>
+                </a>
+                <a>
+                  <div class="title">Publisher 4</div>
+                  <i title="close" class="ico-close"></i>
+                </a>
+              </div>
+              <div class="edv-upldfile">
+                <div class="file-edit">
+                  <span class="upico">
+                    <a class="ico-export"></a>
+                  </span>
+                  <!-- <span class="upimg"><img src="..//images/01.png"></span> -->
+                  <div class="upico-edit">
+                    <a class="ico-edit"></a>
+                  </div>
+                </div>
+                <div class="file-name">Publisher 1</div>
+                <div>
+                  <span>
+                    <a class="ico-edit"></a>
+                  </span>
+                </div>
+              </div>
+              <div class="edv-formfield mt-15">
+                <div class="edv-ticketwrap">
+                  <div class="edv-ticket-author">
+                    <div>
+                      <div class="edv-tbk">
+                        <div class="edv-tbk-head sel">
+                          <div class="title">Add section <i class="ico-add"></i>
+                          </div>
+                        </div>
+                        <div class="edv-tbk-bdy">
+                          <ul>
+                            <li class="dflex align-item-center justify-content-between">
+                              <a>
+                                <span>Book 1</span>
+                              </a>
+                              <a class="act-close xs"></a>
+                            </li>
+                            <li class="sel dflex align-item-center justify-content-between">
+                              <a>
+                                <span>Book 2</span>
+                              </a>
+                              <a class="act-close xs"></a>
+                            </li>
+                            <li class="dflex align-item-center justify-content-between">
+                              <a>
+                                <span>Book 3</span>
+                              </a>
+                              <a class="act-close xs"></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-ticket-cont">
+                    <div class="edv-upldfile">
+                      <div class="file-edit">
+                        <span class="upico">
+                          <a class="ico-export"></a>
+                        </span>
+                        <!-- <span class="upimg"><img src="..//images/01.png"></span> -->
+                        <div class="upico-edit">
+                          <a class="ico-edit"></a>
+                        </div>
+                      </div>
+                      <div class="file-name">Book 1</div>
+                      <div>
+                        <span>
+                          <a class="ico-edit"></a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="edv-section mt-15 pb-10">
+                      <div class="title dflex align-item-center g5">Add Chapters <a class="act-qadd xs"></a>
+                      </div>
+                    </div>
+                    <div class="nav-line">
+                      <a class="sel">
+                        <span class="title">Chapter 1</span>
+                        <i title="edit" class="ico-edit"></i>
+                        <i title="close" class="ico-close"></i>
+                      </a>
+                      <a>
+                        <span class="title">Chapter 2</span>
+                        <i title="edit" class="ico-edit"></i>
+                        <i title="close" class="ico-close"></i>
+                      </a>
+                    </div>
+                    <div class="bg-grey p15">
+                      <div class="sub-head ">
+                        <div>
+                          <span class="title">Topic 1</span>
+                        </div>
+                        <div class="actions">
+                          <a class="ico-close"></a>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top pt-20">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Topic Name</label>
+                            <div>
+                              <input class="edv-input" placeholder="Enter Topic Name">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Period</label>
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Period">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Classification</label>
+                            <div>
+                              <input class="edv-input" placeholder="Enter Classification 1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Sub Classification </label>
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Sub Classification 1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Learning Outcomes </label>
+                            <div>
+                              <div class="dflex align-item-center g5">
+                                <input class="edv-input" placeholder="Enter Learning Outcomes 1">
+                                <a class="act-del"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <input class="edv-input" placeholder="Enter Classification 2">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Sub Classification 2">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div class="dflex align-item-center g5">
+                                <input class="edv-input" placeholder="Enter Learning Outcomes 2">
+                                <a class="act-del"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <input class="edv-input" placeholder="Enter Classification 3">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Sub Classification 3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div class="dflex align-item-center g5">
+                                <input class="edv-input" placeholder="Enter Learning Outcomes 3">
+                                <a class="act-qadd xs"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-head ">
+                      <div></div>
+                      <div class="actions">
+                        <a class="btn primary">Add Topics</a>
+                      </div>
+                    </div>
+                    <div class="bg-grey p15">
+                      <div class="sub-head ">
+                        <div>
+                          <span class="title">Topic 2</span>
+                        </div>
+                        <div class="actions">
+                          <a class="ico-close"></a>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top pt-20">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Topic Name</label>
+                            <div>
+                              <input class="edv-input" placeholder="Enter Topic Name">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Period</label>
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Period">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Classification</label>
+                            <div>
+                              <input class="edv-input" placeholder="Enter Classification 1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Sub Classification </label>
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Sub Classification 1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <label>Learning Outcomes </label>
+                            <div>
+                              <div class="dflex align-item-center g5">
+                                <input class="edv-input" placeholder="Enter Learning Outcomes 1">
+                                <a class="act-del"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <input class="edv-input" placeholder="Enter Classification 2">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Sub Classification 2">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div class="dflex align-item-center g5">
+                                <input class="edv-input" placeholder="Enter Learning Outcomes 2">
+                                <a class="act-del"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-row f-group f-top">
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <input class="edv-input" placeholder="Enter Classification 3">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div>
+                                <input class="edv-input" placeholder="Enter Sub Classification 3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edv-col4">
+                          <div class="f-field">
+                            <div>
+                              <div class="dflex align-item-center g5">
+                                <input class="edv-input" placeholder="Enter Learning Outcomes 3">
+                                <a class="act-qadd xs"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-head ">
+                      <div></div>
+                      <div class="actions">
+                        <a class="btn primary">Add Topics</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <a class="btn primary">Save</a>
+          <a class="btn line">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

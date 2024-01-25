@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : View Notification</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div>
+         <a>View Notification</a>
+        </div>
+       </div>
+
+      <!-- Modal Page -->
+      <div class="mdl-page mdl-open">
+        <div class="mdl-pop">
+          <div class="mdl-nohead"></div>
+          <div class="mdl-body edv-ly-vscrl">
+            <div class="edv-box-grp">
+
+                <div class="edv-row f-group f-top">
+                  <div class="edv-col2">
+                    <div class="f-field">
+                      <label>Notification Type</label>
+                      <div>
+                        <label>Custom</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2">
+                    <div class="f-field">
+                      <label>Notify To</label>
+                      <div>
+                        <label>Students</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2">
+                    <div class="f-field">
+                      <label>Segment</label>
+                      <div>
+                        <label>Middle</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2">
+                    <div class="f-field">
+                      <label>Class & Section</label>
+                      <div>
+                        <label>Class V - All</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2">
+                    <div class="f-field">
+                      <label>Students</label>
+                      <div>
+                        <label>All Students</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-col2">
+                    <div class="f-field">
+                      <label>Notification Type</label>
+                      <div>
+                        <label>Email</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-row f-group f-top">
+                  <div class="edv-col12">
+                    <div class="f-field">
+                      <label>Message</label>
+                      <div>
+                        <label>All students are hereby informed about a change in school timings from 1st October, 2021. The school will now start at 9 am - 3 pm.</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+              <div class="edv-markentry-wrap edv-ly-cntscrl mt-15">
+              <div class="edv-marksentry">
+                  <table class="table tbl-topfxd tbl-stripe">
+                    <thead>
+                      <th class="mw-80"><span>SNo</span></th>
+                      <th><span>Student Name</span></th>
+                      <th><span>Student Email ID</span></th>
+                      <th><span>Admission Number</span></th>
+                      <th><span>Parent Name</span></th>
+                      <th><span>Parent Email ID</span></th>
+                      <th><span>Status</span></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Karthick R</td>
+                        <td>karthick.r@rjr.ac.in</td>
+                        <td>34572575 </td>
+                        <td>Raja C</td>
+                        <td>raja.c@rjr.ac.in</td>
+                        <td><span class="sts_success">Viewed</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Manoj Kumar S</td>
+                        <td>manoj.s@rjr.ac.in</td>
+                        <td>477357456</td>
+                        <td>Sugumaran V</td>
+                        <td>sgugumaran.v@rjr.ac.in</td>
+                        <td><span class="sts_info">Received</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Keerthie Arrvind S</td>
+                        <td>keerthie.sk@rjr.ac.in</td>
+                        <td>635725472</td>
+                        <td>Revathi A</td>
+                        <td>revathi.a@rjr.ac.in</td>
+                        <td><span class="sts_pending">Pending</span></td>
+                      </tr>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Kamal Kumar K</td>
+                      <td>Kamal.m@rjr.ac.in</td>
+                      <td>356836847</td>
+                      <td>Manoj Kumar</td>
+                      <td>mano.j@rjr.ac.in</td>
+                      <td><span class="sts_reject">Not Delevried</span></td>
+                    </tr>
+                    </tbody>
+                  </table>
+              </div>
+              
+            </div>  
+
+
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

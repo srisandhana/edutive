@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : Fee Entry</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div>
+         <a href="#">Fee Entry</a>
+        </div>
+       </div>
+
+      <div class="page-card">
+        <!-- Header -->
+        <div class="main-head">
+          <div>
+            <div>
+              <div class="title"> 
+                Fee Entry
+              </div>
+              </div>
+            <div class="edv-actions">
+
+              <div class="tsearch">
+                <a></a>
+                <input type="text" placeholder="Search" class="edv-input">
+              </div>
+
+              <div class="ln w10 empty"></div>
+
+              <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-sort"></i><span>Sort</span><i class="ico-ar-dwn fs-14"></i>
+                <div class="edv-dropdown mw-200 rht btm">
+                  <ul>
+                    <li>
+                      <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pb-10 pt-10"><i class="ico-ar-up fs-14"></i><span>Segment</span>
+                        <li>
+                          <a><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>All</a>
+                        </li>
+                        <li>
+                          <a><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>Foundational</a>
+                        </li>
+                        <li>
+                          <a><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>Middle</a>
+                        </li>
+                        <li>
+                          <a><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>Secondary</a>
+                        </li>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pt-10"><i class="ico-ar-dwn fs-14"></i><span>Class & Section</span>
+                        <!-- <li>
+                          <a><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>All</a>
+                        </li> -->
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="p-lf-20 p-lr-20 pb-10 pt-15"><sapn class="btn primary">Apply</span></div>
+                </div>
+              </div>
+
+              <div class="ln"></div>
+
+              <div class="pagination">
+                <a class="first"></a>
+                <a class="prev"></a>   
+                <label> 1 to 20  of 420</label>
+                <a class="next"></a>
+                <a class="last"></a>                               
+              </div>
+
+              <div class="ln"></div>
+
+              <a class="act-filter" mdl-pop="mdl-filter"></a>
+            
+            
+            </div>
+          </div>
+          <!-- Mass Update -->
+          <div class="edv-massupt">
+              <div>
+                <a class="act-denied"></a>
+                <a class="act-del"></a>
+              </div>
+              <div>
+                <a class="act-close"></a>
+              </div>
+          </div>
+        </div>
+        <!-- Page Content -->
+          <div class="page-content">
+              <div class="sub-head">
+                <div>
+                  <div class="sort-tab">
+                    <a>Segment: Middle<i class="ico-close"></i></a>
+                    <a>Class: VII - Yamuna<i class="ico-close"></i></a>
+                    <a>Fee : Mid Term Fee 1<i class="ico-close"></i></a>
+                    </div>
+                </div>
+              </div>
+              <table class="table tbl-topfxd tbl-stripe tbl-border">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Segment</th>
+                    <th rowspan="2">Student Name</th>
+                    <th rowspan="2">Roll No</th>
+                    <th rowspan="2">Class & Sec</th>
+                    <th colspan="4" class="text-align-center">Summary</th>
+                  </tr>
+                  <tr class="coltbl-sticky">
+                    <th class="mw-200">Fee Structure Name</th>
+                    <th>Total Fee</th>
+                    <th>Fee paid</th>
+                    <th>Remaining</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr mdl-pop="fee-entry">
+                    <td><span>Middle</span></td>
+                    <td><span>Aadharsh K</span></td>
+                    <td><span>721154623</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>22,378.00</span></td>
+                    <td><span>22,378.00</span></td>
+                    <td><span>-</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Aswhin S</span></td>
+                    <td><span>721154625</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>22,378.00</span></td>
+                    <td><span>15,000.00</span></td>
+                    <td><span>7,378.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Middle</span></td>
+                    <td><span>Bharath B</span></td>
+                    <td><span>721154713</span></td>
+                    <td><span>VII - Yamuna</span></td>
+                    <td><span>Mid Term Fee 1</span></td>
+                    <td><span>26,378.00</span></td>
+                    <td><span>12,000.00</span></td>
+                    <td><span>14,378.00</span></td>
+                  </tr>
+                  <tr class="t-r-bk">
+                    <td colspan="5"></td>
+                    <td><span class="fnt-weight-600">Grand Total</span></td>
+                    <td><span class="fnt-weight-600">12,05,000.00</span></td>
+                    <td><span class="fnt-weight-600">11,05,000.000</span></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+      </div>
+      
+    <!-- meeting approve page screen -->
+    <div class="mdl-page" mdl-box="fee-entry">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Fee Entry</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="nav-wrap">
+            <div class="edv-appointment-approve">
+              <span>
+                <img src="../images/01.png">
+              </span>
+              <div>
+                <div class="head"><span class="title">Aswin Kumar</span></div>
+                <div class="desc">VII - Yamuna</div>
+              </div>
+            </div>
+            <div class="edv-row nav-container">
+              <div class="edv-col6 br1">
+                <div>
+                  <div class="edv-section">
+                    <div class="title">Mid Term 1 -  Fee Details</div>
+                  </div>
+                  <div class="pt-15">
+                    <div class="edv-row f-group f-top">
+                      <div class="edv-col4">
+                        <div class="f-field a-field">
+                          <label>Tuition Fee</label>
+                          <div>
+                            <label class="fnt-weight-600">17,378.00</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col4">
+                        <div class="f-field a-field">
+                          <label>Transport Fee</label>
+                          <div>
+                            <label class="fnt-weight-600">7,000.00</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col4">
+                        <div class="f-field a-field">
+                          <label>Transport Fee</label>
+                          <div>
+                            <label class="fnt-weight-600">7,000.00</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col4">
+                        <div class="f-field a-field">
+                          <label>Exam Fee</label>
+                          <div>
+                            <label class="fnt-weight-600">1,200.00</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col4">
+                        <div class="f-field a-field">
+                          <label>Miscellaneous</label>
+                          <div>
+                            <label class="fnt-weight-600">5,000.00</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edv-col4">
+                        <div class="f-field a-field">
+                          <label>Discount</label>
+                          <div>
+                            <label class="fnt-weight-600">5000.00</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col6">
+                <div class="edv-section">
+                  <div class="title">Summary</div>
+                </div>
+                <div class="pt-15">
+                  <div>
+                    <div class="f-field a-field">
+                      <label>Total fee</label>
+                      <div class="fnt-weight-600">22,378.00</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="f-field a-field">
+                      <label>Fee Paid</label>
+                      <div class="fnt-weight-600">10,000.00</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="f-field a-field">
+                      <label>Remaining</label>
+                      <div class="fnt-weight-600">12,378.00</div>
+                    </div>
+                  </div>
+               </div>
+              </div>
+            </div>
+            <div class="edv-section">
+              <div class="title">Update Fee</div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                  <div class="f-field">
+                  <label>Amount</label>
+                  <div>
+                  <input class="edv-input" value="7,000.00">
+                  </div>
+                  </div>
+              </div>
+              <div class="edv-col3">
+                  <div class="f-field">
+                  <label>Payment Mode</label>
+                  <div>
+                  <select class="edv-select">
+                      <option value="0" selected="">NEFT</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                  </select>
+                  </div>
+                  </div>
+              </div>
+              <div class="edv-col3">
+                  <div class="f-field">
+                  <label>Transaction ID</label>
+                  <div>
+                    <input class="edv-input" value="BA7841254321">
+                  </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <a class="btn primary">Save</a>
+          <a class="btn line">Cancel</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

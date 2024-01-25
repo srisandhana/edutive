@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Appointments</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Appointments</a>
+          </div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div>
+                <div class="title">Appointments</div>
+              </div>
+              <div class="edv-actions">
+                <a class="act-qadd sm" mdl-pop="add-appointment"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Page Content -->
+          <div class="page-content">
+            <table class="table tbl-topfxd tbl-stripe">
+              <thead>
+                <tr>
+                  <th>
+                    <span >Visitor Name</span>
+                  </th>
+                  <th>
+                    <span >Mobile No</span>
+                  </th>
+                  <th>
+                    <span >No of Visitor</span>
+                  </th>
+                  <th>
+                    <span >Purpose</span>
+                  </th>
+                  <th>
+                    <span >Appointment with</span>
+                  </th>
+                  <th>
+                    <span class="mw-80">Start TIme</span>
+                  </th>
+                  <th>
+                    <span class="mw-60">End Time</span>
+                  </th>
+                  <th>
+                    <span class="mw-80">Status</span>
+                  </th>
+                  <th class="mw-40">Action(s)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span>Kumar K</span>
+                  </td>
+                  <td>
+                    <span>7911026498</span>
+                  </td>
+                  <td>
+                    <span>2</span>
+                  </td>
+                  <td>
+                    <span>Parent-Teacher Meeting</span>
+                  </td>
+                  <td>
+                    <span>Kavitha S, VII-Class Teacher</span>
+                  </td>
+                  <td><span>10:30 AM</span></td>
+                  <td><span>-</span></td>
+                  <td>
+                    <span class="sts_reject">Cancelled</span>
+                  </td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-eye"></a>
+                      <div class="ddown">
+                        <a class="act-more"></a>
+                        <div class="edv-dropdown rht btm">
+                          <ul>
+                            <li>
+                              <a>Exit</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Karthik G</span>
+                  </td>
+                  <td>
+                    <span>9443215644</span>
+                  </td>
+                  <td>
+                    <span>-</span>
+                  </td>
+                  <td>
+                    <span>Parent-Teacher Meeting</span>
+                  </td>
+                  <td>
+                    <span>Rajesh S, VI-Class Teacher</span>
+                  </td>
+                  <td><span>11:20 AM</span></td>
+                  <td><span>11:50 AM</span></td>
+                  <td>
+                    <span class="sts_success">Completed</span>
+                  </td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-eye"></a>
+                      <div class="ddown">
+                        <a class="act-more"></a>
+                        <div class="edv-dropdown rht btm">
+                          <ul>
+                            <li>
+                              <a>Exit</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Shanmugan S</span>
+                  </td>
+                  <td>
+                    <span>9443120055</span>
+                  </td>
+                  <td>
+                    <span>1</span>
+                  </td>
+                  <td>
+                    <span>Meeting with Principal</span>
+                  </td>
+                  <td>
+                    <span>Principal</span>
+                  </td>
+                  <td><span>02:00 PM</span></td>
+                  <td><span>-</span></td>
+                  <td>
+                    <span class="sts_pending">On Going</span>
+                  </td>
+                  <td>
+                    <div class="tbl-action">
+                      <a class="act-eye"></a>
+                      <div class="ddown">
+                        <a class="act-more"></a>
+                        <div class="edv-dropdown rht btm">
+                          <ul>
+                            <li>
+                              <a>Exit</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- add appointment page screen-->
+
+    <div class="mdl-page" mdl-box="add-appointment">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Add Appointments</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="nav-wrap">
+            <div class="edv-section">
+              <div class="title">Appointment Details</div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Category</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected="">Parent</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Student Name</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected="">Aswin kumar (Class VII - A)</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Purpose</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected="">Meeting with Teacher</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Appointment With</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected="">Usha Raman ( Class Teacher VII - A)</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="edv-section">
+              <div class="title">Visitor Information</div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Name</label>
+                  <div>
+                    <input class="edv-input" value="Kumar K">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Email ID</label>
+                  <div>
+                    <input class="edv-input" value="Kumar7918@gmail.com">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Mobile No</label>
+                  <div>
+                    <input class="edv-input" value="+91975023659">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Address Line 1</label>
+                  <div>
+                    <input class="edv-input" value="31, B block">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Address Line 1</label>
+                  <div>
+                    <input class="edv-input" value="Sai baba Colony">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>City</label>
+                  <div>
+                    <input class="edv-input" value="Coimbatore">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>PIN</label>
+                  <div>
+                    <input class="edv-input" value="631056">
+                  </div>
+                </div>
+              </div>
+               <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Pass No</label>
+                  <div>
+                    <input class="edv-input" value="#1235455">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Photo</label>
+                  <div class="edv-input-group">
+                    <input class="edv-input" placeholder="Take Photo">
+                    <span class="input-addon">
+                      <i class="ico-camera"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-section">
+              <div class="title">Additional Visitors</div>
+            </div>      
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Add Additional Visitors?</label>
+                  <div>
+                    <label class="edv-radio">
+                      <input name="Add Additional Visitors" value="Yes" type="radio">Yes </label>
+                    <label class="edv-radio">
+                      <input name="Add Additional Visitors" value="No" type="radio">No </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="edv-section">
+              <div class="title">Add Visitor</div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Name</label>
+                  <div>
+                    <input class="edv-input" value="Raja S">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Mobile Number</label>
+                  <div>
+                    <input class="edv-input" value="7904952309">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Visitor Pass No</label>
+                  <div>
+                    <input class="edv-input" value="#1254658">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Photo</label>
+                    <div class="dflex align-item-center g5">
+                      <div class="edv-input-group">
+                        <input class="edv-input" placeholder="Take Photo">
+                        <span class="input-addon">
+                          <i class="ico-camera"></i>
+                        </span>
+                      </div>
+                      <a class="act-del"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <div>
+                    <input class="edv-input" value="Meenakshi">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <div>
+                    <input class="edv-input" value="9483256999">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                  <div>
+                    <input class="edv-input" value="#1254659">
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-field">
+                    <div class="dflex align-item-center g10">
+                      <div class="edv-input-group">
+                        <input class="edv-input" placeholder="Take Photo">
+                        <span class="input-addon">
+                          <i class="ico-camera"></i>
+                        </span>
+                      </div>
+                      <a class="act-qadd xs"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-section">
+              <div class="title">Schedule Appointment</div>
+            </div>      
+            <div class="edv-row f-group f-top">
+              <div class="edv-col3">
+                <div class="f-field">
+                  <label>Appointment Date</label>
+                    <div class="edv-input-group">
+                      <input class="edv-input" value="5/6/2023">
+                      <span class="input-addon">
+                        <i class="ico-caln"></i>
+                      </span>
+                    </div>
+                </div>
+              </div>
+              <div class="edv-col8">
+                <div>
+                  <label>Available Time</label>
+                    <div>
+                      <div class="nav-group a-time">
+                        <a class="sel">10:30 AM</a>
+                        <a>11:10 AM</a>
+                        <a>01:00 PM</a>
+                        <a>04:00 PM</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <a class="btn primary">Save</a>
+          <a class="btn line">Cancel</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

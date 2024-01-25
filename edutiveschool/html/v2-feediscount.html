@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : Fee Discount</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div>
+         <a href="#">Fee Discount</a>
+        </div>
+       </div>
+    </div>
+</div>
+<div class="mdl-page mdl-open">
+  <div class="mdl-pop">
+    <div class="mdl-head">
+      <h6>Fee Discount</h6>
+      <div class="nav-group pills">
+        <a class="ico-table sel"></a>
+        <a class="ico-chart-pie"></a>
+      </div>
+      <div class="mdl-head-act align-item-center">
+        <div class="dflex g20">
+
+          <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-sort"></i><span>Sort</span><i class="ico-ar-dwn fs-14"></i>
+            <div class="edv-dropdown mw-200 rht btm">
+              <ul>
+                <li>
+                  <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pb-10 pt-10"><i class="ico-ar-up fs-14"></i><span>Segment</span>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>All</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Foundational</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Middle</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Secondary</a>
+                    </li>
+                  </label>
+                </li>
+                <li>
+                  <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pt-10"><i class="ico-ar-dwn fs-14"></i><span>Class & Section</span>
+                    <!-- <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>All</a>
+                    </li> -->
+                  </label>
+                </li>
+              </ul>
+              <div class="p-lf-20 p-lr-20 pb-10 pt-15"><sapn class="btn primary">Apply</span></div>
+            </div>
+          </div>
+
+          <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-file-export"></i><span>Export</span><i class="ico-ar-dwn fs-14"></i>
+            <!-- <div class="edv-dropdown mw-200 rht btm">
+              <ul>
+                <li>
+                  <a><i class="ico-f-pdf"></i>PDF</a>
+                </li>
+                <li>
+                  <a><i class="ico-f-excel"></i>EXCEL</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+
+        </div>
+          <div class="ln"></div>
+          <a class="act-filter" mdl-pop="mdl-filter"></a>
+      </div>
+    </div>
+    <div class="mdl-body edv-ly-vscrl">
+      <div class="sub-head">
+        <div>
+          <div class="sort-tab">
+            <a>Segment: All<i class="ico-close"></i></a>
+            </div>
+        </div>
+      </div>
+      <div class="edv-markentry-wrap edv-ly-cntscrl">
+        <div class="edv-marksentry">
+            <table class="table tbl-topfxd tbl-stripe tbl-border">
+              <thead>
+                <tr>
+                  <th  class="mw-200 ">Discount Type</th>
+                  <th  class="mw-200 ">Discount Percentage</th>
+                  <th  class="mw-160 ">Foundational</th>
+                  <th  class="mw-150 ">Middle</th>
+                  <th  class="mw-160 ">Secondary </th>
+                  <th  class="mw-160 ">Total Students</th>
+                  <th>Discounted Fee</th>
+                  <!---->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>Army Students</span></td>
+                  <td><span>10%</span></td>
+                  <td><span>10</span></td>
+                  <td><span>10</span></td>
+                  <td><span>5</span></td>
+                  <td><span>35</span></td>
+                  <td><span>5,20,000.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Siblings Discount</span></td>
+                  <td><span>12%</span></td>
+                  <td><span>15</span></td>
+                  <td><span>35</span></td>
+                  <td><span>10</span></td>
+                  <td><span>60</span></td>
+                  <td><span>1,50,000.00</span></td>
+                </tr>
+                <tr class="t-r-bk">
+                  <td colspan="5"></td>
+                  <td><span class="fnt-weight-600">Grand Total</span></td>
+                  <td><span class="fnt-weight-600">7,05,000.00</span></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

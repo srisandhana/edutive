@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : Fee Collection Register</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div>
+         <a href="#">Fee collection register</a>
+        </div>
+       </div>
+    </div>
+</div>
+<div class="mdl-page mdl-open">
+  <div class="mdl-pop">
+    <div class="mdl-head">
+      <h6>Fee collection register</h6>
+      <div class="nav-group pills">
+        <a class="ico-table sel"></a>
+        <a class="ico-chart-pie"></a>
+      </div>
+      <div class="mdl-head-act align-item-center">
+        <div class="dflex g20">
+
+          <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-calendar"></i><span>Daily Collection</span><i class="ico-ar-dwn fs-14"></i>
+            <div class="edv-dropdown mw-200 rht btm">
+              <ul>
+                <li>
+                  <a class="dflex justify-content-between">
+                    <label>Daily Collection</label>
+                    <div><i class="ico-check"></i></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dflex justify-content-between">
+                    <label>Day Summary</label>
+                    <!-- <div><i class="ico-check"></i></div> -->
+                  </a>
+                </li>
+                <li>
+                  <a class="dflex justify-content-between">
+                    <label>Month Summary</label>
+                    <!-- <div><i class="ico-check"></i></div> -->
+                  </a>
+                </li>
+                <li>
+                  <a class="dflex justify-content-between">
+                    <label>Custom</label>
+                    <!-- <div><i class="ico-check"></i></div> -->
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-sort"></i><span>Sort</span><i class="ico-ar-dwn fs-14"></i>
+            <div class="edv-dropdown mw-250 rht btm">
+              <ul>
+                <li>
+                  <a><label class="edv-checkbox">
+                      <input id="chck02" type="checkbox">
+                    </label>Fee Head</a>
+                </li>
+                <li>
+                  <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pb-10 pt-10"><i class="ico-ar-up fs-14"></i><span>Term</span>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Term- I</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Term - II</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Term - III</a>
+                    </li>
+                  </label>
+                </li>
+                <li>
+                  <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pb-10 pt-10"><i class="ico-ar-up fs-14"></i><span>Segment</span>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>All</a>
+                    </li>
+                    <li class="dflex flex-direction-column flex-wrap">
+                      <a><label class="edv-checkbox">
+                        <input id="chck02" type="checkbox">
+                      </label>Foundational</a>
+                      <label class="dflex align-item-center g20 p-lf-30 p-lr-20 pt-10 pb-10"><i class="ico-ar-dwn fs-14"></i><span>Class</span></label>
+                        <li>
+                          <a class="p-lf-30 p-lr-20 pt-10 pb-10"><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>class IX</a>
+                        </li>
+                        <li>
+                          <a class="p-lf-30 p-lr-20 pt-10 pb-10"><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>class X</a>
+                        </li>
+                        <li>
+                          <a class="p-lf-30 p-lr-20 pt-10 pb-10"><label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                            </label>class VII</a>
+                        </li>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Middle</a>
+                    </li>
+                    <li>
+                      <a><label class="edv-checkbox">
+                          <input id="chck02" type="checkbox">
+                        </label>Secondary</a>
+                    </li>
+                  </label>
+                </li>
+              </ul>
+              <div class="p-lf-20 p-lr-20 pb-10 pt-15"><sapn class="btn primary">Apply</span></div>
+            </div>
+          </div>
+
+          <div class="dflex align-item-center g5 ddown sub-navyblue"><i class="ico-file-export"></i><span>Export</span><i class="ico-ar-dwn fs-14"></i>
+            <!-- <div class="edv-dropdown mw-200 rht btm">
+              <ul>
+                <li>
+                  <a><i class="ico-f-pdf"></i>PDF</a>
+                </li>
+                <li>
+                  <a><i class="ico-f-excel"></i>EXCEL</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+
+        </div>
+          <div class="ln"></div>
+          <a class="act-filter" mdl-pop="mdl-filter"></a>
+      </div>
+    </div>
+    <div class="mdl-body edv-ly-vscrl">
+      <div class="sub-head">
+        <div>
+          <div class="sort-tab">
+            <a>Segment: All<i class="ico-close"></i>
+            </a>
+            <a>Fee Head<i class="ico-close"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="edv-markentry-wrap edv-ly-cntscrl">
+        <div class="edv-marksentry">
+            <table class="table tbl-topfxd tbl-stripe tbl-border">
+              <thead>
+                <tr>
+                  <th rowspan="2" class="mw-100 ">Date</th>
+                  <th rowspan="2" class="mw-200 ">Student Name</th>
+                  <th rowspan="2" class="mw-160 ">Roll No</th>
+                  <th rowspan="2" class="mw-150 ">Class & Sec</th>
+                  <th rowspan="2" class="mw-160 ">Fee Paid </th>
+                  <th rowspan="2" class="mw-160 ">Sub Total</th>
+                  <th style="text-align: center;" colspan="4">Fee Breakdown</th>
+                  <!---->
+                  <th rowspan="2">Total Fee</th>
+                </tr>
+                <tr class="coltbl-sticky">
+                  <th class="title">Registration Fee</th>
+                  <th class="title">Admission Fee</th>
+                  <th class="title">Tuition Fee</th>
+                  <th class="title">Transport Fee</th>
+                  <!---->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3"><span>15/05/2023</span></td>
+                  <td><span>Ravi S</span></td>
+                  <td><span>721154623</span></td>
+                  <td><span>VII - Ganga</span></td>
+                  <td><span>20,000.00</span></td>
+                  <td><span></span></td>
+                  <td><span>80,000</span></td>
+                  <td><span>1,20,000</span></td>
+                  <td><span>1,50,000</span></td>
+                  <td><span>1,00,000</span></td>
+                  <td><span>4,50,000.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Aadharsh K</span></td>
+                  <td><span>721154624</span></td>
+                  <td><span>VII - Ganga</span></td>
+                  <td><span>20,000.00</span></td>
+                  <td><span></span></td>
+                  <td><span>80,000</span></td>
+                  <td><span>1,20,000</span></td>
+                  <td><span>1,50,000</span></td>
+                  <td><span>1,00,000</span></td>
+                  <td><span>4,50,000.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Kavi M</span></td>
+                  <td><span>721154626</span></td>
+                  <td><span>VII - Yamuna</span></td>
+                  <td><span>30,000.00</span></td>
+                  <td><span class="fnt-weight-600">70,0000.00</span></td>
+                  <td><span>80,000</span></td>
+                  <td><span>1,20,000</span></td>
+                  <td><span>1,50,000</span></td>
+                  <td><span>1,00,000</span></td>
+                  <td><span>4,50,000.00</span></td>
+                </tr>
+                <tr>
+                  <td rowspan="4"><span>14/05/2023</span></td>
+                  <td><span>Santhosh K</span></td>
+                  <td><span>621154626</span></td>
+                  <td><span>VIII - Yamuna</span></td>
+                  <td><span>30,000.00</span></td>
+                  <td><span></span></td>
+                  <td><span>70,000</span></td>
+                  <td><span>1,50,000</span></td>
+                  <td><span>1,20,000</span></td>
+                  <td><span>1,10,000</span></td>
+                  <td><span>4,50,000.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Pavithran</span></td>
+                  <td><span>621154214</span></td>
+                  <td><span>VIII - Yamuna</span></td>
+                  <td><span>15,000.00</span></td>
+                  <td><span></span></td>
+                  <td><span>70,000</span></td>
+                  <td><span>1,50,000</span></td>
+                  <td><span>1,20,000</span></td>
+                  <td><span>1,10,000</span></td>
+                  <td><span>4,50,000.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Sumitha</span></td>
+                  <td><span>621154215</span></td>
+                  <td><span>VIII - Yamuna</span></td>
+                  <td><span>30,000.00</span></td>
+                  <td><span></span></td>
+                  <td><span>70,000</span></td>
+                  <td><span>1,50,000</span></td>
+                  <td><span>1,20,000</span></td>
+                  <td><span>1,10,000</span></td>
+                  <td><span>4,50,000.00</span></td>
+                </tr>
+                <tr>
+                  <td><span>Ragul S</span></td>
+                  <td><span>621154218</span></td>
+                  <td><span>X - Kaveri</span></td>
+                  <td><span>15,000.00</span></td>
+                  <td><span></span></td>
+                  <td><span>70,000</span></td>
+                  <td><span>1,50,000</span></td>
+                  <td><span>1,20,000</span></td>
+                  <td><span>1,10,000</span></td>
+                  <td><span>4,50,000.00</span></td>
+                </tr>
+                <tr class="t-r-bk">
+                  <td colspan="9"></td>
+                  <td><span class="fnt-weight-600">Grand Total</span></td>
+                  <td><span class="fnt-weight-600">47,05,000.00</span></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="mdl-contain mdl-right mdl-filter">
+    <div class="mdl-pop xs">
+        <div class="mdl-head">
+            <h6>Filter</h6>
+            <a class="mdl-cls"></a>
+        </div>
+        <div class="mdl-body">
+            <div class="f-group f-top">
+                <div class="f-group f-top">
+                    <div class="f-field">
+                        <ul>
+                            <li>
+                                <a><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>Fee Head</a>
+                            </li>
+                            <li>
+                                <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pb-10 pt-10"><i
+                                        class="ico-ar-up fs-14"></i><span>Term</span>
+                            <li>
+                                <a><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>Term- I</a>
+                            </li>
+                            <li>
+                                <a><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>Term - II</a>
+                            </li>
+                            <li>
+                                <a><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>Term - III</a>
+                            </li>
+                            </label>
+                            </li>
+                            <li>
+                                <label class="dflex align-item-center g20 p-lf-20 p-lr-20 pb-10 pt-10"><i
+                                        class="ico-ar-up fs-14"></i><span>Segment</span>
+                            <li>
+                                <a><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>All</a>
+                            </li>
+                            <li class="dflex flex-direction-column flex-wrap">
+                                <a><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>Foundational</a>
+                                <label class="dflex align-item-center g20 p-lf-30 p-lr-20 pt-10 pb-10"><i
+                                        class="ico-ar-dwn fs-14"></i><span>Class</span></label>
+                            <li>
+                                <a class="p-lf-30 p-lr-20 pt-10 pb-10"><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>class IX</a>
+                            </li>
+                            <li>
+                                <a class="p-lf-30 p-lr-20 pt-10 pb-10"><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>class X</a>
+                            </li>
+                            <li>
+                                <a class="p-lf-30 p-lr-20 pt-10 pb-10"><label class="edv-checkbox">
+                                        <input id="chck02" type="checkbox">
+                                    </label>class VII</a>
+                            </li>
+                            </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-foo">
+                <div class="mdl-foo-action">
+                    <a class="btn primary" (click)="onSearch()">Submit</a>
+                    <a class="btn line" (click)="resetSearch()">Reset</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

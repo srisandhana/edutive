@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Peer Evaluation</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Peer Evaluation</a>
+          </div>
+        </div>
+        <div class="page-card">
+          <div class="main-head">
+            <div>
+              <div>
+                <div class="title"> Peer Evaluation </div>
+              </div>
+              <div class="edv-actions">
+                <div class="tsearch">
+                  <a></a>
+                  <input type="text" placeholder="Search" class="edv-input" fdprocessedid="7edwna">
+                </div>
+                <div class="ln"></div>
+                <div class="pagination">
+                  <a class="first"></a>
+                  <a class="prev"></a>
+                  <label> 1 to 20 of 420</label>
+                  <a class="next"></a>
+                  <a class="last"></a>
+                </div>
+                <div class="ln"></div>
+                <a class="act-filter" mdl-pop="mdl-filter"></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <table class="table tbl-topfxd">
+              <thead>
+                <tr>
+                  <th class="mw-60"></th>
+                  <th class="mw-80">
+                    <span>S.No</span>
+                  </th>
+                  <th>
+                    <span>Class</span>
+                  </th>
+                  <th>
+                    <span>Term & Cycle</span>
+                  </th>
+                  <th>Section</th>
+                  <th>Subject</th>
+                  <th>Assessment Activity</th>
+                  <th>Status</th>
+                  <th class="mw-80">Action(S)</th>
+                </tr>
+              </thead>
+              <tbody class="tbl-group tbl-open" *ngFor="let list of PeerList; let peer=index;">
+                <tr class="tbl-parent" (click)="Peerlistdropbox(peer)">
+                  <td>
+                    <a class="ico-ar-dwn"></a>
+                    <!-- <div class="edu-angle {{Peerlistdrop==peer?'up':'down'}}"></div> -->
+                  </td>
+                  <td>
+                    <span>1</span>
+                  </td>
+                  <td>
+                    <span> XII </span>
+                  </td>
+                  <td>
+                    <span> Term - 1,Pre Mid </span>
+                  </td>
+                  <td colspan="3" class="text-align-center"> - </td>
+                  <td>
+                    <a class="sts_reject">PFND</a>
+                    <!-- <div class="btn"
+                            [ngStyle]="{'color':statuscolor(list.status),'background-color':statusbackground(list.status)}"></div> -->
+                  </td>
+                  <td></td>
+                </tr>
+                <ng-container *ngIf="Peerlistdrop==peer">
+                  <tr class="tbl-child" *ngIf="!list.sections.length">
+                    <td colspan="9" class="text-align-center"> No Sections found </td>
+                  </tr>
+                </ng-container>
+                <tr class="tbl-parent" (click)="Peerlistdropbox(peer)">
+                  <td>
+                    <a class="ico-ar-dwn"></a>
+                    <!-- <div class="edu-angle {{Peerlistdrop==peer?'up':'down'}}"></div> -->
+                  </td>
+                  <td>
+                    <span>2</span>
+                  </td>
+                  <td>
+                    <span> X </span>
+                  </td>
+                  <td>
+                    <span> Term - 1,Pre Mid </span>
+                  </td>
+                  <td colspan="3" class="text-align-center"> - </td>
+                  <td>
+                    <a class="sts_pending">PRUP%</a>
+                    <!-- <div class="btn"
+                            [ngStyle]="{'color':statuscolor(list.status),'background-color':statusbackground(list.status)}"></div> -->
+                  </td>
+                  <td></td>
+                </tr>
+                <ng-container *ngIf="Peerlistdrop==peer">
+                  <tr class="tbl-child">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <span>Section - A</span>
+                    </td>
+                    <td>
+                      <span>Science</span>
+                    </td>
+                    <td>
+                      <span>Projects</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="act-edit"></a>
+                        <a class="act-more"></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="tbl-child">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <span>Section - B</span>
+                    </td>
+                    <td>
+                      <span>Science</span>
+                    </td>
+                    <td>
+                      <span>Projects</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="act-edit"></a>
+                        <a class="act-more"></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="tbl-child">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <span>Section - C</span>
+                    </td>
+                    <td>
+                      <span>-</span>
+                    </td>
+                    <td>
+                      <span>-</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="ico-add"></a>
+                        <a class="act-more"></a>
+                      </div>
+                    </td>
+                  </tr>
+                </ng-container>
+                <tr class="tbl-parent" (click)="Peerlistdropbox(peer)">
+                  <td>
+                    <a class="ico-ar-dwn"></a>
+                    <!-- <div class="edu-angle {{Peerlistdrop==peer?'up':'down'}}"></div> -->
+                  </td>
+                  <td>
+                    <span>3</span>
+                  </td>
+                  <td>
+                    <span> V </span>
+                  </td>
+                  <td>
+                    <span>Term - 1,Cycle Test - 1</span>
+                  </td>
+                  <td colspan="3" class="text-align-center"> - </td>
+                  <td>
+                    <a class="sts_success">PRC</a>
+                    <!-- <div class="btn"
+                            [ngStyle]="{'color':statuscolor(list.status),'background-color':statusbackground(list.status)}"></div> -->
+                  </td>
+                  <td></td>
+                </tr>
+                <ng-container *ngIf="Peerlistdrop==peer">
+                  <tr class="tbl-child">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <span>Section - A</span>
+                    </td>
+                    <td>
+                      <span>English</span>
+                    </td>
+                    <td>
+                      <span>Quiz</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="act-edit"></a>
+                        <a class="act-more"></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="tbl-child">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <span>Section - B</span>
+                    </td>
+                    <td>
+                      <span>English</span>
+                    </td>
+                    <td>
+                      <span>Speaking & Listening</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="act-edit"></a>
+                        <a class="act-more"></a>
+                      </div>
+                    </td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filter -->
+    <div class="mdl-contain mdl-right" mdl-box="mdl-filter">
+      <div class="mdl-pop xs">
+        <div class="mdl-head">
+          <h6>Filter</h6>
+          <a class="mdl-cls"></a>
+          <div class="tsearch mt-20 radius-20">
+            <input class="edv-input">
+            <a></a>
+          </div>
+        </div>
+        <div class="mdl-body">
+          <div class="f-group f-top">
+            <div class="f-field ">
+              <label>Segment</label>
+              <div>
+                <input class="edv-input">
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Class</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Section</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <div class="mdl-foo-action">
+            <a class="btn primary">Submit</a>
+            <a class="btn line">Reset</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

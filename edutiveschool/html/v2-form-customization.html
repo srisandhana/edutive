@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive : Form Customization</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+
+        <div class="edv-bcrumb">
+            <div class="home" href="../html/account-dashboard.html"><a>Dashboard</a></div>
+            <div><a href="../html/teachers.html">Teachers</a></div>
+            <div class="more"><span>Edit Teacher</span></div>
+        </div>
+      </div>
+
+    <!-- Modal Page -->
+    <div class="mdl-page mdl-open">
+      <div class="mdl-pop">
+        <div class="mdl-head">
+          <h6>Edit Teacher</h6>
+        </div>
+        <div class="mdl-body">
+          <div class="nav-wrap">
+            <div class="nav-line sline">
+                <a class="sel" onclick="TestsFunction('profile', this, '#fff')"><span id="defaultOpen">Personal Details</span></a>
+                <a onclick="openPage('Qualification', this, '#fff')"><span>Qualification</span></a>
+                <a onclick="openPage('Experience', this, '#fff')"><span>Experience</a>
+                <a onclick="openPage('Responsibilities', this, '#fff')"><span>Additional Responsibilities</span></a>
+                <a onclick="openPage('Class Responsibilities', this, '#fff')"><span>Class Responsibilities</span></a>
+                <a onclick="openPage('Co-Scholastic', this, '#fff')"><span>Co-Scholastic Class Responsibilities</span></a>
+            </div>
+            <div class="nav-container tabcontent" id="profile">
+            <div edv-tab="profile">
+              <div class="edv-section">
+                <div class="title">Teacher Profile</div>
+              </div>
+              
+           <div class="edv-row">
+              <div class="edv-col10">
+              <div class="edv-row f-group f-top">
+
+              <div class="edv-col4">
+                  <div class="f-field">
+                    <label>First Name</label>
+                       <div>
+                        <input class="edv-input">
+                       </div>
+                  </div>
+              </div>
+
+              <div class="edv-col4">
+                <div class="f-field">
+                  <label>Last Name</label>
+                     <div>
+                      <input class="edv-input">
+                     </div>
+                </div>
+              </div>
+        
+              <div class="edv-col4">
+                  <div class="f-field">
+                    <label>Employee Code</label>
+                            <div>
+                              <input class="edv-input">
+                            </div>
+                  </div>
+              </div>
+
+              <div class="edv-col4">
+                <div class="f-field">
+                  <label>Date of Joining</label>
+                      <div class="edv-input-group">
+                        <input class="edv-input">
+                        <span class="input-addon"><i class="ico-caln"></i></span>
+                      </div>
+                </div>
+              </div>
+
+              <div class="edv-col4">
+                <div class="f-field">
+                  <label>Gender</label>
+                  <div>
+                    <label class="edv-radio"><input name="Gender" value="Female" type="radio">Female</label>
+                    <label class="edv-radio"><input name="Gender" value="Male" type="radio">Male</label>
+                    <label class="edv-radio"><input name="Gender" value="Other" type="radio">Other</label>
+                  </div>         
+                </div>
+              </div>
+              
+              <div class="edv-col4">
+                  <div class="f-field">
+                    <label>Date of Birth</label>
+                        <div class="edv-input-group">
+                          <input class="edv-input">
+                          <span class="input-addon"><i class="ico-caln"></i></span>
+                        </div>
+                  </div>
+              </div>
+
+              <div class="edv-col4">
+                <div class="f-field">
+                  <label>Personal Email</label>
+                  <div>
+                    <input class="edv-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="edv-col4">
+                <div class="f-field">
+                  <label>Official Email</label>
+                  <div>
+                    <input class="edv-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="edv-col4">
+                <div class="f-field">
+                  <label>Mobile</label>
+                  <div>
+                    <input class="edv-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="edv-col4">
+                <div class="f-field">
+                  <label>Residence</label>
+                  <div>
+                    <input class="edv-input">
+                  </div>
+                </div>
+              </div>
+
+             </div>
+              </div>
+               <div class="edv-col2">
+                <div class="f-group f-top">
+                  <div class="f-field">
+                    <label>Photo</label>
+                    <div>
+                      <div class="edv-change-photo">
+                        <img src="../images/01.png" />
+                        <div class="edv-filewrap act-chnpho">
+                          <input type="file" hidden id="edv-photoupload">
+                          <label for="edv-photoupload">Change Photo</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+           <div class="edv-section">
+              <div  class="title">Address</div>
+            </div>
+
+            <div class="edv-row f-group f-top">
+              <div class="edv-col6">
+                <div class="f-field">
+                  <label>Address line 1</label>
+                  <div>
+                    <textarea class="edv-textarea" rows="5"></textarea>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="edv-col6">
+                <div class="f-field">
+                  <label>Address line 2</label>
+                  <div>
+                    <textarea class="edv-textarea" rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="edv-col3">
+              <div class="f-field">
+                <label>City</label>
+                <div>
+                  <input class="edv-input">
+                </div>
+              </div>
+             </div>
+
+             <div class="edv-col3">
+              <div class="f-field">
+                <label>Country</label>
+                <div>
+                  <select class="edv-select"></select>
+                </div>
+              </div>
+             </div>
+
+             <div class="edv-col3">
+              <div class="f-field">
+                <label>State</label>
+                <div>
+                  <select class="edv-select"></select>
+                </div>
+              </div>
+             </div>
+
+             <div class="edv-col3">
+              <div class="f-field">
+                <label>Pin</label>
+                <div>
+                  <input class="edv-input">
+                </div>
+              </div>
+             </div>
+            </div>
+
+          
+            <div class="edv-section">
+              <div  class="title"> Identification 
+                <a  class="act-qadd sm"></a>
+              </div>
+            </div>
+
+
+        <div class="tbl-responsive">
+          <table class="table table-hover tbl-border">
+            <thead>           
+              <tr>              
+                <th width="30%">ID Proof Type</th>
+                <th width="30%">ID Proof Number</th>
+                <th >Upload document</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <select class="edv-select"></select>
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <div class="f-field" style="margin-bottom: 0px;">
+                        <input class="edv-file" type="file">
+                  </div>
+                </td>
+                <td>
+                  <div class="act-del"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="edv-section">
+          <div class="title"> Parent/Spouse Details 
+            <a  class="act-qadd sm"></a>
+          </div>
+        </div>
+
+        <div class="tbl-responsive">
+          <table class="table table-hover tbl-border">
+            <thead>           
+              <tr>              
+                <th width="25%">Relation</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <select class="edv-select"></select>
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <div class="act-del"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+      </div>
+            </div>
+
+            <div class="nav-container tabcontent" id="Qualification">
+            <div edv-tab="profile">
+              <div class="edv-section">
+                <div class="title">Qualification
+                  <a  class="act-qadd sm"></a>
+                </div>
+              </div>
+
+             <div class="tbl-responsive">
+          <table class="table table-hover tbl-border">
+            <thead>           
+              <tr>              
+                <th width="15%">Level</th>
+                <th width="15%">Degree awarded</th>
+                <th>Specialization</th>
+                <th>Institute</th>
+                <th>University</th>
+                <th>Year of Passing</th>
+                <th>Score/Grade</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <select class="edv-select"></select>
+                </td>
+                <td>
+                  <select class="edv-select"></select>
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <input class="edv-input">
+                </td>
+                <td>
+                  <div class="act-del"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+             </div>
+           </div>
+            </div>
+            
+            <div class="nav-container tabcontent" id="Experience">
+              <div edv-tab="profile">
+                <div class="edv-section">
+                  <div class="title">Experience
+                    <a  class="act-qadd sm"></a>
+                  </div>
+                </div>
+  
+                 <div class="tbl-responsive">
+            <table class="table table-hover tbl-border">
+              <thead>           
+                <tr>              
+                  <th width="15%">School Name</th>
+                  <th width="15%">City</th>
+                  <th>Date Started</th>
+                  <th>Date Ended</th>
+                  <th>Subjects handled</th>
+                  <th>Classes handled</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <div class="edv-input-group">
+                      <input class="edv-input">
+                      <span class="input-addon"><i class="ico-caln"></i></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="edv-input-group">
+                      <input class="edv-input">
+                      <span class="input-addon"><i class="ico-caln"></i></span>
+                    </div>
+                  </td>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <div class="act-del"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <div class="edv-input-group">
+                      <input class="edv-input">
+                      <span class="input-addon"><i class="ico-caln"></i></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="edv-input-group">
+                      <input class="edv-input">
+                      <span class="input-addon"><i class="ico-caln"></i></span>
+                    </div>
+                  </td>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <div class="act-del"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+                 </div>
+             </div>
+            </div>
+
+            <div class="nav-container tabcontent" id="Responsibilities">
+              <div edv-tab="profile">
+                <div class="edv-section">
+                  <div class="title">Additional Responsibilities
+                    <a  class="act-qadd sm"></a>
+                  </div>
+                </div>
+  
+                 <div class="tbl-responsive">
+            <table class="table table-hover tbl-border">
+              <thead>           
+                <tr>              
+                  <th>Responsibility</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input class="edv-input">
+                  </td>
+                  <td>
+                    <div class="edv-input-group">
+                      <input class="edv-input">
+                      <span class="input-addon"><i class="ico-caln"></i></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="edv-input-group">
+                      <input class="edv-input">
+                      <span class="input-addon"><i class="ico-caln"></i></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="act-del"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+                 </div>
+             </div>
+            </div>
+
+            <div class="nav-container tabcontent" id="Class Responsibilities">
+              <div edv-tab="profile">
+                <div class="edv-section">
+                  <div class="title">Class Responsibilities
+                    <a  class="act-qadd sm"></a>
+                  </div>
+                </div>
+  
+                 <div class="tbl-responsive">
+            <table class="table table-hover tbl-border">
+              <thead>           
+                <tr>              
+                  <th width="25%">Assignment Type</th>
+                  <th>Class</th>
+                  <th>Section</th>
+                  <th>Subject</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <div class="act-del"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+                 </div>
+             </div>
+            </div>
+
+            <div class="nav-container tabcontent" id="Co-Scholastic">
+              <div edv-tab="profile">
+                <div class="edv-section">
+                  <div class="title">Co-Scholastic Class Responsibilities 
+                    <a  class="act-qadd sm"></a>
+                  </div>
+                </div>
+  
+                 <div class="tbl-responsive">
+            <table class="table table-hover tbl-border">
+              <thead>           
+                <tr>              
+                  <th width="25%">Assignment Type</th>
+                  <th>Class</th>
+                  <th>Section</th>
+                  <th>Subject</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <select class="edv-select"></select>
+                  </td>
+                  <td>
+                    <div class="act-del"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+                 </div>
+             </div>
+            </div>
+  
+          </div>
+       </div>
+ <div class="mdl-foo">           
+     <a class="btn primary">Save</a>
+      <a class="btn line">Cancel</a>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+<script>
+  function openPage(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].style.color = "";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    var T = document.getElementById("act-qadd");
+    T.style.display = "none"; // <-- Set it to block
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+<script>
+  function TestsFunction(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontents = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].style.display = "none";
+      tabcontents[i].style.color = "";
+    }
+    tablinks1 = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks1.length; i++) {
+      tablinks1[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    var T = document.getElementById("act-qadd");
+    T.style.display = "block"; // <-- Set it to block
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

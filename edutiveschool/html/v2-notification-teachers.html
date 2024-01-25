@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive : Notification</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div>
+         <a href="#">Notification</a>
+        </div>
+       </div>
+    
+    <!-- Modal Page -->
+
+  <div class="mdl-page mdl-open">
+    <div class="mdl-pop">
+     <div class="mdl-head">
+      <h6>Notification</h6>
+     </div>
+     <div class="mdl-body">
+      <div class="nav-wrap">
+         <div class="edv-row">
+             <div class="edv-col3">
+               <div class="f-group f-top">
+                 <div class="f-field ">
+                   <label>Notification For</label>
+                   <div>
+                    <label class="edv-radio"><input name="Event" value="Event" type="radio" checked="">Event</label>
+                    <label class="edv-radio"><input name="Event" value="Custom" type="radio">Custom</label>
+                   </div>
+                 </div>  
+               </div>
+             </div>
+             <div class="edv-col3">
+               <div class="f-group f-top">
+                 <div class="f-field">
+                   <label>Notify To</label>
+                   <div>
+                     <select class="edv-select">
+                       <option value="0" selected>Teachers</option>
+                     </select>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="edv-col3">
+               <div class="f-group f-top">
+                 <div class="f-field">
+                   <label>Type</label>
+                    <div>
+                    <label class="edv-radio"><input name="Subject" value="Subject" type="radio" checked="">Subject</label>
+                    <label class="edv-radio"><input name="Subject" value="Class" type="radio">Class</label>
+                   </div> 
+                 </div>
+               </div>
+             </div>
+             <div class="edv-col3">
+               <div class="f-group f-top">
+                 <div class="f-field">
+                   <label>Segment</label>
+                   <div>
+                     <select class="edv-select">
+                       <option value="0" selected>Middle</option>
+                       <option value="1"></option>
+                       <option value="2"></option>
+                     </select>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="edv-col3">
+               <div class="f-group f-top">
+                 <div class="f-field">
+                   <label>Subject</label>
+                   <div>
+                    <select class="edv-select">
+                        <option value="0" selected>English</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                      </select>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Class & Section</label>
+                  <div>
+                   <select class="edv-select">
+                       <option value="0" selected>English</option>
+                       <option value="1"></option>
+                       <option value="2"></option>
+                     </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="edv-col3">
+                <div class="f-group f-top">
+                  <div class="f-field">
+                    <label>Event</label>
+                    <div>
+                     <select class="edv-select">
+                         <option value="0" selected>Weekly Teachers Meeting</option>
+                         <option value="1"></option>
+                         <option value="2"></option>
+                       </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-group f-top">
+                  <div class="f-field">
+                    <label>Teachers</label>
+                    <div>
+                      <select class="edv-select">
+                        <option value="0" selected>Select All</option>
+                        <option value="1">Shiva Kumar</option>
+                        <option value="2">Arun Prasad</option>
+                        <option value="1">Murugan S</option>
+                        <option value="2">Annie JM</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="edv-col3">
+                <div class="f-group f-top">
+                  <div class="f-field">
+                    <label>Notification Type</label>
+                    <div>
+                     <select class="edv-select">
+                         <option value="0" selected>SMS</option>
+                         <option value="1"></option>
+                         <option value="2"></option>
+                       </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-row">
+             <div class="edv-col6">
+               <div class="f-group f-top">
+                 <div class="f-field">
+                   <label>Message</label>
+                   <div>
+                      <textarea class="edv-textarea" rows="5">Dear Teachers 
+Coming Friday We Have Weekly Teachers Meeting at 11:15AM, Please Attend the Meeting Without Fail..</textarea>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+         </div>
+        </div>
+       </div>
+     <div class="mdl-foo">
+      <a class="btn primary">Save</a>
+      <a class="btn line">Cancel</a>
+     </div>
+    </div>
+ </div>
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Add User</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+
+        <div class="edv-bcrumb">
+          <div class="home"><a>Dashboard</a></div>
+          <div><a>Peer Evaluation</a></div>
+          <div class="more"><span>Create Assessment Activity</span></div>
+
+        </div>
+     </div>
+   </div>
+
+
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open" style="display: block;" edv-mdl-box="addEditProfile" id="addEditProfile">
+
+    <div class="mdl-pop">
+      <div class="mdl-head">
+       <h6>Create Assessment Activity</h6>
+      </div>
+      <div class="mdl-body">
+       <div class="nav-wrap">
+        <div class="edv-row">
+         <div class="edv-col12">
+          <div class="wk-row" id="sticky-row">
+           <div>
+            <a class="act-user">1 </a>
+            <span class="setup">Define Group</span>
+           </div>
+           <div class="edv-col1">
+            <span class="ln-h"></span>
+           </div>
+           <div>
+            <a class="act-user nextclr">2 </a>
+            <span>Assign Peer Evaluator</span>
+           </div>
+          </div>
+         </div>
+        </div>
+     <div class="edv-section"></div>
+     <div class="edv-row">
+                <div class="edv-col10">
+                  <div class="edv-row">
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Subject</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">Language I</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                 <option value="3"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Assessment Activity</label>
+                            <div>
+                              <select class="edv-select">
+                                <option value="0" selected="">Quick Quiz</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                 <option value="3"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>No. of Groups</label>
+                            <div>
+                              <input class="edv-input" placeholder="4">
+                            </div>
+                          </div>  
+                        </div>
+                      </div>
+
+                      <div class="edv-col3">
+                        <div class="f-group f-top">
+                          <div class="f-field">
+                            <label>Peer Evaluation Type</label>
+                             <div>
+                              <select class="edv-select">
+                                <option value="0" selecte0d="">1.1</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                 <option value="3"></option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
+               
+              </div>
+              <div class="nav-container peernav">
+                <div class="main-head ">
+                  <div >
+                    <div>
+                      <h6><b>Define Group</b></h6>
+                    </div>
+                    <div>
+                        <div>
+                         <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider round"></span>
+                         </label>
+                        </div>
+                     <a>Dynamic Students Allocation</a>
+                  </div>
+                  </div>
+                  </div>
+            <div class="edv-class-boardview">
+            
+            <div>
+
+              
+              <div class="edv-classbdy" id="class-body">
+                <div class="edv-class-group">
+                  <p><b>Student List</b></p>
+                  <div class="edv-class-addrow edv-ques-choice">
+                    <div>
+                        <div>
+                          <i class="ico-drag"></i>
+                          <input class="edv-input" value="Divya" fdprocessedid="10mu7h">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="edv-class-addrow edv-ques-choice">
+                    <div>
+                      <div>
+                        <i class="ico-drag"></i>
+                        <input class="edv-input" value="Kowshick">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edv-class-addrow edv-ques-choice">
+                    <div>
+                      <div>
+                        <i class="ico-drag"></i>
+                       <input class="edv-input" value="Nivetha">
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              
+              <div class="edv-classbdy" id="edv-classbody">
+                <div class="edv-class-group">
+                  <p><b>Batch 1</b> <a class="act-edit"></a>
+                   <span class="four-number">4</span>
+                  </p>
+                  
+                  <div class="edv-class-addrow">
+                    <input class="edv-input" value="Aswin">
+                   
+                  </div>
+                </div>
+                <div class="edv-class-group">
+                   <div class="edv-class-addrow">
+                    <input class="edv-input" value="Gowtham">
+                   
+                  </div>
+                </div>
+                <div class="edv-class-group">
+                  <div class="edv-class-addrow">
+                    <input class="edv-input" value="Kathick">
+                   
+                  </div>
+                </div>
+                <div class="edv-class-group">
+                 <div class="edv-class-addrow">
+                    <input class="edv-input" value="Meha">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              
+              <div class="edv-classbdy" id="edv-classbody">
+
+                
+                <div class="edv-class-group">
+                  <p><b>Batch </b> <a class="act-edit"></a>
+                    <span class="Icon-awesome-check-circle">
+                      <a class="ico-check"></a>
+                    </span>
+                    <span class="four-number">4</span>
+                  </p>
+                  <div class="edv-class-addrow">
+                    <input class="edv-input" value="Aardhra">
+                    
+                  </div>
+                  <div class="edv-class-addrow">
+                    <input class="edv-input" value="Harishanker">
+                    
+                  </div>
+                  <div class="edv-class-addrow">
+                    <input class="edv-input" value="Indhrani">
+                    
+                  </div>
+                  <div class="edv-class-addrow">
+                    <input class="edv-input" value="Lokeshwari">
+                    
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+
+            <div>
+              
+          
+              <div class="edv-classbdy" id="edv-classbody">
+
+                <div class="edv-class-group">
+                  <p><b>Group 3 </b><a class="act-edit"></a> <span class="four-number">4</span></p>
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="Chitra">
+                 
+                </div>
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="Harish">
+                  
+                </div>
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="Jayakumar">
+                 
+                </div>
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="Lavanya">
+                  
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              
+              <div class="edv-classbdy" id="edv-classbody">
+
+                
+                <div class="edv-class-group">
+                  <p><b>Group 4</b> <a class="act-edit"></a> <span class="four-number">4</span> </p>
+
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="">
+                 
+                </div>
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="">
+               
+                </div>
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="">
+                 
+                </div>
+                <div class="edv-class-addrow">
+                  <input class="edv-input" value="">
+                  
+                </div>
+               
+             
+               
+                </div>
+              </div>
+            </div>
+
+            </div>
+          
+          </div>
+   
+    
+   </div>
+   </div>
+   <div class="mdl-foo">           
+          <a class="btn primary">Next </a>
+          <a class="btn line">Cancel</a>
+   </div>
+   </div>
+  </div>
+
+</body>
+    <script>
+        $("#edvlnav").load("lnav.html");
+        $("#edvheader").load("header.html");
+    </script>
+</html>

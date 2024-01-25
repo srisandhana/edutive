@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Add User</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+   <header id="edvheader"></header>
+   <!-- Left Navigation -->
+   <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div class="home">
+      <a>Dashboard</a>
+     </div>
+     <div>
+      <a>Peer Evaluation</a>
+     </div>
+     <div class="more">
+      <span>Create Assessment Activity</span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open" style="display: block;" edv-mdl-box="addEditProfile" id="addEditProfile">
+   <div class="mdl-pop">
+    <div class="mdl-head" id="cls-mdl-head">
+     <h6>Create Assessment Activity</h6>
+    </div>
+    <div class="mdl-body" id="mdlbdy">
+     <div class="nav-wrap">
+      <div class="edv-row" id="sticky-row">
+       <div class="edv-col12">
+        <div class="wk-row" id="sticky-row">
+         <div>
+          <span>
+           <a class="act-user">
+            <i class="ico-check"></i>
+           </a>
+          </span>
+          <span class="setup">Define Group</span>
+         </div>
+         <div class="edv-col1" id="line-class">
+          <span class="ln-h"></span>
+         </div>
+         <div>
+          <a class="act-user">2</a>
+          <span class="setup">Assign Peer Evaluator</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="edv-section"></div>
+      <div class="nav-container peernav">
+        <div class="main-head ">
+            <div >
+              <div>
+                <h6><b>Assign Peer Evaluator</b></h6>
+              </div>
+            </div>
+            </div>
+        
+       <div class="edv-class-boardview">
+        <div>
+       
+         <div class="edv-classbdy" id="edv-classbody">
+          <div class="edv-class-group">
+           <p>
+            <b>Batch 1</b>
+            <a class="act-edit"></a>
+            <span class="four-number">4</span>
+           </p>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span">Aswin</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Gowtham</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+          </div>
+          <div class="edv-class-group">
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span">Gowtham</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Aswin</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+          </div>
+          <div class="edv-class-group">
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span">Kathick</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Meha</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+          </div>
+          <div class="edv-class-group">
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span">Meha</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Kathick</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div>
+         <div>
+          <span></span>
+         </div>
+         <div class="edv-classbdy" id="edv-classbody">
+          <div class="edv-class-group">
+           <p>
+            <b>Batch 2</b>
+            <a class="act-edit"></a>
+            <span class="four-number">4</span>
+           </p>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span2">Aardhra</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Harishanker</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span2">Harishanker</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Lokeshwari</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span2">Indhrani</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Aardhra</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span2">Lokeshwari</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Indhrani</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div>
+         <div>
+          <span></span>
+         </div>
+         <div class="edv-classbdy" id="edv-classbody">
+          <div class="edv-class-group">
+           <p>
+            <b>Batch 3 </b>
+            <a class="act-edit"></a>
+            <span class="four-number">4</span>
+           </p>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span3">Chitra</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Lavanya</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span3">Harish</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Jayakumar</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span3">Jayakumar</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Chitra</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span3">Lavanya</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Harish</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div>
+         <div>
+          <span></span>
+         </div>
+         <div class="edv-classbdy" id="edv-classbody">
+          <div class="edv-class-group">
+           <p>
+            <b>Batch 4</b>
+            <a class="act-edit"></a>
+            <span class="four-number">4</span>
+           </p>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span4">Divya</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Kowshick</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span4">Kowshick</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Nivetha</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+           <div class="edv-class-addrow">
+            <span class="dropdwn-span4">Nivetha</span>
+            <select class="edv-select" id="edv-classbody">
+             <option value="0" selected="">Divya</option>
+             <option value="1"></option>
+             <option value="2"></option>
+            </select>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mdl-foo">
+     <a class="btn primary">Save </a>
+     <a class="btn line">Cancel</a>
+    </div>
+   </div>
+  </div>
+ </body>
+ <script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+ </script>
+</html>

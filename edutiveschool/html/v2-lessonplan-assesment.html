@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Manual Time Table</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div class="home">
+            <a>Dashboard</a>
+          </div>
+          <div>
+            <span>Settings</span>
+          </div>
+          <div class="more">
+            <span>Lesson Plan Assessment Rubric</span>
+          </div>
+        </div>
+        
+        <!-- Modal page -->
+        <div class="mdl-page mdl-open" >
+          <div class="mdl-pop">
+            <div class="mdl-head">
+              <h6>Lesson Plan Assessment Rubric</h6>
+              <div class="mdl-head-act">
+               
+              </div>
+            </div>
+            <div class="mdl-body edv-ly-vscrl">
+              <div class="edv-row">
+                <div class="edv-col12">
+                    <div class="edv-row" id="table-row">
+                     <div class="edv-col4" id="edvcol4">
+                      <div class="f-group f-top">
+                       <div class="f-field ">
+                        <div class="edv-noticebrd">
+                         <div class="detl">
+                          <div class="desc1">Assessment Activity:  <span>Lesson Plan</span>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="edv-col4" id="edvcol4">
+                      <div class="f-group f-top">
+                       <div class="f-field">
+                        <div class="edv-noticebrd">
+                         <div class="detl">
+                          <div class="desc1">Description:  <span>For all Grade</span>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+              </div>
+
+              <div class="edv-markentry-wrap edv-ly-cntscrl">
+                <div class="edv-marksentry">
+                    <table class="table tbl-topfxd tbl-border tbl-stripe">
+                      <thead>
+                        <th>
+                          <span>Criteria</span>
+                        </th>
+                        <th>
+                          <span>Score</span>
+                        </th>
+                        <th>
+                          <span>Description</span>
+                        </th>
+                      </thead>
+                     <tbody>
+                        <tr>
+                            <td class="t-head"> Can write answers to questions <a class="ico-info" id="info-icon"></a>
+                            </td>
+                            <td>
+                              <input class="edv-input edv-input-btmln" placeholder="4">
+                            </td>
+                            <td>
+                              <span>Has adhered to the format given by the school; throughout the plan.</span>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td class="t-head"> Objectives/ Outcomes <a class="ico-info" id="info-icon"></a>
+                            </td>
+                            <td>
+                              <input class="edv-input edv-input-btmln" placeholder="">
+                            </td>
+                            <td>
+                              <span>Three- four objectives are not specific and do not relate to skills or concepts. Three to four objectives do not relate to the highest level of proficiency. One or two objectives are not measurable and time bound.</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="t-head"> Assessment <a class="ico-info" id="info-icon"></a>
+                            </td>
+                            <td>
+                              <input class="edv-input edv-input-btmln" placeholder="">
+                            </td>
+                            <td>
+                              <span>The assessments align to most of the objectives and reflect a variety of methods.</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="t-head"> Instructional Strategies <a class="ico-info" id="info-icon"></a>
+                            </td>
+                            <td>
+                              <input class="edv-input edv-input-btmln" placeholder="">
+                            </td>
+                            <td>
+                              <span>Plan of instruction is vague. Only the content that will be taught is given. The methodology is missing in more than two instances.</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="t-head">Resources <a class="ico-info" id="info-icon"></a>
+                            </td>
+                            <td>
+                              <input class="edv-input edv-input-btmln" placeholder="" >
+                            </td>
+                            <td>
+                              <span>Materials and resources are listed with specific citation in most cases. A range of resources and technological tools are used.</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="t-head"> Differentiation <a class="ico-info" id="info-icon"></a>
+                            </td>
+                            <td>
+                              <input class="edv-input edv-input-btmln" placeholder="">
+                            </td>
+                            <td>
+                              <span>Plans for accommodating learner differences are not included in the plan.</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="t-head"> Home Assignments/ Extended Learning Activities <a class="ico-info" id="info-icon"></a>
+                            </td>
+                            <td>
+                              <input class="edv-input edv-input-btmln" placeholder="">
+                            </td>
+                            <td>
+                              <span>A variety of home assignments planned. These support the attainment of the learning objectives.</span>
+                            </td>
+                          </tr>
+                </tbody>
+             </table>
+            </div>
+               
+              </div>           
+            </div>
+            <div class="mdl-foo">           
+              <a class="btn primary">Save</a>
+              <a class="btn line">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Review</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div>
+            <a>Review</a>
+          </div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div>
+                <div class="dflex">
+                  <span class="tab-group">
+                    <a rel="Question Bank" class="sel" onclick="TestsFunction('Questionbank', this, '')" id="defaultOpen">Question Bank</a>
+                    <a rel="Lesson Plan" class="" onclick="openPage('Lessonplan', this, '')">Lesson Plan</a>
+                  </span>
+                </div>
+              </div>
+              <div class="edv-actions">
+                <div class="tsearch">
+                  <a></a>
+                  <input type="text" placeholder="Search" class="edv-input">
+                </div>
+                <div class="ln w10 empty"></div>
+                <div class="ln"></div>
+                <div class="pagination">
+                  <a class="first"></a>
+                  <a class="prev"></a>
+                  <label> 1 to 20 of 420</label>
+                  <a class="next"></a>
+                  <a class="last"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Page Content -->
+          <div class="page-content">
+            <div class="tabcontent" id="Questionbank">
+              <table class="table tbl-topfxd tbl-stripe">
+                <thead>
+                  <tr>
+                    <th>
+                      <span>Chapter Name</span>
+                    </th>
+                    <th>
+                      <span>Topic Name</span>
+                    </th>
+                    <th>
+                      <span>Class</span>
+                    </th>
+                    <th>
+                      <span>Subject</span>
+                    </th>
+                    <th>
+                      <span>Action(s)</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Spatial Understanding </td>
+                    <td>Shapes</td>
+                    <td>II</td>
+                    <td>Mathematics</td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="act-edit sm "></a>
+                        <a class="act-del sm "></a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tabcontent" id="Lessonplan">
+              <table class="table tbl-topfxd tbl-stripe">
+                <thead>
+                  <tr>
+                    <th>
+                      <span>Section Name</span>
+                    </th>
+                    <th>
+                      <span>Subject</span>
+                    </th>
+                    <th>
+                      <span>Chapter Name</span>
+                    </th>
+                    <th>
+                      <span>Review Status</span>
+                    </th>
+                    <th>
+                      <span>Action(s)</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ganga</td>
+                    <td>CBSE-VIII-Mathematics</td>
+                    <td>Rational Numbers</td>
+                    <td>
+                      <span class="sts_pending">Pending</span>
+                    </td>
+                    <td>
+                      <div class="tbl-action">
+                        <a class="ico-doc"></a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        tabcontent[i].style.color = "";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+      var T = document.getElementById("act-qadd");
+      T.style.display = "none"; // <-- Set it to block
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+  <script>
+    function TestsFunction(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontents = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].style.display = "none";
+        tabcontents[i].style.color = "";
+      }
+      tablinks1 = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks1.length; i++) {
+        tablinks1[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+      var T = document.getElementById("act-qadd");
+      T.style.display = "block"; // <-- Set it to block
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

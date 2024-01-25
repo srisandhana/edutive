@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Edit Teaching Norms</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+        <div class="home">
+         <a href="../html/account-dashboard.html">Dashboard</a>
+        </div>
+        <div>
+          <a href="#">Settings</a>
+         </div>
+        <div class="more">
+         <span>Edit Teaching Norms</span>
+        </div>
+       </div>
+   </div>
+  </div>
+  <!-- Modal Page -->
+  <div class="mdl-page mdl-open" style="display: block;" edv-mdl-box="addEditProfile" id="addEditProfile">
+   <div class="mdl-pop">
+    <div class="mdl-head">
+     <h6>Edit Teaching Norms</h6>
+    </div>
+    <div class="mdl-body">
+     <div class="nav-wrap">
+      <div edv-tab="profile">
+        <div class="edv-row">
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field ">
+                  <label>Curriculum</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected>Select segment</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Segment</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected>Select segment</option>
+                      <option value="1">Select All</option>
+                      <option value="2">Foundational</option>
+                      <option value="3">Preparatory</option>
+                      <option value="4">Middle</option>
+                      <option value="5">Secondary</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Applicable class</label>
+                   <div>
+                    <select class="edv-select">
+                      <option value="0" selected>Select Applicable class</option>
+                      <option value="1">No data available</option>
+                      <option value="2">Add any segment to show applicable classes</option>
+                    </select>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Role</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected>--Select Role--</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Maximum teaching hours</label>
+                  <div>
+                    <input class="edv-input" placeholder="Enter hours">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Minimum teaching hours</label>
+                  <div>
+                    <input  type="number" class="edv-input" placeholder="Enter hours">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div class="f-group f-top">
+                <div class="f-field">
+                  <label>Type</label>
+                  <div>
+                    <select class="edv-select">
+                      <option value="0" selected>Select type</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    <div class="mdl-foo">
+     <a class="btn primary">Save</a>
+     <a class="btn line">Cancel</a>
+    </div>
+
+  </div>
+</div>
+ </body>
+ <script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

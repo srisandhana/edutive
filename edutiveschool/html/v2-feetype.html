@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Fee Type</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+
+ </head>
+ <body>
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div>
+      <a>Settings</a>
+     </div>
+     <div class="more">
+      <span>Fee Type</span>
+     </div>
+    </div>
+    <div class="page-card">
+      <!-- Header -->
+      <div class="main-head">
+        <div>
+          <div>
+            <div class="title"> 
+              Fee Type
+            </div>
+            </div>
+          <div class="edv-actions">
+
+            <div class="tsearch">
+              <a></a>
+              <input type="text" placeholder="Search" class="edv-input">
+            </div>
+
+            <div class="ln w10 empty"></div>
+            <a class="act-qadd sm" mdl-pop="definefeetype"></a>
+            <div class="ln"></div>
+
+            <a class="act-filter" mdl-pop="mdl-filter"></a>
+           
+          
+          </div>
+        </div>
+      </div>
+      <!-- Page Content -->
+      <div class="page-content">
+       <table class="table tbl-topfxd table-stripe">
+        <thead>
+         <tr>
+          <th>
+           <span>SNo</span>
+          </th>
+          <th>
+           <span>Fee Type</span>
+          </th>
+          <th>
+           <span>Description</span>
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr >
+          <td>
+           <span>1</span>
+          </td>
+          <td>
+           <span>Tuition Fee</span>
+          </td>
+          <td>
+           <span>Tuition fees are charges to cover key elements of your course & academic life, as well as students wellbeing.</span>
+          </td>
+         </tr>
+         <tr >
+          <td>2</td>
+          <td>Admission Fee</td>
+          <td>Non-refundable fee set out in the Tuition Fees Schedule payable upon accepting an offer of enrolment</td>
+         </tr>
+         <tr >
+          <td>3</td>
+          <td>Transport Fee</td>
+          <td>To provide smooth and safe transport.</td>
+         </tr>
+         <tr >
+          <td>4</td>
+          <td>Hostel Fee</td>
+          <td>The fee where students stay which including electricity and everything facilities is being given to the students</td>
+         </tr>
+         <tr >
+          <td>5</td>
+          <td>Mess Charges</td>
+          <td>Mess fee is the amount paid for the food you eat from the campus facility.</td>
+         </tr>
+         <tr >
+          <td>6</td>
+          <td>Exam Fee</td>
+          <td>The fee for registering and securing admission to an examination.</td>
+         </tr>
+         <tr >
+          <td>7</td>
+          <td>Practical Fee</td>
+          <td>The theory exam for physics, Chemistry or Biology already include the practical exam fee</td>
+         </tr>
+         <tr >
+          <td>8</td>
+          <td>Library Fee</td>
+          <td>The students shall pay along with the tuition fees to access library</td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  <!-- Modal Page -->
+  <div class="mdl-page" mdl-box="definefeetype">
+    <div class="mdl-pop">
+     <div class="mdl-head">
+      <h6>Define Fee Type</h6>
+     </div>
+     <div class="mdl-body">
+        <div class="edv-row f-group f-top">
+          <div class="edv-col3">
+            <div class="f-field">
+                <label>Fee Type</label>
+                <div>
+                 <input class="edv-input" placeholder="Enter Fee Type">
+                </div>
+               </div>
+            </div>
+            <div class="edv-col3">
+                <div class="f-field">
+                  <label>Description</label>
+                  <div>
+                    <input class="edv-input" placeholder="Enter Description">
+                  </div>
+                </div>
+            </div> 
+        </div>
+     </div>
+     <div class="mdl-foo ">
+      <a class="btn primary">Save</a>
+      <a class="btn line">Cancel</a>
+     </div>
+    </div>
+ </div>
+</body>
+<script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+</script>
+</html>

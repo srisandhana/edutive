@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+    <title>Edutive :: Assign Section</title>
+    <!-- Stylesheet -->
+    <link href="../css/edv.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <!-- Js -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Nav -->
+      <header id="edvheader"></header>
+      <!-- Left Navigation -->
+      <nav id="edvlnav"></nav>
+      <!-- Page -->
+      <div class="content-wrap">
+        <div class="edv-bcrumb">
+          <div class="home">
+            <a>Dashboard</a>
+          </div>
+          <div>
+            <a>Students Assign Group</a>
+          </div>
+        </div>
+        <div class="page-card">
+          <div class="main-head">
+            <div>
+              <div>
+              </div>
+              <div class="edv-actions">
+                <div class="tsearch">
+                  <a></a>
+                  <input type="text" placeholder="Search" class="edv-input">
+                </div>
+                <div class="ln w10 empty"></div>
+                <button class="btn line multi ddown">Assign <div class="edv-dropdown md btm rht">
+                    <ul>
+                      <li>
+                        <a class="justify-content-center">Assign House</a>
+                      </li>
+                      <li>
+                        <a class="justify-content-center">Assign Section</a>
+                      </li>
+                      <li>
+                        <a class="justify-content-center">Assign Class</a>
+                      </li>
+                      <li>
+                        <a class="justify-content-center">Assign Subject</a>
+                      </li>
+                      <li>
+                        <a class="justify-content-center">Assign CoScholastic Subject</a>
+                      </li>
+                    </ul>
+                  </div>
+                </button>
+                <div class="ln"></div>
+                <div class="pagination">
+                  <a class="first"></a>
+                  <a class="prev"></a>
+                  <label> 1 to 20 of 420</label>
+                  <a class="next"></a>
+                  <a class="last"></a>
+                </div>
+                <div class="ln"></div>
+                <a class="act-filter" mdl-pop="mdl-filter"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Page Content -->
+          <div class="page-content">
+            <table class="table tbl-topfxd tbl-stripe">
+              <thead>
+                <tr>
+                  <th class="mw-30">
+                    <label class="edv-checkbox chkall" id="checkAll1">
+                      <input type="checkbox">
+                    </label>
+                  </th>
+                  <th>
+                    <span class="tsort">
+                      <span>Name</span>
+                      <span class="asc">
+                        <i class="up"></i>
+                        <i class="dwn"></i>
+                      </span>
+                    </span>
+                  </th>
+                  <th>
+                    <span class="tsort">
+                      <span>Roll No</span>
+                      <span class="asc">
+                        <i class="up"></i>
+                        <i class="dwn"></i>
+                      </span>
+                    </span>
+                  </th>
+                  <th>
+                    <span class="tsort">
+                      <span>Admission No</span>
+                      <span class="asc">
+                        <i class="up"></i>
+                        <i class="dwn"></i>
+                      </span>
+                    </span>
+                  </th>
+                  <th>
+                    <span class="tsort">
+                      <span>Current Allotment</span>
+                      <span class="asc">
+                        <i class="up"></i>
+                        <i class="dwn"></i>
+                      </span>
+                    </span>
+                  </th>
+                  <th>
+                    <span class="tsort">
+                      <span>Parent/Guardian Details</span>
+                      <span class="asc">
+                        <i class="up"></i>
+                        <i class="dwn"></i>
+                      </span>
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="edv-checkbox">
+                      <input id="chck02" type="checkbox">
+                    </label>
+                  </td>
+                  <td>
+                    <span>Aswin</span>
+                  </td>
+                  <td>
+                    <span>1223343</span>
+                  </td>
+                  <td>
+                    <span>23456788</span>
+                  </td>
+                  <td>
+                    <span>I - Ganga</span>
+                  </td>
+                  <td>
+                    <span>Ritesh Mohindra - Father - 9872002190</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="edv-checkbox">
+                      <input id="chck02" type="checkbox">
+                    </label>
+                  </td>
+                  <td>
+                    <span>Aravind</span>
+                  </td>
+                  <td>
+                    <span>1223343</span>
+                  </td>
+                  <td>
+                    <span>23456788</span>
+                  </td>
+                  <td>
+                    <span>Class: - VII</span>
+                  </td>
+                  <td>
+                    <span>Sumit Kalia - Father - 9915400976</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filter -->
+    <div class="mdl-contain mdl-right" mdl-box="mdl-filter">
+      <div class="mdl-pop xs">
+        <div class="mdl-head">
+          <h6>Filter</h6>
+          <a class="mdl-cls"></a>
+          <div class="tsearch mt-20 radius-20">
+            <input class="edv-input">
+            <a></a>
+          </div>
+        </div>
+        <div class="mdl-body">
+          <div class="f-group f-top">
+            <div class="f-field ">
+              <label>Segment</label>
+              <div>
+                <input class="edv-input">
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Class</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>
+            <div class="f-field">
+              <label>Section</label>
+              <div>
+                <select class="edv-select">
+                  <option value="0" selected>All</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-foo">
+          <div class="mdl-foo-action">
+            <a class="btn primary">Submit</a>
+            <a class="btn line">Reset</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+  </script>
+</html>

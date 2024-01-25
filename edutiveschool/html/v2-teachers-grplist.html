@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Top Nav -->
+    <header id="edvheader"></header>
+    <!-- Left Navigation -->
+    <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+      <div class="edv-bcrumb">
+        <div class="home">
+         <a href="../html/account-dashboard.html">Dashboard</a>
+        </div>
+        <div class="more">
+         <span>Teachers</span>
+        </div>
+       </div>
+
+        <div class="page-card">
+            <!-- Header -->
+            <div class="main-head">
+              <div>
+                <div>
+                  <div class="title"> 
+                    Teachers
+                  </div>
+                </div>
+                <div class="edv-actions">
+                  <div class="ddown">
+                      <a class="act-qadd sm"></a>
+                      <div class="edv-dropdown md btm rht">
+                          <div class="edv-compt-multisel">
+                            <div>
+                                <div class="edv-compt-bdy">
+                                  <ul>
+                                    <li class="sel">
+                                      <a>Add New</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <div>
+                              <div class="edv-compt-bdy">
+                                <ul>
+                                  <li >
+                                    <a>Bulk Upload</a>
+                                  </li>                          
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                
+                  <div class="ln"></div>
+
+                  <div class="pagination">
+                    <label> 1 to 20  of 420</label>
+                    <a class="prev"></a>
+                    <a class="next"></a>                               
+                  </div>
+
+                  <div class="ln"></div>
+                
+                  <a class="ico-filter" mdl-pop="mdlfilter"></a>
+                    <div class="tsearch">
+                      <input class="edv-input">
+                      <a></a>
+                    </div>
+              
+                </div>
+              </div>
+              <!-- Mass Update -->
+              <div class="edv-massupt">
+                  <div>
+                    <a class="act-denied"></a>
+                    <a class="act-del"></a>
+                  </div>
+                  <div>
+                    <a class="act-close"></a>
+                  </div>
+              </div>
+            </div>
+            <!-- Page Content -->
+            <div class="page-content">
+                <table class="table tbl-topfxd tbl-stripe">
+                  <thead>
+                    <tr>
+                      <th class="mw-30">
+                      </th>
+                      <th width="200"><span class="tsort">Name<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th width="250"><span class="tsort">Personal Email ID<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th width="250"><span class="tsort">Official Email ID<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th width="200"><span class="tsort">Personal Mobile<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span class="tsort">Home Phone<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span class="tsort">Qualification<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th><span class="tsort">Responsibilities<span class="asc"><i class="up"></i><i class="dwn"></i></span></span></th>
+                      <th width="80"></th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbl-group tbl-open">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Heading 1</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td>
+                        <label class="edv-checkbox">
+                              <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td >
+                          <a class="alnk" href="../html/profile.html">Manoj Kumar C</a>
+                      </td>
+                      <td>
+                          <span>manoj.c@gmail.com</span>
+                      </td>
+                      <td>
+                        <span>manoj.c@gmail.com</span>
+                    </td>
+                      <td>
+                          <span>8956746724</span>
+                      </td>
+                      <td>8956746724</td>
+                      <td>PhD Biotechnology</td>
+                      <td>Subject Teacher - I</td>
+                      <td>
+                        <div class="tbl-action">
+                          <a class="act-edit"></a>
+                          <a class="act-denied"></a>
+                          <div class="act-more ddown">
+                            <div class="edv-dropdown btm rht sm">
+                            <ul>
+                              <li>
+                                <a>Assign Class</a>
+                                <a>Delete</a>
+                            </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td>
+                        <label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                        </label>
+                      </td>
+                      <td >
+                          <a class="alnk" href="../html/profile.html">Manoj Kumar C</a>
+                      </td>
+                      <td>
+                          <span>manoj.c@gmail.com</span>
+                      </td>
+                      <td>
+                        <span>manoj.c@gmail.com</span>
+                    </td>
+                      <td>
+                          <span>8956746724</span>
+                      </td>
+                      <td>8956746724</td>
+                      <td>PhD Biotechnology</td>
+                      <td>Subject Teacher - I</td>
+                      <td>
+                        <div class="tbl-action">
+                          <a class="act-edit"></a>
+                          <a class="act-denied"></a>
+                          <div class="act-more ddown">
+                            <div class="edv-dropdown btm rht sm">
+                            <ul>
+                              <li>
+                                <a>Assign Class</a>
+                                <a>Delete</a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td>
+                        <label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                        </label>
+                      </td>
+                      <td >
+                          <a class="alnk" href="../html/profile.html">Manoj Kumar C</a>
+                      </td>
+                      <td>
+                          <span>manoj.c@gmail.com</span>
+                      </td>
+                      <td>
+                        <span>manoj.c@gmail.com</span>
+                    </td>
+                      <td>
+                          <span>8956746724</span>
+                      </td>
+                      <td>8956746724</td>
+                      <td>PhD Biotechnology</td>
+                      <td>Subject Teacher - I</td>
+                      <td>
+                        <div class="tbl-action">
+                          <a class="act-edit"></a>
+                          <a class="act-denied"></a>
+                          <div class="act-more ddown">
+                            <div class="edv-dropdown btm rht sm">
+                            <ul>
+                              <li>
+                                <a>Assign Class</a>
+                                <a>Delete</a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                        </div>
+                      </td>
+                    </tr>                 
+                  </tbody>
+                  <tbody class="tbl-group">
+                    <tr class="tbl-parent">
+                      <td colspan="9"><a class="edv-tblhead"><i class="ico-ar-dwn"></i>Heading 1</a></td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td>
+                        <label class="edv-checkbox">
+                              <input id="edvmchk" type="checkbox">
+                        </label>
+                      </td>
+                      <td >
+                          <a class="alnk" href="../html/profile.html">Manoj Kumar C</a>
+                      </td>
+                      <td>
+                          <span>manoj.c@gmail.com</span>
+                      </td>
+                      <td>
+                        <span>manoj.c@gmail.com</span>
+                    </td>
+                      <td>
+                          <span>8956746724</span>
+                      </td>
+                      <td>8956746724</td>
+                      <td>PhD Biotechnology</td>
+                      <td>Subject Teacher - I</td>
+                      <td>
+                        <div class="tbl-action">
+                          <a class="act-edit"></a>
+                          <a class="act-denied"></a>
+                          <div class="act-more ddown">
+                            <div class="edv-dropdown btm rht sm">
+                            <ul>
+                              <li>
+                                <a>Assign Class</a>
+                                <a>Delete</a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td>
+                        <label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                        </label>
+                      </td>
+                      <td >
+                          <a class="alnk" href="../html/profile.html">Manoj Kumar C</a>
+                      </td>
+                      <td>
+                          <span>manoj.c@gmail.com</span>
+                      </td>
+                      <td>
+                        <span>manoj.c@gmail.com</span>
+                    </td>
+                      <td>
+                          <span>8956746724</span>
+                      </td>
+                      <td>8956746724</td>
+                      <td>PhD Biotechnology</td>
+                      <td>Subject Teacher - I</td>
+                      <td>
+                        <div class="tbl-action">
+                          <a class="act-edit"></a>
+                          <a class="act-denied"></a>
+                          <div class="act-more ddown">
+                            <div class="edv-dropdown btm rht sm">
+                            <ul>
+                              <li>
+                                <a>Assign Class</a>
+                                <a>Delete</a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tbl-child">
+                      <td>
+                        <label class="edv-checkbox">
+                              <input id="chck02" type="checkbox">
+                        </label>
+                      </td>
+                      <td >
+                          <a class="alnk" href="../html/profile.html">Manoj Kumar C</a>
+                      </td>
+                      <td>
+                          <span>manoj.c@gmail.com</span>
+                      </td>
+                      <td>
+                        <span>manoj.c@gmail.com</span>
+                    </td>
+                      <td>
+                          <span>8956746724</span>
+                      </td>
+                      <td>8956746724</td>
+                      <td>PhD Biotechnology</td>
+                      <td>Subject Teacher - I</td>
+                      <td>
+                        <div class="tbl-action">
+                          <a class="act-edit"></a>
+                          <a class="act-denied"></a>
+                          <div class="act-more ddown">
+                            <div class="edv-dropdown btm rht sm">
+                            <ul>
+                              <li>
+                                <a>Assign Class</a>
+                                <a>Delete</a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                        </div>
+                      </td>
+                    </tr>                 
+                  </tbody>
+                </table>
+            </div>
+          
+        </div>
+
+    </div>
+  </div>
+
+  <!-- Filter -->
+  <div class="mdl-contain mdl-right" mdl-box="mdlfilter">
+    <div class="mdl-pop xs">
+      <div class="mdl-head">
+        <h6>Filter</h6>
+        <a class="mdl-cls"></a>
+        <div class="tsearch mt-20 radius-20">
+          <input class="edv-input">
+          <a></a>
+        </div>
+      </div>
+      <div class="mdl-body">
+        <div class="f-group f-top">
+          <div class="f-field ">
+            <label>Segment</label>
+            <div>
+              <input class="edv-input">
+            </div>
+          </div>
+          <div class="f-field">
+            <label>Class</label>
+            <div>
+              <select class="edv-select">
+                <option value="0" selected>All</option>
+                <option value="1"></option>
+                <option value="2"></option>
+              </select>
+            </div>
+          </div>
+          <div class="f-field">
+            <label>Section</label>
+            <div>
+              <select class="edv-select">
+                <option value="0" selected>All</option>
+                <option value="1"></option>
+                <option value="2"></option>
+              </select>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div class="mdl-foo">
+        <div class="mdl-foo-action">
+          <a class="btn primary">Submit</a>
+          <a class="btn line">Reset</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

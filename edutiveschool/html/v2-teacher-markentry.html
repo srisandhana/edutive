@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Teacher Mark Entry</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <!-- Top Nav -->
+   <header id="edvheader"></header>
+   <!-- Left Navigation -->
+   <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div>
+      <a>Teacher Mark Entry</a>
+     </div>
+     <div class="more">
+      <span>Curricular</span>
+     </div>
+    </div>
+    <div class="page-card nopage-head">
+       <!-- Header -->
+       <!-- <div class="main-head">
+         <div>
+          <div>
+           <div class="title">Teacher Mark Entry</div>
+          </div>
+         </div>
+        </div> -->
+      <!-- Page Content -->
+      <div class="page-content">
+       <table class="table tbl-topfxd tbl-stripe">
+        <thead>
+            <tr>
+                <th>Class Name</th>
+                <th>Section Name</th>
+                <th>Subject</th>
+                <th>Term Name</th>
+                <th>Cycle Name</th>
+                <th>Assessment Name</th>
+                <th>Assessment Type</th>
+                <th>Action</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>V</td>
+                <td>A</td>
+                <td>English</td>
+                <td>Term - 1</td>
+                <td>Cycle Test - 1</td>
+                <td>Written Assessment</td>
+                <td>summative</td>
+                <td>
+                  <button class="btn primary">Create Mark Entry</button>
+                </td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>A</td>
+                <td>English</td>
+                <td>Term - 1</td>
+                <td>Cycle Test - 1</td>
+                <td>Written Assessment</td>
+                <td>summative</td>
+                <td>
+                  <button class="btn primary" disabled="">Create Mark Entry</button>
+                </td>
+              </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+</body>
+<script>
+   $("#edvlnav").load("lnav.html");
+   $("#edvheader").load("header.html");
+ </script>
+</html>

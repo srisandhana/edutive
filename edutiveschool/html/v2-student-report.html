@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/fv.ico" sizes="32x32" />
+  <title>Edutive: Student Report</title>
+
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+  <!-- Top Nav -->
+  <header id="edvheader"></header>
+  <!-- Left Navigation -->
+  <nav id="edvlnav"></nav>
+  
+    <!-- Page -->
+    <div class="content-wrap">
+
+      <div class="scroll-cont">
+        <div class="edv-bcrumb">
+            <div class="home"><a>Dashboard</a></div>
+            <div><a>Question Bank</a></div>
+            <div class="more"><span>Add Question Bank</span></div>
+        </div>
+        <div class="page-card">
+          <!-- Header -->
+          <div class="main-head">
+            <div>
+              <div>
+                <div class="title">Student Report</div>
+              </div>
+              <div class="actions">
+              </div>
+            </div>
+          </div>
+
+         <div class="page-content">
+          <div class="edv-rptcard-wrap">
+
+              <div class="edv-row f-group f-top">
+                <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Class</label> 
+                      <div>
+                        <select class="edv-select">
+                          <option value="0">1</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+                <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Section</label>
+                      <div>
+                        <select class="edv-select">
+                          <option value="0" selected>Language II</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                        </select>
+                      </div>
+                  </div>
+                </div>
+                <div class="edv-col3">
+                    <div class="f-field">
+                      <label>Student Name</label>
+                      <div>
+                        <select class="edv-select">
+                          <option value="0" selected>123</option>
+                          <option value="1"></option>
+                          <option value="2"></option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="edv-col3 edv-row-btm">
+                    <div class="f-field">
+                      <div>
+                        <button class="btn line">Submit</button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            
+            <div class="edv-row">
+              <div class="edv-col6">
+                <div class="dflex">
+                <div class="tab-group">
+                  <a rel="scholastic">Scholastic</a>
+                  <a rel="co-scholastic" class="sel">Co-Scholastic</a>
+                </div>
+                </div>
+                <div id="myDiv" class="edv-diagram"></div>
+              </div>
+              <div class="edv-col6">
+                
+                <div class="sub-head">
+                  <div>
+                    <div class="title">General Assessments</div>
+                    <div class="edv-actions">
+                      <a class="act-exp"></a>
+                      <a class="act-print"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tbl-responsive">
+                  <table class="table tbl-border">
+                    <thead>
+                      <th width="50%">Subject</th>
+                      <th>Grade</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Math</td>
+                        <td>C1</td>
+                      </tr>
+                      <tr>
+                        <td>Science</td>
+                        <td>B2</td>
+                      </tr>
+                      <tr>
+                        <td>Language I </td>
+                        <td>A2</td>
+                      </tr>
+                      <tr>
+                        <td>Language II</td>
+                        <td>D</td>
+                      </tr>
+                      <tr>
+                        <td>Social Science</td>
+                        <td>C2</td>
+                      </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>B1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          </div>
+
+        </div>
+      </div>
+       
+    </div>
+
+     
+  </div>
+
+
+
+  <script>
+      var data = [
+        {
+          type: "sunburst",
+          ids: [
+            "Term-1",
+            "FA1",
+            "FA2",
+            "SA",
+            "Co-Scholastic",
+            "General",
+            "English",
+            "Hindi",
+            "Maths",
+            "Science",
+            "Social studies",
+            "Essay writing",
+            "Written test",
+            "Poetry Recitation",
+            "Written test-1",
+            "Project",
+            "Written test-2",
+            "Laboratory",
+            "Project-1",
+            "Written test-3",
+            "Mapping- Art work",
+            "Quiz",
+            "Written test-4",
+            "Creativity",
+            "Critical Thinking",
+            "Collaboration",
+            "Communication",
+            "Idea generation",
+            "Ideas design and refinement",
+            "Openess to explore",
+            "Creative collaboration",
+            "Creative Production and Innovation",
+            "Self reflection",
+            "Inquiry and gathering information",
+            "Interpretation and Analysis",
+            "Uses other perspectives and positions",
+            "Group Goals and Roles",
+            "Cooperation and Flexibility",
+            "Productivity",
+            "Responsiveness",
+            "Reflection",
+            "Engaging in conversations and discussions",
+            "Using digital communication tools",
+            "Communicating in diverse environments",
+            "Remembering",
+            "Understanding",
+            "Applying",
+            "Analyzing",
+            "Evaluating",
+            "Creating",
+            "Memorization",
+            "Stage Posture",
+            "Pausing and inflection",
+            "Clarity",
+            "Creates and recites poetry",
+            "Remembering-1",
+            "Understanding-1",
+            "Applying-1",
+            "Analyzing-1",
+            "Evaluating-1",
+            "Creating-1",
+            "Topic or Problem selection",
+            "Information literacy",
+            "Research design and procedures",
+            "Building a model",
+            "Report",
+            "Presentation",
+            "Team work",
+            "Ability to follow instructions",
+            "Ability to make observations",
+            "Ability to use equipments and conduct experiments",
+            "Ability to make measurements and calculations",
+            "Ability to represent data gathered",
+            "Ability to draw diagrams",
+            "Ability to draw inferences",
+            "Maintenance of Laboratory records",
+            "Creativity-1",
+            "Critical Thinking-1",
+            "Collaboration-1",
+            "Communication-1",
+            "Idea generation-1",
+            "Ideas design and refinement-1",
+            "Openess to explore-1",
+            "Creative collaboration-1",
+            "Creative Production and Innovation-1",
+            "Self reflection-1",
+            "Inquiry and gathering information-1",
+            "Interpretation and Analysis-1",
+            "Uses other perspectives and positions-1",
+            "Group Goals and Roles-1",
+            "Cooperation and Flexibility-1",
+            "Productivity-1",
+            "Responsiveness-1",
+            "Reflection-1",
+            "Engaging in conversations and discussions-1",
+            "Using digital communication tools-1",
+            "Communicating in diverse environments-1",
+            "Creativity-2",
+            "Critical Thinking-2",
+            "Collaboration-2",
+            "Communication-2",
+            "Idea generation-2",
+            "Ideas design and refinement-2",
+            "Openess to explore-2",
+            "Creative collaboration-2",
+            "Creative Production and Innovation-2",
+            "Self reflection-2",
+            "Inquiry and gathering information-2",
+            "Interpretation and Analysis-2",
+            "Uses other perspectives and positions-1",
+            "Group Goals and Roles-2",
+            "Cooperation and Flexibility-2",
+            "Productivity-2",
+            "Responsiveness-2",
+            "Reflection-2",
+            "Engaging in conversations and discussions-2",
+            "Using digital communication tools-2",
+            "Communicating in diverse environments-2",
+            "English-1",
+            "Hindi-1",
+            "Maths-1",
+            "Science-1",
+            "Social studies-1",
+            "Quiz-1",
+            "Written test-5",
+            "Memorization-1",
+            "Written test-6",
+            "Memorization of Formulas",
+            "Written test-7",
+            "Project-2",
+            "Written test-8",
+            "Project-3",
+            "Written test-9",
+            "English-2",
+            "Maths-2",
+            "Science-2",
+            "Social studies-2",
+            "Written test-10",
+            "Written test-11",
+            "Written test-12",
+            "MCQ",
+            "Written test-13",
+            "Class participation",
+            "Peer Evaluation",
+            "Attendance",
+            "Preparation",
+            "Level of Engagement and Behaviour in class",
+            "Teamwork",
+            "General behaviour",
+            "Contributing to the team's work",
+            "Interacting with team mates",
+            "Quality expectations",
+            "Having relevant, knowledge, skills and abilities",
+            "Fine Arts - Painting",
+            "Sports",
+            "Arts - Music",
+            "Literary - Debate",
+            "NCC",
+            "Composition and Design",
+            "Colour Sense",
+            "Technique",
+            "Creativity and Originality",
+            "Craftsmanship",
+            "Work ethics",
+            "Workplace maintenance",
+            "Knowledge of Concepts and Rules",
+            "Application of Skills",
+            "Application of Strategy",
+            "Preparation",
+            "Participation",
+            "Personal and Social Responsibility",
+            "Meets Standards",
+            "Rhythm",
+            "Melody",
+            "Improvisation",
+            "Expressiveness",
+            "Engagement",
+            "Integration of Music into scholastic subjects",
+            "Presentation of factual information",
+            "Comprehension",
+            "Persuasiveness",
+            "Delivery",
+            "Rebuttal",
+            "Regularity",
+            "Fitness",
+            "Term-2",
+            "flare",
+            "FA - 1",
+            "FA - 2",
+            "SA - 2",
+            "Hindi-2",
+            'Written test-14'
+          ],
+          labels: [
+            "Term-1",
+            "FA1",
+            "FA2",
+            "SA",
+            "Co-Scholastic",
+            "General",
+            "English",
+            "Hindi",
+            "Maths",
+            "Science",
+            "Social studies",
+            "Essay writing",
+            "Written test",
+            "Poetry Recitation",
+            "Written test",
+            "Project",
+            "Written test",
+            "Laboratory",
+            "Project",
+            "Written test",
+            "Mapping- Art work",
+            "Quiz",
+            "Written test",
+            "Creativity",
+            "Critical Thinking",
+            "Collaboration",
+            "Communication",
+            "Idea generation",
+            "Ideas design and refinement",
+            "Openess to explore",
+            "Creative collaboration",
+            "Creative Production and Innovation",
+            "Self reflection",
+            "Inquiry and gathering information",
+            "Interpretation and Analysis",
+            "Uses other perspectives and positions",
+            "Group Goals and Roles",
+            "Cooperation and Flexibility",
+            "Productivity",
+            "Responsiveness",
+            "Reflection",
+            "Engaging in conversations and discussions",
+            "Using digital communication tools",
+            "Communicating in diverse environments",
+            "Remembering",
+            "Understanding",
+            "Applying",
+            "Analyzing",
+            "Evaluating",
+            "Creating",
+            "Memorization",
+            "Stage Posture",
+            "Pausing and inflection",
+            "Clarity",
+            "Creates and recites poetry",
+            "Remembering",
+            "Understanding",
+            "Applying",
+            "Analyzing",
+            "Evaluating",
+            "Creating",
+            "Topic or Problem selection",
+            "Information literacy",
+            "Research design and procedures",
+            "Building a model",
+            "Report",
+            "Presentation",
+            "Team work",
+            "Ability to follow instructions",
+            "Ability to make observations",
+            "Ability to use equipments and conduct experiments",
+            "Ability to make measurements and calculations",
+            "Ability to represent data gathered",
+            "Ability to draw diagrams",
+            "Ability to draw inferences",
+            "Maintenance of Laboratory records",
+            "Creativity",
+            "Critical Thinking",
+            "Collaboration",
+            "Communication",
+            "Idea generation",
+            "Ideas design and refinement",
+            "Openess to explore",
+            "Creative collaboration",
+            "Creative Production and Innovation",
+            "Self reflection",
+            "Inquiry and gathering information",
+            "Interpretation and Analysis",
+            "Uses other perspectives and positions",
+            "Group Goals and Roles",
+            "Cooperation and Flexibility",
+            "Productivity",
+            "Responsiveness",
+            "Reflection",
+            "Engaging in conversations and discussions",
+            "Using digital communication tools",
+            "Communicating in diverse environments",
+            "Creativity",
+            "Critical Thinking",
+            "Collaboration",
+            "Communication",
+            "Idea generation",
+            "Ideas design and refinement",
+            "Openess to explore",
+            "Creative collaboration",
+            "Creative Production and Innovation",
+            "Self reflection",
+            "Inquiry and gathering information",
+            "Interpretation and Analysis",
+            "Uses other perspectives and positions",
+            "Group Goals and Roles",
+            "Cooperation and Flexibility",
+            "Productivity",
+            "Responsiveness",
+            "Reflection",
+            "Engaging in conversations and discussions",
+            "Using digital communication tools",
+            "Communicating in diverse environments",
+            "English",
+            "Hindi",
+            "Maths",
+            "Science",
+            "Social studies",
+            "Quiz",
+            "Written test",
+            "Memorization",
+            "Written test",
+            "Memorization of Formulas",
+            "Written test",
+            "Project",
+            "Written test",
+            "Project",
+            "Written test",
+            "English",
+            "Maths",
+            "Science",
+            "Social studies",
+            "Written test",
+            "Written test",
+            "Written test",
+            "MCQ",
+            "Written test",
+            "Class participation",
+            "Peer Evaluation",
+            "Attendance",
+            "Preparation",
+            "Level of Engagement and Behaviour in class",
+            "Teamwork",
+            "General behaviour",
+            "Contributing to the team's work",
+            "Interacting with team mates",
+            "Quality expectations",
+            "Having relevant, knowledge, skills and abilities",
+            "Fine Arts - Painting",
+            "Sports",
+            "Arts - Music",
+            "Literary - Debate",
+            "NCC",
+            "Composition and Design",
+            "Colour Sense",
+            "Technique",
+            "Creativity and Originality",
+            "Craftsmanship",
+            "Work ethics",
+            "Workplace maintenance",
+            "Knowledge of Concepts and Rules",
+            "Application of Skills",
+            "Application of Strategy",
+            "Preparation",
+            "Participation",
+            "Personal and Social Responsibility",
+            "Meets Standards",
+            "Rhythm",
+            "Melody",
+            "Improvisation",
+            "Expressiveness",
+            "Engagement",
+            "Integration of Music into scholastic subjects",
+            "Presentation of factual information",
+            "Comprehension",
+            "Persuasiveness",
+            "Delivery",
+            "Rebuttal",
+            "Regularity",
+            "Fitness",
+            "Term-2",
+            "Thilak Rawat <br>88%",
+            "FA - 1",
+            "FA - 2",
+            "SA - 2",
+            "Hindi",
+            "Written test",
+          ],
+          parents: [
+            "flare",
+            "Term-1",
+            "Term-1",
+            "Term-1",
+            "Term-1",
+            "Term-1",
+            "FA1",
+            "FA1",
+            "FA1",
+            "FA1",
+            "FA1",
+            "English",
+            "English",
+            "Hindi",
+            "Hindi",
+            "Maths",
+            "Maths",
+            "Science",
+            "Science",
+            "Science",
+            "Social studies",
+            "Social studies",
+            "Social studies",
+            "Essay writing",
+            "Essay writing",
+            "Essay writing",
+            "Essay writing",
+            "Creativity",
+            "Creativity",
+            "Creativity",
+            "Creativity",
+            "Creativity",
+            "Creativity",
+            "Critical Thinking",
+            "Critical Thinking",
+            "Critical Thinking",
+            "Collaboration",
+            "Collaboration",
+            "Collaboration",
+            "Collaboration",
+            "Collaboration",
+            "Communication",
+            "Communication",
+            "Communication",
+            "Written test",
+            "Written test",
+            "Written test",
+            "Written test",
+            "Written test",
+            "Written test",
+            "Poetry Recitation",
+            "Poetry Recitation",
+            "Poetry Recitation",
+            "Poetry Recitation",
+            "Poetry Recitation",
+            "Written test-1",
+            "Written test-1",
+            "Written test-1",
+            "Written test-1",
+            "Written test-1",
+            "Written test-1",
+            "Project",
+            "Project",
+            "Project",
+            "Project",
+            "Project",
+            "Project",
+            "Project",
+            "Laboratory",
+            "Laboratory",
+            "Laboratory",
+            "Laboratory",
+            "Laboratory",
+            "Laboratory",
+            "Laboratory",
+            "Laboratory",
+            "Mapping- Art work",
+            "Mapping- Art work",
+            "Mapping- Art work",
+            "Mapping- Art work",
+            "Creativity-1",
+            "Creativity-1",
+            "Creativity-1",
+            "Creativity-1",
+            "Creativity-1",
+            "Creativity-1",
+            "Critical Thinking-1",
+            "Critical Thinking-1",
+            "Critical Thinking-1",
+            "Collaboration-1",
+            "Collaboration-1",
+            "Collaboration-1",
+            "Collaboration-1",
+            "Collaboration-1",
+            "Communication-1",
+            "Communication-1",
+            "Communication-1",
+            "Project-1",
+            "Project-1",
+            "Project-1",
+            "Project-1",
+            "Creativity-2",
+            "Creativity-2",
+            "Creativity-2",
+            "Creativity-2",
+            "Creativity-2",
+            "Creativity-2",
+            "Critical Thinking-2",
+            "Critical Thinking-2",
+            "Critical Thinking-2",
+            "Collaboration-2",
+            "Collaboration-2",
+            "Collaboration-2",
+            "Collaboration-2",
+            "Collaboration-2",
+            "Communication-2",
+            "Communication-2",
+            "Communication-2",
+            "FA2",
+            "FA2",
+            "FA2",
+            "FA2",
+            "FA2",
+            "English-1",
+            "English-1",
+            "Hindi-1",
+            "Hindi-1",
+            "Maths-1",
+            "Maths-1",
+            "Science-1",
+            "Science-1",
+            "Social studies-1",
+            "Social studies-1",
+            "SA",
+            "SA",
+            "SA",
+            "SA",
+            "English-2",
+            "Maths-2",
+            "Science-2",
+            "Social studies-2",
+            "Social studies-2",
+            "General",
+            "General",
+            "Class participation",
+            "Class participation",
+            "Class participation",
+            "Class participation",
+            "Class participation",
+            "Peer Evaluation",
+            "Peer Evaluation",
+            "Peer Evaluation",
+            "Peer Evaluation",
+            "Co-Scholastic",
+            "Co-Scholastic",
+            "Co-Scholastic",
+            "Co-Scholastic",
+            "Co-Scholastic",
+            "Fine Arts - Painting",
+            "Fine Arts - Painting",
+            "Fine Arts - Painting",
+            "Fine Arts - Painting",
+            "Fine Arts - Painting",
+            "Fine Arts - Painting",
+            "Fine Arts - Painting",
+            "Sports",
+            "Sports",
+            "Sports",
+            "Sports",
+            "Sports",
+            "Sports",
+            "Sports",
+            "Arts - Music",
+            "Arts - Music",
+            "Arts - Music",
+            "Arts - Music",
+            "Arts - Music",
+            "Arts - Music",
+            "Literary - Debate",
+            "Literary - Debate",
+            "Literary - Debate",
+            "Literary - Debate",
+            "Literary - Debate",
+            "NCC",
+            "NCC",
+            "flare",
+            "",
+            "Term-2",
+            "Term-2",
+            "Term-2",
+            "SA",
+            "Hindi-2"
+          ],
+          outsidetextfont: { size: 20, color: "#377eb8" },
+          leaf: { opacity: 1 },
+          marker: { line: { width: 2 } },
+        },
+      ];
+
+      var layout = {
+        margin: { l: 0, r: 0, b: 0, t: 0 },
+        sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"],
+        width: 600,
+        height: 600,
+      };
+
+      var myPlot = document.getElementById("myDiv");
+      var hoverInfo = document.getElementById("hoverinfo");
+
+      Plotly.newPlot("myDiv", data, layout);
+
+      // myPlot.on("plotly_hover", function (data) {
+      //   console.log(data);
+      //   console.log(hoverInfo);
+      //   console.log(data.points[0].currentPath);
+
+      //   if (data.points[0].id == "Essay writing") {
+      //     hoverInfo.innerHTML =
+      //       "Subject: Essay Writing<br/> Score: 7.1<br/> Total student: 98";
+      //   } else if (data.points[0].id == "Creativity") {
+      //     hoverInfo.innerHTML =
+      //       "Subject: Creativity<br/> Score: 4.0<br/> Total student: 45";
+      //   } else {
+      //     hoverInfo.innerHTML = "";
+      //   }
+      // });
+
+      // myPlot.on("plotly_unhover", function (data) {
+      //   hoverInfo.innerHTML = "";
+      // });
+  </script>
+
+</body>
+<script>
+  $("#edvlnav").load("lnav.html");
+  $("#edvheader").load("header.html");
+</script>
+</html>

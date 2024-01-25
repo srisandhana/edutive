@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <!-- General meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <!-- Needed for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon -->
+  <link type="image/x-icon" rel="icon" href="../images/edv.ico" sizes="32x32" />
+  <title>Edutive :: Question Bank Reviewer</title>
+  <!-- Stylesheet -->
+  <link href="../css/edv.css" rel="stylesheet">
+  <link href="../css/font.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- Js -->
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+ <body>
+  <div class="container">
+  <!-- Top Nav -->
+  <header id="edvheader"></header>
+  <!-- Left Navigation -->
+  <nav id="edvlnav"></nav>
+   <!-- Page -->
+   <div class="content-wrap">
+    <div class="edv-bcrumb">
+     <div>
+      <a>Settings</a>
+     </div>
+     <div class="more">
+      <span>Question Bank Reviewer</span>
+     </div>
+    </div>
+    <div class="page-card">
+     <!-- Header -->
+     <div class="main-head">
+        <div>
+         <div>
+          <div class="title">Question Bank Reviewer</div>
+         </div>
+         <div class="edv-actions">
+           <a class="act-qadd sm" mdl-pop="add-questionbankreviewer"></a>
+         </div>
+        </div>
+     </div>
+      <!-- Page Content -->
+      <div class="page-content">
+       <table class="table tbl-topfxd tbl-stripe">
+        <thead>
+         <tr>
+          <th>
+           <span>Segment</span>
+          </th>
+          <th>
+           <span>Class</span>
+          </th>
+          <th>
+           <span>Subject</span>
+          </th>
+          <th>
+           <span>Reviewer</span>
+          </th>
+          <th>Action(s)</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr >
+          <td >
+           <span>Foundational</span>
+          </td>
+          <td>
+           <span>Class V </span>
+          </td>
+          <td>
+           <span>English</span>
+          </td>
+          <td>
+           <span>Kumar, Ravi</span>
+          </td>
+          <td>
+            <div class="tbl-action">
+              <a class="act-edit"  mdl-pop="edit-questionbankreviewer"></a>
+              <a class="act-del"></a>
+            </div>
+          </td>
+         </tr>
+         <tr >
+          <td >Middle</td>
+          <td>Class VIII</td>
+          <td>Maths</td>
+          <td>Maaran, Vickey</td>
+          <td>
+            <div class="tbl-action">
+               <a class="act-edit"  mdl-pop="edit-questionbankreviewer"></a>
+              <a class="act-del"></a>
+            </div>
+          </td>
+         </tr>
+         <tr >
+          <td >Middle</td>
+          <td>Class VII</td>
+          <td>Science</td>
+          <td>Dhanush, Indhu, Harisudhan</td>
+          <td>
+            <div class="tbl-action">
+               <a class="act-edit"  mdl-pop="edit-questionbankreviewer"></a>
+              <a class="act-del"></a>
+            </div>
+          </td>
+         </tr>
+         <tr >
+          <td >Preparatory</td>
+          <td>Class I</td>
+          <td>History</td>
+          <td>Hari kumar, Priya</td>
+          <td>
+            <div class="tbl-action">
+               <a class="act-edit"  mdl-pop="edit-questionbankreviewer"></a>
+              <a class="act-del"></a>
+            </div>
+          </td>
+         </tr>
+         <tr >
+          <td >Secondary</td>
+          <td>Class X</td>
+          <td>Computer Science</td>
+          <td>Madhumitha, Mano</td>
+          <td>
+            <div class="tbl-action">
+               <a class="act-edit"  mdl-pop="edit-questionbankreviewer"></a>
+              <a class="act-del"></a>
+            </div>
+          </td>
+         </tr>
+         <tr >
+          <td >Preparatory</td>
+          <td>Class III</td>
+          <td>Maths</td>
+          <td>Varun Prasad, Krishna Kumar</td>
+          <td>
+            <div class="tbl-action">
+               <a class="act-edit"  mdl-pop="edit-questionbankreviewer"></a>
+              <a class="act-del"></a>
+            </div>
+          </td>
+         </tr>
+         <tr >
+          <td > Secondary</td>
+          <td>Class XI</td>
+          <td>Science</td>
+          <td>Prakash, Murali, Sriram</td>
+          <td>
+            <div class="tbl-action">
+               <a class="act-edit"  mdl-pop="edit-questionbankreviewer"></a>
+              <a class="act-del"></a>
+            </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+
+  <!-- Modal Page -->
+  <div class="mdl-page" mdl-box="add-questionbankreviewer">
+   <div class="mdl-pop">
+    <div class="mdl-head">
+     <h6>Add Question Bank Reviewer</h6>
+    </div>
+    <div class="mdl-body">
+       <div class="edv-row">
+        <div class="edv-col12">
+         <div class="edv-row">
+          <div class="edv-col3">
+           <div class="f-group f-top">
+            <div class="f-field">
+             <label>Segment & Class</label>
+             <div class="edv-actions">
+              <select class="edv-select">
+                <option> Foundational, Class LKG </option>
+                <option > Foundational, Class UKG </option>
+                <option > Foundational, Class I </option>
+                <option > Foundational, Class II </option>
+                <option > Preparatory, Class III </option>
+                <option > Preparatory, Class IV </option>
+                <option > Preparatory, Class V </option>
+                <option > Middle, Class VI </option>
+                <option > Middle, Class VII </option>
+                <option > Middle, Class VIII </option>
+                <option > Secondary, Class IX </option>
+                <option > Secondary, Class X </option>
+                <option > Secondary, Class XI </option>
+                <option > Secondary, Class XII </option>
+                <!---->
+              </select>
+              <a class="act-qadd sm"></a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+      </div>
+       <div class="nav-container">
+        <div class="edv-actions dsplysub">
+          <div  class="ico-ar-up"></div>
+          <span class="fntweght">Subjects and Reviewers</span>
+        </div>
+        <div>
+          <div class="edv-row f-group f-top">
+            <div class="edv-col3">
+              <div  class="f-field">
+                <label >Subject</label>
+                <div >
+                  <input  readonly="" class="edv-input" fdprocessedid="qzj67e">
+                </div>
+              </div>
+            </div>
+            <div class="edv-col3">
+              <div  class="f-field">
+                <label >Reviewer</label>
+                <div >
+                  <select class="edv-select">
+                    <option value="0" selected="">Select subject Reviewers</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-foo ">
+     <a class="btn primary">Save</a>
+     <a class="btn line">Cancel</a>
+    </div>
+   </div>
+  </div>
+
+ <div class="mdl-page" mdl-box="edit-questionbankreviewer">
+   <div class="mdl-pop">
+     <div class="mdl-head">
+       <h6>Edit Question Bank Reviewer</h6>
+     </div>
+     <div class="mdl-body">
+       <div class="edv-row f-group f-top">
+         <div class="edv-col3">
+           <div class="f-field">
+             <label>Segment</label>
+             <div>
+               <select class="edv-select">
+                 <option> Foundational </option>
+                 <option> Preparatory </option>
+                 <option> Middle </option>
+                 <option> Secondary </option>
+               </select>
+             </div>
+           </div>
+         </div>
+         <div class="edv-col3">
+           <div class="f-field">
+             <label>Class</label>
+             <div>
+               <select class="edv-select">
+                 <option> LKG </option>
+                 <option> UKG </option>
+                 <option> I </option>
+                 <option> II </option>
+                 <option> III </option>
+                 <option> IV </option>
+                 <option> V </option>
+                 <option> VI </option>
+                 <option> VII </option>
+                 <option> VIII </option>
+                 <option> IX </option>
+                 <option> X </option>
+                 <option> XI </option>
+                 <option> XII </option>
+                 <!---->
+               </select>
+             </div>
+           </div>
+         </div>
+         <div class="edv-col3">
+            <div class="f-field">
+              <label>Subject</label>
+              <div>
+               <select class="edv-select">
+                  <option > English </option>
+                  <option > Hindi II lang </option>
+                  <option > Kannada II lang </option>
+                  <option > French II lang </option>
+                  <option > Mathematics </option>
+                  <option > Mathematics </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="edv-col3">
+            <div class="f-field">
+              <label>Reviewer</label>
+              <div>
+                <select class="edv-select">
+                  <option> </option>
+                  <option> </option>
+                  <option> </option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+     <div class="mdl-foo ">
+       <a class="btn primary">Save</a>
+       <a class="btn line">Cancel</a>
+     </div>
+   </div>
+ </div>
+
+ </body>
+ <script>
+    $("#edvlnav").load("lnav.html");
+    $("#edvheader").load("header.html");
+</script>
+</html>

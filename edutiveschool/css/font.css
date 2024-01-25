@@ -1,0 +1,646 @@
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../fonts/Poppins-Regular.eot');
+  src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Poppins-Regular.woff') format('woff'),
+      url('../fonts/Poppins-Regular.ttf') format('truetype'),
+      url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('../fonts/Poppins-SemiBold.eot');
+  src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Poppins-SemiBold.woff') format('woff'),
+      url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+      url('../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../fonts/Poppins-Medium.eot');
+  src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Poppins-Medium.woff') format('woff'),
+      url('../fonts/Poppins-Medium.ttf') format('truetype'),
+      url('../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ico-font';
+  src:  url('../fonts/ico-font.eot?irhwbm');
+  src:  url('../fonts/ico-font.eot?irhwbm#iefix') format('embedded-opentype'),
+    url('../fonts/ico-font.ttf?irhwbm') format('truetype'),
+    url('../fonts/ico-font.woff?irhwbm') format('woff'),
+    url('../fonts/ico-font.svg?irhwbm#ico-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ico-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.ico-export:before {
+  content: "\e944";
+}
+.ico-pleft:before {
+  content: "\e9a1";
+}
+.ico-pright:before {
+  content: "\e943";
+}
+.ico-download:before {
+  content: "\e942";
+}
+.ico-f-docu:before {
+  content: "\e93e";
+  color: #0278fe;
+}
+.ico-f-img:before {
+  content: "\e93f";
+  color: #a96ce5;
+}
+.ico-f-pdf:before {
+  content: "\e940";
+  color: #d23821;
+}
+.ico-f-video:before {
+  content: "\e941";
+  color: #d23821;
+}
+.ico-admission:before {
+  content: "\e93d";
+}
+.ico-chatroom:before {
+  content: "\e93c";
+}
+.ico-bill:before {
+  content: "\e91c";
+}
+.ico-assemt:before {
+  content: "\e908";
+}
+.ico-bullet:before {
+  content: "\e909";
+}
+.ico-chat:before {
+  content: "\e90e";
+}
+.ico-mark:before {
+  content: "\e90f";
+}
+.ico-more-h:before {
+  content: "\e93a";
+}
+.ico-peer-eva:before {
+  content: "\e911";
+}
+.ico-tbl-cust:before {
+  content: "\e932";
+}
+.ico-report:before {
+  content: "\e900";
+}
+.ico-mob:before {
+  content: "\e901";
+}
+.ico-drag:before {
+  content: "\e902";
+}
+.ico-price:before {
+  content: "\e903";
+}
+.ico-teach:before {
+  content: "\e904";
+}
+.ico-qbank:before {
+  content: "\e905";
+}
+.ico-filter:before {
+  content: "\e906";
+}
+.ico-home:before {
+  content: "\e907";
+}
+.ico-clock:before {
+  content: "\e90a";
+}
+.ico-del:before {
+  content: "\e90b";
+}
+.ico-import:before {
+  content: "\e90c";
+}
+.ico-menu:before {
+  content: "\e90d";
+}
+.ico-asmt:before {
+  content: "\e910";
+}
+.ico-edit:before {
+  content: "\e912";
+}
+.ico-copy:before {
+  content: "\e913";
+}
+.ico-bell:before {
+  content: "\e914";
+}
+.ico-add:before {
+  content: "\e915";
+}
+.ico-ar-dwn:before {
+  content: "\e916";
+}
+.ico-ar-up:before {
+  content: "\e917";
+}
+.ico-dash:before {
+  content: "\e918";
+}
+.ico-dash-cust:before {
+  content: "\e919";
+}
+.ico-stu:before {
+  content: "\e91a";
+}
+.ico-caln:before {
+  content: "\e91b";
+}
+.ico-loc:before {
+  content: "\e91d";
+}
+.ico-expand:before {
+  content: "\e91e";
+}
+.ico-mini:before {
+  content: "\e91f";
+}
+.ico-print:before {
+  content: "\e920";
+}
+.ico-search:before {
+  content: "\e921";
+}
+.ico-denied:before {
+  content: "\e922";
+}
+.ico-more:before {
+  content: "\e923";
+}
+.ico-chklst:before {
+  content: "\e924";
+}
+.ico-alert:before {
+  content: "\e925";
+}
+.ico-info:before {
+  content: "\e926";
+}
+.ico-qpaper:before {
+  content: "\e927";
+}
+.ico-instu:before {
+  content: "\e928";
+}
+.ico-first:before {
+  content: "\e929";
+}
+.ico-last:before {
+  content: "\e92a";
+}
+.ico-next:before {
+  content: "\e92b";
+}
+.ico-prev:before {
+  content: "\e92c";
+}
+.ico-custom:before {
+  content: "\e92d";
+}
+.ico-sports:before {
+  content: "\e92e";
+}
+.ico-celeb:before {
+  content: "\e92f";
+}
+.ico-flag:before {
+  content: "\e930";
+}
+.ico-guest-lec:before {
+  content: "\e931";
+}
+.ico-calc:before {
+  content: "\e933";
+}
+.ico-minus:before {
+  content: "\e934";
+}
+.ico-cmnt:before {
+  content: "\e935";
+}
+.ico-repeat:before {
+  content: "\e936";
+}
+.ico-doc:before {
+  content: "\e937";
+}
+.ico-stud:before {
+  content: "\e938";
+}
+.ico-staff:before {
+  content: "\e939";
+}
+.ico-group:before {
+  content: "\e93b";
+}
+.ico-setting:before {
+  content: "\e94b";
+}
+.ico-weeklytest:before {
+  content: "\e94f";
+}
+.ico-workingday:before {
+  content: "\e950";
+}
+.ico-board:before {
+  content: "\e958";
+}
+.ico-co-scholastic:before {
+  content: "\e959";
+}
+.ico-curriculum:before {
+  content: "\e95a";
+}
+.ico-degree:before {
+  content: "\e95b";
+}
+.ico-attach:before {
+  content: "\e95c";
+}
+.ico-rubrics:before {
+  content: "\e95e";
+}
+.ico-scholastic:before {
+  content: "\e95f";
+}
+.ico-taxonomy:before {
+  content: "\e961";
+}
+.ico-teaching-norms:before {
+  content: "\e962";
+}
+.ico-bold:before {
+  content: "\e964";
+}
+.ico-bookmark:before {
+  content: "\e965";
+}
+.ico-close:before {
+  content: "\e966";
+}
+.ico-image:before {
+  content: "\e967";
+}
+.ico-check:before {
+  content: "\e968";
+}
+.ico-lst:before {
+  content: "\e969";
+}
+.ico-check-view:before {
+  content: "\e96a";
+}
+.ico-send:before {
+  content: "\e96d";
+}
+.ico-italic:before {
+  content: "\e970";
+}
+.ico-msg:before {
+  content: "\e973";
+}
+.ico-smile:before {
+  content: "\e977";
+}
+.ico-strikeout:before {
+  content: "\e978";
+}
+.ico-underline:before {
+  content: "\e979";
+}
+.ico-chkbox:before {
+  content: "\e97e";
+}
+.ico-date:before {
+  content: "\e980";
+}
+.ico-dropbox:before {
+  content: "\e983";
+  color: #0061ff;
+}
+.ico-eye:before {
+  content: "\e997";
+}
+.ico-gdrive:before {
+  content: "\e999";
+  color: #06d;
+}
+.ico-link:before {
+  content: "\e99d";
+}
+.ico-num:before {
+  content: "\e99f";
+}
+.ico-onedrive:before {
+  content: "\e9a0";
+  color: #1288df;
+}
+.ico-user:before {
+  content: "\e9a2";
+}
+.ico-status:before {
+  content: "\e9a3";
+}
+.ico-upload:before {
+  content: "\e9a4";
+}
+.ico-video:before {
+  content: "\e9a6";
+}
+.ico-loader:before {
+  content: "\e9a7";
+}
+.ico-hashtag:before {
+  content: "\e945";
+  color: #93ecc9;
+}
+.ico-pending:before {
+  content: "\e946";
+  color: #1e5a89;
+}
+.ico-resolved:before {
+  content: "\e947";
+  color: #32c4ac;
+}
+.ico-certificate:before {
+  content: "\e948";
+}
+.ico-fee:before {
+  content: "\e949";
+}
+.ico-participant:before {
+  content: "\e94a";
+}
+.ico-athletics:before {
+  content: "\e94c";
+  color: #670ddc;
+}
+.ico-dance:before {
+  content: "\e94d";
+  color: #5a912a;
+}
+.ico-debates:before {
+  content: "\e94e";
+  color: #262f9d;
+}
+.ico-music:before {
+  content: "\e951";
+  color: #670ddc;
+}
+.ico-quiz:before {
+  content: "\e952";
+  color: #f3a50a;
+}
+.ico-crown:before {
+  content: "\e953";
+  color: #727e98;
+}
+.ico-file:before {
+  content: "\e954";
+}
+.ico-glass-plus:before {
+  content: "\e955";
+  color: #fff;
+}
+.ico-house-work:before {
+  content: "\e956";
+}
+.ico-language:before {
+  content: "\e957";
+  color: #4bd992;
+}
+.ico-mathematics:before {
+  content: "\e95d";
+  color: #e99f00;
+}
+.ico-science:before {
+  content: "\e960";
+  color: #0981dc;
+}
+.ico-social:before {
+  content: "\e963";
+  color: #f31e41;
+}
+.ico-f-excel:before {
+  content: "\e96e";
+  color: #1F6E43;
+}
+.ico-f-ppt:before {
+  content: "\e96f";
+  color: #CA4223;
+}
+.ico-grade:before {
+  content: "\e96b";
+}
+.ico-list:before {
+  content: "\e96c";
+}
+.ico-c-sec:before {
+  content: "\e971";
+}
+.ico-c-sub:before {
+  content: "\e972";
+}
+.ico-activity-policy:before {
+  content: "\e974";
+}
+.ico-fee-type:before {
+  content: "\e975";
+}
+.ico-win:before {
+  content: "\e976";
+}
+.ico-rf-field:before {
+  content: "\e97a";
+}
+.ico-teaching:before {
+  content: "\e97b";
+}
+.ico-auto-tmtbl:before {
+  content: "\e97c";
+}
+.ico-cr-report:before {
+  content: "\e97d";
+}
+.ico-mail:before {
+  content: "\e97f";
+}
+.ico-add-admission:before {
+  content: "\e984";
+}
+.ico-assest-bprint:before {
+  content: "\e985";
+}
+.ico-assest-dash:before {
+  content: "\e986";
+}
+.ico-assest-policy:before {
+  content: "\e987";
+}
+.ico-meet:before {
+  content: "\e988";
+}
+.ico-test:before {
+  content: "\e989";
+}
+.ico-q-bank:before {
+  content: "\e98a";
+}
+.ico-schl-report:before {
+  content: "\e981";
+}
+.ico-stu-reportcard:before {
+  content: "\e982";
+}
+.ico-subwise-report:before {
+  content: "\e98b";
+}
+.ico-c-scholastic:before {
+  content: "\e98c";
+}
+.ico-book:before {
+  content: "\e98d";
+}
+.ico-add-wsheet:before {
+  content: "\e98e";
+}
+.ico-hwork:before {
+  content: "\e98f";
+}
+.ico-lst-wsheet:before {
+  content: "\e990";
+}
+.ico-reflection:before {
+  content: "\e991";
+}
+.ico-review:before {
+  content: "\e992";
+}
+.ico-camera:before {
+  content: "\e993";
+}
+.ico-target:before {
+  content: "\e994";
+}
+.ico-email:before {
+  content: "\e995";
+}
+.ico-overall:before {
+  content: "\e996";
+}
+.ico-questn-type:before {
+  content: "\e998";
+}
+.ico-summary-report:before {
+  content: "\e99a";
+}
+.ico-reset:before {
+  content: "\e99b";
+}
+.ico-table:before {
+  content: "\e99c";
+}
+.ico-chart-line:before {
+  content: "\e99e";
+}
+.ico-book-open:before {
+  content: "\e9a5";
+}
+.ico-calendar:before {
+  content: "\e9a8";
+}
+.ico-event-activity:before {
+  content: "\e9a9";
+}
+.ico-module-master:before {
+  content: "\e9aa";
+}
+.ico-page-master:before {
+  content: "\e9ab";
+}
+.ico-sub-tags:before {
+  content: "\e9ac";
+}
+.ico-subwise-topics:before {
+  content: "\e9ad";
+}
+.ico-usage-report:before {
+  content: "\e9ae";
+}
+.ico-qbank-breakup:before {
+  content: "\e9af";
+}
+.ico-shield:before {
+  content: "\e9b0";
+}
+.ico-address:before {
+  content: "\e9b1";
+}
+.ico-user-solid:before {
+  content: "\e9b2";
+}
+.ico-stud-entry:before {
+  content: "\e9b3";
+}
+.ico-wdrawal-f-prof:before {
+  content: "\e9b4";
+}
+.ico-wdrawal-lst:before {
+  content: "\e9b5";
+}
+.ico-wdrawal-frm:before {
+  content: "\e9b6";
+}
+.ico-sort:before {
+  content: "\e9b7";
+}
+.ico-file-export:before {
+  content: "\e9b8";
+}
+.ico-chart-pie:before {
+  content: "\e9b9";
+}
+.ico-stu-tmtbl-bprint:before {
+  content: "\e9bc";
+}

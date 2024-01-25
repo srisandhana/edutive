@@ -1,0 +1,96 @@
+.edv-rptcard-cont{
+    max-width: 920px;
+    margin: auto;
+
+    .edv-rptheader {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 20px 40px;
+        .edv-hlogolft, 
+        .edv-hlogorht{
+            flex: 0 0 200px;
+            display: flex;
+            align-items: center;
+        }
+        .edv-hlogorht{
+            justify-content: flex-end;
+        }
+        .edv-htitle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-grow: 1;
+            text-align: center;
+            gap: 15px;
+            address{
+                font-size: var(--fs-12);
+                color: var(--fc-7);
+                font-style: normal;
+                line-height: 1.4;
+            }
+        }
+    }
+    .edv-rptshead{
+        padding: 0 20px 30px;
+        text-align: center;
+        font-family: var(--font-medium);
+    }
+    h4{
+        font-size: var(--fs-18);
+        font-family: var(--font-semibold);
+    }
+    h5{
+        padding: 20px 10px;
+        font-size: var(--fs-18);
+        font-family: var(--font-semibold);
+    }
+
+    .edv-rpttbl-brd{
+        border: 1px solid #dfdfdf;
+        font-size: var(--fs-13);
+        margin-bottom: 50px;
+        tr>th{
+            text-align: left;
+            font-family: var(--font-medium);
+        }
+        tr>td,
+        tr>th{
+            padding: 10px;
+            line-height: 1.1;
+        }
+    }
+    
+    .edv-rpttbl{
+        width: 100%;
+        border: 1px solid #ccc;
+        font-size: var(--fs-13);
+        margin-bottom: 50px;
+        caption{
+            font-family: var(--font-medium);
+            text-align: left;
+            padding: 10px 0 20px;
+          }
+          >thead>tr>td,
+          >thead>tr>th,
+          >tbody>tr>td,
+          >tfoot>tr>td,
+          >tfoot>tr>th {
+            padding: 12px;
+            // text-align: left;
+          }
+          >thead{
+            background-color: #4472c4;
+            color: #fff;
+              >tr>th{}
+          }
+          >tbody>tr>td {
+              line-height: 1.2;
+            border: 1px solid #ccc;
+          }
+          .edv-throw{
+                font-family: var(--font-medium);
+                background-color: #d9e1f2;
+          }
+    }
+}

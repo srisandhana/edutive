@@ -1,0 +1,61 @@
+.edv-peeredv-wrap {
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    background-color: var(--ico-bg);
+    padding: 20px;
+    border-radius: 4px;
+
+    .edv-peereva-item {
+        border: 1px solid #ededed;
+        background-color: #fff;
+        border-radius: 4px;
+        flex: 0 0 340px;
+        padding: 20px;
+        height: 350px;
+        .edv-peerhead {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .edv-sedit{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            >b {
+                border-radius: 4px;
+                background-color: var(--ico-bg);
+                padding: 4px 6px;
+                color: var(--fc-5);
+                display: inline-flex;
+            }
+        }
+        .edv-peerlst-group {
+            margin: 15px 0 0;
+            >div {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ededed;
+                border-radius: 4px;
+                i {
+                    color: var(--fc-5);
+                    width: 20px;
+                    text-align: center;
+                }
+                .edv-input {
+                    border-color: transparent;
+                }
+                &.edv-peerselect{
+                    border: unset;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 6px;
+                }
+            }
+        }
+    }
+}

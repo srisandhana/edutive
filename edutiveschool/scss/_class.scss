@@ -1,0 +1,73 @@
+
+
+.edv-{
+    &class-boardview {
+        display: flex;
+        gap: 20px;
+        height: auto;
+        overflow-x: auto;
+         >div{
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            flex:1 0 240px;
+            .edv-classhead{
+                padding: 10px 0 15px;
+                // height: 30px;
+            }
+            .edv-classbdy{
+                border:1px solid #dee1e5;
+                padding: 15px;
+                height: 100%;
+                border-radius: 4px;
+                overflow-y: auto;
+                max-height: 500px;
+                min-height: 500px;
+                .edv-class-group{
+                    padding-bottom: 5px;
+                    >p{
+                        color: var(--fc-7);
+                        line-height: 1.2;
+                        padding-bottom: 8px;
+                    }
+                    .edv-grphead{
+                        padding: 10px;
+                        background-color: var(--ico-bg);
+                    }
+                    .edv-grpbody{
+                        padding: 0px 10px;
+                    }
+                }
+                .edv-class-addrow{
+                    display: flex;
+                    gap: 10px;
+                    padding-bottom: 15px;
+                    align-items: baseline;
+                    .edv-class-actions{
+                        display: flex;
+                        align-items: flex-end;
+                        flex: 1 0 35px;
+
+                    }
+                }
+            }
+            // .edv-grpbody{
+            //     padding: 0px;
+            //     .edv-class-group{
+            //         >div{
+            //             >p{
+            //             padding: 10px;
+            //             line-height: 1.4;
+            //             background-color: var(--ico-bg);
+            //             }
+            //         }
+
+            //     }
+            //     .innersec{
+            //         padding: 0px 10px;
+            //     }
+            // }
+        }
+    }
+}
+

@@ -1,0 +1,142 @@
+//7680 x 4320 (8K)
+//3840×2160 (4K)
+//QHD
+
+
+.edv-row {
+  display: flex;  
+  flex-wrap: wrap;
+  margin-right: -10px;;
+  margin-left: -10px;;
+}
+
+.edv-col1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-col12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left:10px;;
+  padding-right:10px;;
+}
+
+.edv-row-btm{
+  display: flex;
+  align-items: flex-end;
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+  
+}
+
+@media only screen and (max-width: 992px) {
+  //  
+  .edv-lesson-wrap {
+    flex-wrap: wrap; 
+    .edv-class-lst { 
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .edv-col12,
+  .edv-col10,
+  .edv-col8,
+  .edv-col6,
+  .edv-col4,
+  .edv-col3,
+  .edv-col2,
+  .edv-col1 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .edv-lesson-wrap {
+    flex-wrap: wrap; 
+    .edv-class-lst { 
+      width: 100%;
+    }
+  }
+ 
+}
+
+@media only screen and (max-width: 576px) {
+  
+  .edv-col12,
+  .edv-col10,
+  .edv-col8,
+  .edv-col6,
+  .edv-col4,
+  .edv-col3,
+  .edv-col2,
+  .edv-col1 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+ 
+  .edv-lesson-wrap {
+    flex-wrap: wrap; 
+    .edv-class-lst { 
+      width: 100%;
+    }
+  }
+}
+

@@ -1,0 +1,224 @@
+// 
+// @import '../scss/variables';
+
+.edv-bcrumb {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0;
+    margin: 0 15px 0;
+    position: sticky;
+    z-index: 1;
+    min-height: 30px;
+    > div {
+      position: relative;
+      &.home{
+        >a{
+          &::before {
+              content: "\e918";
+              font-family: var(--font-ico);
+              margin-right: 5px;
+          }
+      }
+    }
+    &.set{
+      >a{
+        &::before {
+            content: "\e90f";
+            font-family: var(--font-ico);
+            margin-right: 5px;
+        }
+      }
+    }
+    &:after {
+      content: "/";
+      color: var(--fc-7);
+      font-size: 11px;
+      vertical-align: middle;
+      display: inline-block;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+    }
+    &.sel > a {
+      background-color: rgba(238, 242, 255, 0.6);
+    }
+    > a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0  5px;
+      color: var(--fc-5);
+      font-size: 12px;
+      text-decoration: none;
+      &:hover{
+          color: var(--fc-2);
+      }
+    }
+    span {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 5px;
+      font-size: 12px;
+      color: var(--fc-2);
+    }
+      
+    // Last
+      &:last-child::after {
+        content: "";
+      }
+        // First
+        &:first-child{
+            a{
+                padding-left: 0;
+            }
+        }
+    }
+  }
+
+// Horizontal Steps
+.edv-stepnav {
+  padding: 20px;
+  // border: 1px solid #eee;
+  >div {
+    display: flex;
+    justify-content: center;
+    // gap: 20px;
+    // padding-inline: 20px;
+    >div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+      max-width: 160px;
+      padding-inline: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: -18px;
+        height: 4px;
+        width: 100%;
+        background-color: #ecedf1;
+      }
+      &::before {
+        content: '';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        font-size: var(--fs-12);
+        font-family: var(--font-ico);
+        position: absolute;
+        bottom: -26px;
+        background: #fff;
+        border-radius: 50%;
+        border: 3px solid #eee;
+        z-index: 1;
+      }
+      &:first-child {
+        &::after {
+          left: 50%;
+        }
+      }
+      &:last-child {
+        &::after {
+          right: 50%;
+        }
+      }
+      &.sel, 
+      &.success,
+      &.rejected {
+        span{
+          color: var(--fc-2);
+        }
+        &::before {
+          content: '\e9a7';
+          background: #fff;
+          border-color: #27afeb;   
+          color: #27afeb;
+        }
+        &::after {
+          background-color: #27afeb;
+        }
+      }
+      &.success{
+        &::before {
+          content: '\e968';
+          background: #27afeb;
+          border-color: #27afeb;   
+          color: #fff;
+          font-size: 9px;
+        }
+        &::after {
+          background-color: #27afeb;
+        }
+      }
+      &.rejected{
+        &::before {
+          content: '\e966';
+          background-color: var(--sts-reject);
+          border-color: var(--sts-reject);
+          color: #fff;
+          font-size: 9px;  
+        }
+        &::after {
+          background-color: #27afeb;
+        }
+      }
+      img {
+        max-width: 30px;
+      }
+      span{
+        font-size: var(--fs-12);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.2;
+        color: var(--fc-7);
+      }
+    }
+  }
+}
+
+.edv{
+  &-stepcontain {
+  }
+  &-stepcontent {
+    padding: 20px;
+    border: 1px solid #ecedf1;  
+  }
+}
+
+//
+.edv-adms-wrap{
+  display: flex;
+  gap: 20px;
+  // padding: 20px;
+  // border: 1px solid #eee;
+  >div{    
+    flex-grow: 1;
+  }
+}
+
+// Info Panel
+
+.edv-adm-infopanel {
+  width: 350px;
+  >div {
+    display: flex;    
+    gap: 10px;
+    label {
+      width: 160px;
+      flex-shrink: 0;
+      padding-bottom: 15px;
+      color: var(--fc-3);
+    }
+    >div{
+      // flex-grow: 1;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+
+
+.lgn-bimg01{  background: url(../images/lgn-bimg01.png) ;}
+.lgn-bimg02{  background: url(../images/lgn-bimg02.png) ;}
+
+ //Login Screen
+ .lgn-logo {
+  max-width: 200px;
+  max-height: 50px;
+}
+
+.lgn-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    background-size: cover;
+    >div {
+      &:first-child {
+        width: 50%;
+      }
+    }
+}
+
+.lgn-txt{
+  color: var(--fc-f);
+  padding: 0 20%;
+  h1{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-family: var(--font-semibold);
+  }
+}
+
+.lgn-wrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.lgn-topnav{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  a{
+    // color: var(--fc-f);
+  }
+}
+
+.lgn-form {
+  width: 460px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-radius: 10px;
+  margin: auto;
+  padding: 50px;
+  position: relative;
+  transition: all ease .5s;
+  color: var(--fc-f);
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   right: -50px;
+  //   top: -80px;
+  //   background: url(../images/dot.png) no-repeat;
+  //   width: 150px;
+  //   height: 150px;
+  //   background-size: cover;
+  // }
+  h2 {
+    font-family: var(--font-semibold);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    span {
+      display: flex;
+      width: 100%;
+      color: var(--fc-5);
+      font-size: 15px;
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+  }
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+   color: #98a0b1;
+  }
+  .f-group {
+    margin-bottom: 40px;
+  }
+  .f-err {
+    input[type="text"],
+    input[type="password"] {
+      border-color: #e95b6d;
+    }
+  }
+  .lgn-align{
+    display: flex;
+    align-items: center;
+  }
+}
+  
+
+
+//Login Form
+.btnnxt {
+  width: 120px;
+  position: relative;
+  justify-content: flex-start;
+  &::after {
+    content: '\e90e';
+    font-family: var(--font-ico);
+    position: absolute;
+    right: 15px;
+    color: #fff;
+    transition: all ease .3s;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  &:hover {
+    &::after {
+      transform: translateX(2px);
+    }
+  }
+}

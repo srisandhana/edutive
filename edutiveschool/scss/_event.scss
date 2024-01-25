@@ -1,0 +1,176 @@
+.edv-event {
+    .event-box {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 1px solid #e9ebf1;
+      height: 143px;
+      cursor: pointer;
+      .box-head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        .event-ico {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 15px;
+          .ico-quiz {
+            background-color: #fef8eb;
+            padding: 10px;
+            border-radius: 16px;
+            font-size: 17px;
+          }
+          .ico-athletics {
+            background-color: #f6f0fd;
+            padding: 10px;
+            border-radius: 16px;
+            font-size: 18px;
+          }
+          .ico-dance {
+            background-color: #f0f8ef;
+            padding: 10px;
+            border-radius: 16px;
+            font-size: 18px;
+          }
+          .ico-debates {
+            background-color: #eff0f8;
+            padding: 10px;
+            border-radius: 16px;
+            font-size: 18px;
+          }
+          .ico-music {
+            background-color: #F6F0FD;
+            padding: 10px;
+            border-radius: 16px;
+            font-size: 18px;
+          }
+          > div {
+            color: #343434;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .title {
+              font-size: 24px;
+            }
+            .date {
+              font-size: 10px;
+              color: #343434;
+            }
+          }
+        }
+  
+        .evnt-more {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .sts {
+            font-size: 12px;
+            border-radius: 10.5px;
+            padding: 7px 10px;
+          }
+          .e-clr1 {
+            color: var(--sts-reject);
+            background-color: #fff8f9;
+          }
+          .e-clr2 {
+            color: var(--sts-pending);
+            background-color: #fcf4ea;
+          }
+          .e-clr3 {
+            color: var(--sts-success);
+            background-color: #edf8ee;
+          }
+          .e-clr4 {
+            color: var(--sts-info);
+            background-color: #eef7ff;
+          }
+        }
+      }
+      p {
+        font-size: 11px;
+        color: #727e98;
+        line-height: 1.2;
+        font-weight: normal;
+        height: 25px;
+      }
+      .box-end {
+        display: flex;
+        gap: 36px;
+        > div {
+          display: flex;
+          gap: 5px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #333946;
+        }
+      }
+    }
+  }
+
+// view event
+
+  .edv-view-event{
+    .sub-head{
+      padding: 0px 20px 15px;
+      .actions {
+          gap: 2px;
+       }
+      .event-box {
+        .box-head {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 15px;
+          justify-content: space-between;
+          .event-ico {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            .ico-athletics {
+              background-color: #f6f0fd;
+              padding: 10px;
+              border-radius: 16px;
+              font-size: 18px;
+            }
+            .ico-music {
+              background-color: #F6F0FD;
+              padding: 10px;
+              border-radius: 16px;
+              font-size: 18px;
+            }
+            > div {
+              color: #343434;
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              .title {
+                font-size: 24px;
+              }
+              .date {
+                font-size: 12px;
+                color: #343434;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .edv-box-grp{
+    padding: 15px 15px 0px 15px;
+    border: 1px solid #dee1e5;
+    border-radius: 8px;
+  }
+  .edv-box-sgrp{
+    padding: 15px;
+    border: 1px solid #dee1e5;
+    border-radius: 8px;
+    width: 50%;
+  }

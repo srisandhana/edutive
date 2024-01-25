@@ -1,0 +1,47 @@
+.edv-analytics{
+  display: flex;
+  justify-content: space-between;
+  .analytics-grid{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .title{
+      font-size: var(--fs-16);
+      font-weight: 600;
+    }
+    .nav-group{
+      a{
+        padding: 8px 10px;
+        font-size: var(--fs-12);
+      }
+    }
+    .pills {
+      a {
+        border-radius: 8px;
+      }
+    }
+  }
+  .analytics-list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    div{
+      // display: flex;
+      // align-items: center;
+      // gap: 5px;
+      cursor: pointer;
+      i{
+        font-size: 16px;
+      }
+      span{
+        font-size: var(--fs-15);
+      }
+    }
+  }
+  .reset-blue{
+    color: #1786d5;
+  }
+  .sub-navyblue{
+    color: var(--btn-c);
+  }
+}

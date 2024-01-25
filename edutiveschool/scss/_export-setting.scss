@@ -1,0 +1,65 @@
+.export-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+  border-bottom: 1px solid #eaecef;
+  padding: 0px 10px;
+  .nav-line > a{
+    span{
+      padding: 5px;
+      margin-right: 5px;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+    .ico-f-excel{
+      background-color: #029f9d38;
+    }
+    .ico-f-pdf{
+      background-color: #d2382147;
+    }
+  }
+}
+.export-info{
+  .export-title{
+    display:flex ;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8fc;
+    margin: 15px 0px;
+    p{
+      color: #333946;
+      font-size: 14px;
+      font-weight: 600;
+      span{
+        color: #727e98;
+        margin-right: 8px;
+        font-size: 17px;
+      }
+    }
+  }
+  .export-details{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 5px 10px;
+    flex-wrap: wrap;  
+    div{
+      display: flex;
+      .edv-checkbox{
+        margin: 0;
+      }
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+}
+.reset-iconclr{
+  color: #1786d5;
+  font-size: 18px;
+  span{
+    margin-right: 8px;
+  }
+}

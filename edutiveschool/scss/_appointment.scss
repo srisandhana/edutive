@@ -1,0 +1,70 @@
+.edv {
+  &-appointment-approve {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 20px;
+        >span {
+          width: 58px;
+          height: 58px;
+          flex-shrink: 0;
+          img {
+              border-radius: 50%;
+          }
+      }
+      >div {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .head {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              .title {
+                  font-family: var(--font-medium);
+                  font-size: var(--fs-20);
+              }
+          }
+          .desc {
+              line-height: 1.5;
+          }
+    }    
+  }
+}
+.a-schedule{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--tbl-border-color);
+  > div{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #f5f8fa;
+    font-size: var(--fs-14);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+}
+.a-field{
+  > label {
+    min-width: 38%;
+    padding-top: 0px;
+    word-break: break-word;
+    font-size: var(--fs-16);
+    line-height: 1.4;
+  }
+  > div {
+    width: 65%;
+    flex-shrink: 0;
+    word-break: break-word;
+    position: relative;
+    line-height: 1.4;
+    font-size: var(--fs-16);
+  }
+}
+
+.a-hgt{
+  height: 292px;
+}
